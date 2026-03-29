@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "stop:next": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/stop-next.ps1",
+    "stop:next": "node ./scripts/stop-next.mjs",
     "predev": "npm run stop:next",
     "prebuild": "npm run stop:next",
     "prestart": "npm run stop:next",
