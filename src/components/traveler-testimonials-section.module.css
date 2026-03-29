@@ -1,0 +1,322 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4.8rem, 6.3vw, 6.3rem) 0 clamp(5rem, 6.9vw, 6.8rem);
+  background: linear-gradient(
+    180deg,
+    rgba(249, 243, 235, 0.98) 0%,
+    rgba(244, 236, 224, 0.99) 100%
+  );
+  background-color: #f7efe4;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.34;
+  background-image: url("/porco.png");
+  background-size: 820px auto;
+  background-position: 50% 44%;
+  mix-blend-mode: multiply;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0) 44%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(112, 67, 37, 0.08) 0%,
+      rgba(112, 67, 37, 0) 16%,
+      rgba(112, 67, 37, 0) 84%,
+      rgba(112, 67, 37, 0.08) 100%
+    );
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1360px);
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
+.headerBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.heading {
+  margin: 0;
+  color: #3a2617;
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(2.35rem, 4.5vw, 3.9rem);
+  line-height: 0.94;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.headingRule {
+  position: relative;
+  width: min(100%, 35rem);
+  height: 1rem;
+}
+
+.headingRule::before,
+.headingRule::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 0.74rem);
+  border-top: 1px solid rgba(215, 177, 136, 0.64);
+}
+
+.headingRule::before {
+  left: 0;
+}
+
+.headingRule::after {
+  right: 0;
+}
+
+.headingRule span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0.56rem;
+  height: 0.56rem;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border: 1px solid rgba(224, 183, 139, 0.85);
+  background: #f6ead9;
+}
+
+.lead {
+  margin: 0;
+  max-width: 42ch;
+  color: #6c4528;
+  text-align: center;
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: clamp(1.04rem, 1.34vw, 1.4rem);
+  line-height: 1.5;
+}
+
+.carouselViewport {
+  --card-gap: clamp(0.95rem, 1.2vw, 1.15rem);
+  margin-top: clamp(1.95rem, 2.8vw, 2.65rem);
+  overflow: hidden;
+  padding-inline: clamp(0.35rem, 1vw, 0.9rem);
+}
+
+.carouselTrack {
+  display: flex;
+  gap: var(--card-gap);
+  width: max-content;
+  padding-right: var(--card-gap);
+  animation: testimonials-marquee 46s linear infinite;
+}
+
+.carouselViewport:hover .carouselTrack {
+  animation-play-state: paused;
+}
+
+.card {
+  flex: 0 0 clamp(19rem, 24vw, 23.8rem);
+  min-height: clamp(17rem, 27vw, 20rem);
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.cardInner {
+  --chamfer: 0.78rem;
+  position: relative;
+  height: 100%;
+  padding: 1.18rem 1.08rem 1.14rem;
+  isolation: isolate;
+  overflow: hidden;
+  clip-path: polygon(
+    var(--chamfer) 0,
+    calc(100% - var(--chamfer)) 0,
+    100% var(--chamfer),
+    100% calc(100% - var(--chamfer)),
+    calc(100% - var(--chamfer)) 100%,
+    var(--chamfer) 100%,
+    0 calc(100% - var(--chamfer)),
+    0 var(--chamfer)
+  );
+  border: 1px solid rgba(190, 137, 87, 0.9);
+  box-shadow:
+    0 0 0 1px rgba(112, 69, 39, 0.52) inset,
+    0 16px 30px rgba(41, 21, 10, 0.23),
+    0 28px 52px rgba(22, 11, 6, 0.19);
+}
+
+.cardInner::before {
+  content: "";
+  position: absolute;
+  inset: 0.34rem;
+  pointer-events: none;
+  clip-path: polygon(
+    var(--chamfer) 0,
+    calc(100% - var(--chamfer)) 0,
+    100% var(--chamfer),
+    100% calc(100% - var(--chamfer)),
+    calc(100% - var(--chamfer)) 100%,
+    var(--chamfer) 100%,
+    0 calc(100% - var(--chamfer)),
+    0 var(--chamfer)
+  );
+  border: 1px solid rgba(233, 193, 147, 0.66);
+  box-shadow:
+    0 0 0 1px rgba(98, 58, 32, 0.54),
+    0 0 12px rgba(241, 170, 97, 0.18);
+  z-index: 2;
+}
+
+.cardTexture {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url("/PISELLO.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: sepia(12%) saturate(1.16) contrast(1.03) brightness(0.84);
+}
+
+.cardShade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(22, 10, 4, 0.26) 0%,
+      rgba(15, 8, 3, 0.55) 62%,
+      rgba(9, 5, 2, 0.72) 100%
+    ),
+    radial-gradient(
+      circle at 50% 4%,
+      rgba(252, 215, 172, 0.12) 0%,
+      rgba(252, 215, 172, 0) 40%
+    );
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 0.62rem;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8ead6;
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: linear-gradient(
+    180deg,
+    rgba(142, 86, 50, 0.92) 0%,
+    rgba(93, 53, 30, 0.96) 100%
+  );
+  border: 1px solid rgba(215, 167, 114, 0.58);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.name {
+  margin: 0;
+  color: rgba(246, 226, 199, 0.96);
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 650;
+  line-height: 1.1;
+}
+
+.meta {
+  margin: 0.24rem 0 0;
+  color: rgba(229, 204, 172, 0.76);
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: 0.74rem;
+  font-weight: 500;
+}
+
+.rating {
+  margin: 0.88rem 0 0;
+  color: rgba(252, 226, 187, 0.9);
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.quote {
+  margin: 0.74rem 0 0;
+  color: rgba(247, 232, 212, 0.9);
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.48;
+}
+
+@keyframes testimonials-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 860px) {
+  .section {
+    padding: 4rem 0 4.7rem;
+  }
+
+  .inner {
+    padding-inline: 0.95rem;
+  }
+
+  .card {
+    flex-basis: clamp(16.6rem, 82vw, 20rem);
+    min-height: 16rem;
+  }
+
+  .quote {
+    font-size: 0.89rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carouselViewport {
+    overflow-x: auto;
+  }
+
+  .carouselTrack {
+    animation: none;
+  }
+}

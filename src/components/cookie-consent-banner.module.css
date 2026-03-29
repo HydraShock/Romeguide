@@ -1,0 +1,328 @@
+.wrapper {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 90;
+  width: min(100% - 1.6rem, 30rem);
+}
+
+.panel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.05rem;
+  border: 1px solid rgba(218, 173, 118, 0.72);
+  background:
+    linear-gradient(180deg, rgba(31, 14, 9, 0.95) 0%, rgba(20, 9, 6, 0.96) 100%);
+  box-shadow:
+    0 0 0 1px rgba(102, 57, 28, 0.8),
+    0 0 0 1px rgba(238, 195, 139, 0.2) inset,
+    0 18px 34px rgba(10, 4, 2, 0.54);
+  padding: 0.95rem 0.98rem 1rem;
+}
+
+.panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: soft-light;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(255, 199, 136, 0.22) 0%, rgba(255, 199, 136, 0.06) 34%, rgba(255, 199, 136, 0) 68%),
+    url("/darkbronzo.png"),
+    repeating-linear-gradient(118deg, rgba(255, 223, 177, 0.03) 0px, rgba(255, 223, 177, 0.03) 1px, rgba(39, 19, 10, 0.05) 1px, rgba(39, 19, 10, 0.05) 3px);
+  background-size: cover, cover, auto;
+  background-position: center, center, center;
+}
+
+.panel::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: calc(1.05rem - 2px);
+  pointer-events: none;
+  border: 1px solid rgba(246, 201, 137, 0.24);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 236, 205, 0.2),
+    inset 0 -1px 0 rgba(102, 56, 28, 0.28);
+}
+
+.panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.56rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.74rem;
+  height: 1.74rem;
+  border-radius: 999px;
+  border: 1px solid rgba(201, 157, 101, 0.52);
+  background: rgba(248, 237, 221, 0.06);
+  color: #edd0a6;
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.closeButton:hover {
+  border-color: rgba(228, 181, 123, 0.72);
+  background: rgba(248, 237, 221, 0.14);
+  color: #ffdfb4;
+}
+
+.eyebrow {
+  margin: 0;
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #d6b88e;
+}
+
+.title {
+  margin: 0.5rem 0 0;
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(1.5rem, 3.2vw, 1.95rem);
+  line-height: 0.96;
+  color: #f5eee4;
+  text-wrap: balance;
+  text-shadow: 0 2px 10px rgba(11, 4, 2, 0.62);
+}
+
+.bodyText {
+  margin: 0.7rem 0 0;
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.58;
+  color: #edd7bb;
+  text-shadow: 0 1px 5px rgba(10, 4, 2, 0.45);
+}
+
+.status {
+  margin: 0.62rem 0 0;
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-size: 0.74rem;
+  line-height: 1.45;
+  color: #d8bf9f;
+}
+
+.actionsRow {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.48rem;
+}
+
+.primaryButton,
+.secondaryButton,
+.ghostButton,
+.choiceButton {
+  min-height: 2.35rem;
+  border-radius: 999px;
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0 0.9rem;
+  transition: 180ms ease;
+}
+
+.primaryButton {
+  border: 1px solid #ca9555;
+  background: linear-gradient(180deg, #deab65 0%, #c68131 100%);
+  color: #f8eee2;
+  box-shadow:
+    0 1px 0 rgba(255, 230, 197, 0.34) inset,
+    0 8px 16px rgba(136, 83, 39, 0.3);
+}
+
+.primaryButton:hover {
+  filter: brightness(1.04);
+}
+
+.secondaryButton {
+  border: 1px solid rgba(198, 149, 89, 0.58);
+  background: rgba(247, 238, 227, 0.1);
+  color: #f0d8b4;
+}
+
+.secondaryButton:hover {
+  background: rgba(247, 238, 227, 0.18);
+}
+
+.choiceButton {
+  border: 1px solid rgba(198, 149, 89, 0.64);
+  background: rgba(247, 238, 227, 0.11);
+  color: #f0d8b4;
+}
+
+.choiceButton:hover {
+  background: rgba(247, 238, 227, 0.2);
+  border-color: rgba(217, 169, 111, 0.8);
+  color: #ffe1b6;
+}
+
+.ghostButton {
+  border: 1px solid rgba(176, 131, 86, 0.5);
+  background: transparent;
+  color: #d9bb95;
+}
+
+.ghostButton:hover {
+  border-color: rgba(198, 149, 89, 0.72);
+  color: #edd2aa;
+}
+
+.preferenceList {
+  margin-top: 0.72rem;
+  display: grid;
+  gap: 0.56rem;
+}
+
+.preferenceRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.72rem;
+  align-items: center;
+  border-radius: 0.82rem;
+  border: 1px solid rgba(192, 146, 100, 0.36);
+  background: rgba(247, 238, 227, 0.08);
+  padding: 0.58rem 0.62rem;
+}
+
+.prefTitle {
+  margin: 0;
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #efd5b0;
+}
+
+.prefDescription {
+  margin: 0.3rem 0 0;
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-size: 0.76rem;
+  line-height: 1.42;
+  color: #d9c1a2;
+}
+
+.alwaysOn {
+  display: inline-flex;
+  min-height: 1.9rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(200, 163, 119, 0.62);
+  color: #fff7ed;
+  background: rgba(53, 26, 14, 0.68);
+  padding: 0 0.66rem;
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.toggleWrap {
+  position: relative;
+  display: inline-flex;
+  width: 2.8rem;
+  height: 1.55rem;
+}
+
+.toggleInput {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggleTrack {
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  border: 1px solid rgba(198, 149, 89, 0.64);
+  background: rgba(247, 238, 227, 0.16);
+  box-shadow: 0 1px 0 rgba(255, 230, 197, 0.18) inset;
+  transition: background-color 180ms ease, border-color 180ms ease;
+  position: relative;
+}
+
+.toggleTrack::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.2rem;
+  width: 1.03rem;
+  height: 1.03rem;
+  border-radius: 999px;
+  transform: translateY(-50%);
+  background: #f7e6cf;
+  box-shadow: 0 2px 8px rgba(10, 4, 2, 0.4);
+  transition: left 180ms ease, background-color 180ms ease;
+}
+
+.toggleInput:checked + .toggleTrack {
+  border-color: rgba(214, 161, 101, 0.88);
+  background: rgba(140, 85, 45, 0.58);
+}
+
+.toggleInput:checked + .toggleTrack::after {
+  left: 1.46rem;
+  background: #ffe1b6;
+}
+
+.legalText {
+  margin: 0.72rem 0 0;
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: #cdb494;
+}
+
+.legalText a {
+  color: #e6c18f;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+  text-decoration-color: rgba(220, 176, 126, 0.48);
+}
+
+.closeNote {
+  margin: 0.58rem 0 0;
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  color: #c6ac88;
+}
+
+@media (max-width: 720px) {
+  .wrapper {
+    right: 0.8rem;
+    left: 0.8rem;
+    width: auto;
+    bottom: 0.8rem;
+  }
+
+  .actionsRow {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .primaryButton,
+  .secondaryButton,
+  .ghostButton,
+  .choiceButton {
+    width: 100%;
+  }
+}

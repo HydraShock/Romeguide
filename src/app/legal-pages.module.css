@@ -1,0 +1,169 @@
+.page {
+  min-height: 100svh;
+  padding: clamp(7.2rem, 10vw, 9.4rem) 1rem clamp(3rem, 5vw, 4.4rem);
+  background:
+    linear-gradient(180deg, rgba(251, 245, 238, 0.98) 0%, rgba(248, 240, 230, 0.98) 100%),
+    url('/porco2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.inner {
+  width: min(100%, 1080px);
+  margin: 0 auto;
+}
+
+.panel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.4rem;
+  border: 1px solid rgba(193, 149, 93, 0.34);
+  background: linear-gradient(180deg, rgba(255, 251, 245, 0.94) 0%, rgba(250, 242, 232, 0.96) 100%);
+  box-shadow:
+    0 0 0 1px rgba(255, 234, 206, 0.42) inset,
+    0 24px 52px rgba(56, 34, 20, 0.14);
+  padding: clamp(1.4rem, 2.8vw, 2.2rem);
+}
+
+.panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 85% 8%, rgba(214, 173, 118, 0.14) 0%, rgba(214, 173, 118, 0) 52%);
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 1.15rem;
+  border-bottom: 1px solid rgba(185, 139, 86, 0.26);
+}
+
+.eyebrow {
+  margin: 0;
+  color: rgba(138, 98, 58, 0.88);
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.title {
+  margin: 0.6rem 0 0;
+  color: #3e2b21;
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 0.95;
+  letter-spacing: -0.015em;
+}
+
+.meta {
+  margin: 0.8rem 0 0;
+  color: rgba(103, 74, 49, 0.86);
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.section {
+  position: relative;
+  z-index: 1;
+  margin-top: 1.2rem;
+}
+
+.section h2 {
+  margin: 0;
+  color: #442f23;
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(1.42rem, 2.2vw, 1.9rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.section p,
+.section li,
+.section td,
+.section th {
+  color: rgba(77, 56, 40, 0.92);
+  font-family: var(--font-manrope), sans-serif;
+  font-size: clamp(0.95rem, 1vw, 1rem);
+  line-height: 1.7;
+}
+
+.section p {
+  margin: 0.7rem 0 0;
+}
+
+.list {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.48rem;
+}
+
+.list li::marker {
+  color: rgba(152, 110, 71, 0.92);
+}
+
+.tableWrap {
+  margin-top: 0.8rem;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+.table th,
+.table td {
+  border-bottom: 1px solid rgba(178, 134, 86, 0.24);
+  text-align: left;
+  vertical-align: top;
+  padding: 0.72rem 0.66rem;
+}
+
+.table th {
+  color: rgba(110, 77, 49, 0.96);
+  font-size: 0.77rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+}
+
+.link {
+  color: #87542e;
+  text-decoration: underline;
+  text-underline-offset: 0.15rem;
+}
+
+.link:hover {
+  color: #a1673b;
+}
+
+.notice {
+  margin-top: 1rem;
+  padding: 0.78rem 0.9rem;
+  border: 1px solid rgba(188, 145, 94, 0.28);
+  border-radius: 0.9rem;
+  background: rgba(255, 248, 236, 0.7);
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding-top: 6.5rem;
+  }
+
+  .panel {
+    border-radius: 1.1rem;
+    padding: 1.1rem;
+  }
+
+  .section {
+    margin-top: 1rem;
+  }
+}

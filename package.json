@@ -1,0 +1,38 @@
+{
+  "name": "romeguidenet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "stop:next": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/stop-next.ps1",
+    "predev": "npm run stop:next",
+    "prebuild": "npm run stop:next",
+    "prestart": "npm run stop:next",
+    "clean": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\"",
+    "clean:all": "node -e \"const fs=require('fs');['.next','.next-dev'].forEach((d)=>fs.rmSync(d,{recursive:true,force:true}))\"",
+    "dev": "next dev --webpack -p 3000",
+    "dev:clean": "npm run clean:all && next dev --webpack -p 3000",
+    "build": "next build",
+    "build:clean": "npm run clean && next build",
+    "start": "next start -p 3000",
+    "start:clean": "npm run build:clean && next start -p 3000",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "motion": "^12.37.0",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

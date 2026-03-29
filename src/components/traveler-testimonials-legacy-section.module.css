@@ -1,0 +1,423 @@
+.section {
+  --light-ghost-opacity: 0.28;
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4.8rem, 6.2vw, 6.2rem) 1rem clamp(5.1rem, 6.8vw, 6.8rem);
+  background: linear-gradient(
+    180deg,
+    rgba(250, 244, 236, 0.98) 0%,
+    rgba(245, 237, 227, 0.99) 100%
+  );
+  background-color: #f7efe4;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: var(--light-ghost-opacity);
+  background-image: url("/sfondoibianco.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 42%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(113, 61, 31, 0.06) 0%,
+      rgba(113, 61, 31, 0) 48%
+    );
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1320px);
+  margin: 0 auto;
+}
+
+.headerBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.heading {
+  margin: 0;
+  color: #3a2617;
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(2.3rem, 4.4vw, 3.8rem);
+  line-height: 0.94;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.headingRule {
+  position: relative;
+  width: min(100%, 32rem);
+  height: 1rem;
+}
+
+.headingRule::before,
+.headingRule::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 0.74rem);
+  border-top: 1px solid rgba(215, 177, 136, 0.65);
+}
+
+.headingRule::before {
+  left: 0;
+}
+
+.headingRule::after {
+  right: 0;
+}
+
+.headingRule span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0.56rem;
+  height: 0.56rem;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border: 1px solid rgba(224, 183, 139, 0.85);
+  background: #f6ead9;
+}
+
+.lead {
+  margin: 0;
+  max-width: 40ch;
+  color: #6d4528;
+  text-align: center;
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: clamp(1.06rem, 1.34vw, 1.38rem);
+  line-height: 1.48;
+}
+
+.carouselViewport {
+  --card-gap: clamp(0.9rem, 1.35vw, 1.2rem);
+  margin-top: clamp(2rem, 2.7vw, 2.6rem);
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.carouselTrack {
+  --entry-offset: clamp(10.5rem, 15.5vw, 13.4rem);
+  display: flex;
+  gap: var(--card-gap);
+  width: max-content;
+  padding-right: var(--card-gap);
+  animation: legacy-testimonials-marquee 44s linear infinite;
+}
+
+.carouselViewport:hover .carouselTrack {
+  animation-play-state: paused;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 clamp(21rem, 31vw, 26.8rem);
+  min-height: clamp(29rem, 43vw, 32.8rem);
+  transition:
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  filter: brightness(1.04);
+}
+
+.cardInner {
+  --chamfer: 0.8rem;
+  position: relative;
+  height: 100%;
+  isolation: isolate;
+  overflow: hidden;
+  clip-path: polygon(
+    var(--chamfer) 0,
+    calc(100% - var(--chamfer)) 0,
+    100% var(--chamfer),
+    100% calc(100% - var(--chamfer)),
+    calc(100% - var(--chamfer)) 100%,
+    var(--chamfer) 100%,
+    0 calc(100% - var(--chamfer)),
+    0 var(--chamfer)
+  );
+  border: 1px solid rgba(188, 136, 87, 0.88);
+  box-shadow:
+    0 0 0 1px rgba(120, 76, 43, 0.54) inset,
+    0 20px 36px rgba(42, 21, 10, 0.26),
+    0 36px 60px rgba(24, 12, 6, 0.22);
+}
+
+.cardInner::before {
+  content: "";
+  position: absolute;
+  inset: 0.32rem;
+  pointer-events: none;
+  clip-path: polygon(
+    var(--chamfer) 0,
+    calc(100% - var(--chamfer)) 0,
+    100% var(--chamfer),
+    100% calc(100% - var(--chamfer)),
+    calc(100% - var(--chamfer)) 100%,
+    var(--chamfer) 100%,
+    0 calc(100% - var(--chamfer)),
+    0 var(--chamfer)
+  );
+  border: 1px solid rgba(232, 193, 149, 0.68);
+  box-shadow:
+    0 0 0 1px rgba(100, 60, 33, 0.56),
+    0 0 14px rgba(245, 177, 101, 0.2);
+  z-index: 3;
+}
+
+.cardInner::after {
+  content: "";
+  position: absolute;
+  inset: -0.35rem;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(243, 168, 92, 0.22) 0%,
+    rgba(243, 168, 92, 0.08) 44%,
+    rgba(243, 168, 92, 0) 74%
+  );
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.cardTexture {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url("/PISELLO.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: sepia(10%) saturate(1.16) contrast(1.02) brightness(0.82);
+}
+
+.card:nth-child(3n + 2) .cardTexture {
+  background-position: 52% center;
+}
+
+.card:nth-child(3n + 3) .cardTexture {
+  background-position: 60% center;
+}
+
+.cardShade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(22, 11, 5, 0.2) 0%,
+      rgba(19, 9, 4, 0.48) 52%,
+      rgba(12, 6, 3, 0.76) 100%
+    ),
+    radial-gradient(
+      circle at 50% 22%,
+      rgba(255, 223, 181, 0.14) 0%,
+      rgba(255, 223, 181, 0) 38%
+    );
+}
+
+.glowQuote {
+  position: absolute;
+  left: 50%;
+  bottom: 0.5rem;
+  transform: translateX(-50%);
+  z-index: 2;
+  pointer-events: none;
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(2rem, 2.5vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(247, 190, 116, 0.82);
+  text-shadow:
+    0 0 8px rgba(246, 173, 94, 0.6),
+    0 0 16px rgba(246, 173, 94, 0.38),
+    0 0 26px rgba(246, 173, 94, 0.24);
+  filter: saturate(1.08);
+  opacity: 0.86;
+}
+
+.cardBody {
+  position: absolute;
+  top: clamp(1.18rem, 2.1vw, 1.58rem);
+  left: clamp(1.08rem, 1.85vw, 1.38rem);
+  right: clamp(1.08rem, 1.85vw, 1.38rem);
+  bottom: 1.2rem;
+  z-index: 4;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 0.92rem;
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 0.72rem;
+}
+
+.avatarPlaceholder {
+  width: 2.48rem;
+  height: 2.48rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(223, 177, 123, 0.6);
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(255, 224, 183, 0.3) 0%,
+      rgba(255, 224, 183, 0) 50%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(148, 93, 54, 0.92) 0%,
+      rgba(98, 57, 32, 0.94) 100%
+    );
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 232, 198, 0.32);
+}
+
+.avatarPlaceholder span {
+  color: #f8e8d1;
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: 0.81rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.clientMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.source {
+  margin: 0;
+  color: rgba(235, 210, 178, 0.8);
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: clamp(0.84rem, 0.88vw, 0.94rem);
+  font-weight: 560;
+  letter-spacing: 0.01em;
+}
+
+.rating {
+  margin: 0;
+  color: rgba(249, 225, 188, 0.98);
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: clamp(0.96rem, 1.05vw, 1.08rem);
+  font-weight: 750;
+  letter-spacing: 0.015em;
+}
+
+.quoteMark {
+  margin: 0;
+  color: rgba(236, 181, 118, 0.86);
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(2.3rem, 3.5vw, 2.8rem);
+  line-height: 0.72;
+}
+
+.quote {
+  margin: 0;
+  color: rgba(250, 236, 216, 0.94);
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: clamp(0.96rem, 1.02vw, 1.05rem);
+  line-height: 1.56;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.48);
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.name {
+  margin: 0;
+  color: rgba(248, 230, 205, 0.98);
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: clamp(1.02rem, 1.1vw, 1.16rem);
+  font-weight: 700;
+  line-height: 1.08;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes legacy-testimonials-marquee {
+  from {
+    transform: translateX(var(--entry-offset));
+  }
+
+  to {
+    transform: translateX(calc(-50% + var(--entry-offset)));
+  }
+}
+
+@media (max-width: 1120px) {
+  .card {
+    min-height: clamp(27.5rem, 66vw, 31rem);
+    flex-basis: clamp(20rem, 41vw, 24rem);
+  }
+}
+
+@media (max-width: 860px) {
+  .section {
+    padding: 4rem 0.95rem 4.8rem;
+  }
+
+  .card {
+    min-height: clamp(27rem, 112vw, 30rem);
+    flex-basis: clamp(16.8rem, 84vw, 20.5rem);
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .quote {
+    font-size: 0.9rem;
+    -webkit-line-clamp: 10;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carouselViewport {
+    overflow-x: auto;
+  }
+
+  .carouselTrack {
+    animation: none;
+  }
+}

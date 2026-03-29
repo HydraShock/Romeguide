@@ -1,0 +1,290 @@
+.editorialGrid {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.45rem, 2.3vw, 1.95rem);
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 1.7vw, 1.3rem);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.1rem;
+  border: 1.5px solid rgba(166, 109, 60, 0.86);
+  background:
+    linear-gradient(140deg, #fcf4e8 0%, #f5e8d7 53%, #efdfcb 100%);
+  box-shadow:
+    0 18px 34px rgba(10, 4, 2, 0.45),
+    0 1px 0 rgba(255, 250, 240, 0.76) inset,
+    0 0 0 1px rgba(124, 75, 38, 0.22);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 12% 14%,
+      rgba(255, 255, 255, 0.44) 0%,
+      rgba(255, 255, 255, 0) 44%
+    ),
+    repeating-linear-gradient(
+      126deg,
+      rgba(132, 86, 50, 0.018) 0px,
+      rgba(132, 86, 50, 0.018) 1px,
+      rgba(255, 255, 255, 0.012) 1px,
+      rgba(255, 255, 255, 0.012) 3px
+    );
+}
+
+.mediumCard {
+  min-height: clamp(12.2rem, 19vw, 14.2rem);
+}
+
+.featuredCard {
+  min-height: clamp(13.8rem, 23vw, 16.9rem);
+}
+
+.imagePanel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  isolation: isolate;
+}
+
+.imagePanelMedium {
+  width: 56%;
+}
+
+.imagePanelFeatured {
+  width: 52%;
+  z-index: 2;
+}
+
+.imagePanelSecondary {
+  position: absolute;
+  top: 0;
+  right: 34%;
+  width: 24%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.cardImage {
+  object-fit: cover;
+  filter: saturate(1.03) brightness(0.86) contrast(1.04);
+}
+
+.ancientImage {
+  object-position: 50% center;
+}
+
+.vaticanImage {
+  object-position: 90% center;
+}
+
+.featuredVaticanImage {
+  object-position: 92% center;
+}
+
+.featuredColosseumImage {
+  object-position: 54% center;
+  mask-image: linear-gradient(
+    95deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.95) 20%,
+    rgba(0, 0, 0, 0.95) 82%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.imageFade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      92deg,
+      rgba(249, 237, 219, 0.98) 0%,
+      rgba(248, 236, 218, 0.92) 19%,
+      rgba(248, 236, 218, 0.54) 41%,
+      rgba(248, 236, 218, 0.13) 64%,
+      rgba(248, 236, 218, 0) 77%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(45, 22, 11, 0.12) 0%,
+      rgba(45, 22, 11, 0.29) 100%
+    );
+}
+
+.imagePanelSecondary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(45, 22, 11, 0.04) 0%,
+    rgba(45, 22, 11, 0.23) 100%
+  );
+}
+
+.cardCopy {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.62rem;
+  width: min(100%, 56%);
+  height: 100%;
+  padding: clamp(1.1rem, 1.9vw, 1.45rem) clamp(1rem, 1.7vw, 1.42rem);
+}
+
+.featuredCopy {
+  width: min(100%, 59%);
+  padding-right: 0.9rem;
+}
+
+.cardTitle {
+  margin: 0;
+  color: #3c281c;
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(1.9rem, 2vw, 2.3rem);
+  font-weight: 600;
+  line-height: 0.94;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.featuredTitle {
+  font-size: clamp(2.55rem, 3vw, 3.5rem);
+  line-height: 0.88;
+}
+
+.cardDescription {
+  margin: 0;
+  color: #4c3a2e;
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: clamp(0.87rem, 0.96vw, 1rem);
+  line-height: 1.4;
+  max-width: 36ch;
+  text-wrap: pretty;
+}
+
+.featuredDescription {
+  max-width: 40ch;
+}
+
+.cardCta {
+  width: fit-content;
+  margin-top: 0.22rem;
+  padding: 0.56rem 1.3rem;
+  border-radius: 999px;
+  border: 1px solid rgba(146, 93, 51, 0.65);
+  color: #fff3df;
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: 0.89rem;
+  font-weight: 620;
+  letter-spacing: 0.01em;
+  background: linear-gradient(
+    180deg,
+    rgba(201, 153, 101, 0.98) 0%,
+    rgba(152, 99, 58, 0.98) 100%
+  );
+  box-shadow:
+    0 7px 16px rgba(51, 25, 11, 0.35),
+    0 1px 0 rgba(255, 237, 209, 0.3) inset;
+}
+
+.featuredActions {
+  margin-top: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.48rem;
+}
+
+.metaChip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0.32rem 0.84rem;
+  border-radius: 999px;
+  border: 1px solid rgba(154, 102, 62, 0.44);
+  background: rgba(255, 244, 225, 0.82);
+  color: #4a372b;
+  font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: 0 3px 8px rgba(45, 25, 13, 0.14);
+}
+
+@media (max-width: 1080px) {
+  .cardCopy,
+  .featuredCopy {
+    width: min(100%, 61%);
+  }
+
+  .featuredTitle {
+    font-size: clamp(2.25rem, 4.1vw, 3.2rem);
+  }
+}
+
+@media (max-width: 860px) {
+  .topRow {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .mediumCard,
+  .featuredCard {
+    min-height: clamp(14.8rem, 58vw, 19rem);
+  }
+
+  .cardCopy,
+  .featuredCopy {
+    width: min(100%, 73%);
+    padding: 1rem 0.95rem 1.1rem;
+  }
+
+  .cardTitle {
+    font-size: clamp(1.95rem, 6.9vw, 2.4rem);
+  }
+
+  .featuredTitle {
+    font-size: clamp(2.1rem, 8vw, 2.9rem);
+  }
+
+  .cardDescription {
+    font-size: clamp(0.9rem, 3.2vw, 1rem);
+  }
+
+  .imagePanelMedium {
+    width: 62%;
+  }
+
+  .imagePanelFeatured {
+    width: 60%;
+  }
+
+  .imagePanelSecondary {
+    right: 39%;
+    width: 25%;
+  }
+
+  .featuredActions {
+    gap: 0.42rem;
+  }
+}
