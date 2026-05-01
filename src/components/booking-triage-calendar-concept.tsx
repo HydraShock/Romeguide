@@ -84,55 +84,147 @@ const interestGroups: readonly InterestGroup[] = [
   },
 ] as const;
 
-const travelerOptions = ["1-2", "3-5", "6-10", "10+"] as const;
-const languageOptions = ["English", "Italian", "Spanish", "French", "German", "Other"] as const;
-const otherLanguageOptions = [
+const totalTravelerOptions = Array.from({ length: 20 }, (_, index) => index + 1);
+const primaryLanguageOptions = ["English", "Italian", "Spanish", "French", "German"] as const;
+const languageOptions = [...primaryLanguageOptions, "Other"] as const;
+const googleTranslateLanguageOptions = [
+  "Afrikaans",
+  "Albanian",
+  "Amharic",
   "Arabic",
   "Armenian",
+  "Assamese",
+  "Aymara",
+  "Azerbaijani",
+  "Bambara",
+  "Basque",
+  "Belarusian",
   "Bengali",
+  "Bhojpuri",
   "Bosnian",
   "Bulgarian",
-  "Cantonese",
+  "Catalan",
+  "Cebuano",
+  "Chichewa",
+  "Chinese (Simplified)",
+  "Chinese (Traditional)",
+  "Corsican",
   "Croatian",
   "Czech",
   "Danish",
+  "Dhivehi",
+  "Dogri",
   "Dutch",
+  "English",
+  "Esperanto",
   "Estonian",
+  "Ewe",
   "Filipino",
   "Finnish",
+  "French",
+  "Frisian",
+  "Galician",
+  "Georgian",
+  "German",
   "Greek",
+  "Guarani",
+  "Gujarati",
+  "Haitian Creole",
+  "Hausa",
+  "Hawaiian",
   "Hebrew",
   "Hindi",
+  "Hmong",
   "Hungarian",
+  "Icelandic",
+  "Igbo",
+  "Ilocano",
   "Indonesian",
+  "Irish",
+  "Italian",
   "Japanese",
+  "Javanese",
+  "Kannada",
+  "Kazakh",
+  "Khmer",
+  "Kinyarwanda",
+  "Konkani",
   "Korean",
+  "Krio",
+  "Kurdish (Kurmanji)",
+  "Kurdish (Sorani)",
+  "Kyrgyz",
+  "Lao",
+  "Latin",
   "Latvian",
+  "Lingala",
   "Lithuanian",
-  "Mandarin Chinese",
+  "Luganda",
+  "Luxembourgish",
+  "Macedonian",
+  "Maithili",
+  "Malagasy",
+  "Malay",
+  "Malayalam",
+  "Maltese",
+  "Maori",
+  "Marathi",
+  "Meiteilon (Manipuri)",
+  "Mizo",
+  "Mongolian",
+  "Myanmar (Burmese)",
+  "Nepali",
   "Norwegian",
-  "Persian (Farsi)",
+  "Odia (Oriya)",
+  "Oromo",
+  "Pashto",
+  "Persian",
   "Polish",
   "Portuguese",
+  "Punjabi",
+  "Quechua",
   "Romanian",
   "Russian",
+  "Samoan",
+  "Sanskrit",
+  "Scots Gaelic",
+  "Sepedi",
   "Serbian",
+  "Sesotho",
+  "Shona",
+  "Sindhi",
+  "Sinhala",
   "Slovak",
   "Slovenian",
+  "Somali",
+  "Spanish",
+  "Sundanese",
+  "Swahili",
   "Swedish",
+  "Tajik",
+  "Tamil",
+  "Tatar",
+  "Telugu",
   "Thai",
+  "Tigrinya",
+  "Tsonga",
   "Turkish",
+  "Turkmen",
+  "Twi",
   "Ukrainian",
   "Urdu",
+  "Uyghur",
+  "Uzbek",
   "Vietnamese",
-  "Albanian",
-  "Catalan",
-  "Georgian",
-  "Icelandic",
-  "Irish",
-  "Malay",
-  "Swahili",
+  "Welsh",
+  "Xhosa",
+  "Yiddish",
+  "Yoruba",
+  "Zulu",
 ] as const;
+const otherLanguageOptions = googleTranslateLanguageOptions.filter(
+  (language) => !primaryLanguageOptions.includes(language as (typeof primaryLanguageOptions)[number]),
+);
 
 const experienceStyleTags = [
   "History",
@@ -228,6 +320,26 @@ function toggleStringInList(list: string[], value: string) {
   return list.includes(value) ? list.filter((item) => item !== value) : [...list, value];
 }
 
+function toGuestBucket(totalTravelers: number) {
+  if (totalTravelers === 1) {
+    return "1 guest";
+  }
+
+  if (totalTravelers === 2) {
+    return "2 guests";
+  }
+
+  if (totalTravelers <= 4) {
+    return "3-4 guests";
+  }
+
+  if (totalTravelers <= 8) {
+    return "5-8 guests";
+  }
+
+  return "9+ guests";
+}
+
 export default function BookingTriageCalendarConcept() {
   const today = useMemo(() => startOfDay(new Date()), []);
   const todayIso = useMemo(() => toIsoDate(today), [today]);
@@ -240,15 +352,16 @@ export default function BookingTriageCalendarConcept() {
     emptyInterests,
   );
   const [notSureYet, setNotSureYet] = useState(false);
-  const [showOptionalTriage, setShowOptionalTriage] = useState(false);
 
-  const [travelerCount, setTravelerCount] = useState("");
+  const [totalTravelers, setTotalTravelers] = useState<number | null>(null);
+  const [under18Travelers, setUnder18Travelers] = useState<number | null>(null);
   const [travelingWithChildren, setTravelingWithChildren] = useState<BinaryChoice>("");
   const [travelingWithAnimals, setTravelingWithAnimals] = useState<BinaryChoice>("");
   const [mobilityIssues, setMobilityIssues] = useState<BinaryChoice>("");
   const [cruisePassenger, setCruisePassenger] = useState<BinaryChoice>("");
   const [preferredLanguage, setPreferredLanguage] = useState("");
   const [showLanguageScroller, setShowLanguageScroller] = useState(false);
+  const [languageSearchQuery, setLanguageSearchQuery] = useState("");
   const [experiencePriorities, setExperiencePriorities] = useState<string[]>([]);
   const [preferredPace, setPreferredPace] = useState("");
   const [preferredTransport, setPreferredTransport] = useState("");
@@ -333,6 +446,24 @@ export default function BookingTriageCalendarConcept() {
   const isCustomLanguageSelected =
     preferredLanguage.length > 0 &&
     !languageOptions.includes(preferredLanguage as (typeof languageOptions)[number]);
+  const filteredOtherLanguageOptions = useMemo(() => {
+    const query = languageSearchQuery.trim().toLowerCase();
+
+    if (!query) {
+      return otherLanguageOptions;
+    }
+
+    return otherLanguageOptions.filter((language) =>
+      language.toLowerCase().includes(query),
+    );
+  }, [languageSearchQuery]);
+  const under18Options = useMemo(() => {
+    if (totalTravelers === null) {
+      return [] as number[];
+    }
+
+    return Array.from({ length: totalTravelers + 1 }, (_, index) => index);
+  }, [totalTravelers]);
 
   const canContinue = useMemo(() => {
     if (activeStep === 1) {
@@ -345,7 +476,8 @@ export default function BookingTriageCalendarConcept() {
 
     if (activeStep === 3) {
       return (
-        travelerCount.length > 0 &&
+        totalTravelers !== null &&
+        under18Travelers !== null &&
         preferredLanguage.length > 0 &&
         preferredPace.length > 0 &&
         preferredTransport.length > 0
@@ -369,7 +501,8 @@ export default function BookingTriageCalendarConcept() {
     preferredPace,
     preferredTransport,
     selectedGroupCount,
-    travelerCount,
+    totalTravelers,
+    under18Travelers,
   ]);
 
   const requestHref = useMemo(() => {
@@ -389,8 +522,12 @@ export default function BookingTriageCalendarConcept() {
       params.set("interestGroups", selectedGroupLabels.join(", "));
     }
 
-    if (travelerCount) {
-      params.set("travelers", travelerCount);
+    if (totalTravelers !== null) {
+      params.set("travelers", String(totalTravelers));
+      params.set("guests", toGuestBucket(totalTravelers));
+    }
+    if (under18Travelers !== null) {
+      params.set("under18", String(under18Travelers));
     }
     if (travelingWithChildren) {
       params.set("children", travelingWithChildren);
@@ -466,7 +603,8 @@ export default function BookingTriageCalendarConcept() {
     selectedDateIso,
     selectedGroupLabels,
     selectedInterestLabels,
-    travelerCount,
+    totalTravelers,
+    under18Travelers,
     travelingWithAnimals,
     travelingWithChildren,
   ]);
@@ -524,17 +662,23 @@ export default function BookingTriageCalendarConcept() {
     >
       <div className={styles.bookingTriageInner}>
         <div className={styles.calendarShell} role="group" aria-label="Private tour planner">
-          <header className={styles.bookingHeader}>
-            <p className={styles.bookingHeaderEyebrow}>Booking Calendar</p>
-            <h2 id="booking-triage-title" className={styles.bookingHeaderTitle}>
-              Choose Your Date to Book Your Private Tour
-            </h2>
-            <p className={styles.bookingHeaderLead}>
-              Start your booking request here by selecting your preferred date.
-            </p>
-          </header>
+          {activeStep === 1 ? (
+            <header className={styles.bookingHeader}>
+              <p className={styles.bookingHeaderEyebrow}>Booking Calendar</p>
+              <h2 id="booking-triage-title" className={styles.bookingHeaderTitle}>
+                Choose Your Date to Book Your Private Tour
+              </h2>
+              <p className={styles.bookingHeaderLead}>
+                Start your booking request here by selecting your preferred date.
+              </p>
+            </header>
+          ) : null}
 
-          <div className={styles.calendarTopBar}>
+          <div
+            className={`${styles.calendarTopBar} ${
+              activeStep > 1 ? styles.calendarTopBarCompact : ""
+            }`}
+          >
             <p className={styles.calendarTopLabel}>
               Booking step: {activeStepMeta.label} - {activeStepMeta.title}
             </p>
@@ -730,306 +874,342 @@ export default function BookingTriageCalendarConcept() {
           ) : null}
 
           {activeStep === 3 ? (
-            <div className={styles.stepContent}>
+            <div className={`${styles.stepContent} ${styles.stepContentCompact}`}>
               <h4>A few quick details</h4>
-              <p>Start with the essentials. Optional preferences can be added below.</p>
+              <p>Set your trip details below so we can tailor the experience around your group.</p>
 
-              <section className={styles.stepSection}>
-                <h5>Trip basics</h5>
-                <p className={styles.stepSectionHint}>How many travelers are joining?</p>
-                <div className={styles.optionGrid}>
-                  {travelerOptions.map((option) => (
-                    <button
-                      key={option}
-                      type="button"
-                      className={`${styles.optionChip} ${
-                        travelerCount === option ? styles.optionChipActive : ""
-                      }`}
-                      onClick={() => setTravelerCount(option)}
-                      aria-pressed={travelerCount === option}
-                    >
-                      {option} travelers
-                    </button>
-                  ))}
-                </div>
+              <div className={styles.stepThreeGrid}>
+                <section className={`${styles.stepSection} ${styles.stepSectionFull} ${styles.stepSectionCompact}`}>
+                  <h5>Trip basics</h5>
+                  <p className={styles.stepSectionHint}>How many travelers are joining?</p>
+                  <div className={styles.optionGrid}>
+                    {totalTravelerOptions.map((option) => (
+                      <button
+                        key={option}
+                        type="button"
+                        className={`${styles.optionChip} ${
+                          totalTravelers === option ? styles.optionChipActive : ""
+                        }`}
+                        onClick={() => {
+                          setTotalTravelers(option);
+                          if (under18Travelers !== null && under18Travelers > option) {
+                            setUnder18Travelers(null);
+                          }
+                        }}
+                        aria-pressed={totalTravelers === option}
+                      >
+                        {option}
+                      </button>
+                    ))}
+                  </div>
 
-                <p className={styles.stepSectionHint}>Preferred guide language</p>
-                <div className={styles.optionGrid}>
-                  {languageOptions.map((option) => (
-                    <button
-                      key={option}
-                      type="button"
-                      className={`${styles.optionChip} ${
-                        option === "Other"
-                          ? showLanguageScroller || isCustomLanguageSelected
-                            ? styles.optionChipActive
-                            : ""
-                          : preferredLanguage === option
-                            ? styles.optionChipActive
-                            : ""
-                      }`}
-                      onClick={() => {
-                        if (option === "Other") {
-                          setShowLanguageScroller((current) => !current);
-                          return;
-                        }
-
-                        setPreferredLanguage(option);
-                        setShowLanguageScroller(false);
-                      }}
-                      aria-pressed={
-                        option === "Other"
-                          ? showLanguageScroller || isCustomLanguageSelected
-                          : preferredLanguage === option
-                      }
-                    >
-                      {option}
-                    </button>
-                  ))}
-                </div>
-                {showLanguageScroller ? (
-                  <div className={styles.languageScrollPanel} aria-label="All language options">
-                    <div className={styles.languageScrollGrid}>
-                      {otherLanguageOptions.map((option) => (
+                  <p className={styles.stepSectionHint}>How many are under 18?</p>
+                  {totalTravelers === null ? (
+                    <p className={styles.stepSectionSubhint}>
+                      Select total travelers first.
+                    </p>
+                  ) : (
+                    <div className={styles.optionGrid}>
+                      {under18Options.map((option) => (
                         <button
-                          key={option}
+                          key={`under18-${option}`}
                           type="button"
                           className={`${styles.optionChip} ${
-                            preferredLanguage === option ? styles.optionChipActive : ""
+                            under18Travelers === option ? styles.optionChipActive : ""
                           }`}
-                          onClick={() => {
-                            setPreferredLanguage(option);
-                            setShowLanguageScroller(false);
-                          }}
-                          aria-pressed={preferredLanguage === option}
+                          onClick={() => setUnder18Travelers(option)}
+                          aria-pressed={under18Travelers === option}
                         >
                           {option}
                         </button>
                       ))}
                     </div>
+                  )}
+
+                  <p className={styles.stepSectionHint}>Preferred guide language</p>
+                  <div className={styles.optionGrid}>
+                    {languageOptions.map((option) => (
+                      <button
+                        key={option}
+                        type="button"
+                        className={`${styles.optionChip} ${
+                          option === "Other"
+                            ? showLanguageScroller || isCustomLanguageSelected
+                              ? styles.optionChipActive
+                              : ""
+                            : preferredLanguage === option
+                              ? styles.optionChipActive
+                              : ""
+                        }`}
+                        onClick={() => {
+                          if (option === "Other") {
+                            setShowLanguageScroller((current) => !current);
+                            setLanguageSearchQuery("");
+                            return;
+                          }
+
+                          setPreferredLanguage(option);
+                          setShowLanguageScroller(false);
+                          setLanguageSearchQuery("");
+                        }}
+                        aria-pressed={
+                          option === "Other"
+                            ? showLanguageScroller || isCustomLanguageSelected
+                            : preferredLanguage === option
+                        }
+                      >
+                        {option}
+                      </button>
+                    ))}
                   </div>
-                ) : null}
+                  {showLanguageScroller ? (
+                    <div className={styles.languageScrollPanel} aria-label="All language options">
+                      <label className={styles.languageSearchWrap}>
+                        <span className={styles.languageSearchLabel}>Search language</span>
+                        <input
+                          type="text"
+                          value={languageSearchQuery}
+                          onChange={(event) => setLanguageSearchQuery(event.target.value)}
+                          placeholder="Type to filter..."
+                          className={styles.languageSearchInput}
+                        />
+                      </label>
 
-                <p className={styles.stepSectionHint}>Preferred tour pace</p>
-                <div className={styles.optionGrid}>
-                  {paceOptions.map((option) => (
-                    <button
-                      key={option}
-                      type="button"
-                      className={`${styles.optionChip} ${
-                        preferredPace === option ? styles.optionChipActive : ""
-                      }`}
-                      onClick={() => setPreferredPace(option)}
-                      aria-pressed={preferredPace === option}
-                    >
-                      {option}
-                    </button>
-                  ))}
-                </div>
-
-                <p className={styles.stepSectionHint}>Preferred transport style</p>
-                <div className={styles.optionGrid}>
-                  {transportOptions.map((option) => (
-                    <button
-                      key={option}
-                      type="button"
-                      className={`${styles.optionChip} ${
-                        preferredTransport === option ? styles.optionChipActive : ""
-                      }`}
-                      onClick={() => setPreferredTransport(option)}
-                      aria-pressed={preferredTransport === option}
-                    >
-                      {option}
-                    </button>
-                  ))}
-                </div>
-              </section>
-
-              <button
-                type="button"
-                className={`${styles.optionalToggle} ${showOptionalTriage ? styles.optionalToggleActive : ""}`}
-                onClick={() => setShowOptionalTriage((current) => !current)}
-                aria-expanded={showOptionalTriage}
-              >
-                {showOptionalTriage ? "Hide optional details" : "Add optional details"}
-              </button>
-
-              {showOptionalTriage ? (
-                <div className={styles.optionalPanel}>
-                  <section className={styles.stepSection}>
-                    <h5>Group details</h5>
-                    <div className={styles.binaryGrid}>
-                      <div className={styles.binaryGroup}>
-                        <p>Traveling with children?</p>
-                        <div className={styles.binaryRow}>
-                          <button
-                            type="button"
-                            className={`${styles.optionChip} ${
-                              travelingWithChildren === "yes" ? styles.optionChipActive : ""
-                            }`}
-                            onClick={() => setTravelingWithChildren("yes")}
-                            aria-pressed={travelingWithChildren === "yes"}
-                          >
-                            Yes
-                          </button>
-                          <button
-                            type="button"
-                            className={`${styles.optionChip} ${
-                              travelingWithChildren === "no" ? styles.optionChipActive : ""
-                            }`}
-                            onClick={() => setTravelingWithChildren("no")}
-                            aria-pressed={travelingWithChildren === "no"}
-                          >
-                            No
-                          </button>
-                        </div>
-                      </div>
-
-                      <div className={styles.binaryGroup}>
-                        <p>Traveling with animals?</p>
-                        <div className={styles.binaryRow}>
-                          <button
-                            type="button"
-                            className={`${styles.optionChip} ${
-                              travelingWithAnimals === "yes" ? styles.optionChipActive : ""
-                            }`}
-                            onClick={() => setTravelingWithAnimals("yes")}
-                            aria-pressed={travelingWithAnimals === "yes"}
-                          >
-                            Yes
-                          </button>
-                          <button
-                            type="button"
-                            className={`${styles.optionChip} ${
-                              travelingWithAnimals === "no" ? styles.optionChipActive : ""
-                            }`}
-                            onClick={() => setTravelingWithAnimals("no")}
-                            aria-pressed={travelingWithAnimals === "no"}
-                          >
-                            No
-                          </button>
-                        </div>
-                      </div>
-
-                      <div className={styles.binaryGroup}>
-                        <p>Mobility issues?</p>
-                        <div className={styles.binaryRow}>
-                          <button
-                            type="button"
-                            className={`${styles.optionChip} ${
-                              mobilityIssues === "yes" ? styles.optionChipActive : ""
-                            }`}
-                            onClick={() => setMobilityIssues("yes")}
-                            aria-pressed={mobilityIssues === "yes"}
-                          >
-                            Yes
-                          </button>
-                          <button
-                            type="button"
-                            className={`${styles.optionChip} ${
-                              mobilityIssues === "no" ? styles.optionChipActive : ""
-                            }`}
-                            onClick={() => setMobilityIssues("no")}
-                            aria-pressed={mobilityIssues === "no"}
-                          >
-                            No
-                          </button>
-                        </div>
-                      </div>
-
-                      <div className={styles.binaryGroup}>
-                        <p>Arriving by cruise ship?</p>
-                        <div className={styles.binaryRow}>
-                          <button
-                            type="button"
-                            className={`${styles.optionChip} ${
-                              cruisePassenger === "yes" ? styles.optionChipActive : ""
-                            }`}
-                            onClick={() => setCruisePassenger("yes")}
-                            aria-pressed={cruisePassenger === "yes"}
-                          >
-                            Yes
-                          </button>
-                          <button
-                            type="button"
-                            className={`${styles.optionChip} ${
-                              cruisePassenger === "no" ? styles.optionChipActive : ""
-                            }`}
-                            onClick={() => setCruisePassenger("no")}
-                            aria-pressed={cruisePassenger === "no"}
-                          >
-                            No
-                          </button>
-                        </div>
+                      <div className={styles.languageMenuList}>
+                        {filteredOtherLanguageOptions.length > 0 ? (
+                          filteredOtherLanguageOptions.map((option) => (
+                            <button
+                              key={option}
+                              type="button"
+                              className={`${styles.languageMenuItem} ${
+                                preferredLanguage === option ? styles.languageMenuItemActive : ""
+                              }`}
+                              onClick={() => {
+                                setPreferredLanguage(option);
+                                setShowLanguageScroller(false);
+                                setLanguageSearchQuery("");
+                              }}
+                              aria-pressed={preferredLanguage === option}
+                            >
+                              {option}
+                            </button>
+                          ))
+                        ) : (
+                          <p className={styles.languageMenuEmpty}>
+                            No language found with this search.
+                          </p>
+                        )}
                       </div>
                     </div>
-                  </section>
+                  ) : null}
 
-                  <section className={styles.stepSection}>
-                    <h5>Experience preferences</h5>
+                  <p className={styles.stepSectionHint}>Preferred tour pace</p>
+                  <div className={styles.optionGrid}>
+                    {paceOptions.map((option) => (
+                      <button
+                        key={option}
+                        type="button"
+                        className={`${styles.optionChip} ${
+                          preferredPace === option ? styles.optionChipActive : ""
+                        }`}
+                        onClick={() => setPreferredPace(option)}
+                        aria-pressed={preferredPace === option}
+                      >
+                        {option}
+                      </button>
+                    ))}
+                  </div>
+
+                  <p className={styles.stepSectionHint}>Preferred transport style</p>
+                  <div className={styles.optionGrid}>
+                    {transportOptions.map((option) => (
+                      <button
+                        key={option}
+                        type="button"
+                        className={`${styles.optionChip} ${
+                          preferredTransport === option ? styles.optionChipActive : ""
+                        }`}
+                        onClick={() => setPreferredTransport(option)}
+                        aria-pressed={preferredTransport === option}
+                      >
+                        {option}
+                      </button>
+                    ))}
+                  </div>
+                </section>
+
+                <section className={`${styles.stepSection} ${styles.stepSectionCompact}`}>
+                  <h5>Group details</h5>
+                  <div className={styles.binaryGrid}>
+                    <div className={styles.binaryGroup}>
+                      <p>Traveling with children?</p>
+                      <div className={styles.binaryRow}>
+                        <button
+                          type="button"
+                          className={`${styles.optionChip} ${
+                            travelingWithChildren === "yes" ? styles.optionChipActive : ""
+                          }`}
+                          onClick={() => setTravelingWithChildren("yes")}
+                          aria-pressed={travelingWithChildren === "yes"}
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          className={`${styles.optionChip} ${
+                            travelingWithChildren === "no" ? styles.optionChipActive : ""
+                          }`}
+                          onClick={() => setTravelingWithChildren("no")}
+                          aria-pressed={travelingWithChildren === "no"}
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className={styles.binaryGroup}>
+                      <p>Traveling with animals?</p>
+                      <div className={styles.binaryRow}>
+                        <button
+                          type="button"
+                          className={`${styles.optionChip} ${
+                            travelingWithAnimals === "yes" ? styles.optionChipActive : ""
+                          }`}
+                          onClick={() => setTravelingWithAnimals("yes")}
+                          aria-pressed={travelingWithAnimals === "yes"}
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          className={`${styles.optionChip} ${
+                            travelingWithAnimals === "no" ? styles.optionChipActive : ""
+                          }`}
+                          onClick={() => setTravelingWithAnimals("no")}
+                          aria-pressed={travelingWithAnimals === "no"}
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className={styles.binaryGroup}>
+                      <p>Mobility issues?</p>
+                      <div className={styles.binaryRow}>
+                        <button
+                          type="button"
+                          className={`${styles.optionChip} ${
+                            mobilityIssues === "yes" ? styles.optionChipActive : ""
+                          }`}
+                          onClick={() => setMobilityIssues("yes")}
+                          aria-pressed={mobilityIssues === "yes"}
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          className={`${styles.optionChip} ${
+                            mobilityIssues === "no" ? styles.optionChipActive : ""
+                          }`}
+                          onClick={() => setMobilityIssues("no")}
+                          aria-pressed={mobilityIssues === "no"}
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className={styles.binaryGroup}>
+                      <p>Arriving by cruise ship?</p>
+                      <div className={styles.binaryRow}>
+                        <button
+                          type="button"
+                          className={`${styles.optionChip} ${
+                            cruisePassenger === "yes" ? styles.optionChipActive : ""
+                          }`}
+                          onClick={() => setCruisePassenger("yes")}
+                          aria-pressed={cruisePassenger === "yes"}
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          className={`${styles.optionChip} ${
+                            cruisePassenger === "no" ? styles.optionChipActive : ""
+                          }`}
+                          onClick={() => setCruisePassenger("no")}
+                          aria-pressed={cruisePassenger === "no"}
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section className={`${styles.stepSection} ${styles.stepSectionCompact}`}>
+                  <h5>Experience preferences</h5>
+                  <div className={styles.optionGrid}>
+                    {experienceStyleTags.map((tag) => (
+                      <button
+                        key={tag}
+                        type="button"
+                        className={`${styles.optionChip} ${
+                          experiencePriorities.includes(tag) ? styles.optionChipActive : ""
+                        }`}
+                        onClick={() =>
+                          setExperiencePriorities((current) => toggleStringInList(current, tag))
+                        }
+                        aria-pressed={experiencePriorities.includes(tag)}
+                      >
+                        {tag}
+                      </button>
+                    ))}
+                  </div>
+                </section>
+
+                {hasRomeInterests ? (
+                  <section className={`${styles.stepSection} ${styles.stepSectionCompact}`}>
+                    <h5>Rome highlights focus</h5>
                     <div className={styles.optionGrid}>
-                      {experienceStyleTags.map((tag) => (
+                      {romeTriageTags.map((tag) => (
                         <button
                           key={tag}
                           type="button"
                           className={`${styles.optionChip} ${
-                            experiencePriorities.includes(tag) ? styles.optionChipActive : ""
+                            romeFocusTags.includes(tag) ? styles.optionChipActive : ""
                           }`}
-                          onClick={() =>
-                            setExperiencePriorities((current) => toggleStringInList(current, tag))
-                          }
-                          aria-pressed={experiencePriorities.includes(tag)}
+                          onClick={() => setRomeFocusTags((current) => toggleStringInList(current, tag))}
+                          aria-pressed={romeFocusTags.includes(tag)}
                         >
                           {tag}
                         </button>
                       ))}
                     </div>
                   </section>
+                ) : null}
 
-                  {hasRomeInterests ? (
-                    <section className={styles.stepSection}>
-                      <h5>Rome highlights focus</h5>
-                      <div className={styles.optionGrid}>
-                        {romeTriageTags.map((tag) => (
-                          <button
-                            key={tag}
-                            type="button"
-                            className={`${styles.optionChip} ${
-                              romeFocusTags.includes(tag) ? styles.optionChipActive : ""
-                            }`}
-                            onClick={() => setRomeFocusTags((current) => toggleStringInList(current, tag))}
-                            aria-pressed={romeFocusTags.includes(tag)}
-                          >
-                            {tag}
-                          </button>
-                        ))}
-                      </div>
-                    </section>
-                  ) : null}
-
-                  {hasItalyInterests ? (
-                    <section className={styles.stepSection}>
-                      <h5>Italy route focus</h5>
-                      <div className={styles.optionGrid}>
-                        {italyTriageTags.map((tag) => (
-                          <button
-                            key={tag}
-                            type="button"
-                            className={`${styles.optionChip} ${
-                              italyFocusTags.includes(tag) ? styles.optionChipActive : ""
-                            }`}
-                            onClick={() => setItalyFocusTags((current) => toggleStringInList(current, tag))}
-                            aria-pressed={italyFocusTags.includes(tag)}
-                          >
-                            {tag}
-                          </button>
-                        ))}
-                      </div>
-                    </section>
-                  ) : null}
-
-                </div>
-              ) : null}
+                {hasItalyInterests ? (
+                  <section className={`${styles.stepSection} ${styles.stepSectionCompact}`}>
+                    <h5>Italy route focus</h5>
+                    <div className={styles.optionGrid}>
+                      {italyTriageTags.map((tag) => (
+                        <button
+                          key={tag}
+                          type="button"
+                          className={`${styles.optionChip} ${
+                            italyFocusTags.includes(tag) ? styles.optionChipActive : ""
+                          }`}
+                          onClick={() => setItalyFocusTags((current) => toggleStringInList(current, tag))}
+                          aria-pressed={italyFocusTags.includes(tag)}
+                        >
+                          {tag}
+                        </button>
+                      ))}
+                    </div>
+                  </section>
+                ) : null}
+              </div>
             </div>
           ) : null}
 
@@ -1108,6 +1288,12 @@ export default function BookingTriageCalendarConcept() {
               <div className={styles.summaryInline}>
                 <p>
                   <strong>Date:</strong> {selectedDateShort}
+                </p>
+                <p>
+                  <strong>Travelers:</strong>{" "}
+                  {totalTravelers === null || under18Travelers === null
+                    ? "Not set"
+                    : `${totalTravelers} total, ${under18Travelers} under 18`}
                 </p>
                 <p>
                   <strong>Areas chosen:</strong>{" "}
