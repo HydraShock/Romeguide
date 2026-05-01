@@ -2,8 +2,6 @@ import Link from "next/link";
 import styles from "./luxury-footer-section.module.css";
 
 const contactEmail = "romeguideservices@gmail.com";
-const contactPhoneDisplay = "06 687 8411";
-const contactPhoneHref = "+39066878411";
 const creatorInstagramUrl = "https://www.instagram.com/francesco.iaia_/";
 
 const footerGroups = [
@@ -19,7 +17,7 @@ const footerGroups = [
     title: "Experiences",
     links: [
       { label: "Ancient Rome", href: "/tours/ancient-rome" },
-      { label: "Pompei and Amalfi", href: "/tours/day-trips-from-rome/pompeii-amalfi-naples" },
+      { label: "Pompeii and Amalfi", href: "/tours/day-trips-from-rome/pompeii-amalfi-naples" },
       { label: "Venice Tour", href: "/tours-in-italy/private-venice-tour" },
     ],
   },
@@ -67,9 +65,9 @@ export default function LuxuryFooterSection() {
       <div className={styles.inner}>
         <section className={styles.brandStatement} aria-label="Brand statement">
           <p className={styles.brandName}>Rome Guide Services</p>
-          <h2 className={styles.tagline}>Private Rome Tours, Crafted Around You</h2>
+          <h2 className={styles.tagline}>Private Rome Tours, Made Around You</h2>
           <p className={styles.supportingLine}>
-            Timeless experiences designed with care, knowledge, and passion.
+            Private tours in Rome, Vatican highlights, and day trips designed with local care.
           </p>
           <span className={styles.statementDivider} aria-hidden />
         </section>
@@ -97,9 +95,6 @@ export default function LuxuryFooterSection() {
           <div className={styles.contactList}>
             <a href={`mailto:${contactEmail}`} className={styles.contactLink}>
               {contactEmail}
-            </a>
-            <a href={`tel:${contactPhoneHref}`} className={styles.contactLink}>
-              {contactPhoneDisplay}
             </a>
             <p className={styles.location}>Rome, Italy</p>
           </div>
@@ -160,8 +155,8 @@ export default function LuxuryFooterSection() {
               </a>
             </div>
             <p className={styles.complianceNote}>
-              GDPR (UE 2016/679) e Cookie Policy allineata alle Linee guida Garante del 10 giugno
-              2021.
+              GDPR (EU 2016/679) and cookie policy aligned with the Italian Data Protection
+              Authority guidelines of June 10, 2021.
             </p>
           </div>
         </section>

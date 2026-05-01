@@ -95,7 +95,7 @@ function TripCard({
           ) : null}
         </h3>
         <a href={href} className={`${styles.cta} ${large ? styles.featuredCta : ""}`}>
-          {large ? "Explore Day Trips from Rome" : "Explore Day Trip"}
+          {large ? "Explore Day Trips from Rome" : "View Day Trip"}
         </a>
       </div>
     </article>
@@ -114,8 +114,8 @@ export default function DayTripsSection() {
             <span />
           </div>
           <p className={styles.lead}>
-            Explore curated private escapes beyond the city, with seamless departures from
-            Rome, chauffeur-led comfort, and elegant full-day pacing.
+            Discover private day trips from Rome with comfortable transport, local guidance,
+            and a relaxed pace that lets you enjoy every stop.
           </p>
         </header>
 

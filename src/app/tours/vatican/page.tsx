@@ -33,7 +33,7 @@ const vaticanTourData: TourPageData = {
     secondaryCtaLabel: "Ask for a Custom Itinerary",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
-    imageSrc: "/image%20(19).png",
+    imageSrc: "/images/tours/vatican/hero-vatican-private-tour-san-pietro-sunset-final.webp",
     imageAlt: "St. Peter's Basilica facade at sunset in Vatican City",
     quickFacts: ["3 to 4 hours", "Private only", "Licensed guide", "Fast-track access"],
     microTags: ["First-time visitors", "Art lovers", "Pilgrims"],
@@ -203,7 +203,7 @@ const vaticanTourData: TourPageData = {
     },
     {
       title: "Christian Rome Private Tour",
-      description: "Catacombs and papal basilicas for guests focused on faith and heritage.",
+      description: "Catacombs and Major Basilicas for guests focused on faith and heritage.",
       href: "/tours/christian-rome",
     },
     {
@@ -249,7 +249,7 @@ export function generateMetadata(): Metadata {
       siteName: "Rome Guide Services",
       images: [
         {
-          url: "/image%20(19).png",
+          url: "/images/tours/vatican/hero-vatican-private-tour-san-pietro-sunset-final.webp",
           alt: "St. Peter's Basilica facade at sunset in Vatican City",
         },
       ],
@@ -260,7 +260,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: vaticanTourData.seoTitle,
       description: vaticanTourData.seoDescription,
-      images: ["/image%20(19).png"],
+      images: ["/images/tours/vatican/hero-vatican-private-tour-san-pietro-sunset-final.webp"],
     },
   };
 }

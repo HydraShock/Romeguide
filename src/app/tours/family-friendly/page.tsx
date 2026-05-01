@@ -32,7 +32,7 @@ const familyFriendlyTourData: TourPageData = {
     secondaryCtaLabel: "Ask for a Custom Itinerary",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
-    imageSrc: "/image%20(17).png",
+    imageSrc: "/images/tours/family/hero-family-friendly-rome-tour-colosseum-visit.webp",
     imageAlt: "Visitors walking near the Colosseum in Rome on a relaxed day",
     quickFacts: ["About 3 hours", "Private only", "Licensed guide", "Kid-paced rhythm"],
     microTags: ["Families with kids", "Education trips", "Relaxed pace"],
@@ -202,7 +202,7 @@ const familyFriendlyTourData: TourPageData = {
     },
     {
       title: "Private Vatican Tour",
-      description: "Museums, Sistine Chapel, and St. Peter's with private pacing options for families.",
+      description: "Vatican Museums and Sistine Chapel with private pacing options for families.",
       href: "/tours/vatican",
     },
     {
@@ -248,7 +248,7 @@ export function generateMetadata(): Metadata {
       siteName: "Rome Guide Services",
       images: [
         {
-          url: "/image%20(17).png",
+          url: "/images/tours/family/hero-family-friendly-rome-tour-colosseum-visit.webp",
           alt: "Family-friendly private Rome tour route",
         },
       ],
@@ -259,7 +259,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: familyFriendlyTourData.seoTitle,
       description: familyFriendlyTourData.seoDescription,
-      images: ["/image%20(17).png"],
+      images: ["/images/tours/family/hero-family-friendly-rome-tour-colosseum-visit.webp"],
     },
   };
 }

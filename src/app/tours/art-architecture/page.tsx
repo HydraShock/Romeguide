@@ -203,7 +203,7 @@ const artArchitectureTourData: TourPageData = {
     },
     {
       title: "Private Vatican Tour",
-      description: "A private Vatican route centered on museums, Sistine Chapel, and St. Peter's.",
+      description: "A private Vatican route centered on museums and the Sistine Chapel.",
       href: "/tours/vatican",
     },
     {

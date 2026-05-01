@@ -4,8 +4,6 @@ import styles from "../legal-pages.module.css";
 
 const PAGE_PATH = "/privacy-policy";
 const CONTACT_EMAIL = "romeguideservices@gmail.com";
-const CONTACT_PHONE_DISPLAY = "06 687 8411";
-const CONTACT_PHONE_HREF = "+39066878411";
 const LAST_UPDATED = "March 29, 2026";
 const GARANTE_RIGHTS_URL =
   "https://www.garanteprivacy.it/home/diritti/come-agire-per-tutelare-i-tuoi-dati-personali";
@@ -45,9 +43,6 @@ export default function PrivacyPolicyPage() {
             <ul className={styles.list}>
               <li>
                 Email: <a className={styles.link} href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
-              </li>
-              <li>
-                Phone: <a className={styles.link} href={`tel:${CONTACT_PHONE_HREF}`}>{CONTACT_PHONE_DISPLAY}</a>
               </li>
               <li>Location: Rome, Italy</li>
             </ul>

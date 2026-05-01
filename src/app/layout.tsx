@@ -22,7 +22,6 @@ const SITE_NAME = "Rome Guide Services";
 const SITE_DESCRIPTION =
   "Luxury private tours in Rome and across Italy with licensed guides, tailor-made itineraries, and refined concierge-style planning.";
 const CONTACT_EMAIL = "romeguideservices@gmail.com";
-const CONTACT_PHONE = "06 687 8411";
 const FACEBOOK_URL = "https://www.facebook.com/RomeGuideServices/";
 const INSTAGRAM_URL = "https://www.instagram.com/romeguideservices/";
 const SITE_KEYWORDS = [
@@ -109,7 +108,6 @@ export default function RootLayout({
     url: siteUrl,
     description: SITE_DESCRIPTION,
     email: CONTACT_EMAIL,
-    telephone: CONTACT_PHONE,
     sameAs: [FACEBOOK_URL, INSTAGRAM_URL],
     areaServed: ["Rome", "Italy"],
     knowsAbout: [

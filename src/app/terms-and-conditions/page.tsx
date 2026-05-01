@@ -4,8 +4,6 @@ import styles from "../legal-pages.module.css";
 
 const PAGE_PATH = "/terms-and-conditions";
 const CONTACT_EMAIL = "romeguideservices@gmail.com";
-const CONTACT_PHONE_DISPLAY = "06 687 8411";
-const CONTACT_PHONE_HREF = "+39066878411";
 const LAST_UPDATED = "March 29, 2026";
 
 export const metadata: Metadata = {
@@ -120,9 +118,6 @@ export default function TermsAndConditionsPage() {
             <ul className={styles.list}>
               <li>
                 Email: <a className={styles.link} href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
-              </li>
-              <li>
-                Phone: <a className={styles.link} href={`tel:${CONTACT_PHONE_HREF}`}>{CONTACT_PHONE_DISPLAY}</a>
               </li>
               <li>Company: Rome Guide Services, Rome, Italy</li>
             </ul>

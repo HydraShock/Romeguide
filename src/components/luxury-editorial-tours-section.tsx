@@ -6,28 +6,28 @@ const tourTypes = [
     label: "Private Experiences",
     title: "Groups of All Sizes",
     description:
-      "From intimate gatherings to large parties, we design elegant itineraries with seamless pacing, premium logistics, and curated moments across Rome.",
+      "From intimate gatherings to larger parties, we plan private tours in Rome that feel smooth, personal, and easy to enjoy together.",
     image: "/editorial-tours/groups-all-sizes.jpg",
   },
   {
     label: "Tailored Comfort",
     title: "Family-Friendly Tours",
     description:
-      "Thoughtfully paced routes, engaging storytelling, and child-aware planning create refined family experiences that feel effortless and memorable.",
+      "Thoughtful pacing, engaging stories, and child-friendly planning make family tours in Rome easy and memorable.",
     image: "/editorial-tours/family-friendly.jpg",
   },
   {
-    label: "Curated Discovery",
+    label: "Explore Together",
     title: "Small Groups & Friends",
     description:
-      "Perfect for close circles seeking a sophisticated day in Rome, with flexible timing, insider viewpoints, and personalized cultural depth.",
+      "Perfect for friends traveling together, with flexible timing, local tips, and experiences tailored to your shared interests.",
     image: "/editorial-tours/small-groups-friends.jpg",
   },
   {
     label: "Port-to-City Luxury",
     title: "Cruise Passengers",
     description:
-      "Efficient, high-touch touring from dock to destination, crafted for limited schedules while preserving the richness of a private Roman journey.",
+      "From port pickup to return, we design private Rome tours that fit tight cruise schedules without missing the city's highlights.",
     image: "/editorial-tours/cruise-passengers.jpg",
   },
 ] as const;

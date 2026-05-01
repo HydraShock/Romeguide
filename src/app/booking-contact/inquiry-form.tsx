@@ -4,8 +4,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import styles from "./inquiry-form.module.css";
 
 const contactEmail = "romeguideservices@gmail.com";
-const contactPhoneDisplay = "06 687 8411";
-const contactPhoneHref = "+39066878411";
 
 const guestOptions = [
   "1 guest",
@@ -286,8 +284,7 @@ export default function InquiryForm() {
       {submitted ? (
         <p className={styles.successBanner} role="status">
           Thank you. Your inquiry draft is ready. If your email app did not open, send it
-          directly to <a href={`mailto:${contactEmail}`}>{contactEmail}</a> or call{" "}
-          <a href={`tel:${contactPhoneHref}`}>{contactPhoneDisplay}</a>.
+          directly to <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
         </p>
       ) : null}
 

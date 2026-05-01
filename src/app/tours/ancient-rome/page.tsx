@@ -34,7 +34,7 @@ const ancientRomeTourData: TourPageData = {
     secondaryCtaLabel: "Ask for a Tailor-Made Version",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
-    imageSrc: "/image%20(16).png",
+    imageSrc: "/images/tours/ancient-rome/hero-ancient-rome-private-tour-colosseum-warm-light.webp",
     imageAlt: "Colosseum illuminated at warm golden hour in Rome",
     quickFacts: ["3 to 4 hours", "Private only", "Licensed guide", "Driver on request"],
     microTags: ["History lovers", "First-time visitors", "Families welcome"],
@@ -199,7 +199,7 @@ const ancientRomeTourData: TourPageData = {
   relatedTours: [
     {
       title: "Vatican Private Tour",
-      description: "Museums, Sistine Chapel, and St. Peter's in a curated private route.",
+      description: "Vatican Museums and Sistine Chapel in a curated private route.",
       href: "/tours/vatican",
     },
     {
@@ -250,7 +250,7 @@ export function generateMetadata(): Metadata {
       siteName: "Rome Guide Services",
       images: [
         {
-          url: "/image%20(16).png",
+          url: "/images/tours/ancient-rome/hero-ancient-rome-private-tour-colosseum-warm-light.webp",
           alt: "Colosseum illuminated at warm golden hour in Rome",
         },
       ],
@@ -261,7 +261,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: ancientRomeTourData.seoTitle,
       description: ancientRomeTourData.seoDescription,
-      images: ["/image%20(16).png"],
+      images: ["/images/tours/ancient-rome/hero-ancient-rome-private-tour-colosseum-warm-light.webp"],
     },
   };
 }

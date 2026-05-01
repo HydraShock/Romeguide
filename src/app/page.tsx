@@ -16,25 +16,26 @@ export const dynamic = "force-dynamic";
 const PAGE_PATH = "/";
 
 export const metadata: Metadata = {
-  title: "Private Tours in Rome | Licensed Guides & Tailor-Made Itineraries",
+  title: "Private Tours in Rome | Licensed Local Guides & Custom Itineraries",
   description:
-    "Plan private tours in Rome with licensed local guides. Discover Ancient Rome, the Vatican, Christian Rome, and curated day trips from Rome with premium tailor-made service.",
+    "Book private tours in Rome with licensed local guides. Discover Ancient Rome, Vatican private tours, and day trips from Rome with custom itineraries built around your pace.",
   keywords: [
-    "private tours Rome",
-    "licensed Rome tour guide",
-    "Vatican private tour Rome",
+    "private tours in Rome",
+    "Rome private tours",
+    "licensed Rome tour guides",
+    "private Vatican tour",
     "Ancient Rome private tour",
-    "Christian Rome private tour",
-    "day trips from Rome private",
-    "tailor-made Rome itinerary",
+    "Christian Rome tour",
+    "day trips from Rome",
+    "custom Rome itinerary",
   ],
   alternates: {
     canonical: PAGE_PATH,
   },
   openGraph: {
-    title: "Private Tours in Rome | Licensed Guides & Tailor-Made Itineraries",
+    title: "Private Tours in Rome | Licensed Local Guides & Custom Itineraries",
     description:
-      "Luxury private tours in Rome and Italy with licensed guides, elegant pacing, and concierge-level planning.",
+      "Private tours in Rome and Italy with licensed guides, flexible planning, and custom itineraries for every traveler.",
     url: PAGE_PATH,
     siteName: "Rome Guide Services",
     locale: "en_US",
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Private Tours in Rome | Rome Guide Services",
     description:
-      "Private Rome tours, Vatican experiences, and day trips from Rome curated around your pace.",
+      "Private tours in Rome, Vatican highlights, and day trips from Rome tailored to your interests.",
     images: ["/dark1.png"],
   },
 };
@@ -60,47 +61,41 @@ type TrustIconName = "temple" | "scroll" | "feather" | "service" | "globe";
 const trustPoints = [
   {
     icon: "temple",
-    title: "Licensed Rome Tour Guides",
+    title: "Licensed Local Guides in Rome",
     description:
-      "Our team of officially licensed guides in Rome brings over 80 years of combined experience, offering deep knowledge of the city's history, culture, and hidden gems.",
+      "Our officially licensed Rome tour guides have spent decades helping travelers enjoy the city with confidence. We blend iconic landmarks, local stories, and hidden corners at your pace.",
   },
   {
     icon: "scroll",
-    title: "Tailor-Made Private Tours",
+    title: "Private Tours Made for You",
     description:
-      "Every experience is custom-designed around your interests, pace, and travel style - from individual travelers to private groups up to 50 people.",
+      "Every itinerary is built around your interests, your rhythm, and your travel style, from solo travelers to private groups of up to 50 guests.",
   },
   {
     icon: "feather",
-    title: "Family-Run Tour Experience",
+    title: "Family-Run, Personal Approach",
     description:
-      "Founded by Ludovica and Carlo, our family-run service offers a personal, authentic approach to discovering Rome with care, passion, and attention to detail.",
+      "Founded by Ludovica and Carlo, our family-run service makes every guest feel welcomed, cared for, and truly connected to the city.",
   },
   {
     icon: "globe",
-    title: "Multilingual Private Guides",
+    title: "Guides in Your Language",
     description:
-      "We offer tours in English, Spanish, French, German, and more - ensuring a seamless and comfortable experience for international travelers.",
+      "We guide in English, Spanish, French, German, and more, so your day in Rome feels easy, natural, and enjoyable from start to finish.",
   },
   {
     icon: "service",
-    title: "Personalized Premium Service",
+    title: "Premium Service, Human Touch",
     description:
-      "With international experience and deep cultural understanding, we deliver a refined, client-focused service tailored to every traveler's needs.",
+      "From your first message to your final stop, we offer thoughtful support and local expertise for smooth, memorable private tours in Rome.",
   },
 ] as const;
 
 const trustPhotos = [
   { src: "/carlo1.jpg", alt: "Colosseum by blue hour in Rome" },
   { src: "/carlo2.jpg", alt: "Roman fountain and baroque facade" },
-  { src: "/carlo3.jpg", alt: "St Peter's dome and river bridge" },
+  { src: "/carlo3.jpg", alt: "Rome skyline and river bridge at sunset" },
   { src: "/carlo4.jpg", alt: "Trevi-style fountain and Roman architecture" },
-] as const;
-
-const trustHighlights = [
-  { value: "10+", label: "Years of Experience" },
-  { value: "1000+", label: "Tourists Satisfied" },
-  { value: "1500+", label: "Tours Done" },
 ] as const;
 
 function TrustIcon({ name }: { name: TrustIconName }) {
@@ -249,20 +244,20 @@ export default function Home() {
             <div className={styles.copyBlock}>
               <p className={styles.kicker}>Private Tours in Rome</p>
               <h1 className={styles.title}>
-                Private Rome Tours,
+                Private Tours in Rome,
                 <br />
-                Crafted Around You
+                Designed Around You
               </h1>
               <p className={styles.description}>
-                Tailor-made itineraries designed around your interests, pace,
-                and travel style - led by licensed local guides.
+                Personalized journeys through Rome, crafted around your passions and pace.
+                Discover the Eternal City alongside our expert local guides.
               </p>
               <div className={styles.ctaRow}>
                 <Link href="/#requested-tours-heading" className={styles.primaryCta}>
                   Explore Private Tours
                 </Link>
                 <Link href="/#booking-calendar" className={styles.secondaryCta}>
-                  Plan Your Trip
+                  Plan Your Rome Trip
                 </Link>
               </div>
             </div>
@@ -276,12 +271,12 @@ export default function Home() {
         <section className={styles.toursShowcase} aria-labelledby="requested-tours-heading">
           <div className={styles.toursInner}>
             <h2 id="requested-tours-heading" className={styles.toursHeading}>
-              Explore Our Most Requested Private Tours
+              Explore Our Most Requested Private Tours in Rome
             </h2>
             <span className={styles.headingRule} aria-hidden />
             <p className={styles.toursLead}>
-              Curated experiences across Rome, the Vatican, and beyond - designed
-              around your interests, pace, and travel style.
+              Choose from Ancient Rome, Vatican, walking, family-friendly, and
+              art-focused tours, all tailored to your interests.
             </p>
 
             <WobbleCardDemo />
@@ -291,14 +286,13 @@ export default function Home() {
         <section className={styles.whyChooseSection} aria-labelledby="why-choose-heading">
           <div className={styles.whyChooseInner}>
             <div className={styles.whyChooseCopy}>
-              <p className={styles.whyChooseEyebrow}>Why Choose Rome Guide Services</p>
+              <p className={styles.whyChooseEyebrow}>Why Travelers Book With Us</p>
               <h2 id="why-choose-heading" className={styles.whyChooseHeading}>
-                A Family of Licensed Guides, Crafting Rome Around You
+                Licensed Rome Guides, Family-Run Care
               </h2>
               <p className={styles.whyChooseLead}>
-                We are a family-run team of licensed Roman guides, creating private
-                itineraries that feel personal, elegant, and deeply connected to
-                the city&apos;s heritage.
+                We&apos;re a family-run team creating private tours in Rome that feel
+                personal, authentic, and rich in local insight.
               </p>
 
               <div className={styles.trustGrid}>
@@ -335,18 +329,6 @@ export default function Home() {
                 ))}
               </div>
 
-              <div className={styles.highlightCloud}>
-                {trustHighlights.map((highlight, index) => (
-                  <article
-                    key={highlight.label}
-                    className={styles.highlightCard}
-                    data-index={index + 1}
-                  >
-                    <p className={styles.highlightValue}>{highlight.value}</p>
-                    <p className={styles.highlightLabel}>{highlight.label}</p>
-                  </article>
-                ))}
-              </div>
             </div>
           </div>
         </section>

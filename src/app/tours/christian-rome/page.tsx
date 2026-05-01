@@ -12,9 +12,9 @@ import type { TourPageData } from "@/components/tour-template/types";
 const christianRomeTourData: TourPageData = {
   slug: "christian-rome-tour",
   path: "/tours/christian-rome",
-  seoTitle: "Christian Rome Private Tour | Catacombs & Papal Basilicas | Rome Guide Services",
+  seoTitle: "Christian Rome Private Tour | Catacombs & Major Basilicas | Rome Guide Services",
   seoDescription:
-    "Discover catacombs, papal basilicas, and sacred landmarks with a licensed private guide. A Christian Rome tour tailored to your pace and interests.",
+    "Discover catacombs, the Major Basilicas, and sacred landmarks with a licensed private guide. A Christian Rome tour tailored to your pace and interests.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -24,7 +24,7 @@ const christianRomeTourData: TourPageData = {
   hero: {
     eyebrow: "PRIVATE GUIDED TOUR",
     title: "Christian Rome Private Tour",
-    landmarksLine: "Catacombs | St. Peter's Basilica | Papal Basilicas",
+    landmarksLine: "Catacombs | The Major Basilicas",
     subtitle:
       "Discover Rome's Christian heritage through a private journey that connects early faith communities, papal history, and sacred architecture.",
     intentLine: "Private, faith-aware storytelling across Rome's major Christian landmarks.",
@@ -32,7 +32,7 @@ const christianRomeTourData: TourPageData = {
     secondaryCtaLabel: "Ask for a Custom Itinerary",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
-    imageSrc: "/images/tours/christian-rome/hero-christian-rome-tour-christianrome.png",
+    imageSrc: "/images/tours/christian-rome/hero-christian-rome-tour-basilica-facade.webp",
     imageAlt: "Candlelit catacomb chamber with early Christian iconography in Rome",
     quickFacts: ["3 to 4 hours", "Private only", "Licensed guide", "Driver on request"],
     microTags: ["Faith and history buffs", "Pilgrims", "Cultural travelers"],
@@ -63,7 +63,7 @@ const christianRomeTourData: TourPageData = {
       imageAlt: "Stone vaulted passage evoking early Christian catacomb routes",
     },
     {
-      title: "Papal Basilicas in Historical Context",
+      title: "Major Basilicas in Historical Context",
       description:
         "Read each basilica through liturgy, architecture, and patronage, with clear links to Rome's wider ecclesiastical history.",
       imageSrc: "/images/tours/christian-rome/highlight-christian-rome-catacomb-relief.webp",
@@ -81,7 +81,7 @@ const christianRomeTourData: TourPageData = {
       description:
         "Balance historical context with quieter moments, adapting rhythm for prayer, study, or photography.",
       imageSrc: "/images/tours/christian-rome/highlight-christian-rome-basilica-interior.webp",
-      imageAlt: "Grand church interior of St. Peter's Basilica in Rome",
+      imageAlt: "Grand basilica interior with gilded details in Rome",
     },
   ],
   itinerary: [
@@ -98,7 +98,7 @@ const christianRomeTourData: TourPageData = {
     {
       title: "Major Basilica Stop (1h)",
       description:
-        "Continue to a papal basilica and decode architecture, liturgical significance, and key artistic elements.",
+        "Continue to a major basilica and decode architecture, liturgical significance, and key artistic elements.",
     },
     {
       title: "Second Sacred Landmark (45m)",
@@ -197,7 +197,7 @@ const christianRomeTourData: TourPageData = {
   relatedTours: [
     {
       title: "Private Vatican Tour",
-      description: "Vatican Museums, Sistine Chapel, and St. Peter's with a private licensed guide.",
+      description: "Vatican Museums and Sistine Chapel with a private licensed guide.",
       href: "/tours/vatican",
     },
     {
@@ -248,7 +248,7 @@ export function generateMetadata(): Metadata {
       siteName: "Rome Guide Services",
       images: [
         {
-          url: "/images/tours/christian-rome/hero-christian-rome-tour-christianrome.png",
+          url: "/images/tours/christian-rome/hero-christian-rome-tour-basilica-facade.webp",
           alt: "Candlelit catacomb chamber with early Christian iconography in Rome",
         },
       ],
@@ -259,7 +259,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: christianRomeTourData.seoTitle,
       description: christianRomeTourData.seoDescription,
-      images: ["/images/tours/christian-rome/hero-christian-rome-tour-christianrome.png"],
+      images: ["/images/tours/christian-rome/hero-christian-rome-tour-basilica-facade.webp"],
     },
   };
 }

@@ -33,7 +33,7 @@ const walkingTourData: TourPageData = {
     secondaryCtaLabel: "Ask for a Custom Itinerary",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
-    imageSrc: "/images/tours/walking/hero-rome-private-walking-tour-romewalking.png",
+    imageSrc: "/images/tours/walking/hero-rome-private-walking-tour-pantheon-dusk.webp",
     imageAlt: "Pantheon and fountain at sunset in Rome city center",
     quickFacts: ["2 to 3 hours", "Private only", "Licensed guide", "Flexible route"],
     microTags: ["First-time visitors", "Food and culture lovers", "Solo travelers"],
@@ -208,7 +208,7 @@ const walkingTourData: TourPageData = {
     },
     {
       title: "Private Vatican Tour",
-      description: "Vatican Museums, Sistine Chapel, and St. Peter's in one curated private route.",
+      description: "Vatican Museums and Sistine Chapel in one curated private route.",
       href: "/tours/vatican",
     },
     {
@@ -249,7 +249,7 @@ export function generateMetadata(): Metadata {
       siteName: "Rome Guide Services",
       images: [
         {
-          url: "/images/tours/walking/hero-rome-private-walking-tour-romewalking.png",
+          url: "/images/tours/walking/hero-rome-private-walking-tour-pantheon-dusk.webp",
           alt: "Pantheon and fountain at sunset in Rome city center",
         },
       ],
@@ -260,7 +260,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: walkingTourData.seoTitle,
       description: walkingTourData.seoDescription,
-      images: ["/images/tours/walking/hero-rome-private-walking-tour-romewalking.png"],
+      images: ["/images/tours/walking/hero-rome-private-walking-tour-pantheon-dusk.webp"],
     },
   };
 }

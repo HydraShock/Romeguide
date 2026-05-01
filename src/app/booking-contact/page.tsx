@@ -7,8 +7,6 @@ import styles from "./page.module.css";
 
 const PAGE_PATH = "/booking-contact";
 const CONTACT_EMAIL = "romeguideservices@gmail.com";
-const CONTACT_PHONE_DISPLAY = "06 687 8411";
-const CONTACT_PHONE_HREF = "+39066878411";
 const CONTACT_HERO_IMAGE = "/image%20(21).png";
 
 const heroQuickFacts = ["Reply in 24h", "Private only", "Licensed guides", "Tailor-made plans"];
@@ -184,7 +182,6 @@ function buildContactPageSchema() {
       name: "Rome Guide Services",
       url: `${baseUrl}/`,
       email: CONTACT_EMAIL,
-      telephone: CONTACT_PHONE_DISPLAY,
     },
   };
 }
@@ -285,9 +282,9 @@ export default function BookingContactPage() {
                 <a href="#booking-form" className={styles.contactHeroPrimaryCta}>
                   Start Your Inquiry <span aria-hidden>&rarr;</span>
                 </a>
-                <a href="/#requested-tours-heading" className={styles.contactHeroSecondaryCta}>
+                <Link href="/#requested-tours-heading" className={styles.contactHeroSecondaryCta}>
                   Explore Private Tours
-                </a>
+                </Link>
               </div>
 
               <ul className={styles.contactHeroFacts} aria-label="Booking contact quick facts">
@@ -334,8 +331,7 @@ export default function BookingContactPage() {
               can tailor your private plan for Rome, day trips, and selected Italy routes.
             </p>
             <p className={styles.formSupportLine}>
-              Direct support: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> |{" "}
-              <a href={`tel:${CONTACT_PHONE_HREF}`}>{CONTACT_PHONE_DISPLAY}</a>
+              Direct support: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
             </p>
 
             <InquiryForm />

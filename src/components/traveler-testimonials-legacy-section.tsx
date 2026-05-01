@@ -6,14 +6,14 @@ const testimonials = [
     initials: "A",
     when: "3 years ago",
     quote:
-      "What an amazing tour company. We arranged everything at the very last minute, and Carlo pulled it together perfectly. Our Colosseum and Forum day was seamless.",
+      "What an amazing team. We booked at the very last minute, and Carlo made everything feel easy. Our Colosseum and Forum day was fantastic.",
   },
   {
     name: "Kelli Stromski",
     initials: "K",
     when: "2 years ago",
     quote:
-      "We used Rome Guide Services for our family trip to Venice, Florence, Cinque Terre, and Rome. Every detail felt curated and easy, even with complex logistics.",
+      "We used Rome Guide Services for our family trip to Venice, Florence, Cinque Terre, and Rome. Everything felt smooth and simple, even with a complex itinerary.",
   },
   {
     name: "Cindy Evans",
@@ -27,7 +27,7 @@ const testimonials = [
     initials: "L",
     when: "8 years ago",
     quote:
-      "Our private Vatican tour with Elisa was the best way to see the museums and Basilica. Focused, insightful, and perfectly paced for our group.",
+      "Our private Vatican tour with Elisa was the best way to see the museums and Basilica. Insightful, well paced, and perfect for our group.",
   },
   {
     name: "cy chyfer",
@@ -48,14 +48,14 @@ const testimonials = [
     initials: "WQ",
     when: "10 years ago",
     quote:
-      "Excellent private service with outstanding local knowledge. The day was efficient, refined, and full of meaningful highlights.",
+      "Excellent private service and outstanding local knowledge. The day felt smooth, meaningful, and full of highlights.",
   },
   {
     name: "Germano Ciardi",
     initials: "G",
     when: "2 years ago",
     quote:
-      "Professional team, smooth organization, and a premium experience from start to finish. Highly recommended.",
+      "Professional team, smooth organization, and a wonderful experience from start to finish. Highly recommended.",
   },
 ] as const;
 
@@ -67,12 +67,12 @@ export default function TravelerTestimonialsLegacySection() {
       <div className={styles.inner}>
         <header className={styles.headerBlock}>
           <h2 id="traveler-testimonials-legacy-heading" className={styles.heading}>
-            Traveler Testimonials Classic
+            What Travelers Say
           </h2>
           <div className={styles.headingRule} aria-hidden>
             <span />
           </div>
-          <p className={styles.lead}>Previous 3-card version, now in carousel format.</p>
+          <p className={styles.lead}>Real reviews from guests who joined our private tours in Rome.</p>
         </header>
 
         <div className={styles.carouselViewport}>

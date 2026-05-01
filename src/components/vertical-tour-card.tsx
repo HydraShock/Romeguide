@@ -9,8 +9,6 @@ type VerticalTourCardProps = {
   alt: string;
   imagePosition?: string;
   monuments: readonly string[];
-  stops: number;
-  highlights: number;
   href?: string;
   anchorId?: string;
   ctaLabel?: string;
@@ -25,8 +23,6 @@ export default function VerticalTourCard({
   alt,
   imagePosition = "50% 50%",
   monuments,
-  stops,
-  highlights,
   href = "#",
   anchorId,
   ctaLabel = "View Tour",
@@ -78,27 +74,6 @@ export default function VerticalTourCard({
             ))}
           </div>
         </div>
-
-        <a href={href} className={styles.routePanel}>
-          <div className={styles.routeTop}>
-            <span className={styles.routeTitle}>Percorso</span>
-            <span className={styles.routeArrow} aria-hidden>
-              &rarr;
-            </span>
-          </div>
-          <div className={styles.routeTrack} aria-hidden>
-            <span className={styles.routeDot} />
-            <span className={styles.routeDot} />
-            <span className={styles.routeDot} />
-            <span className={`${styles.routeDot} ${styles.routeDotActive}`} />
-            <span className={styles.routeDot} />
-            <span className={`${styles.routeDot} ${styles.routeDotAccent}`} />
-          </div>
-          <div className={styles.routeMeta}>
-            <span>{stops} tappe totali</span>
-            <span className={styles.routeHighlights}>* {highlights} imperdibili</span>
-          </div>
-        </a>
 
         <a href={href} className={`${styles.cta} ${isFeatured ? styles.featuredCta : styles.compactCta}`}>
           {ctaLabel}

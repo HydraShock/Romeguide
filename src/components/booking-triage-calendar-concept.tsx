@@ -37,17 +37,15 @@ const weekdayLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] as const
 const triageSteps: readonly TriageStep[] = [
   { id: 1, label: "Step 01", title: "Date" },
   { id: 2, label: "Step 02", title: "Interests" },
-  { id: 3, label: "Step 03", title: "Concierge Triage" },
+  { id: 3, label: "Step 03", title: "Personalize your experience" },
   { id: 4, label: "Step 04", title: "Contact" },
 ] as const;
-
-const dateFlexibilityOptions = ["Fixed date", "Flexible by 1 day", "Flexible by a few days"] as const;
 
 const interestGroups: readonly InterestGroup[] = [
   {
     id: "rome",
-    title: "Exclusive Rome Tours",
-    subtitle: "Choose one or more Rome private experiences",
+    title: "Private Tours in Rome",
+    subtitle: "Choose one or more experiences in Rome",
     options: [
       { id: "ancient-rome", label: "Ancient Rome" },
       { id: "vatican", label: "Vatican" },
@@ -60,7 +58,7 @@ const interestGroups: readonly InterestGroup[] = [
   {
     id: "dayTrips",
     title: "Day Trips from Rome",
-    subtitle: "Private escapes beyond the city",
+    subtitle: "Easy private escapes beyond the city",
     options: [
       { id: "tivoli", label: "Tivoli" },
       { id: "ostia-antica", label: "Ostia Antica" },
@@ -73,7 +71,7 @@ const interestGroups: readonly InterestGroup[] = [
   {
     id: "italy",
     title: "Tours in Italy",
-    subtitle: "Multi-city private routes",
+    subtitle: "Private routes across Italy",
     options: [
       { id: "florence-tuscany", label: "Florence / Tuscany" },
       { id: "venice", label: "Venice" },
@@ -88,6 +86,53 @@ const interestGroups: readonly InterestGroup[] = [
 
 const travelerOptions = ["1-2", "3-5", "6-10", "10+"] as const;
 const languageOptions = ["English", "Italian", "Spanish", "French", "German", "Other"] as const;
+const otherLanguageOptions = [
+  "Arabic",
+  "Armenian",
+  "Bengali",
+  "Bosnian",
+  "Bulgarian",
+  "Cantonese",
+  "Croatian",
+  "Czech",
+  "Danish",
+  "Dutch",
+  "Estonian",
+  "Filipino",
+  "Finnish",
+  "Greek",
+  "Hebrew",
+  "Hindi",
+  "Hungarian",
+  "Indonesian",
+  "Japanese",
+  "Korean",
+  "Latvian",
+  "Lithuanian",
+  "Mandarin Chinese",
+  "Norwegian",
+  "Persian (Farsi)",
+  "Polish",
+  "Portuguese",
+  "Romanian",
+  "Russian",
+  "Serbian",
+  "Slovak",
+  "Slovenian",
+  "Swedish",
+  "Thai",
+  "Turkish",
+  "Ukrainian",
+  "Urdu",
+  "Vietnamese",
+  "Albanian",
+  "Catalan",
+  "Georgian",
+  "Icelandic",
+  "Irish",
+  "Malay",
+  "Swahili",
+] as const;
 
 const experienceStyleTags = [
   "History",
@@ -96,34 +141,24 @@ const experienceStyleTags = [
   "Architecture",
   "Religion",
   "Food & Wine",
-  "Family pacing",
   "Hidden corners",
-  "Landmark essentials",
 ] as const;
 
 const paceOptions = ["Relaxed", "Balanced", "In-depth"] as const;
-const transportOptions = ["Walking", "Car and driver", "Minivan", "Need guidance"] as const;
-const addOnOptions = ["Food experience", "Wine experience", "Cooking class", "Personal driver"] as const;
+const transportOptions = ["Car and driver", "Walking", "Combination"] as const;
 
 const romeTriageTags = [
-  "Ancient layers depth",
-  "Vatican major highlights",
-  "Christian heritage focus",
-  "Landmark essentials",
-] as const;
-
-const dayTripTriageTags = [
-  "Coastal scenery",
-  "Archaeology escapes",
-  "Countryside rhythm",
-  "Low-intensity pacing",
+  "Ancient Rome depth",
+  "Vatican highlights",
+  "Christian heritage",
+  "Classic landmarks",
 ] as const;
 
 const italyTriageTags = [
   "Single-city extension",
   "Multi-city route",
-  "Rail-based journey",
-  "Car-and-driver continuity",
+  "Train-based journey",
+  "Private car with driver",
 ] as const;
 
 const emptyInterests: Record<InterestGroupId, string[]> = {
@@ -199,9 +234,6 @@ export default function BookingTriageCalendarConcept() {
 
   const [monthOffset, setMonthOffset] = useState(0);
   const [selectedDateIso, setSelectedDateIso] = useState(todayIso);
-  const [dateFlexibility, setDateFlexibility] = useState<(typeof dateFlexibilityOptions)[number]>(
-    "Fixed date",
-  );
   const [activeStep, setActiveStep] = useState<1 | 2 | 3 | 4>(1);
   const [selectedGroups, setSelectedGroups] = useState<Record<InterestGroupId, boolean>>(emptyGroups);
   const [selectedInterests, setSelectedInterests] = useState<Record<InterestGroupId, string[]>>(
@@ -212,16 +244,16 @@ export default function BookingTriageCalendarConcept() {
 
   const [travelerCount, setTravelerCount] = useState("");
   const [travelingWithChildren, setTravelingWithChildren] = useState<BinaryChoice>("");
+  const [travelingWithAnimals, setTravelingWithAnimals] = useState<BinaryChoice>("");
+  const [mobilityIssues, setMobilityIssues] = useState<BinaryChoice>("");
   const [cruisePassenger, setCruisePassenger] = useState<BinaryChoice>("");
   const [preferredLanguage, setPreferredLanguage] = useState("");
+  const [showLanguageScroller, setShowLanguageScroller] = useState(false);
   const [experiencePriorities, setExperiencePriorities] = useState<string[]>([]);
   const [preferredPace, setPreferredPace] = useState("");
   const [preferredTransport, setPreferredTransport] = useState("");
-  const [selectedAddOns, setSelectedAddOns] = useState<string[]>([]);
   const [romeFocusTags, setRomeFocusTags] = useState<string[]>([]);
-  const [dayTripFocusTags, setDayTripFocusTags] = useState<string[]>([]);
   const [italyFocusTags, setItalyFocusTags] = useState<string[]>([]);
-  const [triageNote, setTriageNote] = useState("");
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -297,8 +329,10 @@ export default function BookingTriageCalendarConcept() {
   );
 
   const hasRomeInterests = selectedGroups.rome || selectedInterests.rome.length > 0;
-  const hasDayTripInterests = selectedGroups.dayTrips || selectedInterests.dayTrips.length > 0;
   const hasItalyInterests = selectedGroups.italy || selectedInterests.italy.length > 0;
+  const isCustomLanguageSelected =
+    preferredLanguage.length > 0 &&
+    !languageOptions.includes(preferredLanguage as (typeof languageOptions)[number]);
 
   const canContinue = useMemo(() => {
     if (activeStep === 1) {
@@ -343,7 +377,6 @@ export default function BookingTriageCalendarConcept() {
     const fullName = `${firstName} ${lastName}`.trim();
 
     params.set("date", selectedDateIso);
-    params.set("dateFlexibility", dateFlexibility);
 
     if (notSureYet) {
       params.set("notSureYet", "yes");
@@ -362,6 +395,12 @@ export default function BookingTriageCalendarConcept() {
     if (travelingWithChildren) {
       params.set("children", travelingWithChildren);
     }
+    if (travelingWithAnimals) {
+      params.set("animals", travelingWithAnimals);
+    }
+    if (mobilityIssues) {
+      params.set("mobilityIssues", mobilityIssues);
+    }
     if (cruisePassenger) {
       params.set("cruise", cruisePassenger);
     }
@@ -377,22 +416,12 @@ export default function BookingTriageCalendarConcept() {
     if (preferredTransport) {
       params.set("transport", preferredTransport);
     }
-    if (selectedAddOns.length > 0) {
-      params.set("addons", selectedAddOns.join(", "));
-    }
     if (romeFocusTags.length > 0) {
       params.set("romeFocus", romeFocusTags.join(", "));
-    }
-    if (dayTripFocusTags.length > 0) {
-      params.set("dayTripFocus", dayTripFocusTags.join(", "));
     }
     if (italyFocusTags.length > 0) {
       params.set("italyFocus", italyFocusTags.join(", "));
     }
-    if (triageNote.trim()) {
-      params.set("triageNote", triageNote.trim());
-    }
-
     if (firstName.trim()) {
       params.set("firstName", firstName.trim());
     }
@@ -420,8 +449,6 @@ export default function BookingTriageCalendarConcept() {
     return `/booking-contact?${params.toString()}`;
   }, [
     cruisePassenger,
-    dateFlexibility,
-    dayTripFocusTags,
     email,
     experiencePriorities,
     finalNote,
@@ -429,19 +456,19 @@ export default function BookingTriageCalendarConcept() {
     hotelArea,
     italyFocusTags,
     lastName,
+    mobilityIssues,
     notSureYet,
     phone,
     preferredLanguage,
     preferredPace,
     preferredTransport,
     romeFocusTags,
-    selectedAddOns,
     selectedDateIso,
     selectedGroupLabels,
     selectedInterestLabels,
     travelerCount,
+    travelingWithAnimals,
     travelingWithChildren,
-    triageNote,
   ]);
 
   function toggleInterest(groupId: InterestGroupId, optionId: string) {
@@ -496,48 +523,20 @@ export default function BookingTriageCalendarConcept() {
       aria-labelledby="booking-triage-title"
     >
       <div className={styles.bookingTriageInner}>
-        <article className={styles.bookingTriageIntro}>
-          <p className={styles.bookingTriageEyebrow}>PRIVATE CONCIERGE REQUEST</p>
-          <h2 id="booking-triage-title" className={styles.bookingTriageTitle}>
-            Date-Led Private Itinerary Planning, Designed Around You
-          </h2>
-          <p className={styles.bookingTriageLead}>
-            Start with your date, choose the route families you care about, then answer a concise
-            concierge triage to receive a tailored proposal.
-          </p>
-          <p className={styles.bookingTriageMicro}>
-            Luxury private planning | Multi-selection routes | Fast human reply
-          </p>
+        <div className={styles.calendarShell} role="group" aria-label="Private tour planner">
+          <header className={styles.bookingHeader}>
+            <p className={styles.bookingHeaderEyebrow}>Booking Calendar</p>
+            <h2 id="booking-triage-title" className={styles.bookingHeaderTitle}>
+              Choose Your Date to Book Your Private Tour
+            </h2>
+            <p className={styles.bookingHeaderLead}>
+              Start your booking request here by selecting your preferred date.
+            </p>
+          </header>
 
-          <ul className={styles.triageSteps} aria-label="Booking triage steps">
-            {triageSteps.map((item) => {
-              const isActive = item.id === activeStep;
-              const isDone = item.id < activeStep;
-
-              return (
-                <li
-                  key={item.id}
-                  className={
-                    isActive
-                      ? styles.triageStepActive
-                      : isDone
-                        ? styles.triageStepComplete
-                        : styles.triageStep
-                  }
-                >
-                  <p>{item.label}</p>
-                  <h3>{item.title}</h3>
-                  <span>{isActive ? "Now" : isDone ? "Done" : "Next"}</span>
-                </li>
-              );
-            })}
-          </ul>
-        </article>
-
-        <div className={styles.calendarShell} role="group" aria-label="Concierge booking triage">
           <div className={styles.calendarTopBar}>
             <p className={styles.calendarTopLabel}>
-              {activeStepMeta.label} - {activeStepMeta.title}
+              Booking step: {activeStepMeta.label} - {activeStepMeta.title}
             </p>
 
             {activeStep === 1 ? (
@@ -562,9 +561,9 @@ export default function BookingTriageCalendarConcept() {
               </div>
             ) : (
               <div className={styles.stepHeaderBar}>
-                <p className={styles.stepHeaderDate}>Date locked: {selectedDateShort}</p>
+                <p className={styles.stepHeaderDate}>Date selected: {selectedDateShort}</p>
                 <button type="button" className={styles.changeDateButton} onClick={() => setActiveStep(1)}>
-                  Change date
+                  Edit date
                 </button>
               </div>
             )}
@@ -573,10 +572,10 @@ export default function BookingTriageCalendarConcept() {
           {activeStep === 1 ? (
             <>
               <div className={styles.stepIntroMessage}>
-                <h4>Tell us when you&apos;ll be in Rome</h4>
+                <h4>When will you be in Rome?</h4>
                 <p>
-                  We&apos;ll use your preferred date as the starting point for shaping the right
-                  private itinerary around your interests.
+                  We&apos;ll use your date as the starting point and build the right private
+                  itinerary around your interests.
                 </p>
               </div>
 
@@ -620,34 +619,15 @@ export default function BookingTriageCalendarConcept() {
                   );
                 })}
               </div>
-
-              <div className={styles.dateFlexWrap}>
-                <p className={styles.dateFlexLabel}>Date flexibility</p>
-                <div className={styles.dateFlexRow}>
-                  {dateFlexibilityOptions.map((option) => (
-                    <button
-                      key={option}
-                      type="button"
-                      className={`${styles.dateFlexChip} ${
-                        dateFlexibility === option ? styles.dateFlexChipActive : ""
-                      }`}
-                      onClick={() => setDateFlexibility(option)}
-                      aria-pressed={dateFlexibility === option}
-                    >
-                      {option}
-                    </button>
-                  ))}
-                </div>
-              </div>
             </>
           ) : null}
 
           {activeStep === 2 ? (
             <div className={styles.stepContent}>
-              <h4>Choose one or more areas (you can select all 3)</h4>
+              <h4>Choose one or more areas (you can pick all 3)</h4>
               <p>
-                Select the route families you want to include. Then choose specific experiences
-                inside each selected area.
+                Select the areas you&apos;d like to explore, then choose specific experiences
+                inside each one.
               </p>
 
               <div className={styles.interestCategoryRow}>
@@ -671,7 +651,7 @@ export default function BookingTriageCalendarConcept() {
                           ? selectedCount > 0
                             ? `${selectedCount} experiences selected`
                             : "Area selected"
-                          : "Tap to add this area"}
+                          : "Tap to include this area"}
                       </small>
                     </button>
                   );
@@ -690,12 +670,12 @@ export default function BookingTriageCalendarConcept() {
                 }}
                 aria-pressed={notSureYet}
               >
-                Not sure yet - help me decide the best route
+                Click here if you&apos;re not sure yet
               </button>
 
               {!notSureYet && selectedGroupCount === 0 ? (
                 <div className={styles.interestEmptyState}>
-                  Select at least one area above to continue.
+                  Select at least one area to continue.
                 </div>
               ) : null}
 
@@ -742,7 +722,7 @@ export default function BookingTriageCalendarConcept() {
                     </span>
                   ))}
                   {notSureYet ? (
-                    <span className={styles.selectedInterestPill}>Needs concierge guidance</span>
+                    <span className={styles.selectedInterestPill}>Please help me choose</span>
                   ) : null}
                 </div>
               )}
@@ -751,12 +731,12 @@ export default function BookingTriageCalendarConcept() {
 
           {activeStep === 3 ? (
             <div className={styles.stepContent}>
-              <h4>Essential concierge triage</h4>
-              <p>Complete the core details first. Optional refinements can be added below.</p>
+              <h4>A few quick details</h4>
+              <p>Start with the essentials. Optional preferences can be added below.</p>
 
               <section className={styles.stepSection}>
-                <h5>Core details</h5>
-                <p className={styles.stepSectionHint}>How many travelers?</p>
+                <h5>Trip basics</h5>
+                <p className={styles.stepSectionHint}>How many travelers are joining?</p>
                 <div className={styles.optionGrid}>
                   {travelerOptions.map((option) => (
                     <button
@@ -773,24 +753,64 @@ export default function BookingTriageCalendarConcept() {
                   ))}
                 </div>
 
-                <p className={styles.stepSectionHint}>Preferred language</p>
+                <p className={styles.stepSectionHint}>Preferred guide language</p>
                 <div className={styles.optionGrid}>
                   {languageOptions.map((option) => (
                     <button
                       key={option}
                       type="button"
                       className={`${styles.optionChip} ${
-                        preferredLanguage === option ? styles.optionChipActive : ""
+                        option === "Other"
+                          ? showLanguageScroller || isCustomLanguageSelected
+                            ? styles.optionChipActive
+                            : ""
+                          : preferredLanguage === option
+                            ? styles.optionChipActive
+                            : ""
                       }`}
-                      onClick={() => setPreferredLanguage(option)}
-                      aria-pressed={preferredLanguage === option}
+                      onClick={() => {
+                        if (option === "Other") {
+                          setShowLanguageScroller((current) => !current);
+                          return;
+                        }
+
+                        setPreferredLanguage(option);
+                        setShowLanguageScroller(false);
+                      }}
+                      aria-pressed={
+                        option === "Other"
+                          ? showLanguageScroller || isCustomLanguageSelected
+                          : preferredLanguage === option
+                      }
                     >
                       {option}
                     </button>
                   ))}
                 </div>
+                {showLanguageScroller ? (
+                  <div className={styles.languageScrollPanel} aria-label="All language options">
+                    <div className={styles.languageScrollGrid}>
+                      {otherLanguageOptions.map((option) => (
+                        <button
+                          key={option}
+                          type="button"
+                          className={`${styles.optionChip} ${
+                            preferredLanguage === option ? styles.optionChipActive : ""
+                          }`}
+                          onClick={() => {
+                            setPreferredLanguage(option);
+                            setShowLanguageScroller(false);
+                          }}
+                          aria-pressed={preferredLanguage === option}
+                        >
+                          {option}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
 
-                <p className={styles.stepSectionHint}>Preferred pace</p>
+                <p className={styles.stepSectionHint}>Preferred tour pace</p>
                 <div className={styles.optionGrid}>
                   {paceOptions.map((option) => (
                     <button
@@ -807,7 +827,7 @@ export default function BookingTriageCalendarConcept() {
                   ))}
                 </div>
 
-                <p className={styles.stepSectionHint}>Preferred transport</p>
+                <p className={styles.stepSectionHint}>Preferred transport style</p>
                 <div className={styles.optionGrid}>
                   {transportOptions.map((option) => (
                     <button
@@ -831,13 +851,13 @@ export default function BookingTriageCalendarConcept() {
                 onClick={() => setShowOptionalTriage((current) => !current)}
                 aria-expanded={showOptionalTriage}
               >
-                {showOptionalTriage ? "Hide optional refinements" : "Refine your request (optional)"}
+                {showOptionalTriage ? "Hide optional details" : "Add optional details"}
               </button>
 
               {showOptionalTriage ? (
                 <div className={styles.optionalPanel}>
                   <section className={styles.stepSection}>
-                    <h5>Group profile refinements</h5>
+                    <h5>Group details</h5>
                     <div className={styles.binaryGrid}>
                       <div className={styles.binaryGroup}>
                         <p>Traveling with children?</p>
@@ -866,7 +886,59 @@ export default function BookingTriageCalendarConcept() {
                       </div>
 
                       <div className={styles.binaryGroup}>
-                        <p>Cruise passenger?</p>
+                        <p>Traveling with animals?</p>
+                        <div className={styles.binaryRow}>
+                          <button
+                            type="button"
+                            className={`${styles.optionChip} ${
+                              travelingWithAnimals === "yes" ? styles.optionChipActive : ""
+                            }`}
+                            onClick={() => setTravelingWithAnimals("yes")}
+                            aria-pressed={travelingWithAnimals === "yes"}
+                          >
+                            Yes
+                          </button>
+                          <button
+                            type="button"
+                            className={`${styles.optionChip} ${
+                              travelingWithAnimals === "no" ? styles.optionChipActive : ""
+                            }`}
+                            onClick={() => setTravelingWithAnimals("no")}
+                            aria-pressed={travelingWithAnimals === "no"}
+                          >
+                            No
+                          </button>
+                        </div>
+                      </div>
+
+                      <div className={styles.binaryGroup}>
+                        <p>Mobility issues?</p>
+                        <div className={styles.binaryRow}>
+                          <button
+                            type="button"
+                            className={`${styles.optionChip} ${
+                              mobilityIssues === "yes" ? styles.optionChipActive : ""
+                            }`}
+                            onClick={() => setMobilityIssues("yes")}
+                            aria-pressed={mobilityIssues === "yes"}
+                          >
+                            Yes
+                          </button>
+                          <button
+                            type="button"
+                            className={`${styles.optionChip} ${
+                              mobilityIssues === "no" ? styles.optionChipActive : ""
+                            }`}
+                            onClick={() => setMobilityIssues("no")}
+                            aria-pressed={mobilityIssues === "no"}
+                          >
+                            No
+                          </button>
+                        </div>
+                      </div>
+
+                      <div className={styles.binaryGroup}>
+                        <p>Arriving by cruise ship?</p>
                         <div className={styles.binaryRow}>
                           <button
                             type="button"
@@ -894,7 +966,7 @@ export default function BookingTriageCalendarConcept() {
                   </section>
 
                   <section className={styles.stepSection}>
-                    <h5>Experience style</h5>
+                    <h5>Experience preferences</h5>
                     <div className={styles.optionGrid}>
                       {experienceStyleTags.map((tag) => (
                         <button
@@ -914,30 +986,9 @@ export default function BookingTriageCalendarConcept() {
                     </div>
                   </section>
 
-                  <section className={styles.stepSection}>
-                    <h5>Optional add-ons</h5>
-                    <div className={styles.optionGrid}>
-                      {addOnOptions.map((option) => (
-                        <button
-                          key={option}
-                          type="button"
-                          className={`${styles.optionChip} ${
-                            selectedAddOns.includes(option) ? styles.optionChipActive : ""
-                          }`}
-                          onClick={() =>
-                            setSelectedAddOns((current) => toggleStringInList(current, option))
-                          }
-                          aria-pressed={selectedAddOns.includes(option)}
-                        >
-                          {option}
-                        </button>
-                      ))}
-                    </div>
-                  </section>
-
                   {hasRomeInterests ? (
                     <section className={styles.stepSection}>
-                      <h5>Rome route focus</h5>
+                      <h5>Rome highlights focus</h5>
                       <div className={styles.optionGrid}>
                         {romeTriageTags.map((tag) => (
                           <button
@@ -956,32 +1007,9 @@ export default function BookingTriageCalendarConcept() {
                     </section>
                   ) : null}
 
-                  {hasDayTripInterests ? (
-                    <section className={styles.stepSection}>
-                      <h5>Day trip focus</h5>
-                      <div className={styles.optionGrid}>
-                        {dayTripTriageTags.map((tag) => (
-                          <button
-                            key={tag}
-                            type="button"
-                            className={`${styles.optionChip} ${
-                              dayTripFocusTags.includes(tag) ? styles.optionChipActive : ""
-                            }`}
-                            onClick={() =>
-                              setDayTripFocusTags((current) => toggleStringInList(current, tag))
-                            }
-                            aria-pressed={dayTripFocusTags.includes(tag)}
-                          >
-                            {tag}
-                          </button>
-                        ))}
-                      </div>
-                    </section>
-                  ) : null}
-
                   {hasItalyInterests ? (
                     <section className={styles.stepSection}>
-                      <h5>Tours in Italy focus</h5>
+                      <h5>Italy route focus</h5>
                       <div className={styles.optionGrid}>
                         {italyTriageTags.map((tag) => (
                           <button
@@ -1000,16 +1028,6 @@ export default function BookingTriageCalendarConcept() {
                     </section>
                   ) : null}
 
-                  <label className={styles.fieldWrap}>
-                    <span>Anything important we should know?</span>
-                    <textarea
-                      value={triageNote}
-                      onChange={(event) => setTriageNote(event.target.value)}
-                      className={styles.fieldTextarea}
-                      rows={3}
-                      placeholder="Timing constraints, accessibility notes, or specific priorities."
-                    />
-                  </label>
                 </div>
               ) : null}
             </div>
@@ -1017,8 +1035,8 @@ export default function BookingTriageCalendarConcept() {
 
           {activeStep === 4 ? (
             <div className={styles.stepContent}>
-              <h4>Contact details</h4>
-              <p>Final details to receive your tailored private itinerary proposal.</p>
+              <h4>Your contact details</h4>
+              <p>Share the final details and we&apos;ll send your tailored private itinerary proposal.</p>
 
               <div className={styles.contactGrid}>
                 <label className={styles.fieldWrap}>
@@ -1066,7 +1084,7 @@ export default function BookingTriageCalendarConcept() {
                   />
                 </label>
                 <label className={styles.fieldWrap}>
-                  <span>Hotel / area in Rome (optional)</span>
+                  <span>Hotel or area in Rome (optional)</span>
                   <input
                     type="text"
                     value={hotelArea}
@@ -1076,7 +1094,7 @@ export default function BookingTriageCalendarConcept() {
                   />
                 </label>
                 <label className={styles.fieldWrap}>
-                  <span>What would make this trip ideal for you? (optional)</span>
+                  <span>What would make this trip perfect for you? (optional)</span>
                   <textarea
                     value={finalNote}
                     onChange={(event) => setFinalNote(event.target.value)}
@@ -1092,12 +1110,12 @@ export default function BookingTriageCalendarConcept() {
                   <strong>Date:</strong> {selectedDateShort}
                 </p>
                 <p>
-                  <strong>Areas selected:</strong>{" "}
-                  {notSureYet ? "Need concierge guidance" : selectedGroupCount}
+                  <strong>Areas chosen:</strong>{" "}
+                  {notSureYet ? "Need help choosing" : selectedGroupCount}
                 </p>
                 {!notSureYet && selectedInterestCount > 0 ? (
                   <p>
-                    <strong>Experiences selected:</strong> {selectedInterestCount}
+                    <strong>Experiences chosen:</strong> {selectedInterestCount}
                   </p>
                 ) : null}
               </div>
@@ -1105,7 +1123,7 @@ export default function BookingTriageCalendarConcept() {
           ) : null}
 
           <div className={styles.calendarFooter}>
-            <p className={styles.selectedDatePill}>Selected day: {selectedDateLabel}</p>
+            <p className={styles.selectedDatePill}>Selected date: {selectedDateLabel}</p>
             <div className={styles.actionRow}>
               <button
                 type="button"
@@ -1113,7 +1131,7 @@ export default function BookingTriageCalendarConcept() {
                 onClick={goToPrev}
                 disabled={activeStep === 1}
               >
-                Back
+                Previous
               </button>
 
               {activeStep < 4 ? (
@@ -1123,15 +1141,15 @@ export default function BookingTriageCalendarConcept() {
                   onClick={goToNext}
                   disabled={!canContinue}
                 >
-                  Continue
+                  Next
                 </button>
               ) : canContinue ? (
                 <Link href={requestHref} className={styles.flowFinalCta}>
-                  Request Your Tailor-Made Plan
+                  Send My Request
                 </Link>
               ) : (
                 <button type="button" className={styles.calendarCta} disabled>
-                  Request Your Tailor-Made Plan
+                  Send My Request
                 </button>
               )}
             </div>

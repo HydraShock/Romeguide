@@ -7,32 +7,37 @@ const faqItems = [
   {
     question: "Are your tours private?",
     answer:
-      "Yes. Every experience is fully private, designed exclusively for your party with a licensed local guide.",
+      "Yes. Every tour is fully private, created just for your group with a licensed local guide.",
   },
   {
-    question: "Can you customize the itinerary?",
+    question: "Can you customize our itinerary?",
     answer:
-      "Absolutely. We tailor each itinerary around your interests, pace, preferred timing, and must-see priorities.",
+      "Absolutely. We shape each day around your interests, preferred pace, and must-see places.",
+  },
+  {
+    question: "Do you offer Vatican private tours?",
+    answer:
+      "Yes. Our Vatican private tours include the Museums, Sistine Chapel, and St. Peter's with timing tailored to your group.",
   },
   {
     question: "Do you offer family-friendly tours?",
     answer:
-      "Yes. We create family-friendly routes with flexible pacing, engaging storytelling, and comfort-focused logistics.",
+      "Yes. We design family-friendly routes with flexible timing, engaging storytelling, and practical comfort.",
   },
   {
     question: "Do you arrange day trips from Rome?",
     answer:
-      "Yes. We organize private day trips from Rome with curated routes, seamless timing, and personalized guidance.",
+      "Yes. We organize private day trips from Rome with easy logistics and personalized guidance.",
   },
   {
-    question: "Can you provide a private driver?",
+    question: "Can you include a private driver?",
     answer:
-      "Yes. Private driver service can be included for transfers, full-day touring, and day-trip transportation.",
+      "Yes. We can include a private driver for transfers, full-day touring, and day trips from Rome.",
   },
   {
     question: "How far in advance should we book?",
     answer:
-      "We recommend booking as early as possible, especially in high season, to secure preferred dates and guides.",
+      "The earlier, the better, especially in high season, so we can reserve your preferred dates and guide.",
   },
 ] as const;
 
@@ -64,13 +69,13 @@ export default function LuxuryFaqSection() {
 
       <div className={styles.inner}>
         <header className={styles.header}>
-          <p className={styles.eyebrow}>Everything You Need to Know</p>
+          <p className={styles.eyebrow}>Plan with Ease</p>
           <h2 id="faq-heading" className={styles.heading}>
             Frequently Asked Questions
           </h2>
           <span className={styles.headingLine} aria-hidden />
           <p className={styles.subtext}>
-            Clear answers to help you plan your private Rome experience with confidence.
+            Simple answers to help you plan private tours in Rome with confidence.
           </p>
         </header>
 
