@@ -1063,6 +1063,27 @@
   gap: 0.34rem;
 }
 
+.binaryFieldWrap {
+  margin-top: 0.5rem;
+  display: grid;
+  gap: 0.28rem;
+}
+
+.binaryFieldWrap span {
+  font-family: var(--font-manrope), Arial, sans-serif;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #d3b58f;
+}
+
+.binaryFieldWrap .fieldInput {
+  width: 100%;
+  min-height: 2.2rem;
+  font-size: 0.76rem;
+}
+
 .contactGrid {
   margin-top: 0.64rem;
   display: grid;

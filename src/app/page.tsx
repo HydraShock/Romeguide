@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Private Tours in Rome | Rome Guide Services",
     description:
-      "Private tours in Rome, Vatican highlights, and day trips from Rome tailored to your interests.",
+      "Private tours in Rome, Vatican highlights, and day trips from Rome built around your interests.",
     images: ["/dark1.png"],
   },
 };
@@ -85,7 +85,7 @@ const trustPoints = [
   },
   {
     icon: "service",
-    title: "Premium Service, Human Touch",
+    title: "Friendly Service, Human Touch",
     description:
       "From your first message to your final stop, we offer thoughtful support and local expertise for smooth, memorable private tours in Rome.",
   },
@@ -276,7 +276,7 @@ export default function Home() {
             <span className={styles.headingRule} aria-hidden />
             <p className={styles.toursLead}>
               Choose from Ancient Rome, Vatican, walking, family-friendly, and
-              art-focused tours, all tailored to your interests.
+              art-focused tours, all shaped around what you love.
             </p>
 
             <WobbleCardDemo />

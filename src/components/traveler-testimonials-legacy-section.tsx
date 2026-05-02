@@ -1,5 +1,7 @@
 import styles from "./traveler-testimonials-legacy-section.module.css";
 
+const googleMapsReviewsUrl = "https://share.google/o1WyhQOJTO9yGTJm4";
+
 const testimonials = [
   {
     name: "Ann K",
@@ -34,7 +36,7 @@ const testimonials = [
     initials: "CY",
     when: "8 years ago",
     quote:
-      "Incredible experience, in-depth and wonderfully educational. Carlo guided us around the crowds and made the day feel effortless and exclusive.",
+      "Incredible experience, in-depth and wonderfully educational. Carlo guided us around the crowds and made the day feel effortless and special.",
   },
   {
     name: "Jane Staugas",
@@ -73,6 +75,16 @@ export default function TravelerTestimonialsLegacySection() {
             <span />
           </div>
           <p className={styles.lead}>Real reviews from guests who joined our private tours in Rome.</p>
+          <div className={styles.ctaRow}>
+            <a
+              href={googleMapsReviewsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.mapsButton}
+            >
+              View on Google Maps
+            </a>
+          </div>
         </header>
 
         <div className={styles.carouselViewport}>

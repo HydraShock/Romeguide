@@ -37,7 +37,7 @@ const tours = [
   {
     label: "City Strolls",
     title: "Rome Walking Tours",
-    description: "Discover elegant piazzas, hidden alleys, and local street life on a private walking tour in Rome.",
+    description: "Discover beautiful piazzas, hidden alleys, and local street life on a private walking tour in Rome.",
     image: "/images/tours/walking/hero-rome-private-walking-tour-pantheon-dusk.webp",
     alt: "Roman riverside and bridges during golden hour",
     imagePosition: "84% 43%",

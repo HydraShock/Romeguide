@@ -5,8 +5,8 @@ import styles from "./tailor-made-experiences-section.module.css";
 const features = [
   "Private Driver",
   "Custom Itineraries",
-  "Food & Wine Moments",
-  "Dedicated Concierge Support",
+  "Food & Wine Stops",
+  "Friendly Planning Support",
 ] as const;
 
 function FeatureIcon() {
@@ -49,17 +49,17 @@ export default function TailorMadeExperiencesSection() {
           </figure>
 
           <article className={styles.contentPanel}>
-            <p className={styles.panelEyebrow}>Your Personal Concierge</p>
+            <p className={styles.panelEyebrow}>Plan It Your Way</p>
 
             <h2 id="tailor-made-heading" className={styles.heading}>
-              Tailor-Made Experiences,
+              Private Tours Built Around You,
               <br />
-              <span>Beyond the Usual Tour</span>
+              <span>In Rome and Beyond</span>
             </h2>
 
             <p className={styles.description}>
-              Experience private tours in Rome and across Italy your way, with
-              custom services shaped around your interests, pace, and travel style.
+              From private tours in Rome to multi-city days across Italy, we shape each
+              experience around your interests, your pace, and who is traveling with you.
             </p>
 
             <ul className={styles.featureGrid} aria-label="Tailor-made services">
@@ -74,7 +74,7 @@ export default function TailorMadeExperiencesSection() {
             </ul>
 
             <Link href="/#booking-calendar" className={styles.cta}>
-              Customize My Tour
+              Start My Custom Plan
             </Link>
           </article>
 

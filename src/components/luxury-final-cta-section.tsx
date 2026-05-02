@@ -38,7 +38,7 @@ export default function LuxuryFinalCtaSection() {
 
           <p className={styles.copy}>
             Tell us your dates, interests, and ideal pace. We&apos;ll send back a warm,
-            tailored plan that feels easy, personal, and right for your trip.
+            personal plan that feels easy and right for your trip.
           </p>
 
           <div className={styles.ctaRow}>

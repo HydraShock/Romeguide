@@ -17,7 +17,7 @@ const faqItems = [
   {
     question: "Do you offer Vatican private tours?",
     answer:
-      "Yes. Our Vatican private tours include the Museums, Sistine Chapel, and St. Peter's with timing tailored to your group.",
+      "Yes. Our Vatican private tours include the Museums, Sistine Chapel, and St. Peter's with timing that fits your group.",
   },
   {
     question: "Do you offer family-friendly tours?",
@@ -27,7 +27,7 @@ const faqItems = [
   {
     question: "Do you arrange day trips from Rome?",
     answer:
-      "Yes. We organize private day trips from Rome with easy logistics and personalized guidance.",
+      "Yes. We organize private day trips from Rome with easy logistics and friendly local guidance.",
   },
   {
     question: "Can you include a private driver?",

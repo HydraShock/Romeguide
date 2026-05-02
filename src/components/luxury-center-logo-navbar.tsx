@@ -48,10 +48,10 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
     key: "romeTours",
     label: "Private Tours in Rome",
     href: "/tours",
-    kicker: "Rome Signature Collection",
-    headline: "Private Tours in Rome, Curated Around Your Pace",
+    kicker: "Rome Favorites",
+    headline: "Private Tours in Rome, Built Around You",
     description:
-      "Explore Rome with licensed private guides through routes designed around your interests, timing, and travel style.",
+      "Explore Rome with licensed local guides on routes shaped around your interests, timing, and travel style.",
     ctaLabel: "View All Rome Private Tours",
     columns: [
       {
@@ -65,17 +65,17 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours/vatican",
             label: "Private Vatican Tour",
-            description: "Vatican Museums, Sistine Chapel, and St. Peter's in elegant pacing.",
+            description: "Vatican Museums, Sistine Chapel, and St. Peter's at a relaxed pace.",
           },
           {
             href: "/tours/christian-rome",
             label: "Christian Rome Tour",
-            description: "Basilicas and sacred landmarks through private licensed guidance.",
+            description: "Basilicas and sacred landmarks with a licensed private guide.",
           },
         ],
       },
       {
-        title: "Curated Styles",
+        title: "Tour Styles",
         links: [
           {
             href: "/tours/walking-tours",
@@ -85,7 +85,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours/family-friendly",
             label: "Family-Friendly Rome Tours",
-            description: "Private routes tailored to children, teens, and mixed-age groups.",
+            description: "Private routes built for children, teens, and mixed-age groups.",
           },
           {
             href: "/tours/art-architecture",
@@ -95,17 +95,17 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
         ],
       },
       {
-        title: "Planning Focus",
+        title: "Helpful Links",
         links: [
           {
             href: "/who-we-are",
-            label: "Meet Our Licensed Team",
-            description: "Family-run service with local knowledge and premium attention to detail.",
+            label: "Meet Our Team",
+            description: "Family-run service with local knowledge and genuine care.",
           },
           {
             href: "/#booking-calendar",
             label: "Plan Your Private Tour",
-            description: "Share dates and priorities for a tailor-made proposal.",
+            description: "Share your dates and priorities and we'll help you build the right plan.",
           },
         ],
       },
@@ -116,9 +116,9 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
     label: "Day Trips from Rome",
     href: "/tours/day-trips-from-rome",
     kicker: "Beyond Rome",
-    headline: "Private Day Trips from Rome with Chauffeured Comfort",
+    headline: "Private Day Trips from Rome, Easy and Comfortable",
     description:
-      "Full-day escapes with private transport, realistic pacing, and optional licensed guide support.",
+      "Full-day escapes with private transport, realistic timing, and guide support when you want it.",
     ctaLabel: "Explore Day Trips from Rome",
     columns: [
       {
@@ -127,7 +127,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours/day-trips-from-rome/tivoli",
             label: "Private Tivoli Day Trip from Rome",
-            description: "Hadrian's Villa and Villa d'Este with refined pacing.",
+            description: "Hadrian's Villa and Villa d'Este at a relaxed pace.",
           },
           {
             href: "/tours/day-trips-from-rome/ostia-antica",
@@ -147,7 +147,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours/day-trips-from-rome/pompeii-amalfi-naples",
             label: "Pompeii, Amalfi & Naples Day Trip",
-            description: "A signature private route balancing archaeology and coastline.",
+            description: "A beautiful private route balancing archaeology and coastline.",
           },
           {
             href: "/tours/day-trips-from-rome/orvieto-umbria",
@@ -166,7 +166,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
         links: [
           {
             href: "/#booking-calendar",
-            label: "Ask for Tailor-Made Day Trip Planning",
+            label: "Need Help Choosing Your Day Trip?",
             description: "We shape destination, timing, and comfort around your travel priorities.",
           },
         ],
@@ -178,9 +178,9 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
     label: "Tours in Italy",
     href: "/tours-in-italy",
     kicker: "Italy Collection",
-    headline: "Private Tours in Italy for Multi-City Luxury Itineraries",
+    headline: "Private Tours in Italy for Easy Multi-City Trips",
     description:
-      "Design private experiences across Italy with curated pacing, licensed expertise, and personalized service.",
+      "Plan private experiences across Italy with smart pacing, licensed expertise, and personal support.",
     ctaLabel: "View Private Tours in Italy",
     columns: [
       {
@@ -189,7 +189,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours-in-italy/private-venice-tour",
             label: "Private Venice Tour",
-            description: "Historic canals, hidden passages, and elegant private pacing.",
+            description: "Historic canals, hidden passages, and easy private pacing.",
           },
           {
             href: "/tours-in-italy/private-milan-tour",
@@ -199,7 +199,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours-in-italy/private-florence-tuscany-tour",
             label: "Private Florence & Tuscany Tour",
-            description: "Renaissance highlights and Tuscan atmosphere in one curated route.",
+            description: "Renaissance highlights and Tuscan atmosphere in one well-planned route.",
           },
         ],
       },
@@ -209,27 +209,27 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours-in-italy/private-naples-amalfi-coast-tour",
             label: "Private Naples & Amalfi Coast Tour",
-            description: "Southern heritage and coastlines with premium logistics.",
+            description: "Southern heritage and coastlines with smooth logistics.",
           },
           {
             href: "/tours-in-italy/private-sicily-tours",
             label: "Private Sicily Tours",
-            description: "Island culture, archaeology, and private route design.",
+            description: "Island culture, archaeology, and private routes built around you.",
           },
           {
             href: "/tours-in-italy/private-orvieto-umbria-tour",
             label: "Private Orvieto & Umbria Tour",
-            description: "Countryside elegance, hill towns, and curated cultural stops.",
+            description: "Countryside charm, hill towns, and thoughtfully chosen cultural stops.",
           },
         ],
       },
       {
-        title: "Concierge Support",
+        title: "Planning Support",
         links: [
           {
             href: "/#booking-calendar",
-            label: "Plan a Multi-City Private Itinerary",
-            description: "Get a tailor-made Italy route built around your dates and priorities.",
+            label: "Plan My Multi-City Italy Trip",
+            description: "Get a personal Italy route built around your dates and priorities.",
           },
         ],
       },
@@ -248,13 +248,13 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
     {
       href: "/tours/vatican",
       label: "Private Vatican Tour",
-      description: "Museums, Sistine Chapel, and St. Peter's with curated timing.",
+      description: "Museums, Sistine Chapel, and St. Peter's with smart timing.",
       image: "/images/tours/vatican/hero-vatican-private-tour-san-pietro-sunset-final.webp",
     },
     {
       href: "/tours/christian-rome",
       label: "Christian Rome Tour",
-      description: "Basilicas and sacred landmarks through private licensed guidance.",
+      description: "Basilicas and sacred landmarks with a licensed private guide.",
       image: "/images/tours/christian-rome/hero-christian-rome-tour-basilica-facade.webp",
     },
     {
@@ -286,7 +286,7 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
     {
       href: "/tours/day-trips-from-rome/pompeii-amalfi-naples",
       label: "Pompeii & Amalfi Private Day Trip",
-      description: "Archaeology and coastline in one signature route from Rome.",
+      description: "Archaeology and coastline in one beautiful route from Rome.",
       image: "/images/tours/day-trips/pompeii-amalfi-naples/hero-pompeii-amalfi-day-trip-from-rome.jpg",
     },
     {
@@ -298,7 +298,7 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
     {
       href: "/tours/day-trips-from-rome/roman-hill-towns",
       label: "Roman Hill Towns Day Trip",
-      description: "Scenic villages and slow luxury pacing just beyond Rome.",
+      description: "Scenic villages and a slower pace just beyond Rome.",
       image: "/images/tours/day-trips/roman-hill-towns/hero-roman-hill-towns-day-trip-from-rome.jpg",
     },
   ],
@@ -306,13 +306,13 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
     {
       href: "/tours-in-italy/private-venice-tour",
       label: "Private Venice Tour",
-      description: "Canals, hidden passages, and elegant private pacing.",
+      description: "Canals, hidden passages, and easy private pacing.",
       image: "/images/tours-in-italy/venice/hero-private-venice-tour.jpg",
     },
     {
       href: "/tours-in-italy/private-florence-tuscany-tour",
       label: "Private Florence & Tuscany Tour",
-      description: "Renaissance heritage and Tuscan atmosphere in one curated route.",
+      description: "Renaissance heritage and Tuscan atmosphere in one well-planned route.",
       image: "/images/tours-in-italy/florence-tuscany/hero-private-florence-tuscany-tour.jpg",
     },
     {
@@ -324,13 +324,13 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
     {
       href: "/tours-in-italy/private-naples-amalfi-coast-tour",
       label: "Private Naples & Amalfi Tour",
-      description: "Southern heritage and coastline with premium logistics.",
+      description: "Southern heritage and coastline with smooth logistics.",
       image: "/images/tours-in-italy/naples-amalfi/hero-private-naples-amalfi-coast-tour.jpg",
     },
     {
       href: "/tours-in-italy/private-sicily-tours",
       label: "Private Sicily Tours",
-      description: "Island culture, archaeology, and tailor-made route design.",
+      description: "Island culture, archaeology, and a route built around you.",
       image: "/images/tours-in-italy/sicily/hero-private-sicily-tours.jpg",
     },
   ],
@@ -499,12 +499,12 @@ export default function LuxuryCenterLogoNavbar() {
             <Link
               href="/#booking-calendar"
               className={styles.conciergeCta}
-              aria-label="Private concierge - go to booking calendar"
+              aria-label="Plan my trip - go to booking calendar"
               onClick={closeMenus}
             >
-              <span className={styles.conciergeCtaText}>PRIVATE CONCIERGE</span>
+              <span className={styles.conciergeCtaText}>PLAN MY TRIP</span>
               <span className={styles.conciergeCtaArrow} aria-hidden>
-                →
+                &rarr;
               </span>
             </Link>
 
@@ -611,12 +611,12 @@ export default function LuxuryCenterLogoNavbar() {
           <Link
             href="/#booking-calendar"
             className={styles.mobileCta}
-            aria-label="Private concierge - go to booking calendar"
+            aria-label="Plan my trip - go to booking calendar"
             onClick={closeMenus}
           >
-            <span className={styles.conciergeCtaText}>PRIVATE CONCIERGE</span>
+            <span className={styles.conciergeCtaText}>PLAN MY TRIP</span>
             <span className={styles.conciergeCtaArrow} aria-hidden>
-              →
+              &rarr;
             </span>
           </Link>
         </div>

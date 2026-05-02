@@ -10,7 +10,7 @@ const tourTypes = [
     image: "/editorial-tours/groups-all-sizes.jpg",
   },
   {
-    label: "Tailored Comfort",
+    label: "Easy Comfort",
     title: "Family-Friendly Tours",
     description:
       "Thoughtful pacing, engaging stories, and child-friendly planning make family tours in Rome easy and memorable.",
@@ -20,11 +20,11 @@ const tourTypes = [
     label: "Explore Together",
     title: "Small Groups & Friends",
     description:
-      "Perfect for friends traveling together, with flexible timing, local tips, and experiences tailored to your shared interests.",
+      "Perfect for friends traveling together, with flexible timing, local tips, and plans built around your shared interests.",
     image: "/editorial-tours/small-groups-friends.jpg",
   },
   {
-    label: "Port-to-City Luxury",
+    label: "Cruise Made Easy",
     title: "Cruise Passengers",
     description:
       "From port pickup to return, we design private Rome tours that fit tight cruise schedules without missing the city's highlights.",

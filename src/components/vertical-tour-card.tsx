@@ -65,7 +65,7 @@ export default function VerticalTourCard({
         <p className={styles.description}>{description}</p>
 
         <div className={styles.monumentsSection}>
-          <p className={styles.monumentsLabel}>Monumenti iconici</p>
+          <p className={styles.monumentsLabel}>Top highlights</p>
           <div className={styles.monumentsList}>
             {monuments.map((monument) => (
               <span key={monument} className={styles.monumentChip}>

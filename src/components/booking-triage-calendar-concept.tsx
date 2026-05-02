@@ -355,10 +355,10 @@ export default function BookingTriageCalendarConcept() {
 
   const [totalTravelers, setTotalTravelers] = useState<number | null>(null);
   const [under18Travelers, setUnder18Travelers] = useState<number | null>(null);
-  const [travelingWithChildren, setTravelingWithChildren] = useState<BinaryChoice>("");
   const [travelingWithAnimals, setTravelingWithAnimals] = useState<BinaryChoice>("");
   const [mobilityIssues, setMobilityIssues] = useState<BinaryChoice>("");
   const [cruisePassenger, setCruisePassenger] = useState<BinaryChoice>("");
+  const [cruisePortOfCall, setCruisePortOfCall] = useState("");
   const [preferredLanguage, setPreferredLanguage] = useState("");
   const [showLanguageScroller, setShowLanguageScroller] = useState(false);
   const [languageSearchQuery, setLanguageSearchQuery] = useState("");
@@ -475,12 +475,16 @@ export default function BookingTriageCalendarConcept() {
     }
 
     if (activeStep === 3) {
+      const hasCruisePortOfCall =
+        cruisePassenger !== "yes" || cruisePortOfCall.trim().length > 1;
+
       return (
         totalTravelers !== null &&
         under18Travelers !== null &&
         preferredLanguage.length > 0 &&
         preferredPace.length > 0 &&
-        preferredTransport.length > 0
+        preferredTransport.length > 0 &&
+        hasCruisePortOfCall
       );
     }
 
@@ -492,6 +496,8 @@ export default function BookingTriageCalendarConcept() {
     );
   }, [
     activeStep,
+    cruisePassenger,
+    cruisePortOfCall,
     email,
     firstName,
     lastName,
@@ -529,9 +535,6 @@ export default function BookingTriageCalendarConcept() {
     if (under18Travelers !== null) {
       params.set("under18", String(under18Travelers));
     }
-    if (travelingWithChildren) {
-      params.set("children", travelingWithChildren);
-    }
     if (travelingWithAnimals) {
       params.set("animals", travelingWithAnimals);
     }
@@ -540,6 +543,9 @@ export default function BookingTriageCalendarConcept() {
     }
     if (cruisePassenger) {
       params.set("cruise", cruisePassenger);
+    }
+    if (cruisePortOfCall.trim()) {
+      params.set("cruisePortOfCall", cruisePortOfCall.trim());
     }
     if (preferredLanguage) {
       params.set("language", preferredLanguage);
@@ -586,6 +592,7 @@ export default function BookingTriageCalendarConcept() {
     return `/booking-contact?${params.toString()}`;
   }, [
     cruisePassenger,
+    cruisePortOfCall,
     email,
     experiencePriorities,
     finalNote,
@@ -606,7 +613,6 @@ export default function BookingTriageCalendarConcept() {
     totalTravelers,
     under18Travelers,
     travelingWithAnimals,
-    travelingWithChildren,
   ]);
 
   function toggleInterest(groupId: InterestGroupId, optionId: string) {
@@ -876,7 +882,7 @@ export default function BookingTriageCalendarConcept() {
           {activeStep === 3 ? (
             <div className={`${styles.stepContent} ${styles.stepContentCompact}`}>
               <h4>A few quick details</h4>
-              <p>Set your trip details below so we can tailor the experience around your group.</p>
+              <p>Share a few details so we can shape the experience around your group.</p>
 
               <div className={styles.stepThreeGrid}>
                 <section className={`${styles.stepSection} ${styles.stepSectionFull} ${styles.stepSectionCompact}`}>
@@ -1042,32 +1048,6 @@ export default function BookingTriageCalendarConcept() {
                   <h5>Group details</h5>
                   <div className={styles.binaryGrid}>
                     <div className={styles.binaryGroup}>
-                      <p>Traveling with children?</p>
-                      <div className={styles.binaryRow}>
-                        <button
-                          type="button"
-                          className={`${styles.optionChip} ${
-                            travelingWithChildren === "yes" ? styles.optionChipActive : ""
-                          }`}
-                          onClick={() => setTravelingWithChildren("yes")}
-                          aria-pressed={travelingWithChildren === "yes"}
-                        >
-                          Yes
-                        </button>
-                        <button
-                          type="button"
-                          className={`${styles.optionChip} ${
-                            travelingWithChildren === "no" ? styles.optionChipActive : ""
-                          }`}
-                          onClick={() => setTravelingWithChildren("no")}
-                          aria-pressed={travelingWithChildren === "no"}
-                        >
-                          No
-                        </button>
-                      </div>
-                    </div>
-
-                    <div className={styles.binaryGroup}>
                       <p>Traveling with animals?</p>
                       <div className={styles.binaryRow}>
                         <button
@@ -1137,12 +1117,27 @@ export default function BookingTriageCalendarConcept() {
                           className={`${styles.optionChip} ${
                             cruisePassenger === "no" ? styles.optionChipActive : ""
                           }`}
-                          onClick={() => setCruisePassenger("no")}
+                          onClick={() => {
+                            setCruisePassenger("no");
+                            setCruisePortOfCall("");
+                          }}
                           aria-pressed={cruisePassenger === "no"}
                         >
                           No
                         </button>
                       </div>
+                      {cruisePassenger === "yes" ? (
+                        <label className={styles.binaryFieldWrap}>
+                          <span>Port of call</span>
+                          <input
+                            type="text"
+                            value={cruisePortOfCall}
+                            onChange={(event) => setCruisePortOfCall(event.target.value)}
+                            placeholder="e.g. Civitavecchia"
+                            className={styles.fieldInput}
+                          />
+                        </label>
+                      ) : null}
                     </div>
                   </div>
                 </section>
@@ -1216,7 +1211,7 @@ export default function BookingTriageCalendarConcept() {
           {activeStep === 4 ? (
             <div className={styles.stepContent}>
               <h4>Your contact details</h4>
-              <p>Share the final details and we&apos;ll send your tailored private itinerary proposal.</p>
+              <p>Share your final details and we&apos;ll send you a personal itinerary for your trip.</p>
 
               <div className={styles.contactGrid}>
                 <label className={styles.fieldWrap}>
@@ -1299,6 +1294,11 @@ export default function BookingTriageCalendarConcept() {
                   <strong>Areas chosen:</strong>{" "}
                   {notSureYet ? "Need help choosing" : selectedGroupCount}
                 </p>
+                {cruisePassenger === "yes" && cruisePortOfCall.trim() ? (
+                  <p>
+                    <strong>Port of call:</strong> {cruisePortOfCall.trim()}
+                  </p>
+                ) : null}
                 {!notSureYet && selectedInterestCount > 0 ? (
                   <p>
                     <strong>Experiences chosen:</strong> {selectedInterestCount}
