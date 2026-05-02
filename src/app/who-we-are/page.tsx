@@ -10,56 +10,50 @@ const WHO_HERO_IMAGE = "/image%20(22).png";
 
 const heroTrustStrip = [
   {
-    title: "Licensed Team",
-    value: "Official Rome guide credentials",
+    title: "Licensed Guides",
+    value: "Officially licensed in Rome",
   },
   {
     title: "Family-Run",
-    value: "Direct planning with our core team",
+    value: "Plan directly with our family team",
   },
   {
     title: "Private Only",
-    value: "Custom pacing for every request",
+    value: "Just your group, always",
   },
   {
     title: "Multilingual",
-    value: "International guests hosted with clarity",
+    value: "English, Italian, Spanish, and more",
   },
 ];
 
-const heroCompanionPoints = [
-  "Rome-based family-run core team",
-  "Licensed guide depth with relaxed pace",
-  "Direct support from inquiry to tour day",
-];
-
-const heroPills = ["Licensed in Rome", "Private only", "Multilingual", "Custom"];
+const heroPills = ["Licensed in Rome", "Private tours only", "Family-run", "Multilingual"];
 
 const trustPillars = [
   {
-    title: "Licensed Rome Tour Guides",
+    title: "Licensed Local Guides",
     description:
-      "Our guides are officially licensed in Rome and combine formal qualifications with years of on-the-ground experience across the city's major and lesser-known sites.",
+      "Every tour is led by a licensed Rome guide who knows how to make complex history clear and engaging.",
   },
   {
-    title: "Custom Private Tours",
+    title: "Private Tours Built Around You",
     description:
-      "Every private route is shaped around your pace, interests, and travel priorities, from archaeological depth to family-friendly rhythm.",
+      "We shape each day around your interests, pace, and energy so the experience feels easy and personal.",
   },
   {
-    title: "Family-Run Attention to Detail",
+    title: "Family-Run, Start to Finish",
     description:
-      "We are directly involved in planning and communication, so guests receive thoughtful support instead of anonymous booking-platform replies.",
+      "You speak with real people who plan and support your trip directly, not a generic booking desk.",
   },
   {
-    title: "Multilingual Private Guides",
+    title: "Clear Communication in Your Language",
     description:
-      "We host travelers in multiple languages, helping international guests enjoy a smooth and culturally rich private experience in Rome.",
+      "We match language needs early so your tour feels smooth before, during, and after the day.",
   },
   {
-    title: "Personal, Reliable Service",
+    title: "Reliable Support on Tour Day",
     description:
-      "From first inquiry to final drop-off, we focus on clarity, reliability, comfort, and a genuinely human way of traveling through the city.",
+      "From meeting-point logistics to last-minute adjustments, we stay present and practical.",
   },
 ];
 
@@ -68,11 +62,11 @@ const trustPillarIcons = ["01", "02", "03", "04", "05"];
 const guideProfiles = [
   {
     name: "Carlo",
-    role: "Founder & Senior Licensed Guide",
+    role: "Founder & Licensed Guide",
     license: "Licensed in Rome",
     languages: "English, Italian",
-    specialties: "Ancient Rome, route strategy, private multi-day planning",
-    note: "Known for combining historical depth with practical pacing and high-touch private service.",
+    specialties: "Ancient Rome, smart routing, private multi-day planning",
+    note: "Carlo keeps big stories clear while pacing the day around your energy.",
   },
   {
     name: "Ludovica",
@@ -80,50 +74,30 @@ const guideProfiles = [
     license: "Licensed in Rome",
     languages: "Italian, English, Spanish",
     specialties: "Custom itineraries, family pacing, private guest coordination",
-    note: "Ensures each itinerary feels clear, warm, and built around who is traveling.",
+    note: "Ludovica helps shape each tour so it feels smooth, warm, and personal.",
   },
-];
-
-const flexibilityConceptPills = ["Multilingual", "Private only", "Flexible pacing", "Custom"];
-
-const flexibilityLanguageRows = [
-  "Guide and guest language matching from first contact",
-  "Clear storytelling depth without overly academic jargon",
-  "Context adapted for first-time visitors and experienced travelers",
-];
-
-const flexibilityRhythmRows = [
-  "Light start for jet-lagged arrivals",
-  "High-focus monuments in your strongest energy window",
-  "Calmer close with coffee breaks, taxis, or seated moments",
-];
-
-const flexibilityComfortRows = [
-  "Walking intensity adjusted to your group",
-  "Step-light alternatives when needed",
-  "Route order designed around heat, crowds, and logistics",
 ];
 
 const processSteps = [
   {
-    title: "We Understand Your Priorities",
+    title: "Tell Us What You Want",
     description:
-      "We start by understanding what you want to see, how you like to travel, and the pace that feels right for your group.",
+      "Share your dates, interests, and preferred pace so we understand your priorities right away.",
   },
   {
-    title: "We Shape the Right Private Route",
+    title: "We Build Your Route",
     description:
-      "We design a clear private itinerary with licensed-guide depth, realistic timing, and strong route intelligence.",
+      "We suggest a private plan with the right stops, timing, and rhythm for your group.",
   },
   {
-    title: "We Coordinate the Details Clearly",
+    title: "We Confirm the Details",
     description:
-      "You receive straightforward planning support, practical notes, and reliable communication before the tour date.",
+      "We align on meeting points, timing, and practical notes so everything feels easy before tour day.",
   },
   {
-    title: "We Make the Day Feel Easy",
+    title: "You Enjoy Rome at Your Pace",
     description:
-      "On the day, we focus on flow, comfort, and meaningful context so Rome feels clear rather than overwhelming.",
+      "On the day, we guide with flexibility and clear context so you can enjoy Rome without stress.",
   },
 ];
 
@@ -131,37 +105,37 @@ const faqItems = [
   {
     question: "Are your guides officially licensed in Rome?",
     answer:
-      "Yes. We work with officially licensed Rome tour guides and build each private experience around professional standards and local expertise.",
+      "Yes. All our Rome tours are led by officially licensed guides.",
   },
   {
     question: "Are your tours always private?",
     answer:
-      "Yes. Our tours are private by design, so pacing, route focus, and storytelling can be adapted to your group.",
+      "Yes. We run private tours only, so everything is tailored to your group.",
   },
   {
     question: "Can you tailor tours around specific interests?",
     answer:
-      "Absolutely. We regularly adapt routes around archaeology, art, architecture, faith heritage, food context, and neighborhood atmosphere.",
+      "Absolutely. Tell us what you love, and we shape the day around it.",
   },
   {
     question: "Do you offer tours in multiple languages?",
     answer:
-      "Yes. We host guests in multiple languages and match guide profiles to language and thematic priorities whenever possible.",
+      "Yes. We can guide in multiple languages, based on availability.",
   },
   {
     question: "Can you help with families or slower-paced routes?",
     answer:
-      "Yes. We frequently design routes for families, older travelers, and guests who prefer a calmer rhythm over high-intensity touring.",
+      "Yes. We regularly plan for families, older travelers, and anyone who prefers a slower pace.",
   },
   {
     question: "Do you also organize day trips and tours beyond Rome?",
     answer:
-      "Yes. Alongside Rome tours, we offer private day trips from Rome and selected private destination experiences across Italy.",
+      "Yes. Besides Rome, we plan private day trips and selected multi-city Italy routes.",
   },
   {
     question: "How do we start planning our private tour?",
     answer:
-      "Share your dates, interests, and preferred pace through our booking and contact path, and we will propose a private plan built around you.",
+      "Send us your dates and interests through the booking form, and we will reply with a personal plan.",
   },
 ];
 
@@ -194,7 +168,7 @@ function buildOrganizationSchema() {
     url: `${baseUrl}/`,
     email: "romeguideservices@gmail.com",
     description:
-      "Family-run Rome guide service offering custom private tours with licensed guides, multilingual support, and relaxed pace.",
+      "Family-run Rome guide service offering private tours with licensed guides, multilingual support, and flexible pacing.",
     foundingLocation: {
       "@type": "Place",
       name: "Rome, Italy",
@@ -234,7 +208,7 @@ export function generateMetadata(): Metadata {
   const title =
     "Who We Are | Licensed Rome Tour Guides & Custom Private Tours | Rome Guide Services";
   const description =
-    "Meet our family-run team of licensed Rome tour guides creating custom private tours with relaxed pace, deep local knowledge, and a human client-focused approach.";
+    "Meet our family-run team of licensed Rome guides and see how we plan private tours with clear communication, flexible pacing, and personal support.";
 
   return {
     title,
@@ -308,16 +282,15 @@ export default function WhoWeArePage() {
             <article className={styles.heroPanel}>
               <p className={styles.heroEyebrow}>WHO WE ARE</p>
               <h1 id="who-we-are-main-title" className={styles.heroTitle}>
-                A Family of Licensed Rome Tour Guides, Crafting Private Experiences Around You
+                The Rome Team Behind Your Private Tour
               </h1>
               <p className={styles.heroLead}>
-                We are a family-run team of licensed guides based in Rome, creating private tours
-                that feel personal, warm, deeply informed, and carefully shaped around each
-                traveler&apos;s pace and interests.
+                We are a family-run team of licensed guides in Rome. We create private tours that
+                feel clear, personal, and paced around your group.
               </p>
               <p className={styles.heroSublead}>
-                From iconic landmarks to hidden corners, our work combines local expertise,
-                thoughtful planning, and a more human way of discovering Rome.
+                From must-see landmarks to quieter corners, we help you experience Rome in a way
+                that feels natural and never rushed.
               </p>
               <div className={styles.heroActions}>
                 <Link href="/#requested-tours-heading" className={styles.primaryCta}>
@@ -332,25 +305,9 @@ export default function WhoWeArePage() {
                   <li key={pill}>{pill}</li>
                 ))}
               </ul>
-              <p className={styles.microTrustLine}>Licensed guides | Custom itineraries | Multilingual service</p>
+              <p className={styles.microTrustLine}>Local team in Rome | Licensed guides | Private tours only</p>
             </article>
 
-            <aside className={styles.heroCompanion} aria-label="Private guide service highlights">
-              <p className={styles.heroCompanionEyebrow}>ROME GUIDE SERVICES</p>
-              <h2 className={styles.heroCompanionTitle}>A More Personal Standard for Private Touring</h2>
-              <p className={styles.heroCompanionLead}>
-                We are not a booking platform. We are a hands-on team building clear private
-                experiences with care and route intelligence.
-              </p>
-              <ul>
-                {heroCompanionPoints.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
-              <Link href="/booking-contact" className={styles.heroCompanionCta}>
-                Start Your Inquiry
-              </Link>
-            </aside>
           </div>
         </section>
 
@@ -377,21 +334,18 @@ export default function WhoWeArePage() {
                   Rooted in Rome, Built Around People
                 </h2>
                 <p>
-                  Rome Guide Services was built by people who live this city every day and who
-                  believe private travel should feel more personal than platform-driven. We are a
-                  family-run Rome tour company, not a faceless marketplace.
+                  Rome Guide Services started as a family project with a simple idea: private tours
+                  should feel personal, not transactional.
                 </p>
                 <p>
-                  Our approach is simple: licensed expertise, intelligent routing, and a human
-                  standard of care from first message to final farewell. Guests trust us not just
-                  for what we show, but for how we listen and adapt.
+                  We live and work in Rome, and we plan each route ourselves. That means clear
+                  communication, smart timing, and fewer surprises on the day.
                 </p>
                 <p>
-                  That philosophy allows us to host first-time visitors, returning travelers, and
-                  private families with the same goal: making Rome feel clear, meaningful, and
-                  beautifully paced.
+                  Whether it is your first time here or your fifth, we adapt the experience to
+                  you and keep it warm, practical, and memorable.
                 </p>
-                <p className={styles.storyBadge}>Family-run | Licensed | Private only</p>
+                <p className={styles.storyBadge}>Family-run in Rome | Practical planning | Human support</p>
                 </article>
                 <figure className={styles.storyVisual}>
                   <div className={styles.storyVisualInner}>
@@ -417,14 +371,14 @@ export default function WhoWeArePage() {
                   WHY CHOOSE US
                 </p>
                 <h2 id="why-choose-us-title" className={styles.sectionTitleDark}>
-                  Licensed Expertise, Custom Planning, and a Smarter Way to See Rome
+                  Local Expertise, Human Support, and Private Tours That Feel Easy
                 </h2>
                 <p className={styles.darkSectionLead}>
-                  We combine licensed expertise, family-run care, and private planning built around
-                  travelers who want Rome done properly.
+                  We combine licensed guiding with thoughtful planning, so you get depth without
+                  stress.
                 </p>
                 <p className={styles.darkSectionMeta}>
-                  LICENSED | FAMILY-RUN | CUSTOM | MULTILINGUAL
+                  LOCAL | LICENSED | PRIVATE | FLEXIBLE
                 </p>
               </article>
 
@@ -462,15 +416,14 @@ export default function WhoWeArePage() {
               <article className={styles.guidesIntro} data-reveal>
                 <p className={styles.sectionEyebrow}>OUR GUIDES</p>
                 <h2 id="our-guides-title" className={`${styles.sectionTitle} ${styles.guidesTitle}`}>
-                  Local Knowledge, Professional Licensing, and Private-Guide Depth
+                  Meet the Guides Behind Your Tour
                 </h2>
                 <p className={styles.guidesLead}>
-                  The value of a private Rome guide is not only information, but interpretation,
-                  pacing, and route judgment. Our licensed guides bring depth across archaeology,
-                  art, architecture, and living Roman culture.
+                  A great private guide does more than explain monuments. We read the room, adjust
+                  the rhythm, and turn Rome into a story that makes sense for your group.
                 </p>
                 <p className={styles.guidesTrustRow}>
-                  Licensed in Rome | Family-run approach | Multilingual support | Private only
+                  Real local guides | Friendly pace | Clear communication
                 </p>
               </article>
 
@@ -526,7 +479,7 @@ export default function WhoWeArePage() {
                 />
               </figure>
             </div>
-            <p className={styles.guidesPhotoCaption}>Real licensed guides. Real private experiences.</p>
+            <p className={styles.guidesPhotoCaption}>Real guides, real guests, real days in Rome.</p>
           </div>
         </section>
 
@@ -536,124 +489,58 @@ export default function WhoWeArePage() {
               <article className={styles.approachEditorial}>
                 <p className={styles.sectionEyebrow}>OUR APPROACH</p>
                 <h2 id="our-approach-title" className={`${styles.sectionTitle} ${styles.approachTitle}`}>
-                  Private Touring, Rewritten Around Pace, Context, and Human Judgment
+                  How We Build a Private Tour That Fits You
                 </h2>
                 <p className={styles.approachParagraph}>
-                  Generic group tours optimize for volume. We design private experiences around
-                  rhythm, relevance, and cultural depth.
+                  Group tours follow fixed scripts. We do not.
                 </p>
                 <p className={styles.approachParagraph}>
-                  Every itinerary is shaped by licensed expertise, intelligent route judgment, and
-                  the ability to adapt the day to the traveler - not the other way around.
+                  We adapt each route to your interests, your pace, and how you want the day to
+                  feel.
                 </p>
                 <p className={styles.approachTrustLine}>
-                  Licensed guides | Custom routes | Private only | Clear planning
+                  Built around your interests, your pace, and your day
                 </p>
                 <Link href="/#requested-tours-heading" className={styles.approachEditorialLink}>
-                  See how this philosophy shapes our tours <span aria-hidden="true">&rarr;</span>
+                  See the tours we can shape for you <span aria-hidden="true">&rarr;</span>
                 </Link>
               </article>
 
               <aside className={styles.approachManifesto} aria-label="The private touring difference">
-                <p className={styles.approachManifestoLabel}>THE DIFFERENCE</p>
+                <p className={styles.approachManifestoLabel}>OUR PROMISE</p>
                 <h3 className={styles.approachManifestoStatement}>
-                  No fixed scripts.
+                  No rushed scripts.
                   <br />
-                  No rushed group rhythm.
+                  No giant group pace.
                   <br />
-                  No generic city checklist.
+                  No one-size-fits-all checklist.
                 </h3>
 
                 <div className={styles.approachPrinciples}>
                   <article className={styles.approachPrinciple}>
                     <h4>Custom routing</h4>
-                    <p>Built around interests, pace, and the right sequence of places.</p>
+                    <p>Right places, right order, right rhythm for your group.</p>
                   </article>
                   <article className={styles.approachPrinciple}>
                     <h4>Licensed interpretation</h4>
-                    <p>Context-rich storytelling led by real professional guides.</p>
+                    <p>Clear, engaging context from licensed local guides.</p>
                   </article>
                   <article className={styles.approachPrinciple}>
                     <h4>Clear planning support</h4>
-                    <p>Clear guidance from first inquiry to tour day.</p>
+                    <p>Simple coordination from first message to tour day.</p>
                   </article>
                 </div>
 
-                <p className={styles.approachManifestoTag}>Family-run Rome guide service</p>
+                <p className={styles.approachManifestoTag}>Family-run private touring in Rome</p>
               </aside>
             </div>
 
             <ul className={styles.approachProofStrip} aria-label="Private tour proof points">
-              <li>Licensed in Rome</li>
-              <li>Multilingual private guiding</li>
-              <li>Custom itineraries</li>
-              <li>Family-run planning</li>
+              <li>Private tours only</li>
+              <li>Family and senior-friendly pacing</li>
+              <li>Multilingual support</li>
+              <li>Day trips and Italy extensions</li>
             </ul>
-          </div>
-        </section>
-
-        <section className={styles.flexibilitySection} aria-labelledby="who-we-welcome-title" data-reveal>
-          <div className={styles.sectionInner}>
-            <article className={styles.flexibilityEditorial} data-reveal>
-              <p className={styles.sectionEyebrow}>WHO WE WELCOME</p>
-              <h2 id="who-we-welcome-title" className={`${styles.sectionTitle} ${styles.flexibilityTitle}`}>
-                Different Travelers, Different Rhythms: Three Ways We Shape the Day
-              </h2>
-              <p className={styles.flexibilityLead}>
-                Every private experience is shaped through three concrete lenses: language clarity,
-                pacing control, and comfort logic. This is how we adapt the same city to very
-                different travelers.
-              </p>
-              <ul className={styles.flexibilityTrustLine} aria-label="Flexible private tour principles">
-                {flexibilityConceptPills.map((pill) => (
-                  <li key={pill}>{pill}</li>
-                ))}
-              </ul>
-            </article>
-
-            <div className={styles.flexibilityConceptDeck}>
-              <article className={`${styles.flexibilityConceptCard} ${styles.flexibilityConceptLanguage}`} data-reveal>
-                <p className={styles.flexibilityConceptLabel}>Language-first Design</p>
-                <h3>Multilingual Clarity Panel</h3>
-                <p>
-                  We organize the route and storytelling around how your group actually processes
-                  information, not around a fixed script.
-                </p>
-                <ul>
-                  {flexibilityLanguageRows.map((row) => (
-                    <li key={row}>{row}</li>
-                  ))}
-                </ul>
-              </article>
-
-              <article className={`${styles.flexibilityConceptCard} ${styles.flexibilityConceptRhythm}`} data-reveal>
-                <p className={styles.flexibilityConceptLabel}>Pacing-first Design</p>
-                <h3>Day Rhythm Timeline</h3>
-                <p>
-                  The itinerary follows your energy curve from morning to afternoon, balancing key
-                  landmarks with breathing space.
-                </p>
-                <ol>
-                  {flexibilityRhythmRows.map((row) => (
-                    <li key={row}>{row}</li>
-                  ))}
-                </ol>
-              </article>
-
-              <article className={`${styles.flexibilityConceptCard} ${styles.flexibilityConceptComfort}`} data-reveal>
-                <p className={styles.flexibilityConceptLabel}>Comfort-first Design</p>
-                <h3>Route Intelligence Notes</h3>
-                <p>
-                  We adapt walk length, stop order, and transport support so the day stays smooth,
-                  comfortable, and realistic for your group.
-                </p>
-                <ul>
-                  {flexibilityComfortRows.map((row) => (
-                    <li key={row}>{row}</li>
-                  ))}
-                </ul>
-              </article>
-            </div>
           </div>
         </section>
 
@@ -664,8 +551,8 @@ export default function WhoWeArePage() {
               The People Behind the Experience
             </h2>
             <p className={styles.sectionLead}>
-              Real guides, real guests, real Rome. The following images reflect the human side of
-              our work and the quality of experience we aim to deliver on every private route.
+              These are real moments from our tours. No stock actors, no staged scripts, just the
+              way we actually work with guests in Rome.
             </p>
 
             <div className={styles.galleryGrid}>
@@ -689,7 +576,7 @@ export default function WhoWeArePage() {
             <article className={styles.processIntro} data-reveal>
               <p className={`${styles.sectionEyebrow} ${styles.sectionEyebrowDark}`}>HOW WE WORK</p>
               <h2 id="how-we-work-title" className={styles.sectionTitleDark}>
-                From First Inquiry to Private Experience, Every Detail Is Thought Through
+                How Planning with Us Works
               </h2>
             </article>
 
@@ -711,7 +598,7 @@ export default function WhoWeArePage() {
           <div className={styles.sectionInner}>
             <p className={styles.sectionEyebrow}>FAQ</p>
             <h2 id="who-we-are-faq-title" className={styles.sectionTitle}>
-              Common Questions Before You Plan
+              Questions We Hear Most
             </h2>
 
             <div className={styles.faqList}>
@@ -732,7 +619,7 @@ export default function WhoWeArePage() {
           <div className={styles.sectionInner}>
             <p className={styles.sectionEyebrow}>PLAN YOUR PATH</p>
             <h2 id="pathways-title" className={styles.sectionTitle}>
-              Explore Our Tours, Day Trips, and Booking Path
+              Choose Where to Start
             </h2>
 
             <div className={styles.pathwaysGrid}>
@@ -806,18 +693,17 @@ export default function WhoWeArePage() {
           <div className={styles.sectionInner}>
             <article className={styles.finalCtaPanel}>
               <h2 id="who-we-are-final-cta-title">
-                Plan Your Private Rome Experience with the Right Guides
+                Ready to Plan Your Rome Trip Together?
               </h2>
               <p>
-                Tell us what you want to discover, how you like to travel, and what matters most
-                to you. We&apos;ll help shape a private Rome experience with the right pace,
-                expertise, and attention to detail.
+                Tell us your dates, priorities, and preferred pace. We&apos;ll send a personal
+                plan built around what matters to you.
               </p>
               <Link href="/#booking-calendar" className={styles.finalCtaButton}>
-                Start Planning Your Tour
+                Start Planning
               </Link>
               <p className={styles.finalTrustLine}>
-                Personalized reply within 24 hours | Licensed guides | Custom service
+                Reply within 24 hours | Real people, no call center
               </p>
             </article>
           </div>

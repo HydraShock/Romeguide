@@ -35,15 +35,6 @@ const bookingSteps = [
   },
 ];
 
-const requestTips = [
-  "Your travel dates and preferred start windows",
-  "Group size and traveler profile (family, couple, friends)",
-  "Top priorities: Rome highlights, Vatican, day trips, or Italy routes",
-  "Preferred pace (slow, balanced, intensive)",
-  "Language preferences and mobility notes",
-  "Any must-see landmarks or experiences",
-];
-
 const categoryCards = [
   {
     title: "Private Tours in Rome",
@@ -65,6 +56,10 @@ const categoryCards = [
     links: [
       { href: "/tours/day-trips-from-rome", label: "Private Day Trips from Rome" },
       { href: "/tours/day-trips-from-rome/tivoli", label: "Private Tivoli Day Trip" },
+      { href: "/tours/day-trips-from-rome/ostia-antica", label: "Private Ostia Antica Day Trip" },
+      { href: "/tours/day-trips-from-rome/orvieto-umbria", label: "Private Orvieto & Umbria Day Trip" },
+      { href: "/tours/day-trips-from-rome/roman-hill-towns", label: "Private Roman Hill Towns Day Trip" },
+      { href: "/tours/day-trips-from-rome/cerveteri-etruscans", label: "Private Cerveteri & Etruscans Day Trip" },
       { href: "/tours/day-trips-from-rome/pompeii-amalfi-naples", label: "Pompeii & Amalfi Day Trip" },
     ],
   },
@@ -76,6 +71,8 @@ const categoryCards = [
       { href: "/tours-in-italy/private-florence-tuscany-tour", label: "Private Florence & Tuscany Tour" },
       { href: "/tours-in-italy/private-venice-tour", label: "Private Venice Tour" },
       { href: "/tours-in-italy/private-milan-tour", label: "Private Milan Tour" },
+      { href: "/tours-in-italy/private-naples-amalfi-coast-tour", label: "Private Naples & Amalfi Coast Tour" },
+      { href: "/tours-in-italy/private-orvieto-umbria-tour", label: "Private Orvieto & Umbria Tour" },
       { href: "/tours-in-italy/private-sicily-tours", label: "Private Sicily Tours" },
     ],
   },
@@ -335,14 +332,6 @@ export default function BookingContactPage() {
             </p>
 
             <InquiryForm />
-            <div className={styles.formTipsBlock}>
-              <p className={styles.formTipsTitle}>To help us tailor your itinerary</p>
-              <ul className={styles.tipsGrid}>
-              {requestTips.map((tip) => (
-                <li key={tip}>{tip}</li>
-              ))}
-              </ul>
-            </div>
           </div>
         </section>
 

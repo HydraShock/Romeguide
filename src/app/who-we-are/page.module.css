@@ -185,7 +185,7 @@
   margin: 0 auto;
   padding: clamp(4.9rem, 8.6vw, 6.1rem) 1.1rem clamp(3rem, 5vw, 4.1rem);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+  grid-template-columns: minmax(0, 1fr);
   gap: clamp(1rem, 2.2vw, 1.9rem);
   align-items: end;
   min-height: min(100svh, 920px);
@@ -2247,7 +2247,7 @@
 
 @media (max-width: 1100px) {
   .heroInner {
-    grid-template-columns: minmax(0, 1fr) minmax(240px, 300px);
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .storyTitle {
