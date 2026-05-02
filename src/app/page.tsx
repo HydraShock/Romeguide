@@ -69,7 +69,7 @@ const trustPoints = [
     icon: "scroll",
     title: "Private Tours Made for You",
     description:
-      "Every itinerary is built around your interests, your rhythm, and your travel style, from solo travelers to private groups of up to 50 guests.",
+      "Every itinerary is built around your interests, your rhythm, and your travel style, whether you're traveling solo, as a couple, or with family and friends.",
   },
   {
     icon: "feather",

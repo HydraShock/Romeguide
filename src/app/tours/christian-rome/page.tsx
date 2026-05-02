@@ -106,9 +106,9 @@ const christianRomeTourData: TourPageData = {
         "Add a complementary church or basilica to complete the historical arc and devotional perspective.",
     },
     {
-      title: "Closing and Practical Guidance (20 min)",
+      title: "And Much More...",
       description:
-        "Receive recommendations for additional churches, mass times, and nearby Christian heritage sites.",
+        "Because this is a private custom tour, we can add extra churches, meaningful stops, and practical local guidance based on your interests.",
     },
   ],
   practicalInfo: {

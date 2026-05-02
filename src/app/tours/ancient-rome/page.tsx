@@ -15,7 +15,7 @@ const ancientRomeTourData: TourPageData = {
   seoTitle:
     "Ancient Rome Private Tour | Colosseum, Roman Forum & Palatine Hill | Rome Guide Services",
   seoDescription:
-    "Explore the Colosseum, Roman Forum, and Palatine Hill with a licensed private guide. A tailor-made Ancient Rome tour designed around your pace and interests.",
+    "Explore the Colosseum, Roman Forum, and Palatine Hill with a licensed private guide. A private Ancient Rome tour built around your pace and interests.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -28,10 +28,10 @@ const ancientRomeTourData: TourPageData = {
     title: "Ancient Rome Private Tour",
     landmarksLine: "Colosseum | Roman Forum | Palatine Hill",
     subtitle:
-      "Explore the Colosseum, Roman Forum, and Palatine Hill through a private itinerary designed around your interests, walking pace, and curiosity.",
-    intentLine: "Private, guest-paced storytelling across Rome's essential ancient sites.",
+      "Explore the Colosseum, Roman Forum, and Palatine Hill and much more.",
+    intentLine: "Private storytelling at your pace across Rome's must-see ancient sites.",
     primaryCtaLabel: "Plan This Tour",
-    secondaryCtaLabel: "Ask for a Tailor-Made Version",
+    secondaryCtaLabel: "Customize This Tour",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
     imageSrc: "/images/tours/ancient-rome/hero-ancient-rome-private-tour-colosseum-warm-light.webp",
@@ -48,11 +48,11 @@ const ancientRomeTourData: TourPageData = {
     { label: "Sites", value: "Colosseum, Forum, Palatine" },
   ],
   overview: {
-    title: "Imperial Rome, Read Through Storytelling",
+    title: "Ancient Rome, Brought to Life",
     intro:
-      "This is not a monument checklist. Your guide connects architecture, politics, and daily life so each site reads as one clear story.",
+      "This is not a checklist tour. Your guide connects architecture, politics, and daily life so each stop actually makes sense.",
     body:
-      "From the arena drama of the Colosseum to the civic heart of the Forum and the layered remains on Palatine Hill, the pace is tailored to your group. Families, couples, and deeply curious travelers all get the same landmarks with the right rhythm and depth.",
+      "From the drama of the Colosseum to the civic center of the Forum and the imperial layers on Palatine Hill, the route is shaped around your group. Whether you are traveling as a couple, family, or history lover, the experience stays clear, engaging, and easy to follow.",
     imageSrc: "/images/tours/ancient-rome/overview-ancient-rome-tour-roman-forum-view.webp",
     imageAlt: "Aerial view of the Roman Forum ruins in central Rome",
   },
@@ -60,28 +60,28 @@ const ancientRomeTourData: TourPageData = {
     {
       title: "Colosseum: Arena, Spectacle, and Power",
       description:
-        "Read the amphitheater beyond the postcard: engineering choices, crowd management, and the political theater behind the games.",
+        "Go beyond the postcard and see how the Colosseum really worked, from engineering choices to the politics behind the games.",
       imageSrc: "/images/tours/ancient-rome/highlight-colosseum-arches-ancient-rome.webp",
       imageAlt: "Columns and ruins of the Roman Forum under warm evening light",
     },
     {
       title: "Roman Forum: The Political Heart of the Empire",
       description:
-        "Walk through temples, basilicas, and civic spaces with a clear narrative of how power, law, and ritual shaped imperial Rome.",
+        "Walk through temples, basilicas, and civic spaces with clear explanations of how power, law, and ritual shaped Rome.",
       imageSrc: "/images/tours/ancient-rome/highlight-roman-forum-columns-rome.webp",
       imageAlt: "Palatine Hill archaeological ruins overlooking the Roman Forum",
     },
     {
       title: "Palatine Hill: Origins of Rome",
       description:
-        "Explore imperial residences and archaeological layers while your guide links Rome's legendary foundation to its historical evolution.",
+        "Explore imperial residences and archaeological layers while linking Rome's legendary origins to what historians know today.",
       imageSrc: "/images/tours/ancient-rome/highlight-palatine-hill-ruins-rome.webp",
       imageAlt: "Panoramic view of Roman Forum ruins and surrounding historic skyline",
     },
     {
       title: "Imperial Context, Not Just Isolated Sites",
       description:
-        "Understand how Colosseum, Forum, and Palatine form one system of spectacle, governance, and elite life across centuries.",
+        "See how the Colosseum, Forum, and Palatine connect as one system of entertainment, politics, and elite life across centuries.",
       imageSrc: "/images/tours/ancient-rome/highlight-imperial-rome-archaeology-view.webp",
       imageAlt: "Forum Romanum ruins and archaeological layers in Rome",
     },
@@ -90,38 +90,38 @@ const ancientRomeTourData: TourPageData = {
     {
       title: "Meeting Point and Tour Framing",
       description:
-        "Meet your licensed guide, confirm pacing preferences, and frame the route before entering the main archaeological zone.",
+        "Meet your licensed guide, agree on the pace and focus, and start the route with a clear plan.",
     },
     {
       title: "Colosseum Exploration",
       description:
-        "Explore key areas of the amphitheater while unpacking the logistics, symbolism, and social meaning of Roman spectacle.",
+        "Explore key areas of the amphitheater while unpacking how the games worked and why they mattered in Roman society.",
     },
     {
       title: "Roman Forum Walk",
       description:
-        "Follow a curated route through the Forum with focused storytelling that makes complex ruins easy to read.",
+        "Follow an easy-to-read route through the Forum with storytelling that makes complex ruins understandable.",
     },
     {
       title: "Palatine Hill Viewpoints",
       description:
-        "Take in panoramic viewpoints while exploring palace remains and the evolution of imperial power.",
+        "Take in panoramic views while exploring palace remains and how imperial power changed over time.",
     },
     {
-      title: "Closing Recommendations",
+      title: "And Much More...",
       description:
-        "Close with practical next-step recommendations based on your remaining schedule, interests, and energy.",
+        "Because this is a private custom tour, we can add extra stops, viewpoints, and local suggestions based on your interests and timing.",
     },
   ],
   practicalInfo: {
     ticketsText:
-      "Tickets are not issued automatically with this page request. We assist with reservation strategy during confirmation so entry timing matches your itinerary.",
+      "Tickets are not issued automatically with this page request. During confirmation, we help you choose the best reservation option and entry time for your itinerary.",
     meetingPointText:
-      "Meeting is arranged near the Colosseum area. Exact point and timing are shared during confirmation. TODO: confirm final pin location text.",
+      "Meeting is arranged near the Colosseum area. Exact meeting point and timing are shared during confirmation.",
     walkingLevelText:
       "Moderate walking is expected across archaeological terrain with some uneven surfaces and occasional steps.",
     accessibilityNotes:
-      "Route accessibility depends on current site conditions and entrances. We adapt pace and route where possible. TODO: confirm wheelchair-accessible route policy.",
+      "Route accessibility depends on current site conditions and entrances. We adapt pace and route wherever possible.",
     whatToBringText:
       "Bring a valid ID, comfortable walking shoes, water, and sun protection in warmer months.",
     securityChecksText:
@@ -130,25 +130,25 @@ const ancientRomeTourData: TourPageData = {
   audience: [
     {
       title: "First-Time Visitors to Rome",
-      description: "Ideal if you want a clear and elegant introduction to Rome's most important ancient landmarks.",
+      description: "Great for first-time visitors who want Rome's top ancient landmarks explained in a clear, enjoyable way.",
     },
     {
       title: "Couples and Private Travelers",
-      description: "A refined private experience that allows slower pacing, richer storytelling, and flexible timing.",
+      description: "Perfect for travelers who want private pacing, flexibility, and deeper context without feeling rushed.",
     },
     {
       title: "Families with Teens or Curious Kids",
-      description: "The itinerary can be adapted with accessible explanations and breaks, without losing depth.",
+      description: "The itinerary can be adapted with family-friendly explanations and breaks, while keeping the experience meaningful.",
     },
     {
       title: "Travelers Seeking Historical Context",
-      description: "Perfect for guests who want more than photos and prefer understanding the city through narrative.",
+      description: "Ideal for travelers who want the stories behind the ruins, not just photo stops.",
     },
   ],
   upgrades: [
     {
       title: "Private Driver Coordination",
-      description: "Door-to-door comfort before or after the walking section, ideal for tighter schedules and elevated logistics.",
+      description: "Private driver support before or after the walking section, especially helpful for tighter schedules.",
     },
     {
       title: "Extended Duration",
@@ -156,11 +156,11 @@ const ancientRomeTourData: TourPageData = {
     },
     {
       title: "Ancient + Christian Rome Combination",
-      description: "Pair this tour with a curated church and basilica route for a full historical arc.",
+      description: "Pair this tour with Christian Rome and the Major Basilicas for a full historical timeline.",
     },
     {
       title: "Family Pace Adaptation",
-      description: "Adjust cadence, route complexity, and storytelling style to keep younger travelers engaged.",
+      description: "Adjust pace, route complexity, and storytelling style to keep younger travelers engaged and comfortable.",
     },
   ],
   testimonial: {
@@ -173,7 +173,7 @@ const ancientRomeTourData: TourPageData = {
     {
       question: "Are Colosseum tickets included in this private tour?",
       answer:
-        "Ticket strategy is planned during confirmation. We guide you through timing, entry options, and logistics so access is smooth and aligned with your schedule.",
+        "Ticket planning is handled during confirmation. We guide you through entry times and options so the day runs smoothly.",
     },
     {
       question: "How much walking is involved?",
@@ -183,28 +183,28 @@ const ancientRomeTourData: TourPageData = {
     {
       question: "Can we customize the itinerary?",
       answer:
-        "Yes. This tour is private and flexible. We can emphasize archaeology, storytelling, photography points, or family-friendly pacing.",
+        "Yes. Because the tour is private, we can focus more on archaeology, storytelling, photo spots, or family-friendly pacing.",
     },
     {
       question: "Is this suitable for children?",
       answer:
-        "Absolutely. We tailor explanations and rhythm for families, especially when traveling with older children or teens.",
+        "Absolutely. We adapt explanations and pacing for families, especially when traveling with older children or teens.",
     },
     {
       question: "Can we combine this with another Rome tour?",
       answer:
-        "Yes, we can design a combined day with complementary experiences such as Christian Rome, Vatican, or selected neighborhoods.",
+        "Yes. We can combine it with Christian Rome, Vatican, or selected neighborhoods based on your timing and interests.",
     },
   ],
   relatedTours: [
     {
       title: "Vatican Private Tour",
-      description: "Vatican Museums and Sistine Chapel in a curated private route.",
+      description: "Vatican Museums and Sistine Chapel with private pacing that fits your day.",
       href: "/tours/vatican",
     },
     {
       title: "Christian Rome Tour",
-      description: "Basilicas and sacred landmarks with a narrative approach to early Christian Rome.",
+      description: "Major Basilicas and sacred landmarks with clear storytelling and historical context.",
       href: "/tours/christian-rome",
     },
     {
@@ -214,20 +214,20 @@ const ancientRomeTourData: TourPageData = {
     },
     {
       title: "Day Trips from Rome",
-      description: "Private full-day escapes with curated routes, private transport, and tailored pacing.",
+      description: "Private full-day escapes from Rome with flexible pacing and comfortable transport.",
       href: "/tours/day-trips-from-rome",
     },
   ],
   finalCta: {
     title: "Plan Your Ancient Rome Experience",
     description:
-      "Share your travel dates and preferences. We will design a private itinerary that fits your style, pace, and priorities.",
-    buttonLabel: "Request Your Private Plan",
+      "Share your dates and what matters most to you, and we'll build a private Ancient Rome plan that fits your pace.",
+    buttonLabel: "Request My Private Plan",
     buttonHref: "#",
     trustItems: [
-      "Personalized reply within 24 hours",
+      "Personal reply within 24 hours",
       "Private, licensed guides",
-      "Tailor-made planning",
+      "Flexible planning around your pace",
     ],
   },
 };

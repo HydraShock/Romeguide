@@ -15,7 +15,7 @@ const vaticanTourData: TourPageData = {
   seoTitle:
     "Private Vatican Tour | Vatican Museums, Sistine Chapel & St. Peter's Basilica | Rome Guide Services",
   seoDescription:
-    "Explore the Vatican Museums, Sistine Chapel, and St. Peter's Basilica with a licensed private guide. Personalized Vatican City touring at your pace.",
+    "Explore the Vatican Museums, Sistine Chapel, and St. Peter's Basilica with a licensed private guide. A private Vatican tour at your pace.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -27,10 +27,10 @@ const vaticanTourData: TourPageData = {
     title: "Private Vatican Tour",
     landmarksLine: "Vatican Museums | Sistine Chapel | St. Peter's Basilica",
     subtitle:
-      "Explore Vatican City with a licensed private guide who connects art, history, and faith through a route tailored to your interests and pace.",
-    intentLine: "Private, guest-paced storytelling through the Vatican's most iconic spaces.",
+      "Explore Vatican City with a licensed private guide, with a route shaped around your interests and your pace.",
+    intentLine: "Private Vatican storytelling through the city's most iconic spaces, at a pace that feels right for you.",
     primaryCtaLabel: "Plan This Tour",
-    secondaryCtaLabel: "Ask for a Custom Itinerary",
+    secondaryCtaLabel: "Customize This Tour",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
     imageSrc: "/images/tours/vatican/hero-vatican-private-tour-san-pietro-sunset-final.webp",
@@ -47,11 +47,11 @@ const vaticanTourData: TourPageData = {
     { label: "Sites", value: "Museums, Sistine, St. Peter's" },
   ],
   overview: {
-    title: "Where Faith, Art, and Power Meet",
+    title: "The Vatican, Made Clear and Enjoyable",
     intro:
-      "This is not a rushed museum pass. Your guide weaves together papal history, Renaissance art, and the spiritual meaning behind each space.",
+      "This is not a rushed museum run. Your guide connects papal history, Renaissance art, and the spiritual meaning behind each space in a way that is easy to follow.",
     body:
-      "From the Vatican Museums to the Sistine Chapel and St. Peter's Basilica, the route is paced around your interests and energy. Ideal for guests who want both depth and comfort in one private experience.",
+      "From the Vatican Museums to the Sistine Chapel and St. Peter's Basilica, the route is shaped around your interests and energy. Perfect if you want a private experience that feels both rich and relaxed.",
     imageSrc: "/images/tours/vatican/overview-vatican-tour-st-peters-river-view.webp",
     imageAlt: "St. Peter's Basilica dome viewed across the Tiber in warm evening light",
   },
@@ -59,28 +59,28 @@ const vaticanTourData: TourPageData = {
     {
       title: "Vatican Museums Without Guesswork",
       description:
-        "Follow a curated route through key galleries with clear storytelling, so major works are understood in context instead of seen in passing.",
+        "Follow a clear route through key galleries so the major works are understood in context, not just seen in passing.",
       imageSrc: "/images/tours/vatican/highlight-vatican-tour-basilica-interior.webp",
       imageAlt: "Ornate interior details inside St. Peter's Basilica in Vatican City",
     },
     {
       title: "Sistine Chapel Context and Meaning",
       description:
-        "Arrive prepared with the historical and artistic context needed to fully appreciate Michelangelo's ceiling and altar wall.",
+        "Arrive with the right context so Michelangelo's ceiling and altar wall feel meaningful, not overwhelming.",
       imageSrc: "/images/tours/vatican/highlight-vatican-tour-baldachin-detail.webp",
       imageAlt: "Golden baldachin and monumental columns inside St. Peter's Basilica",
     },
     {
       title: "St. Peter's Basilica, Read as a Story",
       description:
-        "Discover Bernini, Michelangelo, and papal symbolism with explanations tailored to your interests and travel style.",
+        "Discover Bernini, Michelangelo, and papal symbolism through explanations shaped around what interests you most.",
       imageSrc: "/images/tours/vatican/highlight-vatican-tour-st-peters-square-night.webp",
       imageAlt: "Apostolic Palace and colonnade at St. Peter's Square in Vatican City",
     },
     {
       title: "A Calm Private Flow Through Crowded Sites",
       description:
-        "Enjoy smoother timing, fewer bottlenecks, and a route shaped around your pace for a more refined Vatican experience.",
+        "Move through busy areas with smoother timing and a calmer private flow built around your pace.",
       imageSrc: "/images/tours/vatican/highlight-vatican-tour-colonnade-fountain.webp",
       imageAlt: "Fountain and colonnade composition in St. Peter's Square",
     },
@@ -89,69 +89,69 @@ const vaticanTourData: TourPageData = {
     {
       title: "Meeting and Entry Strategy (15 min)",
       description:
-        "Meet your guide, review preferences, and align entry timing before starting the Vatican route.",
+        "Meet your guide, review your preferences, and confirm the best entry timing before starting.",
     },
     {
       title: "Vatican Museums Galleries (1h 45m)",
       description:
-        "Explore major galleries and high-value sections with focused commentary and efficient transitions.",
+        "Explore major galleries with clear commentary and smooth transitions between key sections.",
     },
     {
       title: "Sistine Chapel Visit (30m)",
       description:
-        "Visit the chapel with clear narrative framing on iconography, patronage, and artistic innovation.",
+        "Visit the chapel with easy-to-follow context on iconography, patronage, and Michelangelo's innovation.",
     },
     {
       title: "St. Peter's Basilica (45m)",
       description:
-        "Continue into the basilica to understand its architecture, liturgical role, and key masterpieces.",
+        "Continue into the basilica to understand its architecture, spiritual role, and key masterpieces.",
     },
     {
-      title: "Closing Recommendations (15 min)",
+      title: "And Much More...",
       description:
-        "Receive tailored suggestions for nearby viewpoints, meals, or follow-up cultural stops.",
+        "Because this is a private custom tour, we can add extra moments, nearby stops, and practical suggestions based on your time and interests.",
     },
   ],
   practicalInfo: {
     ticketsText:
       "Vatican access is planned during confirmation. Availability and entry windows can vary by date and season.",
     meetingPointText:
-      "Meeting details are shared after booking confirmation near Vatican Museums entry points.",
+      "Meeting details are shared after confirmation, usually near the Vatican Museums entrances.",
     walkingLevelText:
-      "Moderate walking with museum corridors, standing periods, and controlled pacing.",
+      "Expect moderate walking through museum corridors, with standing periods during explanations.",
     accessibilityNotes:
       "Accessible routing can be arranged where available. Final route depends on current Vatican access conditions.",
     whatToBringText:
       "Bring valid ID, comfortable shoes, and dress in line with church entry requirements.",
     securityChecksText:
-      "Security checks are standard at Vatican entrances, so slight queue times should be expected.",
+      "Security checks are standard at Vatican entrances, so short queues are normal.",
   },
   audience: [
     {
       title: "First-Time Visitors to Rome",
-      description: "Perfect for guests who want Vatican essentials explained clearly in one private route.",
+      description: "Great for first-time visitors who want the Vatican essentials explained clearly in one private route.",
     },
     {
       title: "Art and History Enthusiasts",
-      description: "Ideal for travelers seeking richer context on Renaissance and papal masterpieces.",
+      description: "Ideal for travelers who want deeper context on Renaissance and papal masterpieces.",
     },
     {
       title: "Couples and Private Travelers",
-      description: "A refined format with flexible pacing and quieter moments inside major sites.",
+      description: "A private format with flexible pacing and quieter moments inside major sites.",
     },
     {
       title: "Religious Pilgrims",
-      description: "A respectful itinerary balancing devotional significance and historical insight.",
+      description: "A respectful itinerary that balances spiritual significance and historical insight.",
     },
   ],
   upgrades: [
     {
       title: "Early Entrance Planning",
-      description: "Prioritize calmer entry windows to experience key areas before peak crowd density.",
+      description: "When possible, we aim for calmer entry windows so key areas feel less crowded.",
     },
     {
       title: "Extended Vatican Session",
-      description: "Add extra time for deeper gallery coverage or focused art-historical themes.",
+      description: "Add extra time for deeper gallery coverage or a stronger focus on specific themes.",
     },
     {
       title: "Dome Climb Coordination",
@@ -159,7 +159,7 @@ const vaticanTourData: TourPageData = {
     },
     {
       title: "Private Driver Coordination",
-      description: "Add seamless transfers before or after the tour for maximum comfort.",
+      description: "Add easy transfers before or after the tour for extra comfort.",
     },
   ],
   testimonial: {
@@ -172,12 +172,12 @@ const vaticanTourData: TourPageData = {
     {
       question: "Are skip-the-line Vatican tickets included in this private tour?",
       answer:
-        "Ticket planning is handled during confirmation based on your preferred date and timing. We guide you to the most suitable access option.",
+        "Ticket planning is handled during confirmation based on your preferred date and timing. We guide you to the best access option for your day.",
     },
     {
       question: "Does the tour include St. Peter's Basilica?",
       answer:
-        "Yes, when basilica access is open and operational. Entry flow can vary due to Vatican ceremonies or security controls.",
+        "Yes, when basilica access is open and available. Entry flow can vary due to Vatican ceremonies or security controls.",
     },
     {
       question: "Is this Vatican tour suitable for children?",
@@ -192,13 +192,13 @@ const vaticanTourData: TourPageData = {
     {
       question: "Can we customize the Vatican itinerary around specific artworks?",
       answer:
-        "Absolutely. We can prioritize selected galleries, artists, or devotional points based on your interests.",
+        "Absolutely. We can prioritize specific galleries, artists, or spiritual highlights based on your interests.",
     },
   ],
   relatedTours: [
     {
       title: "Ancient Rome Private Tour",
-      description: "Colosseum, Roman Forum, and Palatine Hill in a private story-led route.",
+      description: "Colosseum, Roman Forum, and Palatine Hill with private pacing and clear storytelling.",
       href: "/tours/ancient-rome",
     },
     {
@@ -213,20 +213,20 @@ const vaticanTourData: TourPageData = {
     },
     {
       title: "Day Trips from Rome",
-      description: "Private full-day escapes from Rome with chauffeur support and curated logistics.",
+      description: "Private full-day escapes from Rome with comfortable transport and flexible pacing.",
       href: "/tours/day-trips-from-rome",
     },
   ],
   finalCta: {
     title: "Plan Your Private Vatican Experience",
     description:
-      "Share your travel dates and interests. We will build a private Vatican itinerary aligned with your pace, priorities, and entry timing.",
-    buttonLabel: "Request Your Private Plan",
+      "Share your travel dates and interests, and we'll build a private Vatican plan that fits your pace, priorities, and entry timing.",
+    buttonLabel: "Request My Private Plan",
     buttonHref: "#",
     trustItems: [
-      "Personalized reply within 24 hours",
+      "Personal reply within 24 hours",
       "Private, licensed guides",
-      "Tailor-made planning",
+      "Flexible planning around your pace",
     ],
   },
 };

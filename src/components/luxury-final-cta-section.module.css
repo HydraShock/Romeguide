@@ -59,18 +59,26 @@
   pointer-events: none;
   z-index: 0;
   transform: translateY(-50%);
-  border: 1px solid rgba(222, 181, 129, 0.44);
+  border: 1px solid rgba(220, 176, 119, 0.86);
   border-radius: clamp(1.35rem, 2vw, 1.9rem);
   background:
-    linear-gradient(180deg, rgba(250, 241, 229, 0.56) 0%, rgba(239, 226, 207, 0.36) 100%),
-    url("/sfondoibianco.png");
-  background-size: cover, cover;
-  background-position: center, center;
-  background-repeat: no-repeat, no-repeat;
+    linear-gradient(180deg, rgba(32, 15, 10, 0.72) 0%, rgba(20, 10, 7, 0.78) 56%, rgba(14, 8, 5, 0.84) 100%),
+    radial-gradient(
+      circle at 18% 14%,
+      rgba(231, 170, 105, 0.24) 0%,
+      rgba(231, 170, 105, 0.08) 34%,
+      rgba(0, 0, 0, 0.48) 100%
+    ),
+    url("/darkbronzo.png");
+  background-size: auto, auto, cover;
+  background-position: center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
   box-shadow:
-    0 18px 34px rgba(47, 24, 13, 0.14),
-    0 0 0 1px rgba(255, 240, 217, 0.18) inset;
-  opacity: 0.66;
+    0 0 0 1px rgba(101, 58, 31, 0.92),
+    0 0 0 1px rgba(240, 199, 142, 0.2) inset,
+    0 0 0 2px rgba(230, 186, 126, 0.22) inset,
+    0 16px 30px rgba(16, 7, 4, 0.24);
+  opacity: 0.88;
 }
 
 .inner::before {
@@ -475,7 +483,7 @@
   .inner::after {
     width: clamp(100px, 24vw, 138px);
     height: clamp(170px, 44vw, 250px);
-    opacity: 0.44;
+    opacity: 0.8;
     top: 58%;
   }
 

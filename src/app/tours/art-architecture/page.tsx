@@ -107,9 +107,9 @@ const artArchitectureTourData: TourPageData = {
         "Add a complementary church, museum, or viewpoint based on your chosen thematic arc.",
     },
     {
-      title: "Closing Recommendations (20 min)",
+      title: "And Much More...",
       description:
-        "Receive tailored museum, exhibition, and neighborhood suggestions for the rest of your stay.",
+        "Because this is a private custom tour, we can add extra galleries, neighborhoods, and recommendations based on what you love most.",
     },
   ],
   practicalInfo: {
