@@ -41,7 +41,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
     label: "Private Tours in Rome",
     href: "/tours",
     kicker: "Rome Signature Collection",
-    headline: "Private Tours in Rome, Curated Around Your Pace",
+    headline: "Private Tours in Rome, Built Around Your Pace",
     description:
       "Explore Rome with licensed private guides through routes designed for your interests, timing, and travel style.",
     ctaLabel: "View All Rome Private Tours",
@@ -57,17 +57,17 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours/vatican",
             label: "Private Vatican Tour",
-            description: "Vatican Museums, Sistine Chapel, and St. Peter's in elegant pacing.",
+            description: "Vatican Museums, Sistine Chapel, and St. Peter's in relaxed pace.",
           },
           {
             href: "/tours/christian-rome",
             label: "Christian Rome Tour",
-            description: "Basilicas and sacred landmarks through private licensed guidance.",
+            description: "Churches and sacred landmarks through private licensed guidance.",
           },
         ],
       },
       {
-        title: "Curated Styles",
+        title: "Tour Styles",
         links: [
           {
             href: "/tours/walking-tours",
@@ -77,7 +77,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours/family-friendly",
             label: "Family-Friendly Rome Tours",
-            description: "Private routes tailored to children, teens, and mixed-age groups.",
+            description: "Private routes built for children, teens, and mixed-age groups.",
           },
           {
             href: "/tours/art-architecture",
@@ -92,12 +92,12 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/who-we-are",
             label: "Meet Our Licensed Team",
-            description: "Family-run service with local knowledge and premium attention to detail.",
+            description: "Family-run service with local knowledge and genuine care and attention to detail.",
           },
           {
             href: "/#booking-calendar",
             label: "Plan Your Private Tour",
-            description: "Share dates and priorities for a tailor-made proposal.",
+            description: "Share dates and priorities for a custom proposal.",
           },
         ],
       },
@@ -119,7 +119,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours/day-trips-from-rome/tivoli",
             label: "Private Tivoli Day Trip from Rome",
-            description: "Hadrian's Villa and Villa d'Este with refined pacing.",
+            description: "Hadrian's Villa and Villa d'Este with relaxed pace.",
           },
           {
             href: "/tours/day-trips-from-rome/ostia-antica",
@@ -139,7 +139,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours/day-trips-from-rome/pompeii-amalfi-naples",
             label: "Pompeii, Amalfi & Naples Day Trip",
-            description: "A signature private route balancing archaeology and coastline.",
+            description: "A top private route balancing archaeology and coastline.",
           },
           {
             href: "/tours/day-trips-from-rome/orvieto-umbria",
@@ -154,11 +154,11 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
         ],
       },
       {
-        title: "Upgrade Your Route",
+        title: "Shape Your Route",
         links: [
           {
             href: "/#booking-calendar",
-            label: "Ask for Tailor-Made Day Trip Planning",
+            label: "Need Help Choosing Your Day Trip?",
             description: "We shape destination, timing, and comfort around your trip priorities.",
           },
         ],
@@ -170,9 +170,9 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
     label: "Tours in Italy",
     href: "/tours-in-italy",
     kicker: "Italy Collection",
-    headline: "Private Tours in Italy for Multi-City Luxury Itineraries",
+    headline: "Private Tours in Italy for Easy Multi-City Trips",
     description:
-      "Design private experiences across Italy with curated pacing, licensed expertise, and personalized service.",
+      "Design private experiences across Italy with smart pacing, licensed expertise, and personalized service.",
     ctaLabel: "View Private Tours in Italy",
     columns: [
       {
@@ -181,7 +181,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours-in-italy/private-venice-tour",
             label: "Private Venice Tour",
-            description: "Historic canals, hidden passages, and elegant private pacing.",
+            description: "Historic canals, hidden passages, and easy private pacing.",
           },
           {
             href: "/tours-in-italy/private-milan-tour",
@@ -191,7 +191,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours-in-italy/private-florence-tuscany-tour",
             label: "Private Florence & Tuscany Tour",
-            description: "Renaissance highlights and Tuscan atmosphere in one curated route.",
+            description: "Renaissance highlights and Tuscan atmosphere in one well-planned route.",
           },
         ],
       },
@@ -201,7 +201,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours-in-italy/private-naples-amalfi-coast-tour",
             label: "Private Naples & Amalfi Coast Tour",
-            description: "Southern heritage and coastlines with premium logistics.",
+            description: "Southern heritage and coastlines with smooth logistics.",
           },
           {
             href: "/tours-in-italy/private-sicily-tours",
@@ -211,17 +211,17 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours-in-italy/private-orvieto-umbria-tour",
             label: "Private Orvieto & Umbria Tour",
-            description: "Countryside elegance, hill towns, and curated cultural stops.",
+            description: "Countryside elegance, hill towns, and carefully chosen cultural stops.",
           },
         ],
       },
       {
-        title: "Concierge Support",
+        title: "Planning Support",
         links: [
           {
             href: "/#booking-calendar",
             label: "Plan a Multi-City Private Itinerary",
-            description: "Get a tailor-made Italy route built around your dates and priorities.",
+            description: "Get a custom Italy route built around your dates and priorities.",
           },
         ],
       },

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import TourTemplatePage from "@/components/tour-template/tour-template-page";
 import type { TourPageData } from "@/components/tour-template/types";
 
@@ -11,9 +11,9 @@ const privateSicilyToursData: TourPageData = {
   slug: "private-sicily-tours",
   path: "/tours-in-italy/private-sicily-tours",
   seoTitle:
-    "Private Sicily Tours | Luxury Tailor-Made Experiences in Sicily | Rome Guide Services",
+    "Private Sicily Tours | Private Custom Experiences in Sicily | Rome Guide Services",
   seoDescription:
-    "Discover Sicily through private tailor-made tours shaped around archaeology, baroque towns, coastal beauty, food, wine, and refined cultural pacing.",
+    "Discover Sicily through private custom tours shaped around archaeology, baroque towns, coastal beauty, food, wine, and comfortable cultural pacing.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -25,16 +25,16 @@ const privateSicilyToursData: TourPageData = {
     title: "Private Sicily Tours",
     landmarksLine: "ARCHAEOLOGY \u2022 BAROQUE TOWNS \u2022 COAST \u2022 FOOD \u2022 WINE",
     subtitle:
-      "Discover Sicily through private tailor-made experiences shaped around ancient sites, elegant towns, coastal beauty, food culture, and the layered identity that makes the island unlike anywhere else in Italy.",
+      "Discover Sicily through private custom experiences shaped around ancient sites, beautiful towns, coastal beauty, food culture, and the layered identity that makes the island unlike anywhere else in Italy.",
     intentLine:
-      "From Greek and Roman archaeology to baroque cities, volcanic landscapes, and refined coastal routes, Sicily can be explored privately and intelligently through journeys designed around your pace and priorities.",
+      "From Greek and Roman archaeology to baroque cities, volcanic landscapes, and comfortable coastal routes, Sicily can be explored privately and intelligently through journeys designed around your pace and priorities.",
     primaryCtaLabel: "Plan Your Sicily Tour",
-    secondaryCtaLabel: "Ask for a Tailor-Made Version",
+    secondaryCtaLabel: "Ask for a Custom Version",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
     imageSrc: "/images/tours-in-italy/sicily/hero-private-sicily-tours.jpg",
     imageAlt: "Mt Etna and Taormina in warm Sicilian evening light",
-    quickFacts: ["Private only", "Tailor-made", "Regional planning", "Cultural and scenic focus"],
+    quickFacts: ["Private only", "Custom", "Regional planning", "Cultural and scenic focus"],
     microTags: [
       "Returning Italy travelers",
       "Couples",
@@ -46,8 +46,8 @@ const privateSicilyToursData: TourPageData = {
     { label: "Format", value: "Private tours" },
     { label: "Region", value: "Sicily" },
     { label: "Focus", value: "Culture, landscapes, archaeology, food, wine" },
-    { label: "Style", value: "Tailor-made" },
-    { label: "Best For", value: "Multi-day and curated experiences" },
+    { label: "Style", value: "Custom" },
+    { label: "Best For", value: "Multi-day and well-planned experiences" },
     { label: "Planning", value: "Personalized route design" },
   ],
   overview: {
@@ -56,7 +56,7 @@ const privateSicilyToursData: TourPageData = {
     intro:
       "Sicily is not one single experience but a region of powerful contrasts: archaeology and baroque architecture, coastal atmosphere and volcanic energy, urban layers and slower cultural rhythm.",
     body:
-      "A private format transforms this complexity into elegance. Rather than rushing through disconnected highlights, you can shape Sicily through meaningful priorities: Greek and Roman heritage, baroque eastern towns, Palermo's Arab-Norman character, scenic coasts, Etna landscapes, and food-and-wine identity. This page is designed as a premium gateway to Sicily planning, not a one-size-fits-all route.",
+      "A private format transforms this complexity into elegance. Rather than rushing through disconnected highlights, you can shape Sicily through meaningful priorities: Greek and Roman heritage, baroque eastern towns, Palermo's Arab-Norman character, scenic coasts, Etna landscapes, and food-and-wine identity. This page is designed as a high-quality gateway to Sicily planning, not a one-size-fits-all route.",
     imageSrc: "/images/tours-in-italy/sicily/overview-sicily-coastal-atmosphere.jpg",
     imageAlt: "Sunset atmosphere over Ortigia coastline in Sicily",
   },
@@ -69,21 +69,21 @@ const privateSicilyToursData: TourPageData = {
       imageAlt: "Valley of the Temples in Agrigento, Sicily",
     },
     {
-      title: "Baroque and Historic Towns: Elegant Urban Beauty Across the Island",
+      title: "Baroque and Historic Towns: Beautiful Urban Beauty Across the Island",
       description:
-        "Discover refined townscapes, piazzas, and architecture that express Sicily's post-seismic baroque and historic identity.",
+        "Discover comfortable townscapes, squares, and architecture that express Sicily's post-seismic baroque and historic identity.",
       imageSrc: "/images/tours-in-italy/sicily/highlight-sicily-baroque-towns.jpg",
       imageAlt: "Baroque architecture in Noto, Sicily",
     },
     {
-      title: "Coastal Sicily: Sea, Light, and Refined Mediterranean Atmosphere",
+      title: "Coastal Sicily: Sea, Light, and Comfortable Mediterranean Atmosphere",
       description:
-        "Follow sea-facing routes and elegant coastal settings where light, stone, and water define Sicilian character.",
+        "Follow sea-facing routes and beautiful coastal settings where light, stone, and water define Sicilian character.",
       imageSrc: "/images/tours-in-italy/sicily/highlight-sicily-coastal-routes.jpg",
       imageAlt: "Ortigia coastline at sunset in Sicily",
     },
     {
-      title: "Food, Wine, and Tailor-Made Regional Rhythm",
+      title: "Food, Wine, and Custom Regional Rhythm",
       description:
         "Shape the island through culinary culture, local wines, and pacing that leaves room for depth rather than checklist speed.",
       imageSrc: "/images/tours-in-italy/sicily/highlight-sicily-food-wine-rhythm.jpg",
@@ -99,12 +99,12 @@ const privateSicilyToursData: TourPageData = {
     {
       title: "Baroque Cities and Historic Elegance",
       description:
-        "Shape your journey around architecture, piazzas, and historic townscapes where Sicily's urban beauty is most expressive.",
+        "Shape your journey around architecture, squares, and historic townscapes where Sicily's urban beauty is most expressive.",
     },
     {
       title: "Coastal and Scenic Sicily",
       description:
-        "Prioritize sea-facing towns, dramatic viewpoints, and Mediterranean atmosphere with refined route pacing.",
+        "Prioritize sea-facing towns, dramatic viewpoints, and Mediterranean atmosphere with comfortable route pacing.",
     },
     {
       title: "Sicily Through Food, Wine, and Slow Cultural Discovery",
@@ -112,9 +112,14 @@ const privateSicilyToursData: TourPageData = {
         "Design an experience built around culinary identity, local producers, and a slower rhythm of cultural immersion.",
     },
     {
-      title: "A Tailor-Made Private Route Built Around Your Priorities",
+      title: "A Custom Private Route Built Around Your Priorities",
       description:
-        "Combine themes into one coherent private journey shaped to your interests, travel style, and desired pace.",
+        "Combine themes into one clear private journey shaped to your interests, travel style, and desired pace.",
+    },
+    {
+      title: "And Much More...",
+      description:
+        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -150,7 +155,7 @@ const privateSicilyToursData: TourPageData = {
     {
       title: "Guests Planning a Private Multi-Day Journey",
       description:
-        "Designed for travelers who want Sicily planned as a coherent region, not a fragmented checklist.",
+        "Designed for travelers who want Sicily planned as a clear region, not a fragmented checklist.",
     },
   ],
   upgrades: [
@@ -167,7 +172,7 @@ const privateSicilyToursData: TourPageData = {
     {
       title: "Food and Wine Emphasis",
       description:
-        "Build in curated culinary and wine moments that align with your route rhythm.",
+        "Build in well-planned culinary and wine moments that align with your route rhythm.",
     },
     {
       title: "Coastal and Scenic Focus",
@@ -175,32 +180,32 @@ const privateSicilyToursData: TourPageData = {
         "Shift the journey toward sea-facing landscapes and atmospheric Mediterranean pacing.",
     },
     {
-      title: "Luxury Vehicle and Transfer Planning",
+      title: "Private Vehicle and Transfer Planning",
       description:
-        "Elevate comfort and logistics for longer regional movements across the island.",
+        "Add extra comfort and clear planning for longer regional movements across the island.",
     },
     {
       title: "Multi-Day Itinerary Shaping",
       description:
-        "Structure a coherent private route across selected Sicily zones with intelligent sequencing.",
+        "Structure a clear private route across selected Sicily zones with intelligent sequencing.",
     },
   ],
   testimonial: {
     quote:
-      "Sicily felt vast and layered in the best possible way, and having it shaped privately made everything feel more coherent, elegant, and deeply memorable.",
+      "Sicily felt vast and layered in the best possible way, and having it shaped privately made everything feel more clear, beautiful, and deeply memorable.",
     name: "Amelia R",
     context: "Private Sicily tour guest",
   },
   faq: [
     {
-      question: "Are these private tours in Sicily tailor-made?",
+      question: "Are these private tours in Sicily custom?",
       answer:
         "Yes. Every Sicily plan is built privately around your interests, pace, and preferred route style.",
     },
     {
       question: "Is Sicily better explored as a multi-day journey?",
       answer:
-        "In most cases, yes. Sicily's range is best experienced through a curated multi-day structure.",
+        "In most cases, yes. Sicily's range is best experienced through a well-planned multi-day structure.",
     },
     {
       question: "Can the route focus on archaeology, food, or coastal towns?",
@@ -220,12 +225,12 @@ const privateSicilyToursData: TourPageData = {
     {
       question: "Is this suitable for first-time visitors to Sicily?",
       answer:
-        "Yes. First-time travelers benefit from structured private planning and coherent route design.",
+        "Yes. First-time travelers benefit from structured private planning and clear route design.",
     },
     {
       question: "Can the experience be adapted for couples, families, or slower-paced travel?",
       answer:
-        "Yes. Pacing, logistics, and thematic focus are tailored to your travel style and group profile.",
+        "Yes. Pacing, planning, and thematic focus are adapted to your travel style and group profile.",
     },
   ],
   relatedTours: [
@@ -257,7 +262,7 @@ const privateSicilyToursData: TourPageData = {
     trustItems: [
       "Personalized reply within 24 hours",
       "Private planning",
-      "Tailor-made routes",
+      "Custom routes",
     ],
   },
 };

@@ -12,9 +12,9 @@ import type { TourPageData } from "@/components/tour-template/types";
 const christianRomeTourData: TourPageData = {
   slug: "christian-rome-tour",
   path: "/tours/christian-rome",
-  seoTitle: "Christian Rome Private Tour | Catacombs & Major Basilicas | Rome Guide Services",
+  seoTitle: "Christian Rome Private Tour | Catacombs & Major Churches | Rome Guide Services",
   seoDescription:
-    "Discover catacombs, the Major Basilicas, and sacred landmarks with a licensed private guide. A Christian Rome tour tailored to your pace and interests.",
+    "Discover catacombs, the Major Churches, and sacred landmarks with a licensed private guide. A Christian Rome tour adapted to your pace and interests.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -24,7 +24,7 @@ const christianRomeTourData: TourPageData = {
   hero: {
     eyebrow: "PRIVATE GUIDED TOUR",
     title: "Christian Rome Private Tour",
-    landmarksLine: "Catacombs | The Major Basilicas",
+    landmarksLine: "Catacombs | The Major Churches",
     subtitle:
       "Discover Rome's Christian heritage through a private journey that connects early faith communities, papal history, and sacred architecture.",
     intentLine: "Private, faith-aware storytelling across Rome's major Christian landmarks.",
@@ -35,7 +35,7 @@ const christianRomeTourData: TourPageData = {
     imageSrc: "/images/tours/christian-rome/hero-christian-rome-tour-basilica-facade.webp",
     imageAlt: "Candlelit catacomb chamber with early Christian iconography in Rome",
     quickFacts: ["3 to 4 hours", "Private only", "Licensed guide", "Driver on request"],
-    microTags: ["Faith and history buffs", "Pilgrims", "Cultural travelers"],
+    microTags: ["Faith and history", "Pilgrims", "Cultural travelers"],
   },
   facts: [
     { label: "Duration", value: "3 to 4 hours" },
@@ -50,7 +50,7 @@ const christianRomeTourData: TourPageData = {
     intro:
       "This tour moves beyond isolated church visits. Your guide links early Christian communities, papal authority, and the evolution of sacred spaces across centuries.",
     body:
-      "From catacomb memory to the ceremonial scale of Rome's great basilicas, each stop is paced to your interests and devotional priorities. The result is a coherent spiritual and historical journey, not a checklist.",
+      "From catacomb memory to the ceremonial scale of Rome's great churches, each stop is paced to your interests and devotional priorities. The result is a clear spiritual and historical journey, not a checklist.",
     imageSrc: "/images/tours/christian-rome/overview-christian-rome-tour-papal-churches.webp",
     imageAlt: "Twin church facades at Piazza del Popolo in Rome",
   },
@@ -63,9 +63,9 @@ const christianRomeTourData: TourPageData = {
       imageAlt: "Stone vaulted passage evoking early Christian catacomb routes",
     },
     {
-      title: "Major Basilicas in Historical Context",
+      title: "Major Churches in Historical Context",
       description:
-        "Read each basilica through liturgy, architecture, and patronage, with clear links to Rome's wider ecclesiastical history.",
+        "Read each church through liturgy, architecture, and patronage, with clear links to Rome's wider ecclesiastical history.",
       imageSrc: "/images/tours/christian-rome/highlight-christian-rome-catacomb-relief.webp",
       imageAlt: "Stone Christian bas-relief carved on a historic tomb slab",
     },
@@ -74,14 +74,14 @@ const christianRomeTourData: TourPageData = {
       description:
         "Follow a narrative route that explains saints, relic traditions, and key turning points of Christian Rome.",
       imageSrc: "/images/tours/christian-rome/highlight-christian-rome-basilica-dome.webp",
-      imageAlt: "Ornate basilica dome and liturgical architecture in Rome",
+      imageAlt: "Ornate church dome and liturgical architecture in Rome",
     },
     {
       title: "Private Pace for Reflection and Depth",
       description:
         "Balance historical context with quieter moments, adapting rhythm for prayer, study, or photography.",
       imageSrc: "/images/tours/christian-rome/highlight-christian-rome-basilica-interior.webp",
-      imageAlt: "Grand basilica interior with gilded details in Rome",
+      imageAlt: "Grand church interior with gilded details in Rome",
     },
   ],
   itinerary: [
@@ -96,19 +96,19 @@ const christianRomeTourData: TourPageData = {
         "Explore selected catacomb contexts with commentary on early Christian life, burial practice, and symbolism.",
     },
     {
-      title: "Major Basilica Stop",
+      title: "Major Church Stop",
       description:
-        "Continue to a major basilica and decode architecture, liturgical significance, and key artistic elements.",
+        "Continue to a major church and decode architecture, liturgical significance, and key artistic elements.",
     },
     {
-      title: "Second Sacred Landmark",
+      title: "Another Sacred Landmark to Choose",
       description:
-        "Add a complementary church or basilica to complete the historical arc and devotional perspective.",
+        "Choose another church or sacred landmark, and we can include more places to visit along the way based on your interests and timing.",
     },
     {
       title: "And Much More...",
       description:
-        "This is a private custom tour, so there is always much more to see and we can add extra stops based on your interests.",
+        "This is a private custom tour, so we can add extra stops, hidden corners, and local suggestions based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -123,7 +123,7 @@ const christianRomeTourData: TourPageData = {
     whatToBringText:
       "Bring valid ID, comfortable footwear, and attire suitable for church entry.",
     securityChecksText:
-      "Security and entry controls may apply at major basilicas and selected sacred sites.",
+      "Security and entry controls may apply at major churches and selected sacred sites.",
   },
   audience: [
     {
@@ -136,7 +136,7 @@ const christianRomeTourData: TourPageData = {
     },
     {
       title: "Couples and Solo Explorers",
-      description: "A calm and personal route with adaptable rhythm and tailored storytelling depth.",
+      description: "A calm and personal route with adaptable rhythm and flexible storytelling depth.",
     },
     {
       title: "Cruise and Short-Stay Guests",
@@ -153,8 +153,8 @@ const christianRomeTourData: TourPageData = {
       description: "Simplify movement between dispersed sacred sites with private transfer support.",
     },
     {
-      title: "Basilica Focus Extension",
-      description: "Add an additional major basilica to broaden theological and architectural context.",
+      title: "Church Focus Extension",
+      description: "Add an additional major church to broaden theological and architectural context.",
     },
     {
       title: "Faith-Focused Narrative Option",
@@ -163,7 +163,7 @@ const christianRomeTourData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "From the catacombs to the basilicas, the route felt deeply meaningful and very clear. Our guide balanced history and spirituality beautifully.",
+      "From the catacombs to the churches, the route felt deeply meaningful and very clear. Our guide balanced history and spirituality beautifully.",
     name: "Thomas P",
     context: "Christian Rome private tour guest",
   },
@@ -179,14 +179,14 @@ const christianRomeTourData: TourPageData = {
         "Transport can be arranged on request. Some routes are partly walkable, while others are more comfortable with a driver.",
     },
     {
-      question: "Is there a dress code for basilicas on this tour?",
+      question: "Is there a dress code for churches on this tour?",
       answer:
         "Yes. Church entry generally requires modest attire. We share practical guidance during confirmation.",
     },
     {
       question: "Can we customize the Christian Rome itinerary for specific churches?",
       answer:
-        "Yes. The tour is private and can prioritize your preferred basilicas, devotional themes, or historical periods.",
+        "Yes. The tour is private and can prioritize your preferred churches, devotional themes, or historical periods.",
     },
     {
       question: "How much walking is involved on the Christian Rome route?",
@@ -207,7 +207,7 @@ const christianRomeTourData: TourPageData = {
     },
     {
       title: "Day Trips from Rome",
-      description: "Curated full-day escapes from Rome with private transport and tailored pacing.",
+      description: "Well-planned full-day escapes from Rome with private transport and flexible pacing.",
       href: "/tours/day-trips-from-rome",
     },
     {
@@ -225,7 +225,7 @@ const christianRomeTourData: TourPageData = {
     trustItems: [
       "Personalized reply within 24 hours",
       "Private, licensed guides",
-      "Tailor-made planning",
+      "Custom planning",
     ],
   },
 };

@@ -62,7 +62,7 @@ export default function TailorMadeExperiencesSection() {
               experience around your interests, your pace, and who is traveling with you.
             </p>
 
-            <ul className={styles.featureGrid} aria-label="Tailor-made services">
+            <ul className={styles.featureGrid} aria-label="Custom services">
               {features.map((feature) => (
                 <li key={feature} className={styles.featureItem}>
                   <span className={styles.featureIcon}>

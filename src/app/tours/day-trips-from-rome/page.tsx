@@ -18,7 +18,7 @@ const dayTrips = [
   {
     href: "/tours/day-trips-from-rome/pompeii-amalfi-naples",
     title: "Pompeii, Amalfi & Naples Day Trip",
-    description: "A signature south-Italy route balancing archaeology, coastlines, and timing.",
+    description: "A top south-Italy route balancing archaeology, coastlines, and timing.",
   },
   {
     href: "/tours/day-trips-from-rome/ostia-antica",
@@ -51,19 +51,19 @@ const romeAddOns = [
   {
     href: "/tours/vatican",
     title: "Private Vatican Tour",
-    description: "Combine your out-of-city day with a curated Vatican private experience.",
+    description: "Combine your out-of-city day with a well-planned Vatican private experience.",
   },
   {
     href: "/#booking-calendar",
-    title: "Plan a Tailor-Made Multi-Day Route",
-    description: "Share your dates and we design Rome + day trips in one coherent itinerary.",
+    title: "Plan a Custom Multi-Day Route",
+    description: "Share your dates and we design Rome + day trips in one clear itinerary.",
   },
 ] as const;
 
 export const metadata: Metadata = {
   title: "Day Trips from Rome | Private Tivoli, Pompeii, Amalfi, Ostia & Umbria",
   description:
-    "Explore private day trips from Rome with chauffeured transport and tailor-made pacing. Compare Tivoli, Pompeii, Amalfi Coast, Ostia Antica, Orvieto, Umbria, and more.",
+    "Explore private day trips from Rome with chauffeured transport and custom pacing. Compare Tivoli, Pompeii, Amalfi Coast, Ostia Antica, Orvieto, Umbria, and more.",
   keywords: [
     "day trips from Rome",
     "private day trips from Rome",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Day Trips from Rome | Rome Guide Services",
     description:
-      "Private full-day escapes from Rome with chauffeur-led comfort and curated pacing.",
+      "Private full-day escapes from Rome with chauffeur-led comfort and well-planned pacing.",
     url: PAGE_PATH,
     siteName: "Rome Guide Services",
     type: "website",
@@ -143,10 +143,10 @@ export default function DayTripsFromRomeHubPage() {
               Day Trips from Rome
             </p>
             <h1 className="mt-3 max-w-[20ch] font-serif text-[clamp(2.1rem,4.3vw,4rem)] leading-[0.95] text-[#f8ead8]">
-              Private Day Trips from Rome, Curated Beyond the City
+              Private Day Trips from Rome, Well-planned Beyond the City
             </h1>
             <p className="mt-4 max-w-[70ch] font-sans text-[1rem] leading-[1.75] text-[#e8d0b2]">
-              Discover full-day private escapes with hotel pickup in Rome, elegant pacing, and
+              Discover full-day private escapes with hotel pickup in Rome, relaxed pace, and
               destination-first planning. From Tivoli and Ostia Antica to Pompeii, Amalfi, and
               Umbria, each route is designed around your style and comfort.
             </p>
@@ -174,7 +174,7 @@ export default function DayTripsFromRomeHubPage() {
           />
           <div className="relative z-[1]">
             <h2 className="font-serif text-[clamp(1.8rem,2.8vw,2.8rem)] leading-[0.98] text-[#3d2b22]">
-              Signature Day Trip Collections
+              Top Day Trip Collections
             </h2>
             <div className="mt-5 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
               {dayTrips.map((trip) => (

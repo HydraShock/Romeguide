@@ -28,11 +28,15 @@ export default function TourTimeline({ stops, theme = "default" }: TourTimelineP
       {!useSfondosez ? <LightCreamLinework /> : null}
       <div className="relative z-[1] mx-auto w-[min(100%,1000px)] px-4 md:px-6">
         <p className="font-sans text-[0.67rem] font-semibold uppercase tracking-[0.17em] text-[#83654B]">
-          Itinerary
+          Custom Route Flow
         </p>
         <h2 className="mt-3 max-w-[14ch] font-serif text-[2.42rem] font-semibold leading-[0.95] tracking-[-0.015em] text-[#352821] md:text-[3.1rem]">
-          What You&apos;ll Experience
+          How Your Private Experience Can Unfold
         </h2>
+        <p className="mt-3 max-w-[64ch] font-sans text-[0.96rem] leading-[1.7] text-[#5b4638] md:text-[1rem]">
+          These are the core moments. Since every tour is private, we can adjust timing, focus, and
+          extra stops around your interests.
+        </p>
 
         <ol className="relative mt-8 space-y-7 before:absolute before:bottom-0 before:left-[1.05rem] before:top-1 before:w-px before:bg-[#B6925E]/38 md:before:left-[1.25rem]">
           {stops.map((stop, index) => (

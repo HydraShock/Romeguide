@@ -4,18 +4,18 @@ import type { TourPageData } from "@/components/tour-template/types";
 
 // Stock image sources:
 // hero: https://www.pexels.com/photo/beautiful-fountains-at-villa-d-este-tivoli-34017020/
-// overview: https://www.pexels.com/photo/elegant-gardens-at-villa-d-este-31563576/
+// overview: https://www.pexels.com/photo/beautiful-gardens-at-villa-d-este-31563576/
 // highlight-1: https://pixabay.com/photos/villa-adriana-hadrians-villa-tivoli-4691262/
 // highlight-2: https://www.pexels.com/photo/water-fountain-at-villa-d-este-13816328/
 // highlight-3: https://www.pexels.com/photo/beautiful-fountains-at-villa-d-este-tivoli-34017020/
-// highlight-4: https://www.pexels.com/photo/elegant-gardens-at-villa-d-este-31563576/
+// highlight-4: https://www.pexels.com/photo/beautiful-gardens-at-villa-d-este-31563576/
 const tivoliDayTripData: TourPageData = {
   slug: "tivoli-villas-day-trip-from-rome",
   path: "/tours/day-trips-from-rome/tivoli",
   seoTitle:
     "Private Tivoli Day Trip from Rome | Hadrian\u2019s Villa & Villa d\u2019Este | Rome Guide Services",
   seoDescription:
-    "Discover Hadrian\u2019s Villa and Villa d\u2019Este on a private day trip from Rome with curated pacing, private transport, and a refined itinerary through Tivoli\u2019s most iconic villas and gardens.",
+    "Discover Hadrian\u2019s Villa and Villa d\u2019Este on a private day trip from Rome with well-planned pacing, private transport, and a comfortable itinerary through Tivoli\u2019s most iconic villas and gardens.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -27,15 +27,15 @@ const tivoliDayTripData: TourPageData = {
     title: "Private Tivoli Day Trip from Rome",
     landmarksLine: "HADRIAN\u2019S VILLA \u2022 VILLA D\u2019ESTE \u2022 TIVOLI",
     subtitle:
-      "Escape Rome for a beautifully curated private day in Tivoli, where imperial ruins, Renaissance villas, and extraordinary gardens create one of Italy\u2019s most elegant cultural journeys.",
+      "Escape Rome for a beautifully well-planned private day in Tivoli, where imperial ruins, Renaissance villas, and extraordinary gardens create one of Italy\u2019s most beautiful cultural journeys.",
     intentLine:
-      "A full-day private experience designed around comfort, pacing, and a refined balance of archaeology, architecture, and landscape.",
+      "A full-day private experience designed around comfort, pacing, and a comfortable balance of archaeology, architecture, and landscape.",
     primaryCtaLabel: "Plan This Day Trip",
-    secondaryCtaLabel: "Ask for a Tailor-Made Version",
+    secondaryCtaLabel: "Ask for a Custom Version",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
     imageSrc: "/images/tours/day-trips/tivoli/hero-tivoli-villas-day-trip-from-rome.jpg",
-    imageAlt: "Tivoli villa gardens and terraces in refined warm light",
+    imageAlt: "Tivoli villa gardens and terraces in comfortable warm light",
     quickFacts: ["Full day", "Private only", "Driver included", "Guide on request"],
     microTags: ["Garden lovers", "Art and history travelers", "Couples", "Visitors extending a Rome stay"],
   },
@@ -53,7 +53,7 @@ const tivoliDayTripData: TourPageData = {
     intro:
       "This is not a rushed excursion. It is a private Tivoli day trip from Rome designed as a cultural retreat, ideal for guests who want beauty and depth without urban intensity.",
     body:
-      "Hadrian\u2019s Villa opens a vast imperial archaeological world, while Villa d\u2019Este offers one of Italy\u2019s most celebrated compositions of fountains, terraces, and Renaissance design. With private transportation and curated pacing, this Tivoli villas day trip from Rome leaves room for walking, photography, and quiet appreciation.",
+      "Hadrian\u2019s Villa opens a vast imperial archaeological world, while Villa d\u2019Este offers one of Italy\u2019s most celebrated compositions of fountains, terraces, and Renaissance design. With private transportation and well-planned pacing, this Tivoli villas day trip from Rome leaves room for walking, photography, and quiet appreciation.",
     imageSrc: "/images/tours/day-trips/tivoli/overview-villa-deste-gardens-tivoli.jpg",
     imageAlt: "Villa d'Este terraces and fountains in Tivoli",
   },
@@ -61,23 +61,23 @@ const tivoliDayTripData: TourPageData = {
     {
       title: "Hadrian\u2019s Villa: Imperial Space on a Monumental Scale",
       description:
-        "Explore the immense archaeological landscape of Villa Adriana through a route tailored to your interests in imperial architecture and Roman history.",
+        "Explore the immense archaeological landscape of Villa Adriana through a route adapted to your interests in imperial architecture and Roman history.",
       imageSrc: "/images/tours/day-trips/tivoli/highlight-hadrians-villa-monumental-ruins.jpg",
       imageAlt: "Hadrian's Villa ruins and reflective pools in Tivoli",
     },
     {
       title: "Villa d\u2019Este: Fountains, Terraces, and Renaissance Spectacle",
       description:
-        "Experience theatrical water features, layered terraces, and refined villa design in one of Italy's most iconic garden ensembles.",
+        "Experience theatrical water features, layered terraces, and comfortable villa design in one of Italy's most iconic garden ensembles.",
       imageSrc: "/images/tours/day-trips/tivoli/highlight-villa-deste-fountain-axis.jpg",
       imageAlt: "Villa d'Este fountain axis and terrace composition",
     },
     {
-      title: "Tivoli: A Refined Escape Beyond the City",
+      title: "Tivoli: A Comfortable Escape Beyond the City",
       description:
         "Enjoy a quieter destination atmosphere beyond Rome, where greenery, stone, and water define a slower cultural rhythm.",
       imageSrc: "/images/tours/day-trips/tivoli/hero-tivoli-villas-day-trip-from-rome.jpg",
-      imageAlt: "Elegant Tivoli garden geometry and cypress-lined terraces",
+      imageAlt: "Beautiful Tivoli garden geometry and cypress-lined terraces",
     },
     {
       title: "One Private Day, Balanced Around Beauty and Pace",
@@ -106,12 +106,17 @@ const tivoliDayTripData: TourPageData = {
     {
       title: "Villa d\u2019Este Gardens and Fountains",
       description:
-        "Experience the terraces, water features, and refined design language of one of Italy's most celebrated villas.",
+        "Experience the terraces, water features, and comfortable design language of one of Italy's most celebrated villas.",
     },
     {
-      title: "Return to Rome",
+      title: "Flexible Return to Rome",
       description:
-        "Return privately to Rome after a full day shaped around beauty, comfort, and cultural depth.",
+        "Return to Rome in comfort after a custom-paced day, with optional final stops if you prefer.",
+    },
+    {
+      title: "And Much More...",
+      description:
+        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -130,7 +135,7 @@ const tivoliDayTripData: TourPageData = {
   },
   audience: [
     {
-      title: "Travelers Seeking a Refined Day Beyond Rome",
+      title: "Travelers Seeking a Comfortable Day Beyond Rome",
       description:
         "Ideal for guests who want a graceful private cultural escape instead of another monument-heavy city day.",
     },
@@ -147,7 +152,7 @@ const tivoliDayTripData: TourPageData = {
     {
       title: "Couples and Private Travelers Wanting a Slower Cultural Pace",
       description:
-        "Designed for elegant pacing, atmospheric stops, and a relaxed rhythm from Rome to Tivoli and back.",
+        "Designed for relaxed pace, atmospheric stops, and a relaxed rhythm from Rome to Tivoli and back.",
     },
   ],
   upgrades: [
@@ -162,11 +167,11 @@ const tivoliDayTripData: TourPageData = {
     },
     {
       title: "Gourmet Lunch Reservation Support",
-      description: "Receive concierge support for a well-timed lunch stop between villa visits.",
+      description: "Receive planning support for a well-timed lunch stop between villa visits.",
     },
     {
-      title: "Premium Vehicle Upgrade",
-      description: "Elevate comfort for your full-day route with a higher private vehicle category.",
+      title: "More Comfortable Vehicle",
+      description: "Add extra comfort for your full-day route with a higher private vehicle category.",
     },
   ],
   testimonial: {
@@ -184,7 +189,7 @@ const tivoliDayTripData: TourPageData = {
     {
       question: "Are both Hadrian\u2019s Villa and Villa d\u2019Este included?",
       answer:
-        "Yes, both villas are included in the core route, with pacing tailored to your interests.",
+        "Yes, both villas are included in the core route, with pacing adapted to your interests.",
     },
     {
       question: "Is a guide included or optional?",
@@ -215,17 +220,17 @@ const tivoliDayTripData: TourPageData = {
   relatedTours: [
     {
       title: "Private Day Trips from Rome",
-      description: "Compare curated destination-led private escapes departing from Rome.",
+      description: "Compare well-planned destination-led private escapes departing from Rome.",
       href: "/tours/day-trips-from-rome",
     },
     {
       title: "Private Orvieto Day Trip from Rome",
-      description: "A refined hill-town and cathedral route with elegant countryside pacing.",
+      description: "A comfortable hill-town and cathedral route with beautiful countryside pacing.",
       href: "/tours/day-trips-from-rome/orvieto-umbria",
     },
     {
       title: "Private Pompeii, Amalfi & Naples Day Trip from Rome",
-      description: "A signature southern Italy route combining archaeology, coast, and private comfort.",
+      description: "A top southern Italy route combining archaeology, coast, and private comfort.",
       href: "/tours/day-trips-from-rome/pompeii-amalfi-naples",
     },
     {
@@ -248,7 +253,7 @@ const tivoliDayTripData: TourPageData = {
     trustItems: [
       "Personalized reply within 24 hours",
       "Private transport",
-      "Tailor-made pacing",
+      "Custom pacing",
     ],
   },
 };
@@ -272,7 +277,7 @@ export function generateMetadata(): Metadata {
       images: [
         {
           url: "/images/tours/day-trips/tivoli/hero-tivoli-villas-day-trip-from-rome.jpg",
-          alt: "Tivoli villa gardens and terraces in refined warm light",
+          alt: "Tivoli villa gardens and terraces in comfortable warm light",
         },
       ],
       locale: "en_US",

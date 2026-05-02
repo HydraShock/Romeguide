@@ -18,12 +18,12 @@ const romeTours = [
   {
     href: "/tours/vatican",
     title: "Private Vatican Tour",
-    description: "Vatican Museums, Sistine Chapel, and St. Peter's in refined private pacing.",
+    description: "Vatican Museums, Sistine Chapel, and St. Peter's in comfortable private pacing.",
   },
   {
     href: "/tours/christian-rome",
     title: "Christian Rome Tour",
-    description: "Basilicas, sacred landmarks, and early Christian heritage in private format.",
+    description: "Churches, sacred landmarks, and early Christian heritage in private format.",
   },
   {
     href: "/tours/walking-tours",
@@ -46,7 +46,7 @@ const dayTrips = [
   {
     href: "/tours/day-trips-from-rome",
     title: "Day Trips from Rome",
-    description: "Compare all private full-day escapes beyond Rome in one curated collection.",
+    description: "Compare all private full-day escapes beyond Rome in one well-planned collection.",
   },
   {
     href: "/tours/day-trips-from-rome/tivoli",
@@ -56,7 +56,7 @@ const dayTrips = [
   {
     href: "/tours/day-trips-from-rome/pompeii-amalfi-naples",
     title: "Pompeii, Amalfi & Naples Day Trip",
-    description: "A signature south-Italy private route balancing archaeology and coastline.",
+    description: "A top south-Italy private route balancing archaeology and coastline.",
   },
 ] as const;
 
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Private Tours in Rome | Rome Guide Services",
     description:
-      "Discover private Rome tours curated around your interests, pace, and travel style with licensed local guides.",
+      "Discover private Rome tours well-planned around your interests, pace, and travel style with licensed local guides.",
     url: PAGE_PATH,
     siteName: "Rome Guide Services",
     type: "website",
@@ -138,12 +138,12 @@ export default function ToursHubPage() {
               Private Tours in Rome
             </p>
             <h1 className="mt-3 max-w-[18ch] font-serif text-[clamp(2.15rem,4.4vw,4.2rem)] leading-[0.95] text-[#f8ead8]">
-              Curated Rome Private Tours, Designed Around You
+              Well-planned Rome Private Tours, Designed Around You
             </h1>
             <p className="mt-4 max-w-[68ch] font-sans text-[1rem] leading-[1.75] text-[#e8d0b2]">
               Choose from our most requested private tours in Rome, from Ancient Rome and the
               Vatican to walking routes, family-friendly itineraries, and art-focused experiences.
-              Every route is tailored to your pace, interests, and priorities.
+              Every route is adapted to your pace, interests, and priorities.
             </p>
           </div>
         </section>

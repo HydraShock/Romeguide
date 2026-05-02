@@ -9,7 +9,7 @@ const PAGE_PATH = "/booking-contact";
 const CONTACT_EMAIL = "romeguideservices@gmail.com";
 const CONTACT_HERO_IMAGE = "/image%20(21).png";
 
-const heroQuickFacts = ["Reply in 24h", "Private only", "Licensed guides", "Tailor-made plans"];
+const heroQuickFacts = ["Reply in 24h", "Private only", "Licensed guides", "Custom plans"];
 const heroQuickPills = ["Families", "Couples", "First-time Rome", "Custom itineraries"];
 
 const bookingSteps = [
@@ -26,12 +26,12 @@ const bookingSteps = [
   {
     title: "We Refine the Details with You",
     description:
-      "We adjust stops, sequencing, and practical notes so your plan feels coherent and realistic.",
+      "We adjust stops, sequencing, and practical notes so your plan feels clear and realistic.",
   },
   {
-    title: "You Receive a Tailored Private Experience",
+    title: "You Enjoy a Private Experience Built Around You",
     description:
-      "On the day, you enjoy a route designed around comfort, context, and elegant pacing.",
+      "On the day, you enjoy a route designed around comfort, context, and relaxed pace.",
   },
 ];
 
@@ -61,7 +61,7 @@ const categoryCards = [
   {
     title: "Day Trips from Rome",
     description:
-      "Plan private escapes beyond Rome with tailored pacing and destination-led route planning.",
+      "Plan private escapes beyond Rome with flexible pacing and destination-focused planning.",
     links: [
       { href: "/tours/day-trips-from-rome", label: "Private Day Trips from Rome" },
       { href: "/tours/day-trips-from-rome/tivoli", label: "Private Tivoli Day Trip" },
@@ -90,7 +90,7 @@ const faqItems = [
   {
     question: "Are your tours always private?",
     answer:
-      "Yes. Our experiences are private, so route pacing and depth can be tailored to your group.",
+      "Yes. Our experiences are private, so route pacing and depth can be adapted to your group.",
   },
   {
     question: "Can you tailor a tour around our interests?",
@@ -100,7 +100,7 @@ const faqItems = [
   {
     question: "Can we ask about more than one tour in the same inquiry?",
     answer:
-      "Yes. One request can include multiple priorities, and we will suggest the most coherent structure.",
+      "Yes. One request can include multiple priorities, and we will suggest the most clear structure.",
   },
   {
     question: "Do you offer tours in different languages?",
@@ -175,7 +175,7 @@ function buildContactPageSchema() {
     "@type": "ContactPage",
     name: "Booking & Contact | Rome Guide Services",
     description:
-      "Contact Rome Guide Services to plan private tours in Rome, day trips from Rome, and tailor-made Italy itineraries.",
+      "Contact Rome Guide Services to plan private tours in Rome, day trips from Rome, and custom Italy itineraries.",
     url: `${baseUrl}${PAGE_PATH}`,
     mainEntity: {
       "@type": "TravelAgency",
@@ -189,7 +189,7 @@ function buildContactPageSchema() {
 export function generateMetadata(): Metadata {
   const title = "Booking & Contact | Plan Your Private Rome Tour | Rome Guide Services";
   const description =
-    "Start planning your private Rome tour with our family-run team of licensed guides. Share your dates, interests, and travel style for a tailored response.";
+    "Start planning your private Rome tour with our family-run team of licensed guides. Share your dates, interests, and travel style for a personal reply.";
 
   return {
     title,
@@ -206,7 +206,7 @@ export function generateMetadata(): Metadata {
       "book private tours Rome",
       "private Rome tour inquiry",
       "Rome private guide contact",
-      "tailor-made Italy itinerary planning",
+      "custom Italy itinerary planning",
     ],
     openGraph: {
       title,
@@ -268,10 +268,10 @@ export default function BookingContactPage() {
               <h1 id="booking-contact-main-title" className={styles.contactHeroTitle}>
                 Plan Your Private Rome Tour
               </h1>
-              <p className={styles.contactHeroLandmarks}>Rome | Day Trips | Italy Tailor-Made</p>
+              <p className={styles.contactHeroLandmarks}>Rome | Day Trips | Italy Private Tours</p>
               <p className={styles.contactHeroLead}>
                 Tell us your dates, interests, and travel style. We shape a private route with
-                licensed guides and refined pacing.
+                licensed guides and relaxed pace.
               </p>
               <p className={styles.contactHeroSublead}>
                 Personalized planning for private tours in Rome, the Vatican, day trips, and

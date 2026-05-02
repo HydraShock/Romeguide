@@ -19,7 +19,7 @@ const heroTrustStrip = [
   },
   {
     title: "Private Only",
-    value: "Tailor-made pacing for every request",
+    value: "Custom pacing for every request",
   },
   {
     title: "Multilingual",
@@ -29,11 +29,11 @@ const heroTrustStrip = [
 
 const heroCompanionPoints = [
   "Rome-based family-run core team",
-  "Licensed guide depth with elegant pacing",
+  "Licensed guide depth with relaxed pace",
   "Direct support from inquiry to tour day",
 ];
 
-const heroPills = ["Licensed in Rome", "Private only", "Multilingual", "Tailor-made"];
+const heroPills = ["Licensed in Rome", "Private only", "Multilingual", "Custom"];
 
 const trustPillars = [
   {
@@ -42,7 +42,7 @@ const trustPillars = [
       "Our guides are officially licensed in Rome and combine formal qualifications with years of on-the-ground experience across the city's major and lesser-known sites.",
   },
   {
-    title: "Tailor-Made Private Tours",
+    title: "Custom Private Tours",
     description:
       "Every private route is shaped around your pace, interests, and travel priorities, from archaeological depth to family-friendly rhythm.",
   },
@@ -54,10 +54,10 @@ const trustPillars = [
   {
     title: "Multilingual Private Guides",
     description:
-      "We host travelers in multiple languages, helping international guests enjoy a seamless and culturally rich private experience in Rome.",
+      "We host travelers in multiple languages, helping international guests enjoy a smooth and culturally rich private experience in Rome.",
   },
   {
-    title: "Personalized Premium Service",
+    title: "Personal, Reliable Service",
     description:
       "From first inquiry to final drop-off, we focus on clarity, reliability, comfort, and a genuinely human way of traveling through the city.",
   },
@@ -79,12 +79,12 @@ const guideProfiles = [
     role: "Co-Founder & Client Experience Lead",
     license: "Licensed in Rome",
     languages: "Italian, English, Spanish",
-    specialties: "Tailor-made itineraries, family pacing, private guest coordination",
-    note: "Ensures each itinerary feels coherent, elegant, and adapted to who is traveling.",
+    specialties: "Custom itineraries, family pacing, private guest coordination",
+    note: "Ensures each itinerary feels clear, warm, and built around who is traveling.",
   },
 ];
 
-const flexibilityConceptPills = ["Multilingual", "Private only", "Flexible pacing", "Tailor-made"];
+const flexibilityConceptPills = ["Multilingual", "Private only", "Flexible pacing", "Custom"];
 
 const flexibilityLanguageRows = [
   "Guide and guest language matching from first contact",
@@ -121,9 +121,9 @@ const processSteps = [
       "You receive straightforward planning support, practical notes, and reliable communication before the tour date.",
   },
   {
-    title: "We Deliver a Seamless Experience",
+    title: "We Make the Day Feel Easy",
     description:
-      "On the day, we focus on flow, comfort, and meaningful context so Rome feels coherent rather than overwhelming.",
+      "On the day, we focus on flow, comfort, and meaningful context so Rome feels clear rather than overwhelming.",
   },
 ];
 
@@ -136,7 +136,7 @@ const faqItems = [
   {
     question: "Are your tours always private?",
     answer:
-      "Yes. Our tours are private by design, so pacing, route focus, and storytelling can be tailored to your group.",
+      "Yes. Our tours are private by design, so pacing, route focus, and storytelling can be adapted to your group.",
   },
   {
     question: "Can you tailor tours around specific interests?",
@@ -161,7 +161,7 @@ const faqItems = [
   {
     question: "How do we start planning our private tour?",
     answer:
-      "Share your dates, interests, and preferred pace through our booking and contact path, and we will propose a tailored private plan.",
+      "Share your dates, interests, and preferred pace through our booking and contact path, and we will propose a private plan built around you.",
   },
 ];
 
@@ -194,7 +194,7 @@ function buildOrganizationSchema() {
     url: `${baseUrl}/`,
     email: "romeguideservices@gmail.com",
     description:
-      "Family-run Rome guide service offering tailor-made private tours with licensed guides, multilingual support, and elegant pacing.",
+      "Family-run Rome guide service offering custom private tours with licensed guides, multilingual support, and relaxed pace.",
     foundingLocation: {
       "@type": "Place",
       name: "Rome, Italy",
@@ -232,9 +232,9 @@ function buildBreadcrumbSchema() {
 
 export function generateMetadata(): Metadata {
   const title =
-    "Who We Are | Licensed Rome Tour Guides & Tailor-Made Private Tours | Rome Guide Services";
+    "Who We Are | Licensed Rome Tour Guides & Custom Private Tours | Rome Guide Services";
   const description =
-    "Meet our family-run team of licensed Rome tour guides creating tailor-made private tours with elegant pacing, deep local knowledge, and a refined client-focused approach.";
+    "Meet our family-run team of licensed Rome tour guides creating custom private tours with relaxed pace, deep local knowledge, and a human client-focused approach.";
 
   return {
     title,
@@ -312,7 +312,7 @@ export default function WhoWeArePage() {
               </h1>
               <p className={styles.heroLead}>
                 We are a family-run team of licensed guides based in Rome, creating private tours
-                that feel personal, elegant, deeply informed, and carefully shaped around each
+                that feel personal, warm, deeply informed, and carefully shaped around each
                 traveler&apos;s pace and interests.
               </p>
               <p className={styles.heroSublead}>
@@ -332,14 +332,14 @@ export default function WhoWeArePage() {
                   <li key={pill}>{pill}</li>
                 ))}
               </ul>
-              <p className={styles.microTrustLine}>Licensed guides | Tailor-made itineraries | Multilingual service</p>
+              <p className={styles.microTrustLine}>Licensed guides | Custom itineraries | Multilingual service</p>
             </article>
 
             <aside className={styles.heroCompanion} aria-label="Private guide service highlights">
               <p className={styles.heroCompanionEyebrow}>ROME GUIDE SERVICES</p>
               <h2 className={styles.heroCompanionTitle}>A More Personal Standard for Private Touring</h2>
               <p className={styles.heroCompanionLead}>
-                We are not a booking platform. We are a hands-on team building coherent private
+                We are not a booking platform. We are a hands-on team building clear private
                 experiences with care and route intelligence.
               </p>
               <ul>
@@ -417,14 +417,14 @@ export default function WhoWeArePage() {
                   WHY CHOOSE US
                 </p>
                 <h2 id="why-choose-us-title" className={styles.sectionTitleDark}>
-                  Licensed Expertise, Tailor-Made Planning, and a More Refined Way to See Rome
+                  Licensed Expertise, Custom Planning, and a Smarter Way to See Rome
                 </h2>
                 <p className={styles.darkSectionLead}>
-                  We combine licensed expertise, family-run care, and tailored private planning for
+                  We combine licensed expertise, family-run care, and private planning built around
                   travelers who want Rome done properly.
                 </p>
                 <p className={styles.darkSectionMeta}>
-                  LICENSED | FAMILY-RUN | TAILOR-MADE | MULTILINGUAL
+                  LICENSED | FAMILY-RUN | CUSTOM | MULTILINGUAL
                 </p>
               </article>
 
@@ -547,7 +547,7 @@ export default function WhoWeArePage() {
                   the ability to adapt the day to the traveler - not the other way around.
                 </p>
                 <p className={styles.approachTrustLine}>
-                  Licensed guides | Tailor-made routes | Private only | Clear planning
+                  Licensed guides | Custom routes | Private only | Clear planning
                 </p>
                 <Link href="/#requested-tours-heading" className={styles.approachEditorialLink}>
                   See how this philosophy shapes our tours <span aria-hidden="true">&rarr;</span>
@@ -566,7 +566,7 @@ export default function WhoWeArePage() {
 
                 <div className={styles.approachPrinciples}>
                   <article className={styles.approachPrinciple}>
-                    <h4>Tailor-made routing</h4>
+                    <h4>Custom routing</h4>
                     <p>Built around interests, pace, and the right sequence of places.</p>
                   </article>
                   <article className={styles.approachPrinciple}>
@@ -574,7 +574,7 @@ export default function WhoWeArePage() {
                     <p>Context-rich storytelling led by real professional guides.</p>
                   </article>
                   <article className={styles.approachPrinciple}>
-                    <h4>Refined planning support</h4>
+                    <h4>Clear planning support</h4>
                     <p>Clear guidance from first inquiry to tour day.</p>
                   </article>
                 </div>
@@ -586,7 +586,7 @@ export default function WhoWeArePage() {
             <ul className={styles.approachProofStrip} aria-label="Private tour proof points">
               <li>Licensed in Rome</li>
               <li>Multilingual private guiding</li>
-              <li>Tailor-made itineraries</li>
+              <li>Custom itineraries</li>
               <li>Family-run planning</li>
             </ul>
           </div>
@@ -645,7 +645,7 @@ export default function WhoWeArePage() {
                 <h3>Route Intelligence Notes</h3>
                 <p>
                   We adapt walk length, stop order, and transport support so the day stays smooth,
-                  elegant, and realistic for your group.
+                  comfortable, and realistic for your group.
                 </p>
                 <ul>
                   {flexibilityComfortRows.map((row) => (
@@ -817,7 +817,7 @@ export default function WhoWeArePage() {
                 Start Planning Your Tour
               </Link>
               <p className={styles.finalTrustLine}>
-                Personalized reply within 24 hours | Licensed guides | Tailor-made service
+                Personalized reply within 24 hours | Licensed guides | Custom service
               </p>
             </article>
           </div>

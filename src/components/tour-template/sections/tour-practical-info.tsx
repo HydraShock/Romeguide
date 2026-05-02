@@ -23,7 +23,7 @@ export default function TourPracticalInfo({ practicalInfo }: TourPracticalInfoPr
 
       <div className="relative mx-auto w-[min(100%,1000px)] px-4 md:px-6">
         <p className="font-sans text-[0.67rem] font-semibold uppercase tracking-[0.17em] text-[#83654B]">
-          Concierge Notes
+          Good to Know
         </p>
         <h2
           id="practical-info-heading"

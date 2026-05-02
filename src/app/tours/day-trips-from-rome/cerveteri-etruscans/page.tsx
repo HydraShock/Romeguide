@@ -14,7 +14,7 @@ const cerveteriEtruscansDayTripData: TourPageData = {
   seoTitle:
     "Cerveteri & Etruscan Heritage Private Day Trip from Rome | Necropolis and Ancient Lazio",
   seoDescription:
-    "Private day trip from Rome to Cerveteri's Etruscan heritage zone with private transport, curated archaeological pacing, and optional expert guidance.",
+    "Private day trip from Rome to Cerveteri's Etruscan heritage zone with private transport, well-planned archaeological pacing, and optional expert guidance.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -28,7 +28,7 @@ const cerveteriEtruscansDayTripData: TourPageData = {
     subtitle:
       "Go beyond Roman history into the Etruscan world with a private day trip from Rome designed around archaeology, context, and route comfort.",
     intentLine:
-      "A curated private archaeology route from Rome focused on pre-Roman civilization, funerary landscapes, and cultural continuity.",
+      "A well-planned private archaeology route from Rome focused on pre-Roman civilization, funerary landscapes, and cultural continuity.",
     primaryCtaLabel: "Plan This Day Trip",
     secondaryCtaLabel: "Ask for Archaeology Focus",
     primaryCtaHref: "#final-cta",
@@ -69,7 +69,7 @@ const cerveteriEtruscansDayTripData: TourPageData = {
     {
       title: "Etruscan Art, Symbols, and Legacy",
       description:
-        "Connect visual motifs and funerary culture to the later Roman world through curated interpretive stops.",
+        "Connect visual motifs and funerary culture to the later Roman world through well-planned interpretive stops.",
       imageSrc:
         "/images/tours/day-trips/cerveteri-etruscans/highlight-etruscan-art-and-reliefs.jpg",
       imageAlt: "Ancient wall details and artistic traces from historical ruins",
@@ -102,12 +102,17 @@ const cerveteriEtruscansDayTripData: TourPageData = {
     {
       title: "Lunch and Scenic Pause",
       description:
-        "Enjoy a relaxed break in the Cerveteri area with timing tailored to your energy and return window.",
+        "Enjoy a relaxed break in the Cerveteri area with timing adapted to your energy and return window.",
     },
     {
-      title: "Return to Rome",
+      title: "Flexible Return to Rome",
       description:
-        "Return by private vehicle and reach Rome with enough evening flexibility for onward plans.",
+        "Return by private vehicle with comfortable timing and flexibility around your evening plans.",
+    },
+    {
+      title: "And Much More...",
+      description:
+        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -135,7 +140,7 @@ const cerveteriEtruscansDayTripData: TourPageData = {
       description: "A strong option for history-forward travelers who value context and interpretation.",
     },
     {
-      title: "Private Groups Seeking Low-Stress Logistics",
+      title: "Private Groups Seeking Low-Stress Planning",
       description: "Door-to-door transport keeps the day easy while preserving high-content site exploration.",
     },
   ],
@@ -173,7 +178,7 @@ const cerveteriEtruscansDayTripData: TourPageData = {
     {
       question: "What is included in this Etruscan day trip?",
       answer:
-        "Private transport and curated route planning are included. Guide and ticket elements are confirmed during planning.",
+        "Private transport and well-planned route planning are included. Guide and ticket elements are confirmed during planning.",
     },
     {
       question: "Is this trip suitable for children or teens?",

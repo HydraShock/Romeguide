@@ -253,7 +253,7 @@ export default function CookieConsentBanner() {
           ×
         </button>
         <p className={styles.eyebrow}>Cookie Preferences</p>
-        <h2 className={styles.title}>Privacy First, Luxury Experience</h2>
+        <h2 className={styles.title}>Privacy First, Better Experience</h2>
         <p className={styles.bodyText}>
           We use strictly necessary cookies for secure navigation and booking. Optional analytics and
           marketing cookies are off by default and require your consent.

@@ -72,7 +72,7 @@ export default function PrivacyPolicyPage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Respond to inquiries and prepare tailored tour proposals.</td>
+                    <td>Respond to inquiries and prepare custom tour proposals.</td>
                     <td>Pre-contractual steps / contract performance (GDPR Art. 6(1)(b)).</td>
                     <td>Name, contact details, travel preferences, message.</td>
                   </tr>

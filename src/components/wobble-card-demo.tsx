@@ -27,7 +27,7 @@ const tours = [
   {
     label: "Faith & Heritage",
     title: "Christian Rome Tour",
-    description: "Visit Rome's great basilicas and sacred landmarks through the stories of early Christianity.",
+    description: "Visit Rome's great churches and sacred landmarks through the stories of early Christianity.",
     image: "/images/tours/christian-rome/hero-christian-rome-tour-basilica-facade.webp",
     alt: "Historic dome and basilica architecture in Rome",
     imagePosition: "66% 39%",
@@ -37,7 +37,7 @@ const tours = [
   {
     label: "City Strolls",
     title: "Rome Walking Tours",
-    description: "Discover beautiful piazzas, hidden alleys, and local street life on a private walking tour in Rome.",
+    description: "Discover beautiful squares, hidden alleys, and local street life on a private walking tour in Rome.",
     image: "/images/tours/walking/hero-rome-private-walking-tour-pantheon-dusk.webp",
     alt: "Roman riverside and bridges during golden hour",
     imagePosition: "84% 43%",

@@ -14,7 +14,7 @@ const orvietoDayTripData: TourPageData = {
   seoTitle:
     "Private Orvieto Day Trip from Rome | Orvieto Cathedral & Umbrian Hill Town | Rome Guide Services",
   seoDescription:
-    "Escape Rome for a private day trip to Orvieto with tailored pacing, private transport, and a refined itinerary through one of Umbria\u2019s most beautiful hill towns.",
+    "Escape Rome for a private day trip to Orvieto with flexible pacing, private transport, and a comfortable itinerary through one of Umbria\u2019s most beautiful hill towns.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -26,11 +26,11 @@ const orvietoDayTripData: TourPageData = {
     title: "Private Orvieto Day Trip from Rome",
     landmarksLine: "ORVIETO \u2022 UMBRIA \u2022 HILL TOWN ESCAPE",
     subtitle:
-      "Leave Rome behind for a private journey into Orvieto, where dramatic views, quiet stone streets, a magnificent cathedral, and the gentle rhythm of Umbria create one of central Italy\u2019s most elegant day trips.",
+      "Leave Rome behind for a private journey into Orvieto, where dramatic views, quiet stone streets, a magnificent cathedral, and the gentle rhythm of Umbria create one of central Italy\u2019s most beautiful day trips.",
     intentLine:
       "A private full-day escape designed around atmosphere, scenic pacing, cultural depth, and the beauty of one unforgettable hill town.",
     primaryCtaLabel: "Plan This Day Trip",
-    secondaryCtaLabel: "Ask for a Tailor-Made Version",
+    secondaryCtaLabel: "Ask for a Custom Version",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
     imageSrc: "/images/tours/day-trips/orvieto-umbria/highlight-orvieto-cliff-panorama.jpg",
@@ -53,11 +53,11 @@ const orvietoDayTripData: TourPageData = {
   ],
   overview: {
     eyebrow: "WHY THIS DAY TRIP",
-    title: "A More Atmospheric and Refined Escape Beyond Rome",
+    title: "A More Atmospheric and Comfortable Escape Beyond Rome",
     intro:
       "Orvieto offers a slower, more scenic contrast to Rome, with extraordinary architecture, quiet streets, and a deeply rewarding Umbrian hill-town atmosphere.",
     body:
-      "This private Orvieto day trip from Rome is designed for beauty and rhythm over intensity. The cathedral anchors the experience with visual and cultural depth, while panoramic viewpoints and elegant stone streets create a graceful route from start to finish. Private transportation keeps the day seamless and comfortable.",
+      "This private Orvieto day trip from Rome is designed for beauty and rhythm over intensity. The cathedral anchors the experience with visual and cultural depth, while panoramic viewpoints and beautiful stone streets create a graceful route from start to finish. Private transportation keeps the day smooth and comfortable.",
     imageSrc: "/images/tours/day-trips/orvieto-umbria/overview-umbria-hill-town-private-route.jpg",
     imageAlt: "Historic Orvieto rooftops and Umbrian landscape views",
   },
@@ -72,21 +72,21 @@ const orvietoDayTripData: TourPageData = {
     {
       title: "Hill-Town Views: One of Central Italy\u2019s Most Scenic Profiles",
       description:
-        "Take in Orvieto's dramatic cliff setting and broad Umbrian panoramas that make this destination a signature private escape from Rome.",
+        "Take in Orvieto's dramatic cliff setting and broad Umbrian panoramas that make this destination a favorite private escape from Rome.",
       imageSrc: "/images/tours/day-trips/orvieto-umbria/highlight-orvieto-cliff-panorama.jpg",
       imageAlt: "Orvieto skyline rising on its cliff above the Umbrian valley",
     },
     {
       title: "Quiet Streets, Stone Architecture, and Umbrian Atmosphere",
       description:
-        "Walk through calm lanes and refined stone spaces where architecture, local rhythm, and viewpoint moments feel intimate and unhurried.",
+        "Walk through calm lanes and comfortable stone spaces where architecture, local rhythm, and viewpoint moments feel intimate and unhurried.",
       imageSrc: "/images/tours/day-trips/orvieto-umbria/overview-umbria-hill-town-private-route.jpg",
       imageAlt: "Quiet stone streets and rooftops in Orvieto's historic core",
     },
     {
       title: "A Private Day with More Beauty, Less Rush",
       description:
-        "Private routing, curated timing, and comfort-focused logistics create a day that is elegant, scenic, and seamlessly paced.",
+        "Private routing, well-planned timing, and comfort-focused planning create a day that is beautiful, scenic, and smoothly paced.",
       imageSrc: "/images/tours/day-trips/orvieto-umbria/hero-orvieto-umbria-day-trip-from-rome.jpg",
       imageAlt: "Cathedral frontage and historic urban atmosphere in Orvieto",
     },
@@ -105,7 +105,7 @@ const orvietoDayTripData: TourPageData = {
     {
       title: "Cathedral and Historic Core",
       description:
-        "Explore the cathedral area and the refined urban heart of Orvieto with time for architecture, art, and atmosphere.",
+        "Explore the cathedral area and the comfortable urban heart of Orvieto with time for architecture, art, and atmosphere.",
     },
     {
       title: "Scenic Views and Slow Exploration",
@@ -113,9 +113,14 @@ const orvietoDayTripData: TourPageData = {
         "Take in quieter streets, local viewpoints, and cultural details that make Orvieto feel distinct from larger cities.",
     },
     {
-      title: "Return to Rome",
+      title: "Flexible Return to Rome",
       description:
-        "Return privately to Rome after a full day designed around elegance, pace, and destination depth.",
+        "Return to Rome at a comfortable pace, with flexibility for one more stop if it fits your day.",
+    },
+    {
+      title: "And Much More...",
+      description:
+        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -141,7 +146,7 @@ const orvietoDayTripData: TourPageData = {
     {
       title: "Couples Seeking a Romantic Cultural Day",
       description:
-        "A strong choice for travelers who want slower rhythm, elegant settings, and memorable shared viewpoints.",
+        "A strong choice for travelers who want slower rhythm, beautiful settings, and memorable shared viewpoints.",
     },
     {
       title: "Guests Interested in Architecture and Italian Towns",
@@ -166,19 +171,19 @@ const orvietoDayTripData: TourPageData = {
         "Reserve extra time for a relaxed Umbrian lunch in line with your preferred pace.",
     },
     {
-      title: "Wine Tasting Add-On",
+      title: "Wine Tasting Moment",
       description:
-        "Include a curated tasting element where timing, season, and opening schedules make it realistic.",
+        "Include a well-planned tasting element where timing, season, and opening schedules make it realistic.",
     },
     {
-      title: "Premium Vehicle Upgrade",
+      title: "More Comfortable Vehicle",
       description:
-        "Elevate transfer comfort with a higher-category private vehicle for the full-day route.",
+        "Add extra transfer comfort with a higher-category private vehicle for the full-day route.",
     },
   ],
   testimonial: {
     quote:
-      "Orvieto was everything we hoped for\u2014beautiful, quiet, and incredibly atmospheric. The private pacing made the day feel relaxed, elegant, and completely different from the intensity of Rome.",
+      "Orvieto was everything we hoped for\u2014beautiful, quiet, and incredibly atmospheric. The private pacing made the day feel relaxed, beautiful, and completely different from the intensity of Rome.",
     name: "Sophie L",
     context: "Private Orvieto day trip guest",
   },
@@ -201,12 +206,12 @@ const orvietoDayTripData: TourPageData = {
     {
       question: "Is there time for lunch or local wine?",
       answer:
-        "Yes. We can include a relaxed lunch window and, where practical, a curated wine element.",
+        "Yes. We can include a relaxed lunch window and, where practical, a well-planned wine element.",
     },
     {
       question: "Can the itinerary be customized?",
       answer:
-        "Absolutely. As a private Orvieto tour from Rome, timing and emphasis can be tailored to your preferences.",
+        "Absolutely. As a private Orvieto tour from Rome, timing and emphasis can be adapted to your preferences.",
     },
     {
       question: "Is hotel pickup included?",
@@ -242,7 +247,7 @@ const orvietoDayTripData: TourPageData = {
     },
     {
       title: "Rome Art & Architecture Tour",
-      description: "Continue with a curated Rome route centered on design, craftsmanship, and urban beauty.",
+      description: "Continue with a well-planned Rome route centered on design, craftsmanship, and urban beauty.",
       href: "/tours/art-architecture",
     },
   ],
@@ -255,7 +260,7 @@ const orvietoDayTripData: TourPageData = {
     trustItems: [
       "Personalized reply within 24 hours",
       "Private transport",
-      "Tailor-made pacing",
+      "Custom pacing",
     ],
   },
 };

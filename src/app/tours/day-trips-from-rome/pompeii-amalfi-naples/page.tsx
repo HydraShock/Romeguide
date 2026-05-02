@@ -13,7 +13,7 @@ const pompeiiAmalfiNaplesData: TourPageData = {
   path: "/tours/day-trips-from-rome/pompeii-amalfi-naples",
   seoTitle: "Private Pompeii, Amalfi & Naples Day Trip from Rome | Rome Guide Services",
   seoDescription:
-    "Explore Pompeii, Naples, and the Amalfi Coast on a private day trip from Rome with tailored pacing, luxury transport, and a curated full-day itinerary.",
+    "Explore Pompeii, Naples, and the Amalfi Coast on a private day trip from Rome with flexible pacing, comfortable transport, and a well-planned full-day itinerary.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -25,11 +25,11 @@ const pompeiiAmalfiNaplesData: TourPageData = {
     title: "Private Pompeii, Amalfi & Naples Day Trip from Rome",
     landmarksLine: "POMPEII • NAPLES • AMALFI COAST",
     subtitle:
-      "Discover southern Italy in one beautifully curated private day trip from Rome. From the ruins of Pompeii to the color and coastline of Naples and Amalfi, this route is designed for comfort, pacing, and memorable views.",
+      "Discover southern Italy in one beautifully well-planned private day trip from Rome. From the ruins of Pompeii to the color and coastline of Naples and Amalfi, this route is designed for comfort, pacing, and memorable views.",
     intentLine:
-      "A full-day private experience with tailored timing, scenic driving, and flexible stop planning.",
+      "A full-day private experience with flexible timing, scenic driving, and flexible stop planning.",
     primaryCtaLabel: "Plan This Day Trip",
-    secondaryCtaLabel: "Ask for a Tailor-Made Version",
+    secondaryCtaLabel: "Ask for a Custom Version",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
     imageSrc: "/images/tours/day-trips/pompeii-amalfi-naples/hero-pompeii-amalfi-day-trip-from-rome.jpg",
@@ -52,9 +52,9 @@ const pompeiiAmalfiNaplesData: TourPageData = {
   ],
   overview: {
     eyebrow: "WHY THIS DAY TRIP",
-    title: "Southern Italy, Curated in One Elegant Route",
+    title: "Southern Italy, Well-planned in One Beautiful Route",
     intro:
-      "This is not a rushed bus-style excursion. It is a private full-day route from Rome, paced around your preferences and designed for elegant, efficient flow.",
+      "This is not a rushed bus-style excursion. It is a private full-day route from Rome, paced around your preferences and designed for beautiful, efficient flow.",
     body:
       "Pompeii brings archaeological depth, Naples adds southern character and panoramic energy, and the Amalfi Coast delivers iconic Mediterranean beauty. With private transportation and thoughtful timing, you experience more of Italy in one memorable day without changing hotels.",
     imageSrc: "/images/tours/day-trips/pompeii-amalfi-naples/overview-pompeii-ruins-private-day-trip.jpg",
@@ -64,7 +64,7 @@ const pompeiiAmalfiNaplesData: TourPageData = {
     {
       title: "Pompeii: The Preserved World of Ancient Daily Life",
       description:
-        "Walk through streets, homes, and civic spaces with route pacing that helps archaeology feel vivid, coherent, and worth the journey from Rome.",
+        "Walk through streets, homes, and civic spaces with route pacing that helps archaeology feel vivid, clear, and worth the journey from Rome.",
       imageSrc: "/images/tours/day-trips/pompeii-amalfi-naples/highlight-pompeii-forum-ruins.jpg",
       imageAlt: "Roman ruins and stone pathways at Pompeii archaeological site",
     },
@@ -78,14 +78,14 @@ const pompeiiAmalfiNaplesData: TourPageData = {
     {
       title: "Amalfi Coast: Scenic Beauty and Iconic Mediterranean Light",
       description:
-        "Enjoy dramatic coastline views, village atmosphere, and curated scenic pauses with private-route flexibility.",
+        "Enjoy dramatic coastline views, village atmosphere, and well-planned scenic pauses with private-route flexibility.",
       imageSrc: "/images/tours/day-trips/pompeii-amalfi-naples/highlight-amalfi-coast-village.jpg",
       imageAlt: "Colorful village houses on the Amalfi Coast hillside",
     },
     {
       title: "One Private Route, Balanced Around Your Day",
       description:
-        "The sequence is planned for comfort and realism, so the day feels curated and memorable rather than overloaded.",
+        "The sequence is planned for comfort and realism, so the day feels well-planned and memorable rather than overloaded.",
       imageSrc: "/images/tours/day-trips/pompeii-amalfi-naples/hero-pompeii-amalfi-day-trip-from-rome.jpg",
       imageAlt: "Southern Italy coastal landscape at golden hour",
     },
@@ -94,7 +94,7 @@ const pompeiiAmalfiNaplesData: TourPageData = {
     {
       title: "Departure from Rome",
       description:
-        "Begin with private pickup and departure tailored to your preferred start time.",
+        "Begin with private pickup and departure adapted to your preferred start time.",
     },
     {
       title: "Pompeii Exploration",
@@ -112,9 +112,14 @@ const pompeiiAmalfiNaplesData: TourPageData = {
         "Enjoy the coastline, villages, and dramatic sea-facing landscapes in a beautifully paced route.",
     },
     {
-      title: "Return to Rome",
+      title: "Flexible Return to Rome",
       description:
-        "Finish with a private return journey designed for comfort after a full day.",
+        "Finish with a comfortable private return, with optional short scenic pauses if timing allows.",
+    },
+    {
+      title: "And Much More...",
+      description:
+        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -140,12 +145,12 @@ const pompeiiAmalfiNaplesData: TourPageData = {
     {
       title: "Couples Seeking a Scenic Private Escape",
       description:
-        "A refined route with dramatic views, flexible stops, and private comfort throughout the day.",
+        "A comfortable route with dramatic views, flexible stops, and private comfort throughout the day.",
     },
     {
       title: "Guests Interested in Archaeology and Coastal Italy",
       description:
-        "Perfect for travelers who want Pompeii's history and Amalfi's beauty in one curated itinerary.",
+        "Perfect for travelers who want Pompeii's history and Amalfi's beauty in one well-planned itinerary.",
     },
     {
       title: "Visitors Preferring Private Transport Over Group Tours",
@@ -155,7 +160,7 @@ const pompeiiAmalfiNaplesData: TourPageData = {
   ],
   upgrades: [
     {
-      title: "Private Pompeii Guide Add-On",
+      title: "Private Pompeii Guide",
       description: "Add deeper archaeological context with a licensed private guide in Pompeii.",
     },
     {
@@ -163,17 +168,17 @@ const pompeiiAmalfiNaplesData: TourPageData = {
       description: "Add extra coastline time when route timing and traffic conditions allow.",
     },
     {
-      title: "Premium Vehicle Upgrade",
-      description: "Elevate comfort with a higher vehicle class for the full-day journey.",
+      title: "More Comfortable Vehicle",
+      description: "Add extra comfort with a higher vehicle class for the full-day journey.",
     },
     {
       title: "Lunch Reservation Support",
-      description: "Receive concierge help securing a well-timed lunch stop along your route.",
+      description: "Receive planning help securing a well-timed lunch stop along your route.",
     },
   ],
   testimonial: {
     quote:
-      "Our day beyond Rome felt seamless from start to finish. Pompeii was extraordinary, the coastline was unforgettable, and the private pacing made the whole experience feel effortless.",
+      "Our day beyond Rome felt smooth from start to finish. Pompeii was extraordinary, the coastline was unforgettable, and the private pacing made the whole experience feel effortless.",
     name: "Claire M",
     context: "Pompeii & Amalfi private day trip guest",
   },
@@ -196,7 +201,7 @@ const pompeiiAmalfiNaplesData: TourPageData = {
     {
       question: "Can the itinerary be customized?",
       answer:
-        "Yes. Stop emphasis and pacing can be tailored to your interests, season, and group style.",
+        "Yes. Stop emphasis and pacing can be adapted to your interests, season, and group style.",
     },
     {
       question: "Is Amalfi or Positano always included?",
@@ -217,7 +222,7 @@ const pompeiiAmalfiNaplesData: TourPageData = {
   relatedTours: [
     {
       title: "Private Day Trips from Rome",
-      description: "Explore all curated private day routes departing from Rome.",
+      description: "Explore all well-planned private day routes departing from Rome.",
       href: "/tours/day-trips-from-rome",
     },
     {
@@ -227,7 +232,7 @@ const pompeiiAmalfiNaplesData: TourPageData = {
     },
     {
       title: "Private Orvieto Day Trip from Rome",
-      description: "Cathedral culture, hill-town atmosphere, and elegant countryside pacing.",
+      description: "Cathedral culture, hill-town atmosphere, and beautiful countryside pacing.",
       href: "/tours/day-trips-from-rome/orvieto-umbria",
     },
     {
@@ -237,7 +242,7 @@ const pompeiiAmalfiNaplesData: TourPageData = {
     },
     {
       title: "Rome Private Walking Tour",
-      description: "Balance your full-day escape with an elegant city-center route at a slower pace.",
+      description: "Balance your full-day escape with a beautiful city-center route at a slower pace.",
       href: "/tours/walking-tours",
     },
   ],
@@ -250,7 +255,7 @@ const pompeiiAmalfiNaplesData: TourPageData = {
     trustItems: [
       "Personalized reply within 24 hours",
       "Private transport",
-      "Tailor-made pacing",
+      "Custom pacing",
     ],
   },
 };

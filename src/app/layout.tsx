@@ -20,7 +20,7 @@ const cormorant = Cormorant_Garamond({
 const DEFAULT_SITE_URL = "http://localhost:3000";
 const SITE_NAME = "Rome Guide Services";
 const SITE_DESCRIPTION =
-  "Luxury private tours in Rome and across Italy with licensed guides, tailor-made itineraries, and refined concierge-style planning.";
+  "Private tours in Rome and across Italy with licensed guides, custom itineraries, and friendly human planning support.";
 const CONTACT_EMAIL = "romeguideservices@gmail.com";
 const FACEBOOK_URL = "https://www.facebook.com/RomeGuideServices/";
 const INSTAGRAM_URL = "https://www.instagram.com/romeguideservices/";
@@ -32,8 +32,8 @@ const SITE_KEYWORDS = [
   "Ancient Rome private tour",
   "day trips from Rome",
   "private tours in Italy",
-  "tailor-made Italy itinerary",
-  "luxury tours Rome",
+  "custom Italy itinerary",
+  "private tours Rome",
   "family-run Rome tours",
 ];
 

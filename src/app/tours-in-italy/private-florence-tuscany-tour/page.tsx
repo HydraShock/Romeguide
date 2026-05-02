@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import TourTemplatePage from "@/components/tour-template/tour-template-page";
 import type { TourPageData } from "@/components/tour-template/types";
 
@@ -15,7 +15,7 @@ const florenceTuscanyTourData: TourPageData = {
   seoTitle:
     "Private Florence & Tuscany Tour | Renaissance Florence, Art, Architecture & Countryside | Rome Guide Services",
   seoDescription:
-    "Discover Florence and the wider Tuscan atmosphere through a private curated experience with tailored pacing, Renaissance highlights, elegant routes, and optional countryside extensions.",
+    "Discover Florence and the wider Tuscan atmosphere through a private well-planned experience with flexible pacing, Renaissance highlights, beautiful routes, and optional countryside extensions.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -27,11 +27,11 @@ const florenceTuscanyTourData: TourPageData = {
     title: "Private Florence & Tuscany Tour",
     landmarksLine: "FLORENCE \u2022 RENAISSANCE HIGHLIGHTS \u2022 TUSCAN ATMOSPHERE",
     subtitle:
-      "Experience Florence through a private curated journey shaped around Renaissance art, architecture, elegant pacing, and the wider beauty of Tuscany beyond the city.",
+      "Experience Florence through a private well-planned journey shaped around Renaissance art, architecture, relaxed pace, and the wider beauty of Tuscany beyond the city.",
     intentLine:
-      "From the Duomo and Ponte Vecchio to museum masterpieces, artisan streets, and optional countryside extensions, this experience is designed for travelers who want Florence at its best \u2014 privately and intelligently.",
+      "From the Duomo and Ponte Vecchio to museum masterpieces, artisan streets, and optional countryside extensions, this experience is designed for travelers who want Florence at its best \u2014 privately and clearly.",
     primaryCtaLabel: "Plan This Tour",
-    secondaryCtaLabel: "Ask for a Tailor-Made Version",
+    secondaryCtaLabel: "Ask for a Custom Version",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
     imageSrc: "/images/tours-in-italy/florence-tuscany/hero-private-florence-tuscany-tour.jpg",
@@ -45,12 +45,12 @@ const florenceTuscanyTourData: TourPageData = {
     ],
   },
   facts: [
-    { label: "Duration", value: "Half day / Full day / Tailor-made" },
+    { label: "Duration", value: "Half day / Full day / Custom" },
     { label: "Format", value: "Private tour" },
     { label: "Guide", value: "Included" },
     { label: "Focus", value: "Florence highlights + Tuscany extension" },
     { label: "Best For", value: "Art, architecture, culture, scenic extensions" },
-    { label: "Flexibility", value: "Tailor-made pacing" },
+    { label: "Flexibility", value: "Custom pacing" },
   ],
   overview: {
     eyebrow: "WHY THIS TOUR",
@@ -58,7 +58,7 @@ const florenceTuscanyTourData: TourPageData = {
     intro:
       "Florence is the cultural anchor of this private experience: a city where Renaissance art, architecture, and civic identity are concentrated at extraordinary density.",
     body:
-      "Rather than trying to package all of Tuscany into one vague route, we begin where the artistic and historical core is strongest: Duomo, Ponte Vecchio, Piazza della Signoria, Uffizi, and Accademia context. Tuscany enters as a curated second layer for guests who want more than the city itself, with optional countryside, hill-town, or wine-country extensions designed around comfort, elegance, and intelligent pacing.",
+      "Rather than trying to package all of Tuscany into one vague route, we begin where the artistic and historical core is strongest: Duomo, Ponte Vecchio, Piazza della Signoria, Uffizi, and Accademia context. Tuscany enters as a well-planned second layer for guests who want more than the city itself, with optional countryside, hill-town, or wine-country extensions designed around comfort, elegance, and smart pace.",
     imageSrc:
       "/images/tours-in-italy/florence-tuscany/overview-renaissance-florence-urban-texture.jpg",
     imageAlt: "Historic Florence streets and cathedral district seen from above",
@@ -67,7 +67,7 @@ const florenceTuscanyTourData: TourPageData = {
     {
       title: "Florence: The Open-Air Museum of the Renaissance",
       description:
-        "Read Florence through its urban fabric, facades, and piazzas, where architecture and civic history form one coherent visual narrative.",
+        "Read Florence through its urban fabric, facades, and squares, where architecture and civic history form one clear visual narrative.",
       imageSrc: "/images/tours-in-italy/florence-tuscany/highlight-ponte-vecchio-blue-hour.jpg",
       imageAlt: "Historic Florence along the Arno with Renaissance-era bridge architecture",
     },
@@ -89,9 +89,9 @@ const florenceTuscanyTourData: TourPageData = {
       title:
         "Tuscany Beyond Florence: Scenic Extensions, Hill Towns, and Wine Country Possibilities",
       description:
-        "When desired, extend beyond Florence into a quieter Tuscan rhythm with curated scenic and cultural layers that complement the city core.",
+        "When desired, extend beyond Florence into a quieter Tuscan rhythm with well-planned scenic and cultural layers that complement the city core.",
       imageSrc: "/images/tours-in-italy/florence-tuscany/highlight-tuscan-views-sunset.jpg",
-      imageAlt: "Tuscan countryside at golden hour with refined landscape atmosphere",
+      imageAlt: "Tuscan countryside at golden hour with comfortable landscape atmosphere",
     },
   ],
   itinerary: [
@@ -106,7 +106,7 @@ const florenceTuscanyTourData: TourPageData = {
         "Move through the essential landmarks, including the Duomo area, Piazza della Signoria, Ponte Vecchio, and surrounding historic streets.",
     },
     {
-      title: "Art, Museums, and Tailored Depth",
+      title: "Art, Museums, and Flexible Depth",
       description:
         "Shape the experience around museum access, architecture, artisans, or thematic focus according to your priorities.",
     },
@@ -118,7 +118,12 @@ const florenceTuscanyTourData: TourPageData = {
     {
       title: "A Private Experience Built Around Your Priorities",
       description:
-        "Close with a route designed around comfort, private pacing, and a clear balance between cultural depth and atmosphere.",
+        "Wrap up with a comfortable custom route, balancing cultural depth and atmosphere, with room to include extra stops if you want more.",
+    },
+    {
+      title: "And Much More...",
+      description:
+        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -139,17 +144,17 @@ const florenceTuscanyTourData: TourPageData = {
     {
       title: "First-Time Florence Visitors Wanting the Right Private Introduction",
       description:
-        "Ideal for guests seeking a clear and elegant Florence foundation without checklist overload.",
+        "Ideal for guests seeking a clear and beautiful Florence foundation without checklist overload.",
     },
     {
       title: "Art and Architecture Travelers",
       description:
-        "Perfect for visitors who want Renaissance context, landmark depth, and curated museum logic.",
+        "Perfect for visitors who want Renaissance context, landmark depth, and well-planned museum logic.",
     },
     {
-      title: "Couples Seeking a More Elegant Pace",
+      title: "Couples Seeking a More Beautiful Pace",
       description:
-        "A refined private format for travelers who value beauty, rhythm, and meaningful cultural time.",
+        "A comfortable private format for travelers who value beauty, rhythm, and meaningful cultural time.",
     },
     {
       title: "Guests Exploring Florence as a Base for Tuscany",
@@ -159,12 +164,12 @@ const florenceTuscanyTourData: TourPageData = {
   ],
   upgrades: [
     {
-      title: "Uffizi Priority Access Add-On",
+      title: "Uffizi Priority Access Planning",
       description:
-        "Add curated Uffizi planning to protect flow and maximize viewing quality.",
+        "Add well-planned Uffizi planning to protect flow and maximize viewing quality.",
     },
     {
-      title: "Accademia / David Focus Add-On",
+      title: "Accademia / David Extra Focus",
       description:
         "Include dedicated time and interpretation around David and Accademia highlights.",
     },
@@ -176,12 +181,12 @@ const florenceTuscanyTourData: TourPageData = {
     {
       title: "Tuscany Scenic or Wine-Country Extension",
       description:
-        "Extend beyond Florence with a curated countryside layer designed around timing and comfort.",
+        "Extend beyond Florence with a well-planned countryside layer designed around timing and comfort.",
     },
     {
-      title: "Premium Vehicle Upgrade",
+      title: "More Comfortable Vehicle",
       description:
-        "Upgrade transfer comfort for extension routes and longer private itineraries.",
+        "Improve transfer comfort for extension routes and longer private itineraries.",
     },
   ],
   testimonial: {
@@ -194,12 +199,12 @@ const florenceTuscanyTourData: TourPageData = {
     {
       question: "Is this focused on Florence or on Tuscany?",
       answer:
-        "Florence is the primary anchor. Tuscany is available as a curated extension layer when it fits your goals.",
+        "Florence is the primary anchor. Tuscany is available as a well-planned extension layer when it fits your goals.",
     },
     {
       question: "Can the experience include museums such as the Uffizi or Accademia?",
       answer:
-        "Yes. Museum inclusion is tailored during planning, with timing and depth adapted to your interests.",
+        "Yes. Museum inclusion is planned during confirmation, with timing and depth adapted to your interests.",
     },
     {
       question: "Is this a walking experience, or can it include transport?",
@@ -214,17 +219,17 @@ const florenceTuscanyTourData: TourPageData = {
     {
       question: "Is this suitable for first-time visitors to Florence?",
       answer:
-        "Yes. It is designed to provide a strong private introduction with clear structure and elegant pacing.",
+        "Yes. It is designed to provide a strong private introduction with clear structure and relaxed pace.",
     },
     {
-      question: "Can the itinerary be tailored to art, architecture, or food interests?",
+      question: "Can the itinerary be built around art, architecture, or food interests?",
       answer:
         "Yes. As a private experience, we tailor emphasis and sequencing around your preferred themes.",
     },
     {
       question: "Is hotel pickup available if needed?",
       answer:
-        "Yes, pickup or coordinated meeting logistics can be arranged based on your location and route design.",
+        "Yes, pickup or coordinated meeting planning can be arranged based on your location and route design.",
     },
   ],
   relatedTours: [
@@ -245,15 +250,15 @@ const florenceTuscanyTourData: TourPageData = {
       href: "/tours-in-italy/private-milan-tour",
     },
     {
-      title: "Private Tuscany Experiences",
+      title: "Private Orvieto & Umbria Tour",
       description:
-        "Explore a Tuscany-first private format when your priorities go beyond city-centered exploration.",
-      href: "/tours-in-italy/private-tuscany-experiences",
+        "Explore a countryside-led private format when your priorities go beyond city-centered exploration.",
+      href: "/tours-in-italy/private-orvieto-umbria-tour",
     },
     {
       title: "Private Day Trips from Rome",
       description:
-        "Compare Florence and Tuscany with Rome-based curated escapes and private full-day routes.",
+        "Compare Florence and Tuscany with Rome-based well-planned escapes and private full-day routes.",
       href: "/tours/day-trips-from-rome",
     },
     {
@@ -271,7 +276,7 @@ const florenceTuscanyTourData: TourPageData = {
     trustItems: [
       "Personalized reply within 24 hours",
       "Private planning",
-      "Tailor-made pacing",
+      "Custom pacing",
     ],
   },
 };

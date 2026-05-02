@@ -22,10 +22,10 @@ export default function TourUpgrades({ items, theme = "default", cardsTheme = "d
       <section className="relative isolate overflow-hidden bg-[#f4e9dc] py-14 text-[#2E241F] md:py-18">
         <div className="mx-auto w-[min(100%,1140px)] px-4 md:px-6">
           <p className="font-sans text-[0.67rem] font-semibold uppercase tracking-[0.16em] text-[#83654B]">
-            Tailor-Made Options
+            Personalize Your Experience
           </p>
           <h2 className="mt-3 max-w-[16ch] font-serif text-[2.45rem] font-semibold leading-[0.95] tracking-[-0.015em] text-[#352821] md:text-[3.1rem]">
-            Optional Upgrades
+            Ways We Can Make Your Day Even Better
           </h2>
 
           <div className="mt-7 grid gap-3.5 md:grid-cols-2">
@@ -62,7 +62,7 @@ export default function TourUpgrades({ items, theme = "default", cardsTheme = "d
                       {item.description}
                     </p>
                     <span className={`mt-4 inline-flex rounded-full border px-3 py-1 font-sans text-[0.63rem] font-semibold uppercase tracking-[0.15em] ${useDarkBronzoCards ? "border-[#B6925E]/42 text-[#D6B88E]" : "border-[#B6925E]/42 text-[#7B542E]"}`}>
-                      Concierge Upgrade
+                      Available for Your Tour
                     </span>
                   </div>
                 </article>
@@ -98,10 +98,10 @@ export default function TourUpgrades({ items, theme = "default", cardsTheme = "d
 
         <div className="relative z-[1] mx-auto w-[min(100%,1140px)] px-4 md:px-6">
           <p className="font-sans text-[0.67rem] font-semibold uppercase tracking-[0.16em] text-[#D6B88E]">
-            Tailor-Made Options
+            Personalize Your Experience
           </p>
           <h2 className="mt-3 max-w-[16ch] font-serif text-[2.45rem] font-semibold leading-[0.95] tracking-[-0.015em] text-[#F5EFE7] md:text-[3.1rem]">
-            Optional Upgrades
+            Ways We Can Make Your Day Even Better
           </h2>
 
           <div className="mt-7 grid gap-3.5 md:grid-cols-2">
@@ -156,10 +156,10 @@ export default function TourUpgrades({ items, theme = "default", cardsTheme = "d
 
       <div className="relative z-[1] mx-auto w-[min(100%,1140px)] px-4 md:px-6">
         <p className="font-sans text-[0.67rem] font-semibold uppercase tracking-[0.16em] text-[#D6B88E]">
-          Tailor-Made Options
+          Personalize Your Experience
         </p>
         <h2 className="mt-3 max-w-[16ch] font-serif text-[2.45rem] font-semibold leading-[0.95] tracking-[-0.015em] text-[#F5EFE7] md:text-[3.1rem]">
-          Optional Upgrades
+          Ways We Can Make Your Day Even Better
         </h2>
 
         <div className="mt-7 grid gap-3.5 md:grid-cols-2">
@@ -182,7 +182,7 @@ export default function TourUpgrades({ items, theme = "default", cardsTheme = "d
                   {item.description}
                 </p>
                 <span className="mt-4 inline-flex rounded-full border border-[#B6925E]/42 px-3 py-1 font-sans text-[0.63rem] font-semibold uppercase tracking-[0.15em] text-[#D6B88E]">
-                  Concierge Upgrade
+                  Available for Your Tour
                 </span>
               </article>
             );

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import TourTemplatePage from "@/components/tour-template/tour-template-page";
 import type { TourPageData } from "@/components/tour-template/types";
 
@@ -11,9 +11,9 @@ const privateMilanTourData: TourPageData = {
   slug: "private-milan-tour",
   path: "/tours-in-italy/private-milan-tour",
   seoTitle:
-    "Private Milan Tour | Duomo, Brera, Design, Architecture & Tailor-Made Experience | Rome Guide Services",
+    "Private Milan Tour | Duomo, Brera, Design, Architecture & Custom Experience | Rome Guide Services",
   seoDescription:
-    "Discover Milan through a private curated tour with tailored pacing, iconic landmarks, elegant districts, architecture, and a more refined way to experience the city.",
+    "Discover Milan through a private well-planned tour with flexible pacing, iconic landmarks, beautiful districts, architecture, and a more comfortable way to experience the city.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -25,30 +25,30 @@ const privateMilanTourData: TourPageData = {
     title: "Private Milan Tour",
     landmarksLine: "DUOMO \u2022 BRERA \u2022 DESIGN \u2022 HIDDEN MILAN",
     subtitle:
-      "Discover Milan through a private curated route that balances iconic landmarks, refined districts, architectural detail, and the quieter urban elegance that defines the city beyond first impressions.",
+      "Discover Milan through a private well-planned route that balances iconic landmarks, comfortable districts, architectural detail, and the quieter urban elegance that defines the city beyond first impressions.",
     intentLine:
       "From the Duomo and Galleria to Brera, design-led streets, and lesser-known corners, this private experience is shaped around your pace and cultural interests.",
     primaryCtaLabel: "Plan This Tour",
-    secondaryCtaLabel: "Ask for a Tailor-Made Version",
+    secondaryCtaLabel: "Ask for a Custom Version",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
     imageSrc: "/images/tours-in-italy/milan/hero-private-milan-tour.jpg",
     imageAlt: "Milan Duomo illuminated in warm evening light",
-    quickFacts: ["Private only", "Walking-led", "Guide included", "Tailor-made pacing"],
+    quickFacts: ["Private only", "Walking-led", "Guide included", "Custom pacing"],
     microTags: [
       "Architecture lovers",
       "Design-minded travelers",
       "First-time Milan visitors",
-      "Guests seeking a refined pace",
+      "Guests seeking a comfortable pace",
     ],
   },
   facts: [
-    { label: "Duration", value: "Half day / Full day / Tailor-made" },
+    { label: "Duration", value: "Half day / Full day / Custom" },
     { label: "Format", value: "Private city tour" },
     { label: "Focus", value: "Milan highlights + hidden districts" },
-    { label: "Pace", value: "Tailored" },
+    { label: "Pace", value: "Flexible" },
     { label: "Best For", value: "Architecture, culture, design" },
-    { label: "Extension", value: "Custom add-ons available" },
+    { label: "Extension", value: "Extra experiences on request" },
   ],
   overview: {
     eyebrow: "WHY THIS TOUR",
@@ -69,9 +69,9 @@ const privateMilanTourData: TourPageData = {
       imageAlt: "Duomo di Milano facade and spires at night",
     },
     {
-      title: "Brera, Elegant Streets, and the City's Cultural Texture",
+      title: "Brera, Beautiful Streets, and the City's Cultural Texture",
       description:
-        "Move through one of Milan's most refined districts where streetscape, proportion, and atmosphere reveal the city's quieter character.",
+        "Move through one of Milan's most comfortable districts where streetscape, proportion, and atmosphere reveal the city's quieter character.",
       imageSrc: "/images/tours-in-italy/milan/highlight-brera-cultural-texture.jpg",
       imageAlt: "Brera district street scene in Milan",
     },
@@ -85,9 +85,9 @@ const privateMilanTourData: TourPageData = {
     {
       title: "A Private Route Through Iconic and More Discreet Milan",
       description:
-        "Private pacing allows iconic landmarks and less obvious city layers to be experienced as one coherent narrative.",
+        "Private pacing allows iconic landmarks and less obvious city layers to be experienced as one clear narrative.",
       imageSrc: "/images/tours-in-italy/milan/highlight-private-milan-discreet-route.jpg",
-      imageAlt: "Milan's elegant gallery axis with warm urban light",
+      imageAlt: "Milan's beautiful gallery axis with warm urban light",
     },
   ],
   itinerary: [
@@ -102,19 +102,24 @@ const privateMilanTourData: TourPageData = {
         "Move through the cathedral area and surrounding anchors with contextual focus and selective depth.",
     },
     {
-      title: "Brera and the City's More Refined Urban Texture",
+      title: "Brera and the City's More Comfortable Urban Texture",
       description:
-        "Continue through one of Milan's most elegant districts, reading the city through proportion, streetscape, and atmosphere.",
+        "Continue through one of Milan's most beautiful districts, reading the city through proportion, streetscape, and atmosphere.",
     },
     {
-      title: "Tailored Interests: Design, Architecture, Hidden Corners, or Cultural Focus",
+      title: "Choose Your Focus: Design, Architecture, Hidden Corners, or Cultural Themes",
       description:
         "Shape the route around your priorities and the specific Milan you want to understand.",
     },
     {
       title: "A Private Finish Built Around Your Pace",
       description:
-        "Conclude with a route that feels coherent, elegant, and distinctly private.",
+        "Wrap up with a route that feels personal and complete, with room for extra stops if you want them.",
+    },
+    {
+      title: "And Much More...",
+      description:
+        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -135,7 +140,7 @@ const privateMilanTourData: TourPageData = {
     {
       title: "First-Time Milan Visitors Wanting the Right Introduction",
       description:
-        "Ideal for guests seeking a clear, elegant private overview of Milan's core identity.",
+        "Ideal for guests seeking a clear, beautiful private overview of Milan's core identity.",
     },
     {
       title: "Architecture and Design Travelers",
@@ -143,19 +148,19 @@ const privateMilanTourData: TourPageData = {
         "Perfect for visitors who want deeper insight into Milan's built environment and design culture.",
     },
     {
-      title: "Couples Seeking a More Refined Pace",
+      title: "Couples Seeking a More Comfortable Pace",
       description:
         "A strong fit for travelers who value atmosphere, proportion, and private rhythm over rush.",
     },
     {
       title: "Guests Who Prefer Private Context Over Standard Group Touring",
       description:
-        "Designed for travelers wanting intelligent route logic, focused interpretation, and flexibility.",
+        "Designed for travelers wanting smart route flow, focused interpretation, and flexibility.",
     },
   ],
   upgrades: [
     {
-      title: "Duomo Focus Add-On",
+      title: "More Duomo Focus",
       description:
         "Add deeper emphasis around the Duomo district and its architectural context.",
     },
@@ -165,7 +170,7 @@ const privateMilanTourData: TourPageData = {
         "Extend time in Brera for stronger cultural and neighborhood depth.",
     },
     {
-      title: "Last Supper Logistics Support",
+      title: "Last Supper Planning Support",
       description:
         "Receive planning support around Last Supper availability and complementary nearby routing.",
     },
@@ -175,14 +180,14 @@ const privateMilanTourData: TourPageData = {
         "Shape the experience around design and architecture priorities across selected city segments.",
     },
     {
-      title: "Fashion and Elegant Streets Add-On",
+      title: "Fashion and Beautiful Streets Focus",
       description:
-        "Add a refined urban style layer framed as cultural streetscape, not generic shopping.",
+        "Add a comfortable urban style layer framed as cultural streetscape, not generic shopping.",
     },
   ],
   testimonial: {
     quote:
-      "Milan felt unexpectedly rich and elegant with private pacing. The route made the city feel coherent, beautiful, and far more interesting than a standard first visit.",
+      "Milan felt unexpectedly rich and beautiful with private pacing. The route made the city feel clear, beautiful, and far more interesting than a standard first visit.",
     name: "Nathalie C",
     context: "Private Milan tour guest",
   },
@@ -195,7 +200,7 @@ const privateMilanTourData: TourPageData = {
     {
       question: "Can the route include the Duomo and Brera?",
       answer:
-        "Yes. Both can be included, with route emphasis tailored to your preferred depth.",
+        "Yes. Both can be included, with route emphasis adapted to your preferred depth.",
     },
     {
       question: "Is this suitable for first-time visitors to Milan?",
@@ -203,9 +208,9 @@ const privateMilanTourData: TourPageData = {
         "Absolutely. It is designed as a private introduction that balances iconic and understated Milan.",
     },
     {
-      question: "Can the experience be customized around architecture, design, or elegant districts?",
+      question: "Can the experience be customized around architecture, design, or beautiful districts?",
       answer:
-        "Yes. The route is tailored around your priorities and thematic interests.",
+        "Yes. The route is built around your priorities and thematic interests.",
     },
     {
       question: "Is museum access included or separate?",
@@ -220,7 +225,7 @@ const privateMilanTourData: TourPageData = {
     {
       question: "Is this a fully private guide experience?",
       answer:
-        "Yes. This is a fully private guided experience with tailor-made sequencing.",
+        "Yes. This is a fully private guided experience with custom sequencing.",
     },
   ],
   relatedTours: [
@@ -246,13 +251,13 @@ const privateMilanTourData: TourPageData = {
   finalCta: {
     title: "Plan Your Private Milan Experience",
     description:
-      "Share your dates, interests, and priorities, and we will shape a private Milan route with the right balance of iconic landmarks, refined districts, architecture, and pace.",
+      "Share your dates, interests, and priorities, and we will shape a private Milan route with the right balance of iconic landmarks, comfortable districts, architecture, and pace.",
     buttonLabel: "Request Your Private Tour",
     buttonHref: "#",
     trustItems: [
       "Personalized reply within 24 hours",
       "Private planning",
-      "Tailor-made pacing",
+      "Custom pacing",
     ],
   },
 };

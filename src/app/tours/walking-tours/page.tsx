@@ -27,7 +27,7 @@ const walkingTourData: TourPageData = {
     title: "Rome Private Walking Tour",
     landmarksLine: "Pantheon | Piazza Navona | Trevi Fountain",
     subtitle:
-      "Explore Rome on foot through iconic piazzas and hidden lanes, guided by a private local expert who adapts the route to your rhythm.",
+      "Explore Rome on foot through iconic squares and hidden lanes, guided by a private local expert who adapts the route to your rhythm.",
     intentLine: "Flexible private walking across Rome's must-see highlights and local corners.",
     primaryCtaLabel: "Plan This Tour",
     secondaryCtaLabel: "Ask for a Custom Itinerary",
@@ -47,7 +47,7 @@ const walkingTourData: TourPageData = {
     { label: "Sites", value: "Pantheon, Navona, Trevi" },
   ],
   overview: {
-    title: "Rome on Foot, Curated Around You",
+    title: "Rome on Foot, Well-planned Around You",
     intro:
       "This is not a rigid group circuit. Your private guide shapes the walk around your pace, interests, and preferred balance of landmarks and hidden corners.",
     body:
@@ -104,12 +104,17 @@ const walkingTourData: TourPageData = {
     {
       title: "Trevi Area and Hidden Stops",
       description:
-        "Reach the Trevi zone through curated side streets that reveal quieter city textures.",
+        "Reach the Trevi zone through well-planned side streets that reveal quieter city textures.",
     },
     {
       title: "Final Local Recommendations",
       description:
-        "Close with tailored suggestions for dining, neighborhoods, and next cultural visits.",
+        "Wrap up with personalized tips for food, neighborhoods, and next visits, with optional extra stops if time allows.",
+    },
+    {
+      title: "And Much More...",
+      description:
+        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -147,14 +152,14 @@ const walkingTourData: TourPageData = {
   upgrades: [
     {
       title: "Street Food Tasting Stop",
-      description: "Add a curated tasting pause featuring classic Roman flavors in trusted local spots.",
+      description: "Add a well-planned tasting pause featuring classic Roman flavors in trusted local spots.",
     },
     {
       title: "Sunset Timing Route",
       description: "Shift the itinerary to golden hour for softer light and a more atmospheric city walk.",
     },
     {
-      title: "Private Driver Add-On",
+      title: "Private Driver Support",
       description: "Include point-to-point comfort before or after the walking segment.",
     },
     {
@@ -164,7 +169,7 @@ const walkingTourData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "We saw the big sights but never felt rushed. The route felt personal, elegant, and full of useful insights for the rest of our stay.",
+      "We saw the big sights but never felt rushed. The route felt personal, beautiful, and full of useful insights for the rest of our stay.",
     name: "Claire M",
     context: "Rome private walking tour guest",
   },
@@ -192,7 +197,7 @@ const walkingTourData: TourPageData = {
     {
       question: "Can we include a food stop during the tour?",
       answer:
-        "Yes. A street-food or coffee break can be integrated as an optional upgrade.",
+        "Yes. A street-food or coffee break can be built into your route if you want.",
     },
   ],
   relatedTours: [
@@ -208,12 +213,12 @@ const walkingTourData: TourPageData = {
     },
     {
       title: "Private Vatican Tour",
-      description: "Vatican Museums and Sistine Chapel in one curated private route.",
+      description: "Vatican Museums and Sistine Chapel in one well-planned private route.",
       href: "/tours/vatican",
     },
     {
       title: "Day Trips from Rome",
-      description: "Add a private full-day escape beyond the city with seamless pickup and return.",
+      description: "Add a private full-day escape beyond the city with easy pickup and return.",
       href: "/tours/day-trips-from-rome",
     },
   ],
@@ -226,7 +231,7 @@ const walkingTourData: TourPageData = {
     trustItems: [
       "Personalized reply within 24 hours",
       "Private, licensed guides",
-      "Tailor-made planning",
+      "Custom planning",
     ],
   },
 };

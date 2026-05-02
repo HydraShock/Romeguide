@@ -15,7 +15,7 @@ const artArchitectureTourData: TourPageData = {
   seoTitle:
     "Rome Art & Architecture Private Tour | Galleries, Churches & Masterpieces | Rome Guide Services",
   seoDescription:
-    "Admire Rome's galleries, churches, and architectural landmarks with a licensed private guide. Tailor-made art and architecture touring at your pace.",
+    "Admire Rome's galleries, churches, and architectural landmarks with a licensed private guide. Custom art and architecture touring at your pace.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -27,7 +27,7 @@ const artArchitectureTourData: TourPageData = {
     title: "Rome Art and Architecture Tour",
     landmarksLine: "Vatican Museums | Borghese Gallery | Capitoline Context",
     subtitle:
-      "Immerse yourself in Rome's artistic and architectural legacy with a private guide who connects masterpieces, patrons, and city design in one coherent route.",
+      "Immerse yourself in Rome's artistic and architectural legacy with a private guide who connects masterpieces, patrons, and city design in one clear route.",
     intentLine: "Private cultural storytelling from Renaissance to Baroque Rome.",
     primaryCtaLabel: "Plan This Tour",
     secondaryCtaLabel: "Ask for a Custom Itinerary",
@@ -35,7 +35,7 @@ const artArchitectureTourData: TourPageData = {
     secondaryCtaHref: "#final-cta",
     imageSrc: "/image%20(15).png",
     imageAlt: "Coffered dome interior of the Pantheon in Rome",
-    quickFacts: ["3 to 4 hours", "Private only", "Licensed guide", "Curated museum flow"],
+    quickFacts: ["3 to 4 hours", "Private only", "Licensed guide", "Well-planned museum flow"],
     microTags: ["Art enthusiasts", "Architecture students", "Couples"],
   },
   facts: [
@@ -44,7 +44,7 @@ const artArchitectureTourData: TourPageData = {
     { label: "Guide", value: "Licensed guide" },
     { label: "Focus", value: "Art and architecture" },
     { label: "Access", value: "Entry planning support" },
-    { label: "Pacing", value: "Tailor-made rhythm" },
+    { label: "Pacing", value: "Custom rhythm" },
   ],
   overview: {
     title: "Masterpieces in Their Urban Context",
@@ -80,14 +80,14 @@ const artArchitectureTourData: TourPageData = {
     {
       title: "Hidden Gems Beyond Standard Circuits",
       description:
-        "Include quieter high-value spaces for travelers seeking a more curated cultural perspective.",
+        "Include quieter special spaces for travelers seeking a more well-planned cultural perspective.",
       imageSrc: "/images/tours/art-architecture/highlight-rome-art-architecture-tour-trevi-detail.webp",
       imageAlt: "Trevi Fountain sculptural detail highlighting Roman craftsmanship",
     },
   ],
   itinerary: [
     {
-      title: "Meeting and Curatorial Brief",
+      title: "Meeting and Art-focused Brief",
       description:
         "Meet your guide and define thematic priorities, from sculpture and painting to architecture.",
     },
@@ -109,7 +109,7 @@ const artArchitectureTourData: TourPageData = {
     {
       title: "And Much More...",
       description:
-        "This is a private custom tour, so there is always much more to see and we can add extra stops based on your interests.",
+        "This is a private custom tour, so we can add extra stops, hidden corners, and local suggestions based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -129,7 +129,7 @@ const artArchitectureTourData: TourPageData = {
   audience: [
     {
       title: "Art Enthusiasts and Collectors",
-      description: "Ideal for guests wanting stronger context around major works and curatorial choices.",
+      description: "Ideal for guests wanting stronger context around major works and art-focused choices.",
     },
     {
       title: "Architecture Students and Designers",
@@ -141,7 +141,7 @@ const artArchitectureTourData: TourPageData = {
     },
     {
       title: "Couples Seeking Cultural Depth",
-      description: "A refined private pace suited to travelers who value atmosphere and detail.",
+      description: "A comfortable private pace suited to travelers who value atmosphere and detail.",
     },
   ],
   upgrades: [
@@ -151,14 +151,14 @@ const artArchitectureTourData: TourPageData = {
     },
     {
       title: "Extended Architecture Session",
-      description: "Add more urban reading time for facades, piazzas, and layered city planning.",
+      description: "Add more urban reading time for facades, squares, and layered city planning.",
     },
     {
       title: "Private Driver Coordination",
-      description: "Optimize transitions between venues while preserving a relaxed premium pace.",
+      description: "Optimize transitions between venues while preserving a relaxed high-quality pace.",
     },
     {
-      title: "Specialist Focus Add-On",
+      title: "Specialist Focus",
       description: "Request deeper emphasis on a period, artist, or architectural movement.",
     },
   ],
@@ -226,7 +226,7 @@ const artArchitectureTourData: TourPageData = {
     trustItems: [
       "Personalized reply within 24 hours",
       "Private, licensed guides",
-      "Tailor-made planning",
+      "Custom planning",
     ],
   },
 };

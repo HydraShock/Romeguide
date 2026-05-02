@@ -15,7 +15,7 @@ const ostiaAnticaDayTripData: TourPageData = {
   seoTitle:
     "Private Ostia Antica Day Trip from Rome | Ancient Port of Rome | Rome Guide Services",
   seoDescription:
-    "Discover Ostia Antica on a private day trip from Rome with tailored pacing, private transport, and a refined archaeological itinerary through the ancient port of Rome.",
+    "Discover Ostia Antica on a private day trip from Rome with flexible pacing, private transport, and a comfortable archaeological itinerary through the ancient port of Rome.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -29,9 +29,9 @@ const ostiaAnticaDayTripData: TourPageData = {
     subtitle:
       "Leave the center of Rome behind for a private journey through Ostia Antica, the remarkably preserved ancient port where streets, baths, houses, and public spaces reveal everyday Roman life in extraordinary detail.",
     intentLine:
-      "A quieter archaeological experience with curated pacing, private transport, and room to understand the Roman world beyond its monumental center.",
+      "A quieter archaeological experience with well-planned pacing, private transport, and room to understand the Roman world beyond its monumental center.",
     primaryCtaLabel: "Plan This Day Trip",
-    secondaryCtaLabel: "Ask for a Tailor-Made Version",
+    secondaryCtaLabel: "Ask for a Custom Version",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
     imageSrc: "/images/tours/day-trips/ostia-antica/hero-private-ostia-antica-day-trip-from-rome-warm-ruins.jpg",
@@ -58,7 +58,7 @@ const ostiaAnticaDayTripData: TourPageData = {
     intro:
       "Ostia Antica offers a more spacious and less crowded archaeological setting than central Rome, making it a highly rewarding private escape for curious travelers.",
     body:
-      "As the ancient port of Rome, Ostia reveals how people lived, traded, bathed, worshipped, and moved through a functioning Roman city. Houses, streets, baths, shops, and public spaces create rich urban texture at a calmer pace. It is an elegant complement to Colosseum and Forum touring, or an alternative for guests seeking substance without intensity.",
+      "As the ancient port of Rome, Ostia reveals how people lived, traded, bathed, worshipped, and moved through a functioning Roman city. Houses, streets, baths, shops, and public spaces create rich urban texture at a calmer pace. It is a beautiful complement to Colosseum and Forum visits, or an alternative for guests seeking substance without intensity.",
     imageSrc: "/images/tours/day-trips/ostia-antica/overview-private-ostia-antica-port-gateway.jpg",
     imageAlt: "Brick streets and arches in the archaeological city of Ostia Antica",
   },
@@ -87,7 +87,7 @@ const ostiaAnticaDayTripData: TourPageData = {
     {
       title: "One Private Route Through the Roman World at a More Human Scale",
       description:
-        "Private transport and tailored timing turn a complex site into a calm, coherent archaeological journey from Rome.",
+        "Private transport and flexible timing turn a complex site into a calm, clear archaeological journey from Rome.",
       imageSrc: "/images/tours/day-trips/ostia-antica/highlight-ostia-antica-sculptural-detail.jpg",
       imageAlt: "Classical sculptural detail connected to Ostia Antica heritage",
     },
@@ -114,9 +114,14 @@ const ostiaAnticaDayTripData: TourPageData = {
         "Move through the theatre, forum area, and other major points of interest with an emphasis on clarity and context.",
     },
     {
-      title: "Return to Rome",
+      title: "Flexible Return to Rome",
       description:
-        "Conclude with a private return to Rome after a calmer, more spacious archaeological experience.",
+        "Head back to Rome comfortably, with room for a final scenic or local stop if timing allows.",
+    },
+    {
+      title: "And Much More...",
+      description:
+        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -152,7 +157,7 @@ const ostiaAnticaDayTripData: TourPageData = {
     {
       title: "Families with Older Children and Curious Teens",
       description:
-        "The route can be paced for engagement and learning while maintaining comfort and manageable logistics.",
+        "The route can be paced for engagement and learning while maintaining comfort and manageable planning.",
     },
   ],
   upgrades: [
@@ -172,9 +177,9 @@ const ostiaAnticaDayTripData: TourPageData = {
         "Combine Roman and Etruscan perspectives in one private archaeological day when requested in advance.",
     },
     {
-      title: "Premium Vehicle Upgrade",
+      title: "More Comfortable Vehicle",
       description:
-        "Elevate transfer comfort with a higher-class private vehicle for a more refined day-trip profile.",
+        "Add extra transfer comfort with a higher-class private vehicle for a more comfortable day-trip profile.",
     },
   ],
   testimonial: {
@@ -223,7 +228,7 @@ const ostiaAnticaDayTripData: TourPageData = {
   relatedTours: [
     {
       title: "Private Day Trips from Rome",
-      description: "Explore all curated private escape routes departing from Rome.",
+      description: "Explore all well-planned private escape routes departing from Rome.",
       href: "/tours/day-trips-from-rome",
     },
     {
@@ -233,7 +238,7 @@ const ostiaAnticaDayTripData: TourPageData = {
     },
     {
       title: "Private Tivoli Day Trip from Rome",
-      description: "A refined villa-and-garden alternative with Renaissance and imperial context.",
+      description: "A comfortable villa-and-garden alternative with Renaissance and imperial context.",
       href: "/tours/day-trips-from-rome/tivoli",
     },
     {
@@ -243,7 +248,7 @@ const ostiaAnticaDayTripData: TourPageData = {
     },
     {
       title: "Rome Private Walking Tour",
-      description: "Continue with an elegant city-center route after your day beyond Rome.",
+      description: "Continue with a beautiful city-center route after your day beyond Rome.",
       href: "/tours/walking-tours",
     },
   ],
@@ -256,7 +261,7 @@ const ostiaAnticaDayTripData: TourPageData = {
     trustItems: [
       "Personalized reply within 24 hours",
       "Private transport",
-      "Tailor-made pacing",
+      "Custom pacing",
     ],
   },
 };

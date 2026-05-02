@@ -6,14 +6,14 @@ const testimonials = [
     initials: "A",
     when: "3 years ago",
     quote:
-      "What an amazing tour company. We arranged at the very last minute, and Carlo pulled everything together for us. Our trip to the Colosseum and Forum was seamless and unforgettable.",
+      "What an amazing tour company. We arranged at the very last minute, and Carlo pulled everything together for us. Our trip to the Colosseum and Forum was smooth and unforgettable.",
   },
   {
     name: "Kelli Stromski",
     initials: "K",
     when: "2 years ago",
     quote:
-      "We used Rome Guide Services to plan our family trip to Venice, Florence, Cinque Terre, and Rome. Every detail felt curated and easy, even for heavy international travelers.",
+      "We used Rome Guide Services to plan our family trip to Venice, Florence, Cinque Terre, and Rome. Every detail felt thoughtful and easy, even with complex international travel.",
   },
   {
     name: "Cindy Evans",
@@ -41,7 +41,7 @@ const testimonials = [
     initials: "J",
     when: "9 years ago",
     quote:
-      "Carlo was our guide and David our driver. We saw far more in two days than we thought possible, while everything still felt calm, elegant, and well-organized.",
+      "Carlo was our guide and David our driver. We saw far more in two days than we thought possible, while everything still felt calm, natural, and well-organized.",
   },
 ] as const;
 

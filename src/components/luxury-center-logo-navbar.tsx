@@ -70,7 +70,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           {
             href: "/tours/christian-rome",
             label: "Christian Rome Tour",
-            description: "Basilicas and sacred landmarks with a licensed private guide.",
+            description: "Churches and sacred landmarks with a licensed private guide.",
           },
         ],
       },
@@ -162,7 +162,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
         ],
       },
       {
-        title: "Upgrade Your Route",
+        title: "Shape Your Route",
         links: [
           {
             href: "/#booking-calendar",
@@ -254,7 +254,7 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
     {
       href: "/tours/christian-rome",
       label: "Christian Rome Tour",
-      description: "Basilicas and sacred landmarks with a licensed private guide.",
+      description: "Churches and sacred landmarks with a licensed private guide.",
       image: "/images/tours/christian-rome/hero-christian-rome-tour-basilica-facade.webp",
     },
     {
@@ -266,7 +266,7 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
     {
       href: "/tours/family-friendly",
       label: "Family-Friendly Rome Tour",
-      description: "Tailored route for families, teens, and multigenerational travelers.",
+      description: "Flexible route for families, teens, and multigenerational travelers.",
       image: "/images/tours/family/hero-family-friendly-rome-tour-colosseum-visit.webp",
     },
   ],
@@ -465,7 +465,7 @@ export default function LuxuryCenterLogoNavbar() {
             <span className={styles.centerLogoWrap}>
               <Image
                 src="/logo2.png"
-                alt="RG Rome Guide Services Italy Bespoke"
+                alt="RG Rome Guide Services Italy logo"
                 width={810}
                 height={367}
                 priority

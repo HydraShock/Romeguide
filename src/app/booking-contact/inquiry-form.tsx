@@ -43,7 +43,7 @@ const categoryOptions = [
   "Art & Architecture",
   "Day Trips from Rome",
   "Tours in Italy",
-  "Tailor-Made Private Tour",
+  "Custom Private Tour",
 ] as const;
 
 type FormValues = {

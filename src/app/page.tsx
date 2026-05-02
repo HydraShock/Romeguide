@@ -197,7 +197,7 @@ export default function Home() {
       "Private tours in Rome",
       "Vatican private tours",
       "Day trips from Rome",
-      "Tailor-made tours in Italy",
+      "Custom tours in Italy",
     ],
     offers: {
       "@type": "OfferCatalog",

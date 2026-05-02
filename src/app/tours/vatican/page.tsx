@@ -109,7 +109,7 @@ const vaticanTourData: TourPageData = {
     {
       title: "And Much More...",
       description:
-        "This is a private custom tour, so there is always much more to see and we can add extra stops based on your interests.",
+        "This is a private custom tour, so we can add extra stops, hidden corners, and local suggestions based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -203,7 +203,7 @@ const vaticanTourData: TourPageData = {
     },
     {
       title: "Christian Rome Private Tour",
-      description: "Catacombs and Major Basilicas for guests focused on faith and heritage.",
+      description: "Catacombs and Major Churches for guests focused on faith and heritage.",
       href: "/tours/christian-rome",
     },
     {

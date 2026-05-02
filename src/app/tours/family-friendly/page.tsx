@@ -43,7 +43,7 @@ const familyFriendlyTourData: TourPageData = {
     { label: "Guide", value: "Licensed guide" },
     { label: "Pacing", value: "Kid-friendly" },
     { label: "Breaks", value: "Planned stops" },
-    { label: "Route", value: "Family-tailored" },
+    { label: "Route", value: "Family-based on" },
   ],
   overview: {
     title: "Rome Through Curious Eyes",
@@ -77,7 +77,7 @@ const familyFriendlyTourData: TourPageData = {
       imageAlt: "People gathered in a sunlit courtyard near the Colosseum",
     },
     {
-      title: "Tailored Route by Age and Energy",
+      title: "Flexible Route by Age and Energy",
       description:
         "The itinerary adjusts to your group's age range, walking comfort, and overall travel schedule.",
       imageSrc: "/images/tours/family/highlight-family-friendly-rome-tour-relaxed-pace.webp",
@@ -108,7 +108,12 @@ const familyFriendlyTourData: TourPageData = {
     {
       title: "Wrap-Up and Next Tips",
       description:
-        "End with practical suggestions for family dining, transport, and additional kid-friendly sites.",
+        "End with practical tips for family dining and transport, and choose whether to add one more kid-friendly stop if everyone still has energy.",
+    },
+    {
+      title: "And Much More...",
+      description:
+        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -140,7 +145,7 @@ const familyFriendlyTourData: TourPageData = {
     },
     {
       title: "Travelers Needing Relaxed Pace",
-      description: "Ideal when comfort, breaks, and low-stress logistics are top priorities.",
+      description: "Ideal when comfort, breaks, and low-stress planning are top priorities.",
     },
   ],
   upgrades: [
@@ -158,7 +163,7 @@ const familyFriendlyTourData: TourPageData = {
     },
     {
       title: "Family Lunch Planning",
-      description: "Add a child-friendly meal stop selected for quality, comfort, and logistics.",
+      description: "Add a child-friendly meal stop selected for quality, comfort, and planning.",
     },
   ],
   testimonial: {
@@ -207,12 +212,12 @@ const familyFriendlyTourData: TourPageData = {
     },
     {
       title: "Rome Private Walking Tour",
-      description: "Flexible city-center walking for families wanting lighter logistics.",
+      description: "Flexible city-center walking for families wanting lighter planning.",
       href: "/tours/walking-tours",
     },
     {
       title: "Day Trips from Rome",
-      description: "Private family-ready escapes with custom pacing, private transport, and practical logistics.",
+      description: "Private family-ready escapes with custom pacing, private transport, and practical planning.",
       href: "/tours/day-trips-from-rome",
     },
   ],
@@ -225,7 +230,7 @@ const familyFriendlyTourData: TourPageData = {
     trustItems: [
       "Personalized reply within 24 hours",
       "Private, licensed guides",
-      "Tailor-made planning",
+      "Custom planning",
     ],
   },
 };

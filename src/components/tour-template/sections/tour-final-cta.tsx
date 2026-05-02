@@ -10,12 +10,16 @@ type TourFinalCtaProps = {
 function resolveFinalCtaHref(label: string, href: string) {
   const normalizedHref = href.trim();
   const normalizedLabel = label.toLowerCase();
-  const isPlanningCta = /plan|booking|book|prenota|availability|concierge|tailor/.test(
+  const isPlaceholderTarget =
+    normalizedHref === "#" ||
+    normalizedHref === "#final-cta" ||
+    normalizedHref.startsWith("/booking-contact");
+  const isPlanningCta = /plan|booking|book|prenota|availability|concierge|tailor|request|ask|custom|inquiry/.test(
     normalizedLabel,
   );
   const isExploreToursCta = /explore|view all|see all/.test(normalizedLabel);
 
-  if (isPlanningCta && (normalizedHref === "#" || normalizedHref.startsWith("/booking-contact"))) {
+  if (isPlanningCta && isPlaceholderTarget) {
     return "/#booking-calendar";
   }
 

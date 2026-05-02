@@ -8,13 +8,17 @@ type TourHeroProps = {
 function resolveHeroCtaHref(label: string, href: string) {
   const normalizedHref = href.trim();
   const normalizedLabel = label.toLowerCase();
+  const isPlaceholderTarget =
+    normalizedHref === "#" ||
+    normalizedHref === "#final-cta" ||
+    normalizedHref.startsWith("/booking-contact");
 
-  const isPlanningCta = /plan|booking|book|prenota|availability|concierge|tailor/.test(
+  const isPlanningCta = /plan|booking|book|prenota|availability|concierge|tailor|request|ask|custom|inquiry/.test(
     normalizedLabel,
   );
   const isExploreToursCta = /explore|view all|see all/.test(normalizedLabel);
 
-  if (isPlanningCta && (normalizedHref === "#" || normalizedHref.startsWith("/booking-contact"))) {
+  if (isPlanningCta && isPlaceholderTarget) {
     return "/#booking-calendar";
   }
 
@@ -30,7 +34,7 @@ export default function TourHero({ hero }: TourHeroProps) {
   const heroFacts =
     hero.quickFacts && hero.quickFacts.length > 0
       ? hero.quickFacts.slice(0, 4)
-      : ["Private Guides", "Tailor-Made Itineraries", "Seamless Planning"];
+      : ["Private Guides", "Custom Itineraries", "Easy Planning"];
   const heroTags = hero.microTags ?? [];
   const denseCopy =
     hero.title.length > 30 ||

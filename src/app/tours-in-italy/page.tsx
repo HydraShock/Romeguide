@@ -13,12 +13,12 @@ const italyTours = [
   {
     href: "/tours-in-italy/private-florence-tuscany-tour",
     title: "Private Florence & Tuscany Tour",
-    description: "Renaissance art, Tuscan atmosphere, and private pacing in one refined route.",
+    description: "Renaissance art, Tuscan atmosphere, and private pacing in one comfortable route.",
   },
   {
     href: "/tours-in-italy/private-venice-tour",
     title: "Private Venice Tour",
-    description: "Canals, hidden passages, and curated neighborhood discoveries.",
+    description: "Canals, hidden passages, and well-planned neighborhood discoveries.",
   },
   {
     href: "/tours-in-italy/private-milan-tour",
@@ -28,12 +28,12 @@ const italyTours = [
   {
     href: "/tours-in-italy/private-sicily-tours",
     title: "Private Sicily Tours",
-    description: "Island heritage, archaeology, and tailor-made private experiences.",
+    description: "Island heritage, archaeology, and custom private experiences.",
   },
   {
     href: "/tours-in-italy/private-naples-amalfi-coast-tour",
     title: "Private Naples & Amalfi Coast Tour",
-    description: "Southern culture, coastlines, and premium transport-led logistics.",
+    description: "Southern culture, coastlines, and high-quality transport-led planning.",
   },
   {
     href: "/tours-in-italy/private-orvieto-umbria-tour",
@@ -45,7 +45,7 @@ const italyTours = [
 export const metadata: Metadata = {
   title: "Private Tours in Italy | Florence, Venice, Milan, Sicily & Amalfi",
   description:
-    "Explore private tours in Italy with tailor-made itineraries across Florence, Tuscany, Venice, Milan, Sicily, Naples, Amalfi Coast, and Umbria.",
+    "Explore private tours in Italy with custom itineraries across Florence, Tuscany, Venice, Milan, Sicily, Naples, Amalfi Coast, and Umbria.",
   keywords: [
     "private tours in Italy",
     "private Florence tour",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Private Tours in Italy | Rome Guide Services",
     description:
-      "Luxury private tours in Italy for travelers who want tailor-made pacing, premium logistics, and local expertise.",
+      "Private tours in Italy for travelers who want custom pacing, smart planning, and local expertise.",
     url: PAGE_PATH,
     siteName: "Rome Guide Services",
     type: "website",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Private Tours in Italy | Rome Guide Services",
     description:
-      "Curated private journeys in Florence, Venice, Milan, Sicily, Naples, Amalfi Coast, and Umbria.",
+      "Well-planned private journeys in Florence, Venice, Milan, Sicily, Naples, Amalfi Coast, and Umbria.",
     images: ["/dark1.png"],
   },
 };
@@ -120,12 +120,12 @@ export default function ToursInItalyHubPage() {
               Tours in Italy
             </p>
             <h1 className="mt-3 max-w-[20ch] font-serif text-[clamp(2.1rem,4.3vw,4rem)] leading-[0.95] text-[#f8ead8]">
-              Private Tours in Italy for Multi-City Luxury Journeys
+              Private Tours in Italy for Easy Multi-City Trips
             </h1>
             <p className="mt-4 max-w-[70ch] font-sans text-[1rem] leading-[1.75] text-[#e8d0b2]">
-              Extend your experience beyond Rome with tailor-made private tours across Italy.
+              Extend your experience beyond Rome with custom private tours across Italy.
               From Florence and Venice to Milan, Sicily, Umbria, Naples, and the Amalfi Coast,
-              each route is curated around your interests and travel style.
+              each route is well-planned around your interests and travel style.
             </p>
           </div>
         </section>
@@ -151,7 +151,7 @@ export default function ToursInItalyHubPage() {
           />
           <div className="relative z-[1]">
             <h2 className="font-serif text-[clamp(1.8rem,2.8vw,2.8rem)] leading-[0.98] text-[#3d2b22]">
-              Signature Italy Collections
+              Top Italy Collections
             </h2>
             <div className="mt-5 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
               {italyTours.map((tour) => (
@@ -175,11 +175,11 @@ export default function ToursInItalyHubPage() {
 
             <div className="mt-8 rounded-[1.2rem] border border-[#c79a62]/46 bg-[#f5eadf] p-5 md:p-6">
               <h2 className="font-serif text-[clamp(1.5rem,2.4vw,2.1rem)] leading-[1] text-[#3f2f25]">
-                Need a Tailor-Made Italy Itinerary?
+                Need a Custom Italy Itinerary?
               </h2>
               <p className="mt-3 max-w-[68ch] font-sans text-[0.98rem] leading-[1.72] text-[#5c4739]">
                 Share your dates, pacing preferences, and destination priorities. We can design a
-                private multi-city route with coordinated logistics, elegant timing, and personalized
+                private multi-city route with coordinated planning, beautiful timing, and personalized
                 recommendations.
               </p>
               <Link

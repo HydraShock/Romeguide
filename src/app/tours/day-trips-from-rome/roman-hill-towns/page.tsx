@@ -26,16 +26,16 @@ const romanHillTownsDayTripData: TourPageData = {
     title: "Roman Hill Towns\nPrivate Day Trip From Rome",
     landmarksLine: "From Rome | Frascati | Castel Gandolfo | Lake and Village Views",
     subtitle:
-      "Enjoy a refined countryside day just outside Rome, blending village character, panoramic stops, and slow private pacing.",
+      "Enjoy a comfortable countryside day just outside Rome, blending village character, panoramic stops, and slow private pacing.",
     intentLine:
-      "A scenic private day from Rome for guests who want atmosphere, local texture, and lower-intensity logistics.",
+      "A scenic private day from Rome for guests who want atmosphere, local texture, and lower-intensity planning.",
     primaryCtaLabel: "Plan This Day Trip",
     secondaryCtaLabel: "Ask for Food & Wine Focus",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
     imageSrc: "/images/tours/day-trips/roman-hill-towns/hero-roman-hill-towns-day-trip-from-rome.jpg",
     imageAlt: "Historic hilltop village in Lazio at sunset",
-    quickFacts: ["8 hours", "From Rome", "Private driver", "Tailored village stops"],
+    quickFacts: ["8 hours", "From Rome", "Private driver", "Flexible village stops"],
     microTags: ["Couples", "Slow-travel guests", "Food and wine travelers"],
   },
   facts: [
@@ -51,7 +51,7 @@ const romanHillTownsDayTripData: TourPageData = {
     intro:
       "The Roman hill towns offer a full-day feeling without very long transfers, ideal for a lighter but still memorable escape.",
     body:
-      "This private route is designed around atmosphere and comfort: village streets, panoramic lake viewpoints, and curated lunch timing. It is especially strong for couples and travelers who want a softer pace than monument-heavy city touring.",
+      "This private route is designed around atmosphere and comfort: village streets, panoramic lake viewpoints, and well-planned lunch timing. It is especially strong for couples and travelers who want a softer pace than monument-heavy city touring.",
     imageSrc: "/images/tours/day-trips/roman-hill-towns/overview-castelli-romani-hillscape.jpg",
     imageAlt: "Rolling hills and clustered townscape in the Roman countryside",
   },
@@ -59,7 +59,7 @@ const romanHillTownsDayTripData: TourPageData = {
     {
       title: "Frascati and Local Village Life",
       description:
-        "Explore elegant streets and local rhythm in one of the most beloved hill-town zones near Rome.",
+        "Explore beautiful streets and local rhythm in one of the most beloved hill-town zones near Rome.",
       imageSrc: "/images/tours/day-trips/roman-hill-towns/highlight-hillside-village-terraces.jpg",
       imageAlt: "Village terraces and layered homes on a hillside",
     },
@@ -71,7 +71,7 @@ const romanHillTownsDayTripData: TourPageData = {
       imageAlt: "Panoramic hilltown and countryside views near Rome",
     },
     {
-      title: "Slow Streets, Refined Pace",
+      title: "Slow Streets, Comfortable Pace",
       description:
         "This itinerary prioritizes ease and atmosphere, allowing moments to walk, sip, and linger without pressure.",
       imageSrc: "/images/tours/day-trips/roman-hill-towns/highlight-slow-village-streets.jpg",
@@ -92,7 +92,7 @@ const romanHillTownsDayTripData: TourPageData = {
     {
       title: "Castel Gandolfo and Lake Panorama",
       description:
-        "Continue to elevated viewpoints and village sections with curated scenic pauses.",
+        "Continue to elevated viewpoints and village sections with well-planned scenic pauses.",
     },
     {
       title: "Lunch and Optional Nemi Segment",
@@ -100,9 +100,14 @@ const romanHillTownsDayTripData: TourPageData = {
         "Pause for lunch and, where preferred, add a short Nemi-style village stop before heading back.",
     },
     {
-      title: "Return to Rome",
+      title: "Flexible Return to Rome",
       description:
-        "Arrive in Rome with late-afternoon or early-evening timing depending on chosen route depth.",
+        "Head back to Rome with flexible late-afternoon or early-evening timing, and keep room for one extra village pause if you prefer.",
+    },
+    {
+      title: "And Much More...",
+      description:
+        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -136,15 +141,15 @@ const romanHillTownsDayTripData: TourPageData = {
   upgrades: [
     {
       title: "Private Tasting Appointment",
-      description: "Add a curated local wine or product tasting where schedule and openings align.",
+      description: "Add a well-planned local wine or product tasting where schedule and openings align.",
     },
     {
       title: "Extended Village Walk",
       description: "Increase on-foot time in your preferred town for shopping, photos, and slower exploration.",
     },
     {
-      title: "Premium Vehicle Upgrade",
-      description: "Enhance transfer comfort with elevated vehicle category and cabin refinement.",
+      title: "More Comfortable Vehicle",
+      description: "Add extra transfer comfort with a higher vehicle category and a quieter, more spacious cabin.",
     },
     {
       title: "Family Comfort Adaptation",
@@ -170,11 +175,11 @@ const romanHillTownsDayTripData: TourPageData = {
     {
       question: "Can you include food and wine experiences?",
       answer:
-        "Absolutely. We can add curated tasting or lunch reservations where timing and availability allow.",
+        "Absolutely. We can add well-planned tasting or lunch reservations where timing and availability allow.",
     },
     {
       question: "Is the trip private with hotel pickup from Rome?",
-      answer: "Yes. The route is private-only and includes Rome departure and return logistics.",
+      answer: "Yes. The route is private-only and includes Rome departure and return planning.",
     },
     {
       question: "Can this route be customized for families?",

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import TourTemplatePage from "@/components/tour-template/tour-template-page";
 import type { TourPageData } from "@/components/tour-template/types";
 
@@ -67,7 +67,7 @@ const ancientRomeTourData: TourPageData = {
     {
       title: "Roman Forum: The Political Heart of the Empire",
       description:
-        "Walk through temples, basilicas, and civic spaces with clear explanations of how power, law, and ritual shaped Rome.",
+        "Walk through temples, churches, and civic spaces with clear explanations of how power, law, and ritual shaped Rome.",
       imageSrc: "/images/tours/ancient-rome/highlight-roman-forum-columns-rome.webp",
       imageAlt: "Palatine Hill archaeological ruins overlooking the Roman Forum",
     },
@@ -110,7 +110,7 @@ const ancientRomeTourData: TourPageData = {
     {
       title: "And Much More...",
       description:
-        "This is a private custom tour, so there is always much more to see and we can add extra stops based on your interests.",
+        "This is a private custom tour, so we can add extra stops, hidden corners, and local suggestions based on your interests and timing.",
     },
   ],
   practicalInfo: {
@@ -156,7 +156,7 @@ const ancientRomeTourData: TourPageData = {
     },
     {
       title: "Ancient + Christian Rome Combination",
-      description: "Pair this tour with Christian Rome and the Major Basilicas for a full historical timeline.",
+      description: "Pair this tour with Christian Rome and the Major Churches for a full historical timeline.",
     },
     {
       title: "Family Pace Adaptation",
@@ -204,7 +204,7 @@ const ancientRomeTourData: TourPageData = {
     },
     {
       title: "Christian Rome Tour",
-      description: "Major Basilicas and sacred landmarks with clear storytelling and historical context.",
+      description: "Major Churches and sacred landmarks with clear storytelling and historical context.",
       href: "/tours/christian-rome",
     },
     {

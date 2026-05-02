@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import TourTemplatePage from "@/components/tour-template/tour-template-page";
 import type { TourPageData } from "@/components/tour-template/types";
 
@@ -13,9 +13,9 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
   slug: "private-naples-amalfi-coast-tour",
   path: "/tours-in-italy/private-naples-amalfi-coast-tour",
   seoTitle:
-    "Private Naples & Amalfi Coast Tour | Luxury Southern Italy Experience | Rome Guide Services",
+    "Private Naples & Amalfi Coast Tour | Private Southern Italy Experience | Rome Guide Services",
   seoDescription:
-    "Discover Naples and the Amalfi Coast through a private curated experience shaped around coastal beauty, urban character, elegant pacing, and tailor-made southern Italy touring.",
+    "Discover Naples and the Amalfi Coast through a private well-planned experience shaped around coastal beauty, urban character, relaxed pace, and custom southern Italy touring.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -27,18 +27,18 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
     title: "Private Naples & Amalfi Coast Tour",
     landmarksLine: "NAPLES \u2022 AMALFI COAST \u2022 SOUTHERN ITALY ATMOSPHERE",
     subtitle:
-      "Discover Naples and the Amalfi Coast through a private curated experience shaped around coastal beauty, historic character, Mediterranean light, and the flexibility to move at the right pace.",
+      "Discover Naples and the Amalfi Coast through a private well-planned experience shaped around coastal beauty, historic character, Mediterranean light, and the flexibility to move at the right pace.",
     intentLine:
-      "From Naples' layered identity to the elegance of the coast, this private route is designed for travelers who want southern Italy to feel refined, atmospheric, and intelligently paced.",
+      "From Naples' layered identity to the elegance of the coast, this private route is designed for travelers who want southern Italy to feel comfortable, atmospheric, and intelligently paced.",
     primaryCtaLabel: "Plan This Tour",
-    secondaryCtaLabel: "Ask for a Tailor-Made Version",
+    secondaryCtaLabel: "Ask for a Custom Version",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
     imageSrc: "/images/tours-in-italy/naples-amalfi/hero-private-naples-amalfi-coast-tour.jpg",
     imageAlt: "Positano and the Amalfi Coast glowing in warm sunset light",
     quickFacts: [
       "Private only",
-      "Tailor-made pacing",
+      "Custom pacing",
       "Driver-led route available",
       "Scenic and cultural focus",
     ],
@@ -50,20 +50,20 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
     ],
   },
   facts: [
-    { label: "Duration", value: "Full day / Multi-stop / Tailor-made" },
+    { label: "Duration", value: "Full day / Multi-stop / Custom" },
     { label: "Format", value: "Private coastal experience" },
     { label: "Focus", value: "Naples + Amalfi Coast" },
     { label: "Route Style", value: "Scenic and cultural" },
     { label: "Best For", value: "Southern Italy, views, atmosphere, architecture" },
-    { label: "Flexibility", value: "Tailor-made pacing" },
+    { label: "Flexibility", value: "Custom pacing" },
   ],
   overview: {
     eyebrow: "WHY THIS TOUR",
     title: "Southern Italy at Its Most Atmospheric, Without the Rush",
     intro:
-      "Naples and the Amalfi Coast are often experienced too quickly or through generic checklists. In a private format, their contrast becomes the strength of the journey: Naples' layered energy and the coast's luminous elegance in one coherent route.",
+      "Naples and the Amalfi Coast are often experienced too quickly or through generic checklists. In a private format, their contrast becomes the strength of the journey: Naples' layered energy and the coast's luminous elegance in one clear route.",
     body:
-      "This experience is designed around pace, scenic rhythm, and selective focus rather than speed. You move through southern Italy with room for context, atmosphere, and comfort, adapting stop priorities to what matters most to you. It is not mass-tour logic or one-day sprint planning. It is a refined private approach that makes both city character and coastal beauty more memorable.",
+      "This experience is designed around pace, scenic rhythm, and selective focus rather than speed. You move through southern Italy with room for context, atmosphere, and comfort, adapting stop priorities to what matters most to you. It is not mass-tour logic or one-day sprint planning. It is a comfortable private approach that makes both city character and coastal beauty more memorable.",
     imageSrc:
       "/images/tours-in-italy/naples-amalfi/overview-naples-bay-private-coastal-tour.jpg",
     imageAlt: "Naples Bay and Mount Vesuvius in cinematic evening atmosphere",
@@ -77,7 +77,7 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
       imageAlt: "Historic Naples view with warm southern light and coastal depth",
     },
     {
-      title: "Amalfi Coast: Mediterranean Light, Cliffs, and Elegant Scenery",
+      title: "Amalfi Coast: Mediterranean Light, Cliffs, and Beautiful Scenery",
       description:
         "Move through iconic coastline perspectives where architecture, cliffs, and sea light create unmistakable southern atmosphere.",
       imageSrc: "/images/tours-in-italy/naples-amalfi/highlight-amalfi-coast-scenery.jpg",
@@ -86,7 +86,7 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
     {
       title: "Scenic Movement Between Places, Not Just Checkpoints",
       description:
-        "The route is curated as a visual experience in motion, with transitions that feel intentional, graceful, and unrushed.",
+        "The route is well-planned as a visual experience in motion, with transitions that feel intentional, graceful, and unrushed.",
       imageSrc: "/images/tours-in-italy/naples-amalfi/highlight-scenic-movement-route.jpg",
       imageAlt: "Mediterranean sunset over the southern Italy coast",
     },
@@ -96,14 +96,14 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
         "Private planning allows priorities, tempo, and emphasis to adapt to your style rather than fixed group-tour timing.",
       imageSrc:
         "/images/tours-in-italy/naples-amalfi/highlight-private-route-southern-italy.jpg",
-      imageAlt: "Positano hillside architecture and sea in refined coastal light",
+      imageAlt: "Positano hillside architecture and sea in comfortable coastal light",
     },
   ],
   itinerary: [
     {
       title: "Arrival Into the Southern Italy Atmosphere",
       description:
-        "Begin by framing the experience through the contrast between Naples and the coast, with route flow tailored to your pace.",
+        "Begin by framing the experience through the contrast between Naples and the coast, with route flow adapted to your pace.",
     },
     {
       title: "Naples as the Cultural Anchor",
@@ -116,23 +116,28 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
         "Follow a coastline segment designed around beauty, perspective, and selected stops rather than rushed coverage.",
     },
     {
-      title: "Tailored Priorities Along the Route",
+      title: "Choose Priorities Along the Route",
       description:
         "Adapt the route around your interests, whether scenic emphasis, architecture, food moments, or slower exploration.",
     },
     {
       title: "A Private Experience Built Around Your Style",
       description:
-        "Conclude with a coherent private journey shaped around comfort, flexibility, and the kind of southern Italy experience you want.",
+        "Wrap up with a private journey shaped around comfort and flexibility, with room for extra scenic or cultural stops if timing allows.",
+    },
+    {
+      title: "And Much More...",
+      description:
+        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
     },
   ],
   practicalInfo: {
     ticketsText:
-      "Any optional site access is planned during confirmation so timing stays coherent with your preferred route style.",
+      "Any optional site access is planned during confirmation so timing stays clear with your preferred route style.",
     meetingPointText:
       "Start points are coordinated according to your southern Italy base and private route design.",
     walkingLevelText:
-      "Walking is typically moderate, with pacing tailored to your group and selected stop mix.",
+      "Walking is typically moderate, with pacing adapted to your group and selected stop mix.",
     accessibilityNotes:
       "We can adapt sequence where possible, though some historic centers and coastal settings include steps or uneven surfaces.",
     whatToBringText:
@@ -147,9 +152,9 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
         "Ideal for travelers who want atmosphere, scenic depth, and private rhythm over checklist speed.",
     },
     {
-      title: "Travelers Wanting Naples and the Coast in One Refined Route",
+      title: "Travelers Wanting Naples and the Coast in One Comfortable Route",
       description:
-        "A strong fit for guests who want urban character and coastal elegance in one curated journey.",
+        "A strong fit for guests who want urban character and coastal elegance in one well-planned journey.",
     },
     {
       title: "Returning Italy Visitors Looking for More Atmosphere",
@@ -159,7 +164,7 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
     {
       title: "Guests Who Prefer Private Pacing Over Standard Group Touring",
       description:
-        "Designed for visitors who value comfort, flexibility, and intelligent route logic.",
+        "Designed for visitors who value comfort, flexibility, and smart route flow.",
     },
   ],
   upgrades: [
@@ -171,15 +176,15 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
     {
       title: "Gourmet Lunch Reservation Support",
       description:
-        "Receive concierge assistance for a well-positioned lunch stop along your route.",
+        "Receive planning assistance for a well-positioned lunch stop along your route.",
     },
     {
-      title: "Private Driver Upgrade / Premium Vehicle",
+      title: "Private Driver and More Comfortable Vehicle",
       description:
-        "Enhance comfort and style with an upgraded vehicle class for the full experience.",
+        "Add extra comfort and style with a higher-comfort vehicle option for the full experience.",
     },
     {
-      title: "Optional Pompeii Add-On",
+      title: "Pompeii Stop if You Want It",
       description:
         "Add Pompeii only when desired, framed as a selective extension rather than the core route.",
     },
@@ -191,7 +196,7 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "The route felt beautifully balanced. Naples had depth and character, the coast was extraordinary, and the private pacing made the entire day feel elegant rather than overwhelming.",
+      "The route felt beautifully balanced. Naples had depth and character, the coast was extraordinary, and the private pacing made the entire day feel beautiful rather than overwhelming.",
     name: "Claire M",
     context: "Private Naples & Amalfi Coast guest",
   },
@@ -209,7 +214,7 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
     {
       question: "Is this different from a day trip from Rome?",
       answer:
-        "Yes. This page is destination-led for Naples and the Amalfi Coast, not built around Rome departure logistics.",
+        "Yes. This page is destination-led for Naples and the Amalfi Coast, not built around Rome departure planning.",
     },
     {
       question: "Can Pompeii be added if requested?",
@@ -229,14 +234,14 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
     {
       question: "Is this suitable for couples or slower-paced travelers?",
       answer:
-        "Yes. The experience is especially well suited to guests who value a refined, less rushed pace.",
+        "Yes. The experience is especially well suited to guests who value a comfortable, less rushed pace.",
     },
   ],
   relatedTours: [
     {
       title: "Private Sicily Tours",
       description:
-        "Continue south with a tailor-made regional Sicily journey focused on culture, scenery, and private planning.",
+        "Continue south with a custom regional Sicily journey focused on culture, scenery, and private planning.",
       href: "/tours-in-italy/private-sicily-tours",
     },
     {
@@ -254,26 +259,26 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
     {
       title: "Private Day Trips from Rome",
       description:
-        "Compare destination-based touring with curated private day escapes departing from Rome.",
+        "Compare destination-based touring with well-planned private day escapes departing from Rome.",
       href: "/tours/day-trips-from-rome",
     },
     {
       title: "Private Pompeii, Amalfi & Naples Day Trip from Rome",
       description:
-        "Need a Rome-departure full-day format instead? Explore the dedicated day-trip version with from-Rome logistics.",
+        "Need a Rome-departure full-day format instead? Explore the dedicated day-trip version with from-Rome planning.",
       href: "/tours/day-trips-from-rome/pompeii-amalfi-naples",
     },
   ],
   finalCta: {
     title: "Plan Your Private Naples & Amalfi Coast Experience",
     description:
-      "Share your dates, interests, and priorities, and we will shape a private southern Italy route with the right balance of coastal beauty, urban character, and elegant pacing.",
+      "Share your dates, interests, and priorities, and we will shape a private southern Italy route with the right balance of coastal beauty, urban character, and relaxed pace.",
     buttonLabel: "Request Your Private Tour",
     buttonHref: "#",
     trustItems: [
       "Personalized reply within 24 hours",
       "Private planning",
-      "Tailor-made pacing",
+      "Custom pacing",
     ],
   },
 };
