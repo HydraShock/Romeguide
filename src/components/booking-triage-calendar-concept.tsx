@@ -12,7 +12,7 @@ type DayCell = {
 };
 
 type TriageStep = {
-  id: 1 | 2 | 3 | 4;
+  id: 1 | 2 | 3 | 4 | 5;
   label: string;
   title: string;
 };
@@ -36,9 +36,10 @@ const weekdayLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] as const
 
 const triageSteps: readonly TriageStep[] = [
   { id: 1, label: "Step 01", title: "Date" },
-  { id: 2, label: "Step 02", title: "Interests" },
-  { id: 3, label: "Step 03", title: "Personalize your experience" },
-  { id: 4, label: "Step 04", title: "Contact" },
+  { id: 2, label: "Step 02", title: "Travel route" },
+  { id: 3, label: "Step 03", title: "Interests" },
+  { id: 4, label: "Step 04", title: "Personalize your experience" },
+  { id: 5, label: "Step 05", title: "Contact" },
 ] as const;
 
 const interestGroups: readonly InterestGroup[] = [
@@ -239,13 +240,6 @@ const experienceStyleTags = [
 const paceOptions = ["Relaxed", "Balanced", "In-depth"] as const;
 const transportOptions = ["Car and driver", "Walking", "Combination"] as const;
 
-const romeTriageTags = [
-  "Ancient Rome depth",
-  "Vatican highlights",
-  "Christian heritage",
-  "Classic landmarks",
-] as const;
-
 const italyTriageTags = [
   "Single-city extension",
   "Multi-city route",
@@ -346,7 +340,9 @@ export default function BookingTriageCalendarConcept() {
 
   const [monthOffset, setMonthOffset] = useState(0);
   const [selectedDateIso, setSelectedDateIso] = useState(todayIso);
-  const [activeStep, setActiveStep] = useState<1 | 2 | 3 | 4>(1);
+  const [activeStep, setActiveStep] = useState<1 | 2 | 3 | 4 | 5>(1);
+  const [departureCity, setDepartureCity] = useState("");
+  const [arrivalCityItaly, setArrivalCityItaly] = useState("");
   const [selectedGroups, setSelectedGroups] = useState<Record<InterestGroupId, boolean>>(emptyGroups);
   const [selectedInterests, setSelectedInterests] = useState<Record<InterestGroupId, string[]>>(
     emptyInterests,
@@ -365,7 +361,6 @@ export default function BookingTriageCalendarConcept() {
   const [experiencePriorities, setExperiencePriorities] = useState<string[]>([]);
   const [preferredPace, setPreferredPace] = useState("");
   const [preferredTransport, setPreferredTransport] = useState("");
-  const [romeFocusTags, setRomeFocusTags] = useState<string[]>([]);
   const [italyFocusTags, setItalyFocusTags] = useState<string[]>([]);
 
   const [firstName, setFirstName] = useState("");
@@ -441,7 +436,6 @@ export default function BookingTriageCalendarConcept() {
     [selectedGroups],
   );
 
-  const hasRomeInterests = selectedGroups.rome || selectedInterests.rome.length > 0;
   const hasItalyInterests = selectedGroups.italy || selectedInterests.italy.length > 0;
   const isCustomLanguageSelected =
     preferredLanguage.length > 0 &&
@@ -471,10 +465,14 @@ export default function BookingTriageCalendarConcept() {
     }
 
     if (activeStep === 2) {
-      return notSureYet || selectedGroupCount > 0;
+      return departureCity.trim().length > 1 && arrivalCityItaly.trim().length > 1;
     }
 
     if (activeStep === 3) {
+      return notSureYet || selectedGroupCount > 0;
+    }
+
+    if (activeStep === 4) {
       const hasCruisePortOfCall =
         cruisePassenger !== "yes" || cruisePortOfCall.trim().length > 1;
 
@@ -496,8 +494,10 @@ export default function BookingTriageCalendarConcept() {
     );
   }, [
     activeStep,
+    arrivalCityItaly,
     cruisePassenger,
     cruisePortOfCall,
+    departureCity,
     email,
     firstName,
     lastName,
@@ -526,6 +526,12 @@ export default function BookingTriageCalendarConcept() {
     }
     if (selectedGroupLabels.length > 0) {
       params.set("interestGroups", selectedGroupLabels.join(", "));
+    }
+    if (departureCity.trim()) {
+      params.set("departureCity", departureCity.trim());
+    }
+    if (arrivalCityItaly.trim()) {
+      params.set("arrivalCityItaly", arrivalCityItaly.trim());
     }
 
     if (totalTravelers !== null) {
@@ -559,9 +565,6 @@ export default function BookingTriageCalendarConcept() {
     if (preferredTransport) {
       params.set("transport", preferredTransport);
     }
-    if (romeFocusTags.length > 0) {
-      params.set("romeFocus", romeFocusTags.join(", "));
-    }
     if (italyFocusTags.length > 0) {
       params.set("italyFocus", italyFocusTags.join(", "));
     }
@@ -591,8 +594,10 @@ export default function BookingTriageCalendarConcept() {
 
     return `/booking-contact?${params.toString()}`;
   }, [
+    arrivalCityItaly,
     cruisePassenger,
     cruisePortOfCall,
+    departureCity,
     email,
     experiencePriorities,
     finalNote,
@@ -606,7 +611,6 @@ export default function BookingTriageCalendarConcept() {
     preferredLanguage,
     preferredPace,
     preferredTransport,
-    romeFocusTags,
     selectedDateIso,
     selectedGroupLabels,
     selectedInterestLabels,
@@ -643,11 +647,11 @@ export default function BookingTriageCalendarConcept() {
   }
 
   function goToNext() {
-    if (!canContinue || activeStep >= 4) {
+    if (!canContinue || activeStep >= 5) {
       return;
     }
 
-    const next = (activeStep + 1) as 2 | 3 | 4;
+    const next = (activeStep + 1) as 2 | 3 | 4 | 5;
     setActiveStep(next);
   }
 
@@ -656,7 +660,7 @@ export default function BookingTriageCalendarConcept() {
       return;
     }
 
-    const prev = (activeStep - 1) as 1 | 2 | 3;
+    const prev = (activeStep - 1) as 1 | 2 | 3 | 4;
     setActiveStep(prev);
   }
 
@@ -774,6 +778,39 @@ export default function BookingTriageCalendarConcept() {
 
           {activeStep === 2 ? (
             <div className={styles.stepContent}>
+              <h4>Your travel route in Italy</h4>
+              <p>
+                Tell us where you are starting and where you want to arrive in Italy before we
+                choose experiences.
+              </p>
+
+              <div className={styles.routeGrid}>
+                <label className={styles.fieldWrap}>
+                  <span>Departure city</span>
+                  <input
+                    type="text"
+                    value={departureCity}
+                    onChange={(event) => setDepartureCity(event.target.value)}
+                    placeholder="e.g. Rome"
+                    className={styles.fieldInput}
+                  />
+                </label>
+                <label className={styles.fieldWrap}>
+                  <span>Arrival city in Italy</span>
+                  <input
+                    type="text"
+                    value={arrivalCityItaly}
+                    onChange={(event) => setArrivalCityItaly(event.target.value)}
+                    placeholder="e.g. Florence"
+                    className={styles.fieldInput}
+                  />
+                </label>
+              </div>
+            </div>
+          ) : null}
+
+          {activeStep === 3 ? (
+            <div className={styles.stepContent}>
               <h4>Choose one or more areas (you can pick all 3)</h4>
               <p>
                 Select the areas you&apos;d like to explore, then choose specific experiences
@@ -879,7 +916,7 @@ export default function BookingTriageCalendarConcept() {
             </div>
           ) : null}
 
-          {activeStep === 3 ? (
+          {activeStep === 4 ? (
             <div className={`${styles.stepContent} ${styles.stepContentCompact}`}>
               <h4>A few quick details</h4>
               <p>Share a few details so we can shape the experience around your group.</p>
@@ -1163,27 +1200,6 @@ export default function BookingTriageCalendarConcept() {
                   </div>
                 </section>
 
-                {hasRomeInterests ? (
-                  <section className={`${styles.stepSection} ${styles.stepSectionCompact}`}>
-                    <h5>Rome highlights focus</h5>
-                    <div className={styles.optionGrid}>
-                      {romeTriageTags.map((tag) => (
-                        <button
-                          key={tag}
-                          type="button"
-                          className={`${styles.optionChip} ${
-                            romeFocusTags.includes(tag) ? styles.optionChipActive : ""
-                          }`}
-                          onClick={() => setRomeFocusTags((current) => toggleStringInList(current, tag))}
-                          aria-pressed={romeFocusTags.includes(tag)}
-                        >
-                          {tag}
-                        </button>
-                      ))}
-                    </div>
-                  </section>
-                ) : null}
-
                 {hasItalyInterests ? (
                   <section className={`${styles.stepSection} ${styles.stepSectionCompact}`}>
                     <h5>Italy route focus</h5>
@@ -1208,7 +1224,7 @@ export default function BookingTriageCalendarConcept() {
             </div>
           ) : null}
 
-          {activeStep === 4 ? (
+          {activeStep === 5 ? (
             <div className={styles.stepContent}>
               <h4>Your contact details</h4>
               <p>Share your final details and we&apos;ll send you a personal itinerary for your trip.</p>
@@ -1285,6 +1301,12 @@ export default function BookingTriageCalendarConcept() {
                   <strong>Date:</strong> {selectedDateShort}
                 </p>
                 <p>
+                  <strong>Route:</strong>{" "}
+                  {departureCity.trim() && arrivalCityItaly.trim()
+                    ? `${departureCity.trim()} -> ${arrivalCityItaly.trim()}`
+                    : "Not set"}
+                </p>
+                <p>
                   <strong>Travelers:</strong>{" "}
                   {totalTravelers === null || under18Travelers === null
                     ? "Not set"
@@ -1320,7 +1342,7 @@ export default function BookingTriageCalendarConcept() {
                 Previous
               </button>
 
-              {activeStep < 4 ? (
+              {activeStep < 5 ? (
                 <button
                   type="button"
                   className={styles.calendarCta}
