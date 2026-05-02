@@ -240,13 +240,6 @@ const experienceStyleTags = [
 const paceOptions = ["Relaxed", "Balanced", "In-depth"] as const;
 const transportOptions = ["Car and driver", "Walking", "Combination"] as const;
 
-const italyTriageTags = [
-  "Single-city extension",
-  "Multi-city route",
-  "Train-based journey",
-  "Private car with driver",
-] as const;
-
 const emptyInterests: Record<InterestGroupId, string[]> = {
   rome: [],
   dayTrips: [],
@@ -361,7 +354,6 @@ export default function BookingTriageCalendarConcept() {
   const [experiencePriorities, setExperiencePriorities] = useState<string[]>([]);
   const [preferredPace, setPreferredPace] = useState("");
   const [preferredTransport, setPreferredTransport] = useState("");
-  const [italyFocusTags, setItalyFocusTags] = useState<string[]>([]);
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -436,7 +428,6 @@ export default function BookingTriageCalendarConcept() {
     [selectedGroups],
   );
 
-  const hasItalyInterests = selectedGroups.italy || selectedInterests.italy.length > 0;
   const isCustomLanguageSelected =
     preferredLanguage.length > 0 &&
     !languageOptions.includes(preferredLanguage as (typeof languageOptions)[number]);
@@ -565,9 +556,6 @@ export default function BookingTriageCalendarConcept() {
     if (preferredTransport) {
       params.set("transport", preferredTransport);
     }
-    if (italyFocusTags.length > 0) {
-      params.set("italyFocus", italyFocusTags.join(", "));
-    }
     if (firstName.trim()) {
       params.set("firstName", firstName.trim());
     }
@@ -603,7 +591,6 @@ export default function BookingTriageCalendarConcept() {
     finalNote,
     firstName,
     hotelArea,
-    italyFocusTags,
     lastName,
     mobilityIssues,
     notSureYet,
@@ -1200,26 +1187,6 @@ export default function BookingTriageCalendarConcept() {
                   </div>
                 </section>
 
-                {hasItalyInterests ? (
-                  <section className={`${styles.stepSection} ${styles.stepSectionCompact}`}>
-                    <h5>Italy route focus</h5>
-                    <div className={styles.optionGrid}>
-                      {italyTriageTags.map((tag) => (
-                        <button
-                          key={tag}
-                          type="button"
-                          className={`${styles.optionChip} ${
-                            italyFocusTags.includes(tag) ? styles.optionChipActive : ""
-                          }`}
-                          onClick={() => setItalyFocusTags((current) => toggleStringInList(current, tag))}
-                          aria-pressed={italyFocusTags.includes(tag)}
-                        >
-                          {tag}
-                        </button>
-                      ))}
-                    </div>
-                  </section>
-                ) : null}
               </div>
             </div>
           ) : null}
