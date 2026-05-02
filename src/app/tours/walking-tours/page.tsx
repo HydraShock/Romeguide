@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import TourTemplatePage from "@/components/tour-template/tour-template-page";
 import type { TourPageData } from "@/components/tour-template/types";
 
@@ -87,27 +87,27 @@ const walkingTourData: TourPageData = {
   ],
   itinerary: [
     {
-      title: "Meeting Point and Preferences (10 min)",
+      title: "Meeting Point and Preferences",
       description:
         "Meet your guide in central Rome and set priorities for pacing, focus, and route style.",
     },
     {
-      title: "Pantheon District Walk (50 min)",
+      title: "Pantheon District Walk",
       description:
         "Explore the Pantheon area with commentary on architecture, urban layering, and Roman daily life.",
     },
     {
-      title: "Piazza Navona Segment (45 min)",
+      title: "Piazza Navona Segment",
       description:
         "Walk through Navona and nearby lanes with focus on fountains, baroque design, and local history.",
     },
     {
-      title: "Trevi Area and Hidden Stops (40 min)",
+      title: "Trevi Area and Hidden Stops",
       description:
         "Reach the Trevi zone through curated side streets that reveal quieter city textures.",
     },
     {
-      title: "Final Local Recommendations (15 min)",
+      title: "Final Local Recommendations",
       description:
         "Close with tailored suggestions for dining, neighborhoods, and next cultural visits.",
     },

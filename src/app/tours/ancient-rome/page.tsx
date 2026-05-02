@@ -110,7 +110,7 @@ const ancientRomeTourData: TourPageData = {
     {
       title: "And Much More...",
       description:
-        "Because this is a private custom tour, we can add extra stops, viewpoints, and local suggestions based on your interests and timing.",
+        "This is a private custom tour, so there is always much more to see and we can add extra stops based on your interests.",
     },
   ],
   practicalInfo: {

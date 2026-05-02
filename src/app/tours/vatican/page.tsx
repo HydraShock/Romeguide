@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import TourTemplatePage from "@/components/tour-template/tour-template-page";
 import type { TourPageData } from "@/components/tour-template/types";
 
@@ -87,29 +87,29 @@ const vaticanTourData: TourPageData = {
   ],
   itinerary: [
     {
-      title: "Meeting and Entry Strategy (15 min)",
+      title: "Meeting and Entry Strategy",
       description:
         "Meet your guide, review your preferences, and confirm the best entry timing before starting.",
     },
     {
-      title: "Vatican Museums Galleries (1h 45m)",
+      title: "Vatican Museums Galleries",
       description:
         "Explore major galleries with clear commentary and smooth transitions between key sections.",
     },
     {
-      title: "Sistine Chapel Visit (30m)",
+      title: "Sistine Chapel Visit",
       description:
         "Visit the chapel with easy-to-follow context on iconography, patronage, and Michelangelo's innovation.",
     },
     {
-      title: "St. Peter's Basilica (45m)",
+      title: "St. Peter's Basilica",
       description:
         "Continue into the basilica to understand its architecture, spiritual role, and key masterpieces.",
     },
     {
       title: "And Much More...",
       description:
-        "Because this is a private custom tour, we can add extra moments, nearby stops, and practical suggestions based on your time and interests.",
+        "This is a private custom tour, so there is always much more to see and we can add extra stops based on your interests.",
     },
   ],
   practicalInfo: {

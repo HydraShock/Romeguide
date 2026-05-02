@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import TourTemplatePage from "@/components/tour-template/tour-template-page";
 import type { TourPageData } from "@/components/tour-template/types";
 
@@ -87,29 +87,29 @@ const artArchitectureTourData: TourPageData = {
   ],
   itinerary: [
     {
-      title: "Meeting and Curatorial Brief (15 min)",
+      title: "Meeting and Curatorial Brief",
       description:
         "Meet your guide and define thematic priorities, from sculpture and painting to architecture.",
     },
     {
-      title: "Primary Collection Focus (1h 20m)",
+      title: "Primary Collection Focus",
       description:
         "Explore selected galleries or major interior spaces with high-context commentary.",
     },
     {
-      title: "Architectural Reading Walk (50 min)",
+      title: "Architectural Reading Walk",
       description:
         "Move through nearby streets and facades to connect building design with artistic trends.",
     },
     {
-      title: "Second Cultural Anchor (45 min)",
+      title: "Second Cultural Anchor",
       description:
         "Add a complementary church, museum, or viewpoint based on your chosen thematic arc.",
     },
     {
       title: "And Much More...",
       description:
-        "Because this is a private custom tour, we can add extra galleries, neighborhoods, and recommendations based on what you love most.",
+        "This is a private custom tour, so there is always much more to see and we can add extra stops based on your interests.",
     },
   ],
   practicalInfo: {

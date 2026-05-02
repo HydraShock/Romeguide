@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import TourTemplatePage from "@/components/tour-template/tour-template-page";
 import type { TourPageData } from "@/components/tour-template/types";
 
@@ -86,27 +86,27 @@ const familyFriendlyTourData: TourPageData = {
   ],
   itinerary: [
     {
-      title: "Meet and Family Briefing (10 min)",
+      title: "Meet and Family Briefing",
       description:
         "Meet your guide and confirm age range, attention span, and preferred activity rhythm.",
     },
     {
-      title: "Main Landmark Story Stop (55 min)",
+      title: "Main Landmark Story Stop",
       description:
         "Begin with a high-impact site explained through child-friendly storytelling and visual anchors.",
     },
     {
-      title: "Interactive Walk Segment (45 min)",
+      title: "Interactive Walk Segment",
       description:
         "Move through nearby streets with light educational prompts and engaging Roman anecdotes.",
     },
     {
-      title: "Second Highlight and Break (45 min)",
+      title: "Second Highlight and Break",
       description:
         "Add a second major stop with pacing adjustments and optional snack or rest pause.",
     },
     {
-      title: "Wrap-Up and Next Tips (15 min)",
+      title: "Wrap-Up and Next Tips",
       description:
         "End with practical suggestions for family dining, transport, and additional kid-friendly sites.",
     },

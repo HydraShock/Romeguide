@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import TourTemplatePage from "@/components/tour-template/tour-template-page";
 import type { TourPageData } from "@/components/tour-template/types";
 
@@ -86,29 +86,29 @@ const christianRomeTourData: TourPageData = {
   ],
   itinerary: [
     {
-      title: "Meeting and Route Framing (15 min)",
+      title: "Meeting and Route Framing",
       description:
         "Meet your guide and align route priorities around faith focus, pacing, and preferred church sequence.",
     },
     {
-      title: "Catacombs Visit (1h 10m)",
+      title: "Catacombs Visit",
       description:
         "Explore selected catacomb contexts with commentary on early Christian life, burial practice, and symbolism.",
     },
     {
-      title: "Major Basilica Stop (1h)",
+      title: "Major Basilica Stop",
       description:
         "Continue to a major basilica and decode architecture, liturgical significance, and key artistic elements.",
     },
     {
-      title: "Second Sacred Landmark (45m)",
+      title: "Second Sacred Landmark",
       description:
         "Add a complementary church or basilica to complete the historical arc and devotional perspective.",
     },
     {
       title: "And Much More...",
       description:
-        "Because this is a private custom tour, we can add extra churches, meaningful stops, and practical local guidance based on your interests.",
+        "This is a private custom tour, so there is always much more to see and we can add extra stops based on your interests.",
     },
   ],
   practicalInfo: {

@@ -85,27 +85,27 @@ const cerveteriEtruscansDayTripData: TourPageData = {
   ],
   itinerary: [
     {
-      title: "Pickup in Rome and Transfer North-West (1h)",
+      title: "Pickup in Rome and Transfer North-West",
       description:
         "Depart Rome with private driver service and route briefing on the Etruscan focus of the day.",
     },
     {
-      title: "Banditaccia Necropolis Visit (2h)",
+      title: "Banditaccia Necropolis Visit",
       description:
         "Explore key sectors with optional expert guidance to decode funerary architecture and cultural meaning.",
     },
     {
-      title: "Local Heritage Segment (1h 15m)",
+      title: "Local Heritage Segment",
       description:
         "Add a nearby museum or contextual stop depending on opening schedules and your historical priorities.",
     },
     {
-      title: "Lunch and Scenic Pause (1h)",
+      title: "Lunch and Scenic Pause",
       description:
         "Enjoy a relaxed break in the Cerveteri area with timing tailored to your energy and return window.",
     },
     {
-      title: "Return to Rome (1h)",
+      title: "Return to Rome",
       description:
         "Return by private vehicle and reach Rome with enough evening flexibility for onward plans.",
     },

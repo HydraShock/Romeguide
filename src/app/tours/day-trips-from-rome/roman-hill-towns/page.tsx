@@ -80,27 +80,27 @@ const romanHillTownsDayTripData: TourPageData = {
   ],
   itinerary: [
     {
-      title: "Pickup in Rome and Transfer to First Hill Town (45m)",
+      title: "Pickup in Rome and Transfer to First Hill Town",
       description:
         "Start with private departure from Rome and a short scenic drive into the Castelli Romani area.",
     },
     {
-      title: "Frascati Exploration Window (1h 30m)",
+      title: "Frascati Exploration Window",
       description:
         "Stroll through key streets and viewpoints with optional local tasting stops based on your interests.",
     },
     {
-      title: "Castel Gandolfo and Lake Panorama (1h 30m)",
+      title: "Castel Gandolfo and Lake Panorama",
       description:
         "Continue to elevated viewpoints and village sections with curated scenic pauses.",
     },
     {
-      title: "Lunch and Optional Nemi Segment (1h 30m)",
+      title: "Lunch and Optional Nemi Segment",
       description:
         "Pause for lunch and, where preferred, add a short Nemi-style village stop before heading back.",
     },
     {
-      title: "Return to Rome (1h)",
+      title: "Return to Rome",
       description:
         "Arrive in Rome with late-afternoon or early-evening timing depending on chosen route depth.",
     },
