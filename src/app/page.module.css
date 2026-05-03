@@ -983,6 +983,42 @@
   filter: brightness(1.1);
 }
 
+@media (max-width: 980px) {
+  .heroDivider {
+    display: none;
+  }
+
+  .contentLayer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.8rem 1.2rem 1.5rem;
+  }
+
+  .copyBlock {
+    position: static;
+    width: min(100%, 34rem);
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .kicker,
+  .title,
+  .description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .ctaRow {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 720px) {
   .heroDivider {
     display: none;
@@ -1007,7 +1043,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3.1rem 1.2rem 1.5rem;
+    padding: 5.8rem 1.2rem 1.5rem;
   }
 
   .copyBlock {
