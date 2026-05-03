@@ -719,6 +719,10 @@
     transform: translateY(-0.18rem);
   }
 
+  .centerLogoImage {
+    transform: translateX(6px);
+  }
+
   .navGroupRight {
     position: absolute;
     right: 0.7rem;
