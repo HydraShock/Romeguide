@@ -27,7 +27,7 @@ const artArchitectureTourData: TourPageData = {
     title: "Rome Art and Architecture Tour",
     landmarksLine: "Vatican Museums | Borghese Gallery | Capitoline Context",
     subtitle:
-      "Immerse yourself in Rome's artistic and architectural legacy with a private guide who connects masterpieces, patrons, and city design in one clear route.",
+      "Immerse yourself in Rome's artistic and architectural legacy with a private guide who connects masterpieces and city design in one clear route.",
     intentLine: "Private cultural storytelling from Renaissance to Baroque Rome.",
     primaryCtaLabel: "Plan This Tour",
     secondaryCtaLabel: "Ask for a Custom Itinerary",
@@ -59,7 +59,7 @@ const artArchitectureTourData: TourPageData = {
     {
       title: "Masterpiece Collections with Clear Context",
       description:
-        "Understand major works through patronage, style evolution, and artistic intent rather than disconnected labels.",
+        "Understand major works through style evolution and artistic intent rather than disconnected labels.",
       imageSrc: "/images/tours/art-architecture/highlight-rome-art-architecture-tour-baroque-sculpture.webp",
       imageAlt: "Baroque fountain sculpture detail in historic Rome",
     },
@@ -80,7 +80,7 @@ const artArchitectureTourData: TourPageData = {
     {
       title: "Hidden Gems Beyond Standard Circuits",
       description:
-        "Include quieter special spaces for travelers seeking a more well-planned cultural perspective.",
+        "Include quieter special spaces for travelers seeking a more intense cultural perspective.",
       imageSrc: "/images/tours/art-architecture/highlight-rome-art-architecture-tour-trevi-detail.webp",
       imageAlt: "Trevi Fountain sculptural detail highlighting Roman craftsmanship",
     },
@@ -164,9 +164,9 @@ const artArchitectureTourData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "This felt like a private masterclass, not a standard tour. We finally understood how Rome's architecture and art speak to each other.",
-    name: "Daniel S",
-    context: "Art and architecture private tour guest",
+      "We toured Rome, Florence, and Venice with Rome Guide Services, and every guide made art, architecture, and history easy to understand and enjoyable.",
+    name: "Rich V",
+    context: "Tripadvisor review, Jul 2019",
   },
   faq: [
     {

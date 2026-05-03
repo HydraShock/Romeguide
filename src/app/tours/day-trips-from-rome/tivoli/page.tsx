@@ -51,7 +51,7 @@ const tivoliDayTripData: TourPageData = {
     eyebrow: "WHY THIS DAY TRIP",
     title: "Imperial Grandeur, Garden Elegance, and a Slower Rhythm Beyond Rome",
     intro:
-      "This is not a rushed excursion. It is a private Tivoli day trip from Rome designed as a cultural retreat, ideal for guests who want beauty and depth without urban intensity.",
+      "It is a private Tivoli day trip from Rome designed as a cultural retreat, ideal for guests who want beauty and depth without urban intensity.",
     body:
       "Hadrian\u2019s Villa opens a vast imperial archaeological world, while Villa d\u2019Este offers one of Italy\u2019s most celebrated compositions of fountains, terraces, and Renaissance design. With private transportation and well-planned pacing, this Tivoli villas day trip from Rome leaves room for walking, photography, and quiet appreciation.",
     imageSrc: "/images/tours/day-trips/tivoli/overview-villa-deste-gardens-tivoli.jpg",
@@ -107,11 +107,6 @@ const tivoliDayTripData: TourPageData = {
       title: "Villa d\u2019Este Gardens and Fountains",
       description:
         "Experience the terraces, water features, and comfortable design language of one of Italy's most celebrated villas.",
-    },
-    {
-      title: "Flexible Return to Rome",
-      description:
-        "Return to Rome in comfort after a custom-paced day, with optional final stops if you prefer.",
     },
     {
       title: "And Much More...",
@@ -176,9 +171,9 @@ const tivoliDayTripData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "Tivoli felt like the perfect escape from Rome. Hadrian\u2019s Villa was extraordinary, Villa d\u2019Este was unforgettable, and the private pacing made the whole day feel beautifully effortless.",
-    name: "Elena R",
-    context: "Private Tivoli day trip guest",
+      "Carlo provided a guide and driver, and it made all the difference in how we saw Rome and nearby sites. It was a marvelous experience.",
+    name: "Anne H",
+    context: "Tripadvisor review, May 2022",
   },
   faq: [
     {

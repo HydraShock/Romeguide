@@ -28,6 +28,14 @@
   z-index: 0;
 }
 
+.desktopHeroBackground {
+  display: block;
+}
+
+.mobileHeroBackground {
+  display: none;
+}
+
 .contentLayer {
   position: absolute;
   inset: 0;
@@ -976,6 +984,15 @@
 }
 
 @media (max-width: 720px) {
+  .desktopHeroBackground {
+    display: none;
+  }
+
+  .mobileHeroBackground {
+    display: block;
+    object-position: center;
+  }
+
   .hero {
     width: 100%;
     aspect-ratio: auto;

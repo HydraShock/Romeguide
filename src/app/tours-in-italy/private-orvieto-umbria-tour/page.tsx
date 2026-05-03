@@ -15,7 +15,7 @@ const privateOrvietoUmbriaTourData: TourPageData = {
   seoTitle:
     "Private Orvieto & Umbria Tour | Hill Towns, Cathedral, Countryside & Custom Experience | Rome Guide Services",
   seoDescription:
-    "Discover Orvieto and Umbria through a private well-planned experience shaped around hill-town beauty, cathedral architecture, countryside rhythm, food, wine, and relaxed pace.",
+    "Explore Orvieto and Umbria with a private tour at your pace, with hill towns, cathedral heritage, countryside views, and food and wine options.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -27,9 +27,9 @@ const privateOrvietoUmbriaTourData: TourPageData = {
     title: "Private Orvieto & Umbria Tour",
     landmarksLine: "ORVIETO \u2022 HILL TOWNS \u2022 COUNTRYSIDE \u2022 FOOD & WINE",
     subtitle:
-      "Discover Orvieto and the wider Umbrian atmosphere through a private well-planned experience shaped around hill-town beauty, cathedral architecture, countryside rhythm, and the quieter elegance of central Italy.",
+      "Discover Orvieto and Umbria with a private route built around hill-town beauty, cathedral architecture, countryside rhythm, and a slower pace.",
     intentLine:
-      "From Orvieto's dramatic skyline and cathedral to scenic villages, local food, and slower cultural pacing, this private route is designed for travelers who want beauty without rush and depth without noise.",
+      "From Orvieto's skyline and cathedral to scenic villages and local food, we shape the day around what you enjoy most.",
     primaryCtaLabel: "Plan This Tour",
     secondaryCtaLabel: "Ask for a Custom Version",
     primaryCtaHref: "#final-cta",
@@ -59,59 +59,59 @@ const privateOrvietoUmbriaTourData: TourPageData = {
   ],
   overview: {
     eyebrow: "WHY THIS TOUR",
-    title: "A More Graceful Central Italy Experience, Built Around Place Rather Than Rush",
+    title: "A Calmer Way to See Central Italy",
     intro:
-      "Orvieto and Umbria are often overshadowed by louder destinations, yet they offer one of central Italy's most rewarding combinations of architecture, atmosphere, and countryside rhythm.",
+      "Orvieto and Umbria are quieter than Italy's biggest cities, but full of beauty, history, and character.",
     body:
-      "A private format reveals this region at the right pace. Orvieto provides a strong visual and cultural anchor through its skyline and cathedral, while the wider Umbrian layer adds beautiful villages, scenic roads, food-and-wine texture, and reflective tempo. This is not a checklist route or one-day speed run. It is a comfortable journey shaped around place, beauty, and smart pace.",
+      "A private format lets you enjoy this region at the right pace. Orvieto gives the day a strong cultural base, while Umbria adds villages, scenic roads, and food-and-wine moments. It feels clear, relaxed, and much more enjoyable than a rushed checklist.",
     imageSrc: "/images/tours-in-italy/orvieto-umbria/overview-orvieto-umbrian-atmosphere.jpg",
     imageAlt: "Orvieto and surrounding Umbrian countryside in warm afternoon light",
   },
   highlights: [
     {
-      title: "Orvieto: Cathedral, Skyline, and Hill-Town Drama",
+      title: "Orvieto: Cathedral, Skyline, and Hill-Town Beauty",
       description:
-        "Experience Orvieto as the route's visual and architectural anchor, where cathedral craft and cliffside identity create immediate impact.",
+        "Experience Orvieto through its cathedral, skyline, and cliffside setting.",
       imageSrc: "/images/tours-in-italy/orvieto-umbria/highlight-orvieto-cathedral-skyline.jpg",
       imageAlt: "Detailed Gothic facade of Orvieto Cathedral",
     },
     {
       title: "Umbria: Slower Roads, Beautiful Villages, and Countryside Rhythm",
       description:
-        "Move through hill-town and rural settings with a route designed for atmosphere, proportion, and scenic continuity.",
+        "Move through hill towns and countryside with a route focused on views, comfort, and continuity.",
       imageSrc: "/images/tours-in-italy/orvieto-umbria/highlight-umbria-hill-town-streets.jpg",
       imageAlt: "Medieval Umbrian village architecture and stone lanes",
     },
     {
       title: "Food, Wine, and the Quiet Beauty of Central Italy",
       description:
-        "Add culinary and wine moments as natural supporting layers that enrich the route without overwhelming its cultural focus.",
+        "Add food and wine moments naturally along the route, without losing the cultural focus.",
       imageSrc: "/images/tours-in-italy/orvieto-umbria/highlight-umbria-food-wine-rhythm.jpg",
-      imageAlt: "Umbrian hillside textures and vineyard atmosphere",
+      imageAlt: "Umbrian hillside views and vineyard atmosphere",
     },
     {
-      title: "A Private Route Shaped Around Atmosphere, Not Rush",
+      title: "A Private Route Focused on Atmosphere, Not Rush",
       description:
-        "Private planning allows timing, stop depth, and scenic emphasis to adapt to your priorities instead of group-tour constraints.",
+        "Private planning lets us adapt timing, stop depth, and scenic focus to your priorities.",
       imageSrc: "/images/tours-in-italy/orvieto-umbria/highlight-private-route-atmosphere.jpg",
       imageAlt: "Orvieto skyline profile above central Italy countryside",
     },
   ],
   itinerary: [
     {
-      title: "Entering the Umbrian Atmosphere",
+      title: "Getting Started in Umbria",
       description:
-        "Frame the experience through the contrast between hill-town architecture, countryside depth, and slower cultural rhythm.",
+        "Start with a clear route through hill towns, countryside views, and a slower rhythm.",
     },
     {
-      title: "Orvieto as the Architectural and Visual Anchor",
+      title: "Orvieto as the Main Cultural Stop",
       description:
-        "Begin in Orvieto with focus on skyline presence, cathedral identity, and the character of its historic core.",
+        "Begin in Orvieto with focus on its skyline, cathedral, and historic center.",
     },
     {
       title: "Hill-Town and Countryside Texture",
       description:
-        "Continue through scenic segments and selected village layers with room for perspective and unhurried exploration.",
+        "Continue through scenic roads and selected villages, with room for unhurried exploration.",
     },
     {
       title: "Choose Priorities Along the Route",
@@ -119,21 +119,16 @@ const privateOrvietoUmbriaTourData: TourPageData = {
         "Adapt the route around food, wine, architecture, viewpoints, or a slower atmospheric pace.",
     },
     {
-      title: "A Private Experience Built Around Your Style",
-      description:
-        "Wrap up with a route shaped around your preferences, with flexibility for extra moments along the way.",
-    },
-    {
       title: "And Much More...",
       description:
-        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
+        "Every tour is private and custom, so we can always add more places and ideas based on what you enjoy most.",
     },
   ],
   practicalInfo: {
     ticketsText:
-      "Any site or cathedral access is aligned during planning so timing supports your preferred route rhythm.",
+      "Any site or cathedral access is planned in advance so timing stays smooth for your route.",
     meetingPointText:
-      "Starting points are coordinated according to your base location and private route design.",
+      "Starting points are set based on where you are staying and your route.",
     walkingLevelText:
       "Walking is typically moderate with stone streets and occasional inclines in historic areas.",
     accessibilityNotes:
@@ -147,29 +142,29 @@ const privateOrvietoUmbriaTourData: TourPageData = {
     {
       title: "Couples Seeking a More Romantic Central Italy Experience",
       description:
-        "Ideal for travelers wanting scenic elegance, cultural depth, and private pacing in one comfortable route.",
+        "Ideal for travelers who want scenic views, cultural depth, and a comfortable private pace.",
     },
     {
-      title: "Travelers Wanting Hill Towns and Countryside in One Comfortable Route",
+      title: "Travelers Who Want Hill Towns and Countryside Together",
       description:
         "Perfect for guests who value village character and landscape atmosphere beyond major city intensity.",
     },
     {
       title: "Food and Wine Lovers",
       description:
-        "A strong fit for travelers who want local culinary texture integrated into a broader cultural journey.",
+        "A strong fit for travelers who want local food culture as part of the day.",
     },
     {
-      title: "Guests Who Prefer Private Pacing Over Standard Group Touring",
+      title: "Travelers Who Prefer Private Tours",
       description:
-        "Designed for visitors seeking flexibility, comfort, and well-planned route logic.",
+        "Designed for visitors who want flexibility, comfort, and a route that makes sense.",
     },
   ],
   upgrades: [
     {
       title: "Wine Tasting Moment",
       description:
-        "Integrate a well-planned wine moment where it naturally fits your route style and timing.",
+        "Add a wine tasting stop where it fits naturally in your day.",
     },
     {
       title: "Gourmet Lunch Reservation Support",
@@ -189,40 +184,40 @@ const privateOrvietoUmbriaTourData: TourPageData = {
     {
       title: "Architecture-Focused Route Adjustment",
       description:
-        "Increase emphasis on cathedral, streetscape, and heritage detail along the route.",
+        "Add more focus on the cathedral, streetscape, and heritage details along the route.",
     },
   ],
   testimonial: {
     quote:
-      "The route felt beautifully balanced \u2014 Orvieto had drama and elegance, while the wider Umbrian atmosphere made the whole experience feel calm, rich, and deeply memorable.",
-    name: "Emma S",
-    context: "Private Orvieto & Umbria guest",
+      "Their flexibility in adjusting the itinerary to what we wanted was extraordinary, and the full day felt calm, smooth, and very well organized.",
+    name: "Jocelyn S",
+    context: "Tripadvisor review, Oct 2019",
   },
   faq: [
     {
       question: "Is this a private Orvieto and Umbria experience?",
       answer:
-        "Yes. This is a fully private destination-led experience with flexible pacing and route design.",
+        "Yes. This is a fully private Orvieto and Umbria experience, built around your pace.",
     },
     {
       question: "Can the route be customized?",
       answer:
-        "Absolutely. Stops, timing, and thematic focus are adapted to your interests and travel style.",
+        "Absolutely. Stops, timing, and themes are adjusted to your interests and travel style.",
     },
     {
       question: "Is this different from a day trip from Rome?",
       answer:
-        "Yes. This page is positioned as an Orvieto and Umbria destination experience, not as a Rome-departure day-trip format.",
+        "Yes. This page is for an Orvieto and Umbria destination tour, not a Rome-departure day trip.",
     },
     {
       question: "Can wine or food stops be included?",
       answer:
-        "Yes. Food and wine elements can be added as well-planned route extensions.",
+        "Yes. Food and wine stops can be added naturally along the route.",
     },
     {
       question: "Is private transport part of the experience?",
       answer:
-        "Yes. Private transport can be integrated according to your preferred route and pacing.",
+        "Yes. Private transport can be added based on your preferred route and pace.",
     },
     {
       question: "How much walking is involved?",
@@ -239,13 +234,13 @@ const privateOrvietoUmbriaTourData: TourPageData = {
     {
       title: "Private Florence & Tuscany Tour",
       description:
-        "Pair Umbria's hill-town rhythm with a Florence-first private experience and Tuscan cultural depth.",
+        "Pair Umbria's hill-town rhythm with a Florence route and optional Tuscany extension.",
       href: "/tours-in-italy/private-florence-tuscany-tour",
     },
     {
       title: "Private Castelli Romani Day Trip from Rome",
       description:
-        "Compare this destination-led Umbria route with a Rome-based hill-town day trip format.",
+        "Compare this Umbria destination route with a day trip that starts from Rome.",
       href: "/tours/day-trips-from-rome/roman-hill-towns",
     },
     {
@@ -257,7 +252,7 @@ const privateOrvietoUmbriaTourData: TourPageData = {
     {
       title: "Private Sicily Tours",
       description:
-        "Continue with a richer regional private journey across Sicily's culture, landscapes, and atmosphere.",
+        "Continue with private Sicily tours across culture, landscapes, and coastal towns.",
       href: "/tours-in-italy/private-sicily-tours",
     },
     {
@@ -269,9 +264,9 @@ const privateOrvietoUmbriaTourData: TourPageData = {
   ],
   finalCta: {
     title: "Plan Your Private Orvieto & Umbria Experience",
-    description:
-      "Share your dates, interests, and priorities, and we will shape a private central Italy route with the right balance of scenery, architecture, food, wine, and relaxed pace.",
-    buttonLabel: "Request Your Private Tour",
+      description:
+        "Share your dates and interests, and we'll build a private Orvieto and Umbria route that fits your pace.",
+    buttonLabel: "Plan This Tour",
     buttonHref: "#",
     trustItems: [
       "Personalized reply within 24 hours",

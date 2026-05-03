@@ -113,11 +113,6 @@ const orvietoDayTripData: TourPageData = {
         "Take in quieter streets, local viewpoints, and cultural details that make Orvieto feel distinct from larger cities.",
     },
     {
-      title: "Flexible Return to Rome",
-      description:
-        "Return to Rome at a comfortable pace, with flexibility for one more stop if it fits your day.",
-    },
-    {
       title: "And Much More...",
       description:
         "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
@@ -183,9 +178,9 @@ const orvietoDayTripData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "Orvieto was everything we hoped for\u2014beautiful, quiet, and incredibly atmospheric. The private pacing made the day feel relaxed, beautiful, and completely different from the intensity of Rome.",
-    name: "Sophie L",
-    context: "Private Orvieto day trip guest",
+      "Their flexibility in adjusting the itinerary to our wishes was extraordinary. The day felt insightful, smooth, and fully personalized.",
+    name: "Jocelyn S",
+    context: "Tripadvisor review, Oct 2019",
   },
   faq: [
     {

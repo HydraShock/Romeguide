@@ -114,11 +114,6 @@ const ostiaAnticaDayTripData: TourPageData = {
         "Move through the theatre, forum area, and other major points of interest with an emphasis on clarity and context.",
     },
     {
-      title: "Flexible Return to Rome",
-      description:
-        "Head back to Rome comfortably, with room for a final scenic or local stop if timing allows.",
-    },
-    {
       title: "And Much More...",
       description:
         "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
@@ -184,9 +179,9 @@ const ostiaAnticaDayTripData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "Ostia Antica was one of the most rewarding days of our trip. It felt spacious, deeply atmospheric, and much easier to absorb with private pacing and context.",
-    name: "Daniel F",
-    context: "Private Ostia Antica day trip guest",
+      "Our tour with Carlo was excellent, informative, and very well paced. He was sensitive to our preferences and made every stop easy to understand.",
+    name: "DavidTraveller2",
+    context: "Tripadvisor review, Apr 2018",
   },
   faq: [
     {

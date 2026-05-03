@@ -237,7 +237,16 @@ export default function Home() {
             priority
             quality={100}
             unoptimized
-            className={styles.heroBackground}
+            className={`${styles.heroBackground} ${styles.desktopHeroBackground}`}
+          />
+          <Image
+            src="/chat.png"
+            alt="Rome private tours with local guide"
+            fill
+            priority
+            quality={100}
+            unoptimized
+            className={`${styles.heroBackground} ${styles.mobileHeroBackground}`}
           />
 
           <div className={styles.contentLayer}>

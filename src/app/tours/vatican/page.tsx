@@ -49,7 +49,7 @@ const vaticanTourData: TourPageData = {
   overview: {
     title: "The Vatican, Made Clear and Enjoyable",
     intro:
-      "This is not a rushed museum run. Your guide connects papal history, Renaissance art, and the spiritual meaning behind each space in a way that is easy to follow.",
+      "Your guide connects papal history, Renaissance art, and the spiritual meaning behind each space in a way that is easy to follow.",
     body:
       "From the Vatican Museums to the Sistine Chapel and St. Peter's Basilica, the route is shaped around your interests and energy. Perfect if you want a private experience that feels both rich and relaxed.",
     imageSrc: "/images/tours/vatican/overview-vatican-tour-st-peters-river-view.webp",
@@ -164,9 +164,9 @@ const vaticanTourData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "Our guide made the Vatican feel personal and understandable. We moved smoothly, avoided stress, and finally understood what we were seeing.",
-    name: "Maria R",
-    context: "Vatican private tour guest",
+      "Our private Vatican tour with Elisa was the best way to see the museums and Basilica. She was extremely knowledgeable and kept us comfortable throughout.",
+    name: "Liz S",
+    context: "Tripadvisor review, Aug 2017",
   },
   faq: [
     {

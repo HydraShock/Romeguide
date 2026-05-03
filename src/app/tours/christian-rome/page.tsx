@@ -163,9 +163,9 @@ const christianRomeTourData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "From the catacombs to the churches, the route felt deeply meaningful and very clear. Our guide balanced history and spirituality beautifully.",
-    name: "Thomas P",
-    context: "Christian Rome private tour guest",
+      "We had an all-day Rome tour including St. Peter's, the Sistine Chapel, and major churches in Rome. Carlo was personable, knowledgeable, and thorough throughout.",
+    name: "Dennis F",
+    context: "Tripadvisor review, May 2025",
   },
   faq: [
     {

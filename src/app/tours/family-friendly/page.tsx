@@ -14,7 +14,7 @@ const familyFriendlyTourData: TourPageData = {
   path: "/tours/family-friendly",
   seoTitle: "Rome Family-Friendly Private Tour | Kid-Friendly Rome Highlights | Rome Guide Services",
   seoDescription:
-    "Keep kids engaged while exploring Rome with a licensed private guide. Family-friendly storytelling, flexible pacing, and personalized routes for all ages.",
+    "Explore Rome with kids and a licensed private guide. Family-friendly storytelling, flexible pacing, and personalized routes for all ages.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -26,7 +26,7 @@ const familyFriendlyTourData: TourPageData = {
     title: "Rome Family-Friendly Tour",
     landmarksLine: "Ancient Rome Highlights | Vatican Options | Piazza Stops",
     subtitle:
-      "Keep children engaged with interactive storytelling and relaxed pacing while your private guide adapts Rome's major sites to your family rhythm.",
+      "Keep children involved with clear storytelling and relaxed pacing while your private guide adapts Rome's major sites to your family rhythm.",
     intentLine: "Private, kid-aware touring that keeps adults and children equally involved.",
     primaryCtaLabel: "Plan This Tour",
     secondaryCtaLabel: "Ask for a Custom Itinerary",
@@ -43,14 +43,14 @@ const familyFriendlyTourData: TourPageData = {
     { label: "Guide", value: "Licensed guide" },
     { label: "Pacing", value: "Kid-friendly" },
     { label: "Breaks", value: "Planned stops" },
-    { label: "Route", value: "Family-based on" },
+    { label: "Route", value: "Family-based route" },
   ],
   overview: {
     title: "Rome Through Curious Eyes",
     intro:
-      "This is not an adults-only lecture adapted at the last minute. The itinerary is designed from the start for families, with storytelling that keeps children involved.",
+      "The itinerary is designed from the start for families, with storytelling that keeps children involved.",
     body:
-      "Your guide balances historical depth for adults with interactive prompts, short transitions, and flexible pauses for younger travelers. Families leave with shared memories instead of fatigue.",
+      "Your guide balances historical depth for adults with simple explanations, short transitions, and flexible pauses for younger travelers. Families leave with shared memories instead of fatigue.",
     imageSrc: "/images/tours/family/overview-family-friendly-rome-tour-villa-borghese-lake.webp",
     imageAlt: "Families and visitors enjoying the lake at Villa Borghese in Rome",
   },
@@ -63,9 +63,9 @@ const familyFriendlyTourData: TourPageData = {
       imageAlt: "Couple relaxing near the Temple of Diana in Villa Borghese",
     },
     {
-      title: "Interactive Stories at Major Sites",
+      title: "Family-Friendly Stories at Major Sites",
       description:
-        "Transform monuments into stories with characters, fun facts, and questions that keep attention high.",
+        "Turn monuments into stories with clear explanations, fun facts, and a pace that works for kids.",
       imageSrc: "/images/tours/family/highlight-family-friendly-rome-tour-park-boat.webp",
       imageAlt: "Small boats and families at Villa Borghese park in Rome",
     },
@@ -96,19 +96,14 @@ const familyFriendlyTourData: TourPageData = {
         "Begin with a high-impact site explained through child-friendly storytelling and visual anchors.",
     },
     {
-      title: "Interactive Walk Segment",
+      title: "Easy Walk Segment",
       description:
-        "Move through nearby streets with light educational prompts and engaging Roman anecdotes.",
+        "Move through nearby streets with simple Roman stories and easy transitions between stops.",
     },
     {
       title: "Second Highlight and Break",
       description:
         "Add a second major stop with pacing adjustments and optional snack or rest pause.",
-    },
-    {
-      title: "Wrap-Up and Next Tips",
-      description:
-        "End with practical tips for family dining and transport, and choose whether to add one more kid-friendly stop if everyone still has energy.",
     },
     {
       title: "And Much More...",
@@ -132,12 +127,12 @@ const familyFriendlyTourData: TourPageData = {
   },
   audience: [
     {
-      title: "Parents with Kids Age 6+",
-      description: "A balanced format that keeps children engaged while adults enjoy meaningful context.",
+      title: "Parents with Kids",
+      description: "A balanced format that keeps children involved while adults enjoy meaningful context.",
     },
     {
       title: "School and Education Trips",
-      description: "Structured storytelling and interactive prompts support learning in a live city setting.",
+      description: "Structured storytelling supports learning in a real city setting.",
     },
     {
       title: "Multi-Generational Families",
@@ -158,8 +153,8 @@ const familyFriendlyTourData: TourPageData = {
       description: "Add extra time for slower pacing, additional breaks, and one extra highlight.",
     },
     {
-      title: "Interactive Activity Kit",
-      description: "Include optional age-appropriate prompts to keep children actively participating.",
+      title: "Extra Kid-Friendly Story Stops",
+      description: "Add extra child-friendly stops and story moments based on your kids' ages.",
     },
     {
       title: "Family Lunch Planning",
@@ -168,9 +163,9 @@ const familyFriendlyTourData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "Our kids stayed engaged the whole time, and we still got the depth we wanted. It was smooth, thoughtful, and genuinely fun for everyone.",
-    name: "Emily T",
-    context: "Family-friendly Rome tour guest",
+      "Carlo tailored the tours to all our interests and kept our family engaged through his informative storytelling. We truly appreciated how they handled planning and last-minute changes.",
+    name: "CowgirlmomYYC",
+    context: "Tripadvisor review, Mar 2019",
   },
   faq: [
     {

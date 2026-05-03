@@ -269,6 +269,12 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
       description: "Flexible route for families, teens, and multigenerational travelers.",
       image: "/images/tours/family/hero-family-friendly-rome-tour-colosseum-visit.webp",
     },
+    {
+      href: "/tours/art-architecture",
+      label: "Rome Art & Architecture Tour",
+      description: "Masterpieces, city layers, and design history with a private guide.",
+      image: "/images/tours/art-architecture/hero-rome-art-architecture-tour-forum-column.webp",
+    },
   ],
   dayTrips: [
     {
@@ -301,6 +307,12 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
       description: "Scenic villages and a slower pace just beyond Rome.",
       image: "/images/tours/day-trips/roman-hill-towns/hero-roman-hill-towns-day-trip-from-rome.jpg",
     },
+    {
+      href: "/tours/day-trips-from-rome/cerveteri-etruscans",
+      label: "Private Cerveteri Etruscan Day Trip",
+      description: "Etruscan tombs, history, and smooth private logistics from Rome.",
+      image: "/images/tours/day-trips/cerveteri-etruscans/hero-cerveteri-etruscan-necropolis-day-trip-from-rome.jpg",
+    },
   ],
   italyTours: [
     {
@@ -332,6 +344,12 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
       label: "Private Sicily Tours",
       description: "Island culture, archaeology, and a route built around you.",
       image: "/images/tours-in-italy/sicily/hero-private-sicily-tours.jpg",
+    },
+    {
+      href: "/tours-in-italy/private-orvieto-umbria-tour",
+      label: "Private Orvieto & Umbria Tour",
+      description: "Hill towns, countryside views, and local food culture at your pace.",
+      image: "/images/tours-in-italy/orvieto-umbria/hero-private-orvieto-umbria-tour.jpg",
     },
   ],
 };

@@ -59,7 +59,6 @@ export default function TourHero({ hero }: TourHeroProps) {
     ? "relative w-full max-w-[640px] overflow-hidden rounded-[1.9rem] border border-[#e8bb82]/58 bg-[linear-gradient(180deg,rgba(248,240,230,0.97)_0%,rgba(243,232,217,0.96)_100%)] shadow-[0_0_0_1px_rgba(255,229,192,0.24)_inset,0_0_32px_rgba(216,164,104,0.2),0_30px_68px_rgba(26,12,8,0.32)] md:p-0 lg:ml-[96px]"
     : "relative w-full max-w-[640px] overflow-hidden rounded-[1.9rem] border border-[#f2c27b]/62 bg-[linear-gradient(180deg,rgba(247,239,230,0.98)_0%,rgba(244,234,221,0.962)_100%)] shadow-[0_0_0_1px_rgba(255,222,171,0.26)_inset,0_0_44px_rgba(232,179,109,0.26),0_30px_68px_rgba(26,12,8,0.32)] md:p-0 lg:ml-[96px]";
   const primaryCtaHref = resolveHeroCtaHref(hero.primaryCtaLabel, hero.primaryCtaHref);
-  const secondaryCtaHref = resolveHeroCtaHref(hero.secondaryCtaLabel, hero.secondaryCtaHref);
 
   return (
     <section className={`relative isolate overflow-hidden bg-[#2b140c] ${sectionHeightClass}`}>
@@ -117,14 +116,8 @@ export default function TourHero({ hero }: TourHeroProps) {
                 href={primaryCtaHref}
                 className="inline-flex min-h-[3rem] min-w-[12.4rem] items-center justify-center gap-2 rounded-full border border-[#ca9555] bg-[linear-gradient(180deg,#dfad67_0%,#c68131_100%)] px-5.5 font-sans text-[0.87rem] font-semibold text-[#fff1de] shadow-[0_1px_0_rgba(255,230,197,0.44)_inset,0_12px_24px_rgba(142,84,36,0.28)] transition duration-300 hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C79A62]/72 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f4eadf] md:text-[0.93rem]"
               >
-                {hero.primaryCtaLabel}
+                Plan This Tour
                 <span aria-hidden>&rarr;</span>
-              </a>
-              <a
-                href={secondaryCtaHref}
-                className="inline-flex min-h-[3rem] min-w-[12.4rem] items-center justify-center rounded-full border border-[#cfa46e] bg-[#f6ead8]/80 px-5.5 font-sans text-[0.87rem] font-semibold text-[#7B542E] shadow-[0_1px_0_rgba(255,245,228,0.7)_inset] transition duration-300 hover:bg-[#f6ead8]/92 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C79A62]/58 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f4eadf] md:text-[0.93rem]"
-              >
-                {hero.secondaryCtaLabel}
               </a>
             </div>
 

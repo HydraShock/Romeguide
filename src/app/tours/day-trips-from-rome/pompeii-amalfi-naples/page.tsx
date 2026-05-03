@@ -54,7 +54,7 @@ const pompeiiAmalfiNaplesData: TourPageData = {
     eyebrow: "WHY THIS DAY TRIP",
     title: "Southern Italy, Well-planned in One Beautiful Route",
     intro:
-      "This is not a rushed bus-style excursion. It is a private full-day route from Rome, paced around your preferences and designed for beautiful, efficient flow.",
+      "It is a private full-day route from Rome, paced around your preferences and designed for beautiful, efficient flow.",
     body:
       "Pompeii brings archaeological depth, Naples adds southern character and panoramic energy, and the Amalfi Coast delivers iconic Mediterranean beauty. With private transportation and thoughtful timing, you experience more of Italy in one memorable day without changing hotels.",
     imageSrc: "/images/tours/day-trips/pompeii-amalfi-naples/overview-pompeii-ruins-private-day-trip.jpg",
@@ -110,11 +110,6 @@ const pompeiiAmalfiNaplesData: TourPageData = {
       title: "Amalfi Coast Scenic Segment",
       description:
         "Enjoy the coastline, villages, and dramatic sea-facing landscapes in a beautifully paced route.",
-    },
-    {
-      title: "Flexible Return to Rome",
-      description:
-        "Finish with a comfortable private return, with optional short scenic pauses if timing allows.",
     },
     {
       title: "And Much More...",
@@ -178,9 +173,9 @@ const pompeiiAmalfiNaplesData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "Our day beyond Rome felt smooth from start to finish. Pompeii was extraordinary, the coastline was unforgettable, and the private pacing made the whole experience feel effortless.",
-    name: "Claire M",
-    context: "Pompeii & Amalfi private day trip guest",
+      "We did Vatican one day and Ancient Rome the next with Rome Guide Services. We saw more in one day than we could have in three on our own, and everything felt easy with guide and driver support.",
+    name: "Mac & Christina",
+    context: "Tripadvisor review, Apr 2019",
   },
   faq: [
     {

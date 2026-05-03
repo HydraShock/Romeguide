@@ -100,11 +100,6 @@ const romanHillTownsDayTripData: TourPageData = {
         "Pause for lunch and, where preferred, add a short Nemi-style village stop before heading back.",
     },
     {
-      title: "Flexible Return to Rome",
-      description:
-        "Head back to Rome with flexible late-afternoon or early-evening timing, and keep room for one extra village pause if you prefer.",
-    },
-    {
       title: "And Much More...",
       description:
         "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
@@ -158,9 +153,9 @@ const romanHillTownsDayTripData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "Exactly the day we needed after busy Rome touring. Beautiful villages, smooth driving, and enough time to truly enjoy each stop.",
-    name: "Emma W",
-    context: "Roman hill towns private day trip guest",
+      "They adjusted the itinerary around what we wanted and delivered a truly smooth day with great flexibility and support from guides and drivers.",
+    name: "Jocelyn S",
+    context: "Tripadvisor review, Oct 2019",
   },
   faq: [
     {

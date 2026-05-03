@@ -50,7 +50,7 @@ const ancientRomeTourData: TourPageData = {
   overview: {
     title: "Ancient Rome, Brought to Life",
     intro:
-      "This is not a checklist tour. Your guide connects architecture, politics, and daily life so each stop actually makes sense.",
+      "Your guide connects architecture, politics, and daily life so each stop actually makes sense.",
     body:
       "From the drama of the Colosseum to the civic center of the Forum and the imperial layers on Palatine Hill, the route is shaped around your group. Whether you are traveling as a couple, family, or history lover, the experience stays clear, engaging, and easy to follow.",
     imageSrc: "/images/tours/ancient-rome/overview-ancient-rome-tour-roman-forum-view.webp",
@@ -165,9 +165,9 @@ const ancientRomeTourData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "Our guide transformed the Colosseum and Forum from ruins into a story we could actually follow. It felt private, calm, and perfectly paced.",
-    name: "Ann K",
-    context: "Ancient Rome private tour guest",
+      "This was our second time with Rome Guide Services, and our Colosseum, Forum, and Palatine Hill tour would not have been the same without our guide.",
+    name: "Mary R",
+    context: "Tripadvisor review, May 2019",
   },
   faq: [
     {

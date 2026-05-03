@@ -661,13 +661,9 @@ export default function BookingTriageCalendarConcept() {
         <div className={styles.calendarShell} role="group" aria-label="Private tour planner">
           {activeStep === 1 ? (
             <header className={styles.bookingHeader}>
-              <p className={styles.bookingHeaderEyebrow}>Booking Calendar</p>
               <h2 id="booking-triage-title" className={styles.bookingHeaderTitle}>
-                Choose Your Date to Book Your Private Tour
+                Start booking your Tour!
               </h2>
-              <p className={styles.bookingHeaderLead}>
-                Start your booking request here by selecting your preferred date.
-              </p>
             </header>
           ) : null}
 
@@ -713,7 +709,7 @@ export default function BookingTriageCalendarConcept() {
           {activeStep === 1 ? (
             <>
               <div className={styles.stepIntroMessage}>
-                <h4>When will you be in Rome?</h4>
+                <h4>When will you be in Italy?</h4>
                 <p>
                   We&apos;ll use your date as the starting point and build the right private
                   itinerary around your interests.

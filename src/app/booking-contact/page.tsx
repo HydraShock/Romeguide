@@ -277,11 +277,8 @@ export default function BookingContactPage() {
 
               <div className={styles.contactHeroActions}>
                 <a href="#booking-form" className={styles.contactHeroPrimaryCta}>
-                  Start Your Inquiry <span aria-hidden>&rarr;</span>
+                  Plan This Tour <span aria-hidden>&rarr;</span>
                 </a>
-                <Link href="/#requested-tours-heading" className={styles.contactHeroSecondaryCta}>
-                  Explore Private Tours
-                </Link>
               </div>
 
               <ul className={styles.contactHeroFacts} aria-label="Booking contact quick facts">

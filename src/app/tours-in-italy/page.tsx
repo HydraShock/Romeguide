@@ -13,32 +13,32 @@ const italyTours = [
   {
     href: "/tours-in-italy/private-florence-tuscany-tour",
     title: "Private Florence & Tuscany Tour",
-    description: "Renaissance art, Tuscan atmosphere, and private pacing in one comfortable route.",
+    description: "Renaissance art, Tuscan views, and a private route at your pace.",
   },
   {
     href: "/tours-in-italy/private-venice-tour",
     title: "Private Venice Tour",
-    description: "Canals, hidden passages, and well-planned neighborhood discoveries.",
+    description: "Canals, hidden lanes, and local corners beyond the busiest routes.",
   },
   {
     href: "/tours-in-italy/private-milan-tour",
     title: "Private Milan Tour",
-    description: "Architecture, design, and cultural landmarks with local private guidance.",
+    description: "Architecture, design, and city highlights with local private guidance.",
   },
   {
     href: "/tours-in-italy/private-sicily-tours",
     title: "Private Sicily Tours",
-    description: "Island heritage, archaeology, and custom private experiences.",
+    description: "Island history, archaeology, and flexible private routes.",
   },
   {
     href: "/tours-in-italy/private-naples-amalfi-coast-tour",
     title: "Private Naples & Amalfi Coast Tour",
-    description: "Southern culture, coastlines, and high-quality transport-led planning.",
+    description: "Southern city character, coastal views, and flexible private planning.",
   },
   {
     href: "/tours-in-italy/private-orvieto-umbria-tour",
     title: "Private Orvieto & Umbria Tour",
-    description: "Hill-town elegance, cathedral heritage, and countryside rhythm.",
+    description: "Hill towns, cathedral heritage, and countryside rhythm at a relaxed pace.",
   },
 ] as const;
 
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Private Tours in Italy | Rome Guide Services",
     description:
-      "Private tours in Italy for travelers who want custom pacing, smart planning, and local expertise.",
+      "Private tours in Italy with local guides, flexible pacing, and clear planning.",
     url: PAGE_PATH,
     siteName: "Rome Guide Services",
     type: "website",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Private Tours in Italy | Rome Guide Services",
     description:
-      "Well-planned private journeys in Florence, Venice, Milan, Sicily, Naples, Amalfi Coast, and Umbria.",
+      "Private tours in Florence, Venice, Milan, Sicily, Naples, Amalfi Coast, and Umbria.",
     images: ["/dark1.png"],
   },
 };
@@ -123,9 +123,9 @@ export default function ToursInItalyHubPage() {
               Private Tours in Italy for Easy Multi-City Trips
             </h1>
             <p className="mt-4 max-w-[70ch] font-sans text-[1rem] leading-[1.75] text-[#e8d0b2]">
-              Extend your experience beyond Rome with custom private tours across Italy.
+              Go beyond Rome with private tours across Italy.
               From Florence and Venice to Milan, Sicily, Umbria, Naples, and the Amalfi Coast,
-              each route is well-planned around your interests and travel style.
+              each route is shaped around your interests and your pace.
             </p>
           </div>
         </section>
@@ -178,9 +178,8 @@ export default function ToursInItalyHubPage() {
                 Need a Custom Italy Itinerary?
               </h2>
               <p className="mt-3 max-w-[68ch] font-sans text-[0.98rem] leading-[1.72] text-[#5c4739]">
-                Share your dates, pacing preferences, and destination priorities. We can design a
-                private multi-city route with coordinated planning, beautiful timing, and personalized
-                recommendations.
+                Share your dates, pace, and main destinations. We will put together a private
+                multi-city route that feels clear, smooth, and personal.
               </p>
               <Link
                 href="/#booking-calendar"

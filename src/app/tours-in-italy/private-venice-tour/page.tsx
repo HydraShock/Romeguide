@@ -15,7 +15,7 @@ const privateVeniceTourData: TourPageData = {
   seoTitle:
     "Private Venice Tour | St. Mark's, Canals, Hidden Venice & Custom Experience | Rome Guide Services",
   seoDescription:
-    "Discover Venice through a private well-planned tour with flexible pacing, iconic highlights, hidden corners, beautiful routes, and a more intimate experience of the city.",
+    "Explore Venice with a private tour at your pace, mixing iconic landmarks, quiet canals, and hidden corners.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -27,9 +27,9 @@ const privateVeniceTourData: TourPageData = {
     title: "Private Venice Tour",
     landmarksLine: "ST. MARK'S \u2022 CANALS \u2022 HIDDEN VENICE",
     subtitle:
-      "Discover Venice through a private well-planned route that balances iconic landmarks, quiet canals, historic atmosphere, and the slower rhythm that makes the city unforgettable.",
+      "Discover Venice with a private route that balances iconic landmarks, quiet canals, and the slower rhythm that makes the city special.",
     intentLine:
-      "From St. Mark's and the Grand Canal to hidden passages, artisan corners, and beautiful viewpoints, this private experience is shaped around your pace and interests.",
+      "From St. Mark's and the Grand Canal to hidden lanes and artisan corners, we shape the day around your pace and interests.",
     primaryCtaLabel: "Plan This Tour",
     secondaryCtaLabel: "Ask for a Custom Version",
     primaryCtaHref: "#final-cta",
@@ -54,11 +54,11 @@ const privateVeniceTourData: TourPageData = {
   ],
   overview: {
     eyebrow: "WHY THIS TOUR",
-    title: "Venice Beyond the Crowd, Seen at the Right Pace",
+    title: "Venice Without the Rush",
     intro:
-      "Venice can feel overwhelming when approached as a rushed checklist. A private format changes that by improving pacing, route logic, and context from the first steps.",
+      "Venice can feel overwhelming when you rush it. A private format makes the city easier, clearer, and more enjoyable.",
     body:
-      "This experience balances St. Mark's and the iconic urban core with quieter calli, bridges, and canals where the city feels more intimate and clear. With a private guide and well-planned walking rhythm, Venice becomes less congested and more readable: architecture, water, movement, and atmosphere connected in one beautiful route.",
+      "We balance St. Mark's and other highlights with quieter calli, bridges, and canals where Venice feels more local. With a private guide and a steady walking pace, the city becomes easier to understand and much more memorable.",
     imageSrc: "/images/tours-in-italy/venice/overview-st-marks-private-venice-tour.jpg",
     imageAlt: "St. Mark's Basilica and the monumental heart of Venice",
   },
@@ -66,73 +66,68 @@ const privateVeniceTourData: TourPageData = {
     {
       title: "St. Mark's and the Historic Heart of Venice",
       description:
-        "Experience Venice's cultural anchor with focused context and a private pace that avoids rushed monument-hopping.",
+        "Visit Venice's cultural center with clear explanations and a private pace, without rushing monument to monument.",
       imageSrc: "/images/tours-in-italy/venice/overview-st-marks-private-venice-tour.jpg",
       imageAlt: "St. Mark's Basilica in warm Venetian light",
     },
     {
       title: "The Grand Canal, Bridges, and the City's Water-Led Identity",
       description:
-        "Read Venice through canals, crossings, and viewpoints that reveal how water shapes architecture, movement, and civic life.",
+        "See Venice through canals, bridges, and viewpoints that show how water shapes daily life in the city.",
       imageSrc: "/images/tours-in-italy/venice/highlight-grand-canal-rialto.jpg",
       imageAlt: "Rialto bridge and Grand Canal at evening hour",
     },
     {
       title: "Hidden Venice: Quiet Passages, Artisan Corners, and Lesser-Known Beauty",
       description:
-        "Step beyond the busiest flows into quieter lanes and local textures that make the city feel layered and authentic.",
+        "Step away from the busiest routes into quieter lanes that feel more local and authentic.",
       imageSrc: "/images/tours-in-italy/venice/highlight-hidden-venice-calle.jpg",
       imageAlt: "Narrow Venetian calle with historic facades and intimate atmosphere",
     },
     {
-      title: "A Private Route Designed Around Atmosphere, Not Rush",
+      title: "A Private Route Focused on Atmosphere, Not Rush",
       description:
-        "Private planning keeps the route beautiful and clear, prioritizing quality of experience over checklist speed.",
+        "Private planning keeps the route clear and enjoyable, with enough time to really enjoy each place.",
       imageSrc: "/images/tours-in-italy/venice/highlight-private-venice-night-route.jpg",
       imageAlt: "Night-time Venice canal scene with warm reflections",
     },
   ],
   itinerary: [
     {
-      title: "Orientation and First View of Venice",
+      title: "Getting Started in Venice",
       description:
-        "Begin with the city's visual and historical framework introduced at a calm private pace.",
+        "Start with a clear intro to Venice at a calm pace.",
     },
     {
       title: "St. Mark's and the Iconic Core",
       description:
-        "Move through Venice's monumental heart with context, elegance, and selective focus on what matters most.",
+        "Walk through Venice's iconic center with clear explanations and focus on what matters most to you.",
     },
     {
       title: "Canals, Bridges, and the City's Rhythm",
       description:
-        "Understand Venice through movement, water, and viewpoint logic that makes this city unlike any other.",
+        "Experience how movement, water, and viewpoints make Venice unlike any other city.",
     },
     {
       title: "Hidden Passages and Your Interests",
       description:
-        "Shape the route around quieter areas, architecture, artisans, and personal priorities.",
-    },
-    {
-      title: "A Private Finish Built Around Your Pace",
-      description:
-        "Wrap up with a memorable finish and the flexibility to add extra moments if they fit your day.",
+        "Shape the route around quieter areas, architecture, artisans, and your personal priorities.",
     },
     {
       title: "And Much More...",
       description:
-        "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
+        "Every tour is private and custom, so we can always add more places and ideas based on what you enjoy most.",
     },
   ],
   practicalInfo: {
     ticketsText:
-      "Monument or museum entries can be integrated during planning based on your preferred depth and timing.",
+      "Monument or museum entries can be added during planning based on your preferred depth and timing.",
     meetingPointText:
       "Meeting starts in central Venice, with exact point and timing confirmed during itinerary design.",
     walkingLevelText:
-      "This is primarily a walking-led route across bridges and calli, with pacing adapted to your group.",
+      "This is mainly a walking route across bridges and calli, with pace adjusted to your group.",
     accessibilityNotes:
-      "Venice includes bridges and uneven surfaces; route logic can be adjusted where possible for comfort.",
+      "Venice includes bridges and uneven surfaces; we adjust the route where possible for comfort.",
     whatToBringText:
       "Comfortable shoes and weather-appropriate layers are recommended for a city route shaped by walking and water.",
     securityChecksText:
@@ -140,36 +135,36 @@ const privateVeniceTourData: TourPageData = {
   },
   audience: [
     {
-      title: "First-Time Venice Visitors Wanting the Right Introduction",
+      title: "First-Time Venice Visitors",
       description:
         "Ideal for guests who want a clear and beautiful private entry point into Venice.",
     },
     {
-      title: "Couples Seeking a More Atmospheric Pace",
+      title: "Couples Who Prefer an Atmospheric Pace",
       description:
         "Perfect for travelers who value intimacy, beauty, and a less rushed city rhythm.",
     },
     {
-      title: "Guests Interested in Architecture and Urban Beauty",
+      title: "Travelers Who Love Architecture and City Detail",
       description:
-        "A strong fit for visitors drawn to facades, bridges, urban texture, and civic history.",
+        "A strong fit for visitors drawn to facades, bridges, city details, and local history.",
     },
     {
-      title: "Travelers Who Prefer Private Context Over Standard Group Touring",
+      title: "Travelers Who Prefer Private Tours",
       description:
-        "Designed for guests who want smart route flow, focused storytelling, and flexible pacing.",
+        "Great for guests who want a smoother day flow, focused storytelling, and flexible pacing.",
     },
   ],
   upgrades: [
     {
       title: "More St. Mark's Focus",
       description:
-        "We can place deeper emphasis on the St. Mark's area and its historical context.",
+        "We can place more focus on the St. Mark's area and its history.",
     },
     {
       title: "Doge's Palace or Museum Extension",
       description:
-        "Integrate well-planned interior depth for travelers wanting stronger institutional context.",
+        "Add more museum time if you want stronger historical background.",
     },
     {
       title: "Gondola Experience Coordination",
@@ -189,15 +184,15 @@ const privateVeniceTourData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "Venice felt completely different with private pacing. We saw the iconic places, but the quieter corners and the way the route unfolded made the city feel intimate and extraordinary.",
-    name: "Caroline D",
-    context: "Private Venice tour guest",
+      "In Venice, our guide gave us a wonderful tour of Piazza San Marco, the Doge's Palace, and nearby historic sites in a way that kept everyone engaged.",
+    name: "Rich V",
+    context: "Tripadvisor review, Jul 2019",
   },
   faq: [
     {
       question: "Is this a walking tour?",
       answer:
-        "Yes, it is primarily walking-led, designed around Venice's urban layout and bridge network.",
+        "Yes, it is mainly a walking tour, based on Venice's layout and bridge network.",
     },
     {
       question: "Can the route include St. Mark's or the Doge's Palace?",
@@ -207,12 +202,12 @@ const privateVeniceTourData: TourPageData = {
     {
       question: "Is this suitable for first-time visitors to Venice?",
       answer:
-        "Absolutely. It is designed as a clear private introduction to iconic and lesser-known Venice.",
+        "Absolutely. It works very well as a private introduction to both iconic and quieter Venice.",
     },
     {
       question: "Can the experience be customized around art, architecture, or quieter areas?",
       answer:
-        "Yes. The route is built around your priorities, with emphasis adjusted to your preferred themes.",
+        "Yes. The route is built around your priorities, with focus adjusted to your preferred themes.",
     },
     {
       question: "Is gondola coordination possible?",
@@ -222,45 +217,45 @@ const privateVeniceTourData: TourPageData = {
     {
       question: "How much walking is involved?",
       answer:
-        "Walking is moderate to substantial depending on duration, with pacing adapted to your group.",
+        "Walking is moderate to substantial depending on duration, with pace adjusted to your group.",
     },
     {
       question: "Is this a private guide experience only?",
       answer:
-        "Yes. This is designed as a private guide experience with custom pacing and route logic.",
+        "Yes. This is a fully private guide experience, built around your pace.",
     },
   ],
   relatedTours: [
     {
       title: "Private Florence & Tuscany Tour",
       description:
-        "Pair Venice's water-led urban atmosphere with a Florence-first Renaissance private experience.",
+        "Pair Venice with a Florence-first private route focused on Renaissance highlights.",
       href: "/tours-in-italy/private-florence-tuscany-tour",
     },
     {
       title: "Private Milan Tour",
       description:
-        "Continue north with a private route focused on architecture, design, and modern urban identity.",
+        "Continue north with a private Milan route focused on architecture, design, and city life.",
       href: "/tours-in-italy/private-milan-tour",
     },
     {
       title: "Rome Art & Architecture Tour",
       description:
-        "Extend your cultural itinerary with a Rome route centered on artistic and architectural depth.",
+        "Add Rome with a private route centered on art and architecture.",
       href: "/tours/art-architecture",
     },
     {
       title: "Private Orvieto & Umbria Tour",
       description:
-        "Explore a countryside-led private format when your priorities shift from city texture to regional rhythm.",
+        "Switch to a calmer countryside route with hill towns, views, and local food culture.",
       href: "/tours-in-italy/private-orvieto-umbria-tour",
     },
   ],
   finalCta: {
     title: "Plan Your Private Venice Experience",
-    description:
-      "Share your dates, interests, and priorities, and we will shape a private Venice route with the right balance of iconic landmarks, hidden corners, atmosphere, and pace.",
-    buttonLabel: "Request Your Private Tour",
+      description:
+        "Share your dates and interests, and we'll build a private Venice route that fits your pace.",
+    buttonLabel: "Plan This Tour",
     buttonHref: "#",
     trustItems: [
       "Personalized reply within 24 hours",

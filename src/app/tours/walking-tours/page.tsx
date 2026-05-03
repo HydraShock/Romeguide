@@ -49,7 +49,7 @@ const walkingTourData: TourPageData = {
   overview: {
     title: "Rome on Foot, Well-planned Around You",
     intro:
-      "This is not a rigid group circuit. Your private guide shapes the walk around your pace, interests, and preferred balance of landmarks and hidden corners.",
+      "Your private guide shapes the walk around your pace, interests, and preferred balance of landmarks and hidden corners.",
     body:
       "From the Pantheon to Piazza Navona and the Trevi area, the route blends essential highlights with local context and practical city insights. A strong fit for first-time visitors who want flexibility without losing depth.",
     imageSrc: "/images/tours/walking/overview-rome-private-walking-tour-piazza-navona.webp",
@@ -66,19 +66,19 @@ const walkingTourData: TourPageData = {
     {
       title: "Piazza Navona and Baroque Storytelling",
       description:
-        "Read fountains, palazzi, and civic life with a guide who connects art history to everyday Roman identity.",
+        "Explore fountains, historic buildings, and local city life with a guide who connects art history to everyday life in Rome.",
       imageSrc: "/images/tours/walking/highlight-rome-walking-tour-piazza-navona-architecture.webp",
       imageAlt: "Architectural details around Piazza Navona on a Rome walking route",
     },
     {
       title: "Trevi Fountain and Hidden Passages",
       description:
-        "Move from iconic viewpoints into quieter streets where local texture and practical recommendations emerge.",
+        "Move from iconic viewpoints into quieter streets.",
       imageSrc: "/images/tours/walking/highlight-rome-walking-tour-trevi-fountain-evening.webp",
       imageAlt: "Trevi Fountain illuminated in the evening in Rome",
     },
     {
-      title: "City Guidance You Can Use All Trip",
+      title: "City Guidance for all your journey",
       description:
         "Get practical orientation, neighborhood tips, and food suggestions to improve the rest of your Rome stay.",
       imageSrc: "/images/tours/walking/highlight-rome-walking-tour-street-life.webp",
@@ -104,12 +104,7 @@ const walkingTourData: TourPageData = {
     {
       title: "Trevi Area and Hidden Stops",
       description:
-        "Reach the Trevi zone through well-planned side streets that reveal quieter city textures.",
-    },
-    {
-      title: "Final Local Recommendations",
-      description:
-        "Wrap up with personalized tips for food, neighborhoods, and next visits, with optional extra stops if time allows.",
+        "Reach the Trevi zone through side streets that feel quieter and more local.",
     },
     {
       title: "And Much More...",
@@ -169,9 +164,9 @@ const walkingTourData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "We saw the big sights but never felt rushed. The route felt personal, beautiful, and full of useful insights for the rest of our stay.",
-    name: "Claire M",
-    context: "Rome private walking tour guest",
+      "Our Pantheon and Colosseum day with Francesca was wonderful. She was knowledgeable and easy to follow, and we would definitely book this company again.",
+    name: "Ben G",
+    context: "Tripadvisor review, Feb 2017",
   },
   faq: [
     {

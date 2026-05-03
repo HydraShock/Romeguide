@@ -105,11 +105,6 @@ const cerveteriEtruscansDayTripData: TourPageData = {
         "Enjoy a relaxed break in the Cerveteri area with timing adapted to your energy and return window.",
     },
     {
-      title: "Flexible Return to Rome",
-      description:
-        "Return by private vehicle with comfortable timing and flexibility around your evening plans.",
-    },
-    {
       title: "And Much More...",
       description:
         "This is a private custom tour, so we can always add more stops, moments, and ideas based on your interests and timing.",
@@ -165,9 +160,9 @@ const cerveteriEtruscansDayTripData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "This trip gave us the missing chapter before Rome. The private format made a complex historical topic feel easy and fascinating.",
-    name: "Robert L",
-    context: "Cerveteri private day trip guest",
+      "Carlo arranged our schedule so we could see everything we wanted and more. He knew how to avoid lines and move efficiently, and the day felt easy from start to finish.",
+    name: "NCMom21",
+    context: "Tripadvisor review, Jun 2017",
   },
   faq: [
     {
