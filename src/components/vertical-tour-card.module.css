@@ -222,20 +222,7 @@
 }
 
 .body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 1.05rem;
-  right: 1.05rem;
-  height: 1px;
-  pointer-events: none;
-  z-index: 1;
-  background: linear-gradient(
-      90deg,
-      rgba(171, 118, 72, 0) 0%,
-      rgba(171, 118, 72, 0.54) 50%,
-      rgba(171, 118, 72, 0) 100%
-  );
+  content: none;
 }
 
 .kicker,
@@ -551,10 +538,6 @@
 }
 
 @media (max-width: 760px) {
-  .body::after {
-    content: none;
-  }
-
   .featuredCard {
     min-height: clamp(23.9rem, 102vw, 27.4rem);
   }
