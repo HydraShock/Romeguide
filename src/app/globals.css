@@ -26,6 +26,22 @@ html {
   scroll-behavior: smooth;
 }
 
+html.luxury-cursor-enabled,
+body.luxury-cursor-enabled {
+  cursor: none !important;
+}
+
+.luxury-cursor-enabled * {
+  cursor: none !important;
+}
+
+.luxury-cursor-enabled input,
+.luxury-cursor-enabled textarea,
+.luxury-cursor-enabled select,
+.luxury-cursor-enabled [contenteditable="true"] {
+  cursor: text !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

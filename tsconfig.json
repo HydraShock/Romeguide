@@ -39,6 +39,9 @@
     ".next-dev/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "_restore_points",
+    "tmp-audit",
+    ".next-dev"
   ]
 }

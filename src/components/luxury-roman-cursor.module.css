@@ -127,22 +127,6 @@
   margin-top: -3.5px;
 }
 
-:global(html.luxury-cursor-enabled),
-:global(body.luxury-cursor-enabled) {
-  cursor: none !important;
-}
-
-:global(.luxury-cursor-enabled *) {
-  cursor: none !important;
-}
-
-:global(.luxury-cursor-enabled input),
-:global(.luxury-cursor-enabled textarea),
-:global(.luxury-cursor-enabled select),
-:global(.luxury-cursor-enabled [contenteditable="true"]) {
-  cursor: text !important;
-}
-
 @media (pointer: coarse), (prefers-reduced-motion: reduce) {
   .cursorRoot {
     display: none;
