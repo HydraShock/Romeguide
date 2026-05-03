@@ -551,6 +551,10 @@
 }
 
 @media (max-width: 760px) {
+  .body::after {
+    content: none;
+  }
+
   .featuredCard {
     min-height: clamp(23.9rem, 102vw, 27.4rem);
   }
