@@ -273,7 +273,7 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
       href: "/tours/art-architecture",
       label: "Rome Art & Architecture Tour",
       description: "Masterpieces, city layers, and design history with a private guide.",
-      image: "/images/tours/art-architecture/hero-rome-art-architecture-tour-forum-column.webp",
+      image: "/images/tours/art-architecture/hero-rome-art-architecture-tour-pantheon-dome.webp",
     },
   ],
   dayTrips: [
@@ -311,7 +311,7 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
       href: "/tours/day-trips-from-rome/cerveteri-etruscans",
       label: "Private Cerveteri Etruscan Day Trip",
       description: "Etruscan tombs, history, and smooth private logistics from Rome.",
-      image: "/images/tours/day-trips/cerveteri-etruscans/hero-cerveteri-etruscan-necropolis-day-trip-from-rome.jpg",
+      image: "/images/tours/day-trips/cerveteri-etruscans/hero-cerveteri-etruscan-day-trip-from-rome.jpg",
     },
   ],
   italyTours: [
