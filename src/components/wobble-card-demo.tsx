@@ -10,7 +10,7 @@ const tours = [
     image: "/images/tours/ancient-rome/hero-ancient-rome-private-tour-colosseum-warm-light.webp",
     alt: "Colosseum and Roman Forum at sunset",
     imagePosition: "52% 44%",
-    monuments: ["Colosseo", "Foro Romano", "Palatino"],
+    monuments: ["Colosseum", "Roman Forum", "Palatine Hill"],
     href: "/tours/ancient-rome",
   },
   {
@@ -21,7 +21,7 @@ const tours = [
     image: "/images/tours/vatican/hero-vatican-private-tour-st-peters-basilica-dusk.webp",
     alt: "St Peter's Basilica and Rome skyline at dusk",
     imagePosition: "72% 41%",
-    monuments: ["Sistine Chapel", "San Pietro", "Musei Vaticani"],
+    monuments: ["Sistine Chapel", "St. Peter's Basilica", "Vatican Museums"],
     href: "/tours/vatican",
   },
   {
@@ -31,7 +31,7 @@ const tours = [
     image: "/images/tours/christian-rome/hero-christian-rome-tour-basilica-facade.webp",
     alt: "Historic dome and basilica architecture in Rome",
     imagePosition: "66% 39%",
-    monuments: ["S. Maria Maggiore", "S. Giovanni", "S. Clemente"],
+    monuments: ["St. Mary Major", "St. John Lateran", "St. Clement Basilica"],
     href: "/tours/christian-rome",
   },
   {
@@ -51,7 +51,7 @@ const tours = [
     image: "/images/tours/family/hero-family-friendly-rome-tour-colosseum-visit.webp",
     alt: "Warm Rome skyline with spacious route for families",
     imagePosition: "73% 43%",
-    monuments: ["Villa Borghese", "Colosseo", "Circo Massimo"],
+    monuments: ["Borghese Gardens", "Colosseum", "Circus Maximus"],
     href: "/tours/family-friendly",
   },
   {

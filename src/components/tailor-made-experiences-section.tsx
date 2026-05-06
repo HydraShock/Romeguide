@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./tailor-made-experiences-section.module.css";
 
 const features = [
@@ -73,9 +72,6 @@ export default function TailorMadeExperiencesSection() {
               ))}
             </ul>
 
-            <Link href="/#booking-calendar" className={styles.cta}>
-              Start My Custom Plan
-            </Link>
           </article>
 
           <aside className={styles.sideNotes} aria-hidden>

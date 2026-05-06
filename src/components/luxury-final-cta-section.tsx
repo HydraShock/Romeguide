@@ -33,11 +33,11 @@ export default function LuxuryFinalCtaSection() {
           </div>
 
           <h2 id="final-cta-heading" className={styles.heading}>
-            Let&apos;s Plan Your Rome Trip Together
+            Let&apos;s Plan Your Trip Together
           </h2>
 
           <p className={styles.copy}>
-            Tell us your dates, interests, and ideal pace. We&apos;ll send back a warm,
+            Tell us your dates, interests, and ideal pace. We&apos;ll send back a
             personal plan that feels easy and right for your trip.
           </p>
 

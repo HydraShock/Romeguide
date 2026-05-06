@@ -46,7 +46,6 @@ const privateOrvietoUmbriaTourData: TourPageData = {
       "Couples",
       "Hill-town lovers",
       "Food and wine travelers",
-      "Guests seeking a slower pace",
     ],
   },
   facts: [

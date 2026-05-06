@@ -10,7 +10,7 @@ const footerGroups = [
     links: [
       { label: "Day Trips", href: "/tours/day-trips-from-rome" },
       { label: "Tours in Italy", href: "/tours-in-italy" },
-      { label: "Private Tours", href: "/tours" },
+      { label: "Rome Tours", href: "/tours" },
     ],
   },
   {
@@ -65,9 +65,9 @@ export default function LuxuryFooterSection() {
       <div className={styles.inner}>
         <section className={styles.brandStatement} aria-label="Brand statement">
           <p className={styles.brandName}>Rome Guide Services</p>
-          <h2 className={styles.tagline}>Private Rome Tours, Made Around You</h2>
+          <h2 className={styles.tagline}>Private Italy Tours, Made Around You</h2>
           <p className={styles.supportingLine}>
-            Private tours in Rome, Vatican highlights, and day trips designed with local care.
+            Private tours across Italy, Vatican highlights, and day trips in Italian cities designed with local care.
           </p>
           <span className={styles.statementDivider} aria-hidden />
         </section>

@@ -763,27 +763,27 @@ export default function BookingTriageCalendarConcept() {
             <div className={styles.stepContent}>
               <h4>Your travel route in Italy</h4>
               <p>
-                Tell us where you are starting and where you want to arrive in Italy before we
-                choose experiences.
+                Tell us your arrival city and your departure city so we can shape the route around
+                your plan.
               </p>
 
               <div className={styles.routeGrid}>
+                <label className={styles.fieldWrap}>
+                  <span>Arrival city</span>
+                  <input
+                    type="text"
+                    value={arrivalCityItaly}
+                    onChange={(event) => setArrivalCityItaly(event.target.value)}
+                    placeholder="e.g. Rome"
+                    className={styles.fieldInput}
+                  />
+                </label>
                 <label className={styles.fieldWrap}>
                   <span>Departure city</span>
                   <input
                     type="text"
                     value={departureCity}
                     onChange={(event) => setDepartureCity(event.target.value)}
-                    placeholder="e.g. Rome"
-                    className={styles.fieldInput}
-                  />
-                </label>
-                <label className={styles.fieldWrap}>
-                  <span>Arrival city in Italy</span>
-                  <input
-                    type="text"
-                    value={arrivalCityItaly}
-                    onChange={(event) => setArrivalCityItaly(event.target.value)}
                     placeholder="e.g. Florence"
                     className={styles.fieldInput}
                   />
@@ -879,13 +879,8 @@ export default function BookingTriageCalendarConcept() {
                   </section>
                 ))}
 
-              {(selectedGroupCount > 0 || selectedInterestLabels.length > 0 || notSureYet) && (
+              {(selectedInterestLabels.length > 0 || notSureYet) && (
                 <div className={styles.selectedInterestWrap}>
-                  {selectedGroupLabels.map((label) => (
-                    <span key={label} className={styles.selectedInterestPill}>
-                      {label}
-                    </span>
-                  ))}
                   {selectedInterestLabels.map((label) => (
                     <span key={label} className={styles.selectedInterestPill}>
                       {label}
@@ -1266,7 +1261,7 @@ export default function BookingTriageCalendarConcept() {
                 <p>
                   <strong>Route:</strong>{" "}
                   {departureCity.trim() && arrivalCityItaly.trim()
-                    ? `${departureCity.trim()} -> ${arrivalCityItaly.trim()}`
+                    ? `Arrival: ${arrivalCityItaly.trim()} | Departure: ${departureCity.trim()}`
                     : "Not set"}
                 </p>
                 <p>

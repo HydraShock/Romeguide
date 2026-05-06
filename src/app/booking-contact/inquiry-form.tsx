@@ -222,7 +222,7 @@ export default function InquiryForm() {
       startWindow ? `Preferred start window: ${startWindow}` : "",
       travelerProfile ? `Traveler profile: ${travelerProfile}` : "",
       departureCity && arrivalCityItaly
-        ? `Travel route in Italy: ${departureCity} -> ${arrivalCityItaly}`
+        ? `Travel route in Italy: Arrival ${arrivalCityItaly} | Departure ${departureCity}`
         : "",
     ].filter(Boolean);
 

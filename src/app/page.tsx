@@ -297,7 +297,7 @@ export default function Home() {
             <div className={styles.whyChooseCopy}>
               <p className={styles.whyChooseEyebrow}>Why Travelers Book With Us</p>
               <h2 id="why-choose-heading" className={styles.whyChooseHeading}>
-                Licensed Rome Guides, Family-Run Care
+                Licensed Guides, Family-Run Care
               </h2>
               <p className={styles.whyChooseLead}>
                 We&apos;re a family-run team creating private tours in Rome that feel

@@ -6,7 +6,7 @@ const tourTypes = [
     label: "Private Experiences",
     title: "Groups of All Sizes",
     description:
-      "From intimate gatherings to larger parties, we plan private tours in Rome that feel smooth, personal, and easy to enjoy together.",
+      "From intimate gatherings to larger parties, we plan private tours that feel smooth, personal, and easy to enjoy together.",
     image: "/editorial-tours/groups-all-sizes.jpg",
   },
   {

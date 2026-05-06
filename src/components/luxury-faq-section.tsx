@@ -15,9 +15,9 @@ const faqItems = [
       "Absolutely. We shape each day around your interests, preferred pace, and must-see places.",
   },
   {
-    question: "Do you offer Vatican private tours?",
+    question: "Do you offer Vatican tours?",
     answer:
-      "Yes. Our Vatican private tours include the Museums, Sistine Chapel, and St. Peter's with timing that fits your group.",
+      "Yes. Our Vatican private tours include the Museums, Sistine Chapel, and St. Peter's basilica.",
   },
   {
     question: "Do you offer family-friendly tours?",
@@ -25,14 +25,14 @@ const faqItems = [
       "Yes. We design family-friendly routes with flexible timing, engaging storytelling, and practical comfort.",
   },
   {
-    question: "Do you arrange day trips from Rome?",
+    question: "Do you arrange day trips?",
     answer:
       "Yes. We organize private day trips from Rome with easy logistics and friendly local guidance.",
   },
   {
     question: "Can you include a private driver?",
     answer:
-      "Yes. We can include a private driver for transfers, full-day touring, and day trips from Rome.",
+      "Yes. We can include a private driver for transfers, full-day touring, and day trips from Rome and other Italian cities.",
   },
   {
     question: "How far in advance should we book?",

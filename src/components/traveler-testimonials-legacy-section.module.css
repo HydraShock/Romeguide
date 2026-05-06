@@ -174,7 +174,7 @@
   gap: var(--card-gap);
   width: max-content;
   padding-right: var(--card-gap);
-  animation: legacy-testimonials-marquee 44s linear infinite;
+  animation: legacy-testimonials-marquee 78s linear infinite;
 }
 
 .carouselViewport:hover .carouselTrack {

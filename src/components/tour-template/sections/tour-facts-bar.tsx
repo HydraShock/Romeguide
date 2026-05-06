@@ -8,7 +8,6 @@ type TourFactsBarProps = {
 
 const FACTS_STANDARD = [
   { label: "Duration", aliases: ["duration"] },
-  { label: "Format", aliases: ["format"] },
   { label: "Guide", aliases: ["guide"] },
   { label: "Driver", aliases: ["driver"] },
   { label: "Sites", aliases: ["sites", "main stops", "focus", "region"] },
@@ -16,7 +15,6 @@ const FACTS_STANDARD = [
 
 const FACTS_FALLBACK: Record<(typeof FACTS_STANDARD)[number]["label"], string> = {
   Duration: "Flexible",
-  Format: "Private tour",
   Guide: "Licensed guide",
   Driver: "On request",
   Sites: "Based on interests",
@@ -68,7 +66,7 @@ export default function TourFactsBar({ facts }: TourFactsBarProps) {
         <div className="relative overflow-hidden rounded-[1.15rem] border border-[#C79A62]/34 bg-[#f7efe4]/84 px-4 py-4 shadow-[0_0_0_1px_rgba(255,244,226,0.68)_inset,0_12px_28px_rgba(60,34,20,0.08)] md:px-6">
           <div className="pointer-events-none absolute inset-x-0 top-0 h-[42%] bg-[radial-gradient(circle_at_50%_0%,rgba(255,252,246,0.68)_0%,rgba(255,252,246,0)_76%)]" />
 
-          <dl className="relative grid grid-cols-2 gap-x-6 gap-y-4 md:grid-cols-3 lg:grid-cols-5">
+          <dl className="relative grid grid-cols-2 gap-x-6 gap-y-4 md:grid-cols-4 lg:grid-cols-4">
             {standardFacts.map((fact, index) => (
               <div
                 key={fact.label}
