@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import styles from "./luxury-center-logo-navbar.module.css";
+import logoCarlo from "./logocarlo.png";
 
 type PanelKey = "romeTours" | "dayTrips" | "italyTours";
 
@@ -482,10 +483,10 @@ export default function LuxuryCenterLogoNavbar() {
           >
             <span className={styles.centerLogoWrap}>
               <Image
-                src="/logo2.png"
-                alt="RG Rome Guide Services Italy logo"
-                width={810}
-                height={367}
+                src={logoCarlo}
+                alt="Rome Guide Services logo"
+                width={logoCarlo.width}
+                height={logoCarlo.height}
                 priority
                 quality={100}
                 sizes="(max-width: 980px) 210px, 340px"

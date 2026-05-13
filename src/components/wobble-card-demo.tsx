@@ -41,7 +41,7 @@ const tours = [
     image: "/images/tours/walking/hero-rome-private-walking-tour-pantheon-dusk.webp",
     alt: "Roman riverside and bridges during golden hour",
     imagePosition: "84% 43%",
-    monuments: ["Piazza Navona", "Pantheon", "Campo de' Fiori"],
+    monuments: ["Navona Square", "Pantheon", "Campo de' Fiori Square"],
     href: "/tours/walking-tours",
   },
   {
@@ -62,7 +62,7 @@ const tours = [
     image: "/images/tours/art-architecture/hero-rome-art-architecture-tour-pantheon-dome.webp",
     alt: "Roman architecture and river view at golden hour",
     imagePosition: "78% 40%",
-    monuments: ["Pantheon", "Ara Pacis", "Piazza Venezia"],
+    monuments: ["Pantheon", "Ara Pacis", "Venezia Square"],
     href: "/tours/art-architecture",
   },
 ] as const;
