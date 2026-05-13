@@ -1,5 +1,8 @@
 import Image from "next/image";
 import styles from "./luxury-editorial-tours-section.module.css";
+import groupsAllSizesPortrait from "./romeguideservices-cooking.jpg";
+import familyFriendlyPortrait from "./romeguideservices-families-300x300.jpg";
+import smallGroupsPortrait from "./romeguidenet-vaticantours1200.jpg";
 
 const tourTypes = [
   {
@@ -7,21 +10,21 @@ const tourTypes = [
     title: "Groups of All Sizes",
     description:
       "From intimate gatherings to larger parties, we plan private tours that feel smooth, personal, and easy to enjoy together.",
-    image: "/editorial-tours/groups-all-sizes.jpg",
+    image: groupsAllSizesPortrait,
   },
   {
     label: "Easy Comfort",
     title: "Family-Friendly Tours",
     description:
       "Thoughtful pacing, engaging stories, and child-friendly planning make family tours in Rome easy and memorable.",
-    image: "/editorial-tours/family-friendly.jpg",
+    image: familyFriendlyPortrait,
   },
   {
     label: "Explore Together",
     title: "Small Groups & Friends",
     description:
       "Perfect for friends traveling together, with flexible timing, local tips, and plans built around your shared interests.",
-    image: "/editorial-tours/small-groups-friends.jpg",
+    image: smallGroupsPortrait,
   },
   {
     label: "Cruise Made Easy",

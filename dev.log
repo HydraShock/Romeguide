@@ -1,0 +1,36 @@
+
+> romeguidenet@0.1.0 predev
+> npm run stop:next
+
+
+> romeguidenet@0.1.0 stop:next
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/stop-next.ps1
+
+
+> romeguidenet@0.1.0 dev
+> next dev --webpack -p 3000
+
+▲ Next.js 16.1.6 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.4:3000
+
+✓ Starting...
+✓ Ready in 1971ms
+ GET / 200 in 2.6s (compile: 2.0s, render: 557ms)
+ GET / 200 in 82ms (compile: 7ms, render: 75ms)
+ GET / 200 in 340ms (compile: 6ms, render: 334ms)
+ GET / 200 in 120ms (compile: 6ms, render: 114ms)
+ GET / 200 in 134ms (compile: 5ms, render: 129ms)
+ GET / 200 in 116ms (compile: 6ms, render: 111ms)
+ GET / 200 in 535ms (compile: 105ms, render: 431ms)
+ GET / 200 in 367ms (compile: 8ms, render: 359ms)
+ GET / 200 in 98ms (compile: 5ms, render: 93ms)
+ GET / 200 in 286ms (compile: 104ms, render: 182ms)
+ GET / 200 in 491ms (compile: 49ms, render: 442ms)
+ GET / 200 in 399ms (compile: 9ms, render: 389ms)
+ GET / 200 in 112ms (compile: 6ms, render: 107ms)
+ GET / 200 in 464ms (compile: 47ms, render: 417ms)
+ GET / 200 in 411ms (compile: 8ms, render: 403ms)
+ GET / 200 in 101ms (compile: 5ms, render: 96ms)
+ GET / 200 in 194ms (compile: 67ms, render: 126ms)
+[?25h
