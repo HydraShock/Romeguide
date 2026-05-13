@@ -435,8 +435,8 @@
 .centerLogoWrap {
   position: relative;
   display: block;
-  width: clamp(6.4rem, 9.8vw, 8.6rem);
-  transform: translateY(-0.4rem);
+  width: clamp(9.8rem, 14.2vw, 12.8rem);
+  transform: translateY(-0.34rem);
 }
 
 .centerLogoImage {
@@ -715,8 +715,8 @@
   }
 
   .centerLogoWrap {
-    width: clamp(5.4rem, 17vw, 6.8rem);
-    transform: translateY(-0.18rem);
+    width: clamp(7.4rem, 23vw, 9.2rem);
+    transform: translateY(-0.12rem);
   }
 
   .centerLogoImage {
