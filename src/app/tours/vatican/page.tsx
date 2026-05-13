@@ -13,7 +13,7 @@ const vaticanTourData: TourPageData = {
   slug: "vatican-tour",
   path: "/tours/vatican",
   seoTitle:
-    "Private Vatican Tour | Vatican Museums, Sistine Chapel & St. Peter's Basilica | Rome Guide Services",
+    "Vatican Tour | Vatican Museums, Sistine Chapel & St. Peter's Basilica | Rome Guide Services",
   seoDescription:
     "Explore the Vatican Museums, Sistine Chapel, and St. Peter's Basilica with a licensed private guide. A private Vatican tour at your pace.",
   lightSectionsTheme: "tivoliUnified",
@@ -24,7 +24,7 @@ const vaticanTourData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE GUIDED TOUR",
-    title: "Private Vatican Tour",
+    title: "Vatican Tour",
     landmarksLine: "Vatican Museums | Sistine Chapel | St. Peter's Basilica",
     subtitle:
       "Explore Vatican City with a licensed private guide, with a route shaped around your interests and your pace.",
@@ -197,12 +197,12 @@ const vaticanTourData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Ancient Rome Private Tour",
+      title: "Ancient Rome Tour",
       description: "Colosseum, Roman Forum, and Palatine Hill with private pacing and clear storytelling.",
       href: "/tours/ancient-rome",
     },
     {
-      title: "Christian Rome Private Tour",
+      title: "Christian Rome Tour",
       description: "Catacombs and Major Churches for guests focused on faith and heritage.",
       href: "/tours/christian-rome",
     },
@@ -268,3 +268,4 @@ export function generateMetadata(): Metadata {
 export default function VaticanTourPage() {
   return <TourTemplatePage data={vaticanTourData} />;
 }
+

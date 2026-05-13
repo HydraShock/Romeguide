@@ -12,32 +12,32 @@ const PAGE_PATH = "/tours-in-italy";
 const italyTours = [
   {
     href: "/tours-in-italy/private-florence-tuscany-tour",
-    title: "Private Florence & Tuscany Tour",
+    title: "Florence & Tuscany Tour",
     description: "Renaissance art, Tuscan views, and a private route at your pace.",
   },
   {
     href: "/tours-in-italy/private-venice-tour",
-    title: "Private Venice Tour",
+    title: "Venice Tour",
     description: "Canals, hidden lanes, and local corners beyond the busiest routes.",
   },
   {
     href: "/tours-in-italy/private-milan-tour",
-    title: "Private Milan Tour",
+    title: "Milan Tour",
     description: "Architecture, design, and city highlights with local private guidance.",
   },
   {
     href: "/tours-in-italy/private-sicily-tours",
-    title: "Private Sicily Tours",
+    title: "Sicily Tours",
     description: "Island history, archaeology, and flexible private routes.",
   },
   {
     href: "/tours-in-italy/private-naples-amalfi-coast-tour",
-    title: "Private Naples & Amalfi Coast Tour",
+    title: "Naples & Amalfi Coast Tour",
     description: "Southern city character, coastal views, and flexible private planning.",
   },
   {
     href: "/tours-in-italy/private-orvieto-umbria-tour",
-    title: "Private Orvieto & Umbria Tour",
+    title: "Orvieto & Umbria Tour",
     description: "Hill towns, cathedral heritage, and countryside rhythm at a relaxed pace.",
   },
 ] as const;
@@ -196,3 +196,4 @@ export default function ToursInItalyHubPage() {
     </>
   );
 }
+

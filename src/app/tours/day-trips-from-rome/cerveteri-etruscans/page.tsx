@@ -23,7 +23,7 @@ const cerveteriEtruscansDayTripData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE DAY TRIP FROM ROME",
-    title: "Cerveteri & Etruscan Heritage\nPrivate Day Trip From Rome",
+    title: "Cerveteri & Etruscan Heritage\nDay Trip From Rome",
     landmarksLine: "From Rome | Banditaccia Necropolis | Etruscan Legacy in Lazio",
     subtitle:
       "Go beyond Roman history into the Etruscan world with a private day trip from Rome designed around archaeology, context, and route comfort.",
@@ -191,12 +191,12 @@ const cerveteriEtruscansDayTripData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Ostia Antica Private Day Trip",
+      title: "Ostia Antica Day Trip",
       description: "Another archaeology-led route from Rome with shorter transfers and urban Roman context.",
       href: "/tours/day-trips-from-rome/ostia-antica",
     },
     {
-      title: "Roman Hill Towns Private Day Trip",
+      title: "Roman Hill Towns Day Trip",
       description: "Switch from archaeology to village landscapes and countryside rhythm.",
       href: "/tours/day-trips-from-rome/roman-hill-towns",
     },
@@ -206,7 +206,7 @@ const cerveteriEtruscansDayTripData: TourPageData = {
       href: "/tours/day-trips-from-rome",
     },
     {
-      title: "Christian Rome Private Tour",
+      title: "Christian Rome Tour",
       description: "Connect pre-Roman heritage with Rome's later religious and cultural evolution.",
       href: "/tours/christian-rome",
     },
@@ -262,3 +262,4 @@ export function generateMetadata(): Metadata {
 export default function CerveteriEtruscansDayTripPage() {
   return <TourTemplatePage data={cerveteriEtruscansDayTripData} />;
 }
+

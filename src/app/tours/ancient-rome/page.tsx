@@ -13,7 +13,7 @@ const ancientRomeTourData: TourPageData = {
   slug: "ancient-rome-tour",
   path: "/tours/ancient-rome",
   seoTitle:
-    "Ancient Rome Private Tour | Colosseum, Roman Forum & Palatine Hill | Rome Guide Services",
+    "Ancient Rome Tour | Colosseum, Roman Forum & Palatine Hill | Rome Guide Services",
   seoDescription:
     "Explore the Colosseum, Roman Forum, and Palatine Hill with a licensed private guide. A private Ancient Rome tour built around your pace and interests.",
   lightSectionsTheme: "tivoliUnified",
@@ -25,7 +25,7 @@ const ancientRomeTourData: TourPageData = {
   highlightsTheme: "bronzeHome",
   hero: {
     eyebrow: "PRIVATE GUIDED TOUR",
-    title: "Ancient Rome Private Tour",
+    title: "Ancient Rome Tour",
     landmarksLine: "Colosseum | Roman Forum | Palatine Hill",
     subtitle:
       "Explore the Colosseum, Roman Forum, and Palatine Hill and much more.",
@@ -198,7 +198,7 @@ const ancientRomeTourData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Vatican Private Tour",
+      title: "Vatican Tour",
       description: "Vatican Museums and Sistine Chapel with private pacing that fits your day.",
       href: "/tours/vatican",
     },
@@ -269,4 +269,5 @@ export function generateMetadata(): Metadata {
 export default function AncientRomeTourPage() {
   return <TourTemplatePage data={ancientRomeTourData} />;
 }
+
 

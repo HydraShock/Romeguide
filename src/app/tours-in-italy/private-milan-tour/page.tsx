@@ -11,7 +11,7 @@ const privateMilanTourData: TourPageData = {
   slug: "private-milan-tour",
   path: "/tours-in-italy/private-milan-tour",
   seoTitle:
-    "Private Milan Tour | Duomo, Brera, Design, Architecture & Custom Experience | Rome Guide Services",
+    "Milan Tour | Duomo, Brera, Design, Architecture & Custom Experience | Rome Guide Services",
   seoDescription:
     "Explore Milan with a private tour at your pace, from iconic landmarks to quieter neighborhoods and design-focused streets.",
   lightSectionsTheme: "tivoliUnified",
@@ -22,7 +22,7 @@ const privateMilanTourData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE TOUR IN ITALY",
-    title: "Private Milan Tour",
+    title: "Milan Tour",
     landmarksLine: "DUOMO \u2022 BRERA \u2022 DESIGN \u2022 HIDDEN MILAN",
     subtitle:
       "Discover Milan with a private route that balances iconic landmarks, architectural detail, and quieter neighborhoods.",
@@ -225,13 +225,13 @@ const privateMilanTourData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Private Venice Tour",
+      title: "Venice Tour",
       description:
         "Pair Milan with a private Venice route centered on canals and quieter corners.",
       href: "/tours-in-italy/private-venice-tour",
     },
     {
-      title: "Private Florence & Tuscany Tour",
+      title: "Florence & Tuscany Tour",
       description:
         "Continue with a Florence-focused private route and optional Tuscany extension.",
       href: "/tours-in-italy/private-florence-tuscany-tour",
@@ -294,3 +294,4 @@ export function generateMetadata(): Metadata {
 export default function PrivateMilanTourPage() {
   return <TourTemplatePage data={privateMilanTourData} />;
 }
+

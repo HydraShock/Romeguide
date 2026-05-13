@@ -12,7 +12,7 @@ const PAGE_PATH = "/tours/day-trips-from-rome";
 const dayTrips = [
   {
     href: "/tours/day-trips-from-rome/tivoli",
-    title: "Private Tivoli Day Trip",
+    title: "Tivoli Day Trip",
     description: "Hadrian's Villa and Villa d'Este with chauffeured comfort from Rome.",
   },
   {
@@ -22,12 +22,12 @@ const dayTrips = [
   },
   {
     href: "/tours/day-trips-from-rome/ostia-antica",
-    title: "Private Ostia Antica Day Trip",
+    title: "Ostia Antica Day Trip",
     description: "Ancient harbor archaeology with private transport and flexible pacing.",
   },
   {
     href: "/tours/day-trips-from-rome/orvieto-umbria",
-    title: "Private Orvieto & Umbria Day Trip",
+    title: "Orvieto & Umbria Day Trip",
     description: "Hill-town atmosphere, cathedral heritage, and countryside elegance.",
   },
   {
@@ -45,12 +45,12 @@ const dayTrips = [
 const romeAddOns = [
   {
     href: "/tours/ancient-rome",
-    title: "Ancient Rome Private Tour",
+    title: "Ancient Rome Tour",
     description: "Pair your day trip with Rome's imperial landmarks and private storytelling.",
   },
   {
     href: "/tours/vatican",
-    title: "Private Vatican Tour",
+    title: "Vatican Tour",
     description: "Combine your out-of-city day with a well-planned Vatican private experience.",
   },
   {
@@ -115,7 +115,7 @@ export default function DayTripsFromRomeHubPage() {
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Private Day Trips from Rome",
+    name: "Day Trips from Rome",
     itemListElement: dayTrips.map((trip, index) => ({
       "@type": "ListItem",
       position: index + 1,
@@ -143,7 +143,7 @@ export default function DayTripsFromRomeHubPage() {
               Day Trips from Rome
             </p>
             <h1 className="mt-3 max-w-[20ch] font-serif text-[clamp(2.1rem,4.3vw,4rem)] leading-[0.95] text-[#f8ead8]">
-              Private Day Trips from Rome, Well-planned Beyond the City
+              Day Trips from Rome, Well-planned Beyond the City
             </h1>
             <p className="mt-4 max-w-[70ch] font-sans text-[1rem] leading-[1.75] text-[#e8d0b2]">
               Discover full-day private escapes with hotel pickup in Rome, relaxed pace, and
@@ -226,3 +226,4 @@ export default function DayTripsFromRomeHubPage() {
     </>
   );
 }
+

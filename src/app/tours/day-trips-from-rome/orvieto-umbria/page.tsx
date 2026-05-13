@@ -12,7 +12,7 @@ const orvietoDayTripData: TourPageData = {
   slug: "orvieto-day-trip-from-rome",
   path: "/tours/day-trips-from-rome/orvieto-umbria",
   seoTitle:
-    "Private Orvieto Day Trip from Rome | Orvieto Cathedral & Umbrian Hill Town | Rome Guide Services",
+    "Orvieto Day Trip from Rome | Orvieto Cathedral & Umbrian Hill Town | Rome Guide Services",
   seoDescription:
     "Escape Rome for a private day trip to Orvieto with flexible pacing, private transport, and a comfortable itinerary through one of Umbria\u2019s most beautiful hill towns.",
   lightSectionsTheme: "tivoliUnified",
@@ -23,7 +23,7 @@ const orvietoDayTripData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE DAY TRIP FROM ROME",
-    title: "Private Orvieto Day Trip from Rome",
+    title: "Orvieto Day Trip from Rome",
     landmarksLine: "ORVIETO \u2022 UMBRIA \u2022 HILL TOWN ESCAPE",
     subtitle:
       "Leave Rome behind for a private journey into Orvieto, where dramatic views, quiet stone streets, a magnificent cathedral, and the gentle rhythm of Umbria create one of central Italy\u2019s most beautiful day trips.",
@@ -221,22 +221,22 @@ const orvietoDayTripData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Private Day Trips from Rome",
+      title: "Day Trips from Rome",
       description: "Browse all destination-led private escapes departing from Rome.",
       href: "/tours/day-trips-from-rome",
     },
     {
-      title: "Private Tivoli Day Trip from Rome",
+      title: "Tivoli Day Trip from Rome",
       description: "Pair Orvieto's hill-town elegance with villas, gardens, and imperial heritage.",
       href: "/tours/day-trips-from-rome/tivoli",
     },
     {
-      title: "Private Ostia Antica Day Trip from Rome",
+      title: "Ostia Antica Day Trip from Rome",
       description: "Add a quieter archaeological route focused on daily life in the ancient port of Rome.",
       href: "/tours/day-trips-from-rome/ostia-antica",
     },
     {
-      title: "Ancient Rome Private Tour",
+      title: "Ancient Rome Tour",
       description: "Complement your day beyond Rome with a private deep dive into imperial landmarks.",
       href: "/tours/ancient-rome",
     },
@@ -297,3 +297,4 @@ export function generateMetadata(): Metadata {
 export default function OrvietoUmbriaDayTripPage() {
   return <TourTemplatePage data={orvietoDayTripData} />;
 }
+

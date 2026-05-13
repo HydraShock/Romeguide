@@ -41,12 +41,12 @@ const categoryCards = [
     description:
       "Choose among private routes in Ancient Rome, Vatican, Christian Rome, walking, family, and art-focused itineraries.",
     links: [
-      { href: "/tours/ancient-rome", label: "Ancient Rome Private Tour" },
-      { href: "/tours/vatican", label: "Private Vatican Tour" },
-      { href: "/tours/christian-rome", label: "Christian Rome Private Tour" },
-      { href: "/tours/walking-tours", label: "Rome Private Walking Tours" },
-      { href: "/tours/family-friendly", label: "Family-Friendly Rome Private Tours" },
-      { href: "/tours/art-architecture", label: "Rome Art & Architecture Private Tour" },
+      { href: "/tours/ancient-rome", label: "Ancient Rome Tour" },
+      { href: "/tours/vatican", label: "Vatican Tour" },
+      { href: "/tours/christian-rome", label: "Christian Rome Tour" },
+      { href: "/tours/walking-tours", label: "Rome Walking Tours" },
+      { href: "/tours/family-friendly", label: "Family-Friendly Rome Tours" },
+      { href: "/tours/art-architecture", label: "Rome Art & Architecture Tour" },
     ],
   },
   {
@@ -54,12 +54,12 @@ const categoryCards = [
     description:
       "Plan private escapes beyond Rome with flexible pacing and destination-focused planning.",
     links: [
-      { href: "/tours/day-trips-from-rome", label: "Private Day Trips from Rome" },
-      { href: "/tours/day-trips-from-rome/tivoli", label: "Private Tivoli Day Trip" },
-      { href: "/tours/day-trips-from-rome/ostia-antica", label: "Private Ostia Antica Day Trip" },
-      { href: "/tours/day-trips-from-rome/orvieto-umbria", label: "Private Orvieto & Umbria Day Trip" },
-      { href: "/tours/day-trips-from-rome/roman-hill-towns", label: "Private Roman Hill Towns Day Trip" },
-      { href: "/tours/day-trips-from-rome/cerveteri-etruscans", label: "Private Cerveteri & Etruscans Day Trip" },
+      { href: "/tours/day-trips-from-rome", label: "Day Trips from Rome" },
+      { href: "/tours/day-trips-from-rome/tivoli", label: "Tivoli Day Trip" },
+      { href: "/tours/day-trips-from-rome/ostia-antica", label: "Ostia Antica Day Trip" },
+      { href: "/tours/day-trips-from-rome/orvieto-umbria", label: "Orvieto & Umbria Day Trip" },
+      { href: "/tours/day-trips-from-rome/roman-hill-towns", label: "Roman Hill Towns Day Trip" },
+      { href: "/tours/day-trips-from-rome/cerveteri-etruscans", label: "Cerveteri & Etruscans Day Trip" },
       { href: "/tours/day-trips-from-rome/pompeii-amalfi-naples", label: "Pompeii & Amalfi Day Trip" },
     ],
   },
@@ -68,12 +68,12 @@ const categoryCards = [
     description:
       "For multi-city journeys, we support private planning across selected Italy destinations.",
     links: [
-      { href: "/tours-in-italy/private-florence-tuscany-tour", label: "Private Florence & Tuscany Tour" },
-      { href: "/tours-in-italy/private-venice-tour", label: "Private Venice Tour" },
-      { href: "/tours-in-italy/private-milan-tour", label: "Private Milan Tour" },
-      { href: "/tours-in-italy/private-naples-amalfi-coast-tour", label: "Private Naples & Amalfi Coast Tour" },
-      { href: "/tours-in-italy/private-orvieto-umbria-tour", label: "Private Orvieto & Umbria Tour" },
-      { href: "/tours-in-italy/private-sicily-tours", label: "Private Sicily Tours" },
+      { href: "/tours-in-italy/private-florence-tuscany-tour", label: "Florence & Tuscany Tour" },
+      { href: "/tours-in-italy/private-venice-tour", label: "Venice Tour" },
+      { href: "/tours-in-italy/private-milan-tour", label: "Milan Tour" },
+      { href: "/tours-in-italy/private-naples-amalfi-coast-tour", label: "Naples & Amalfi Coast Tour" },
+      { href: "/tours-in-italy/private-orvieto-umbria-tour", label: "Orvieto & Umbria Tour" },
+      { href: "/tours-in-italy/private-sicily-tours", label: "Sicily Tours" },
     ],
   },
 ];
@@ -385,3 +385,4 @@ export default function BookingContactPage() {
     </>
   );
 }
+

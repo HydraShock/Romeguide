@@ -12,7 +12,7 @@ import type { TourPageData } from "@/components/tour-template/types";
 const christianRomeTourData: TourPageData = {
   slug: "christian-rome-tour",
   path: "/tours/christian-rome",
-  seoTitle: "Christian Rome Private Tour | Catacombs & Major Churches | Rome Guide Services",
+  seoTitle: "Christian Rome Tour | Catacombs & Major Churches | Rome Guide Services",
   seoDescription:
     "Discover catacombs, the Major Churches, and sacred landmarks with a licensed private guide. A Christian Rome tour adapted to your pace and interests.",
   lightSectionsTheme: "tivoliUnified",
@@ -23,7 +23,7 @@ const christianRomeTourData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE GUIDED TOUR",
-    title: "Christian Rome Private Tour",
+    title: "Christian Rome Tour",
     landmarksLine: "Catacombs | The Major Churches",
     subtitle:
       "Discover Rome's Christian heritage through a private journey that connects early faith communities, papal history, and sacred architecture.",
@@ -196,12 +196,12 @@ const christianRomeTourData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Private Vatican Tour",
+      title: "Vatican Tour",
       description: "Vatican Museums and Sistine Chapel with a private licensed guide.",
       href: "/tours/vatican",
     },
     {
-      title: "Ancient Rome Private Tour",
+      title: "Ancient Rome Tour",
       description: "A story-led private route across Colosseum, Forum, and Palatine Hill.",
       href: "/tours/ancient-rome",
     },
@@ -267,3 +267,4 @@ export function generateMetadata(): Metadata {
 export default function ChristianRomeTourPage() {
   return <TourTemplatePage data={christianRomeTourData} />;
 }
+

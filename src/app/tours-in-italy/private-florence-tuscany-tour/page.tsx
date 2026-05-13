@@ -13,7 +13,7 @@ const florenceTuscanyTourData: TourPageData = {
   slug: "private-florence-tuscany-tour",
   path: "/tours-in-italy/private-florence-tuscany-tour",
   seoTitle:
-    "Private Florence & Tuscany Tour | Renaissance Florence, Art, Architecture & Countryside | Rome Guide Services",
+    "Florence & Tuscany Tour | Renaissance Florence, Art, Architecture & Countryside | Rome Guide Services",
   seoDescription:
     "Explore Florence and Tuscany with a private tour at your pace, with Renaissance highlights, local neighborhoods, and optional countryside time.",
   lightSectionsTheme: "tivoliUnified",
@@ -24,7 +24,7 @@ const florenceTuscanyTourData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE TOUR IN ITALY",
-    title: "Private Florence & Tuscany Tour",
+    title: "Florence & Tuscany Tour",
     landmarksLine: "FLORENCE \u2022 RENAISSANCE HIGHLIGHTS \u2022 TUSCAN ATMOSPHERE",
     subtitle:
       "Discover Florence with a private tour focused on Renaissance art, architecture, and a relaxed pace, with the option to continue into Tuscany.",
@@ -233,30 +233,30 @@ const florenceTuscanyTourData: TourPageData = {
       href: "/tours/art-architecture",
     },
     {
-      title: "Private Venice Tour",
+      title: "Venice Tour",
       description: "Pair Florence with a private Venice route focused on canals, art, and local atmosphere.",
       href: "/tours-in-italy/private-venice-tour",
     },
     {
-      title: "Private Milan Tour",
+      title: "Milan Tour",
       description:
         "Add a northern Italy stop with a private Milan route focused on design and architecture.",
       href: "/tours-in-italy/private-milan-tour",
     },
     {
-      title: "Private Orvieto & Umbria Tour",
+      title: "Orvieto & Umbria Tour",
       description:
         "Switch to a countryside rhythm with hill towns, views, and local food culture.",
       href: "/tours-in-italy/private-orvieto-umbria-tour",
     },
     {
-      title: "Private Day Trips from Rome",
+      title: "Day Trips from Rome",
       description:
         "Compare Florence and Tuscany with private day-trip options from Rome.",
       href: "/tours/day-trips-from-rome",
     },
     {
-      title: "Ancient Rome Private Tour",
+      title: "Ancient Rome Tour",
       description: "Combine Renaissance Florence with an imperial Rome private experience for full historical range.",
       href: "/tours/ancient-rome",
     },
@@ -312,4 +312,5 @@ export function generateMetadata(): Metadata {
 export default function PrivateFlorenceTuscanyTourPage() {
   return <TourTemplatePage data={florenceTuscanyTourData} />;
 }
+
 

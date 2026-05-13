@@ -12,12 +12,12 @@ const PAGE_PATH = "/tours";
 const romeTours = [
   {
     href: "/tours/ancient-rome",
-    title: "Ancient Rome Private Tour",
+    title: "Ancient Rome Tour",
     description: "Colosseum, Roman Forum, and Palatine Hill with licensed private storytelling.",
   },
   {
     href: "/tours/vatican",
-    title: "Private Vatican Tour",
+    title: "Vatican Tour",
     description: "Vatican Museums, Sistine Chapel, and St. Peter's in comfortable private pacing.",
   },
   {
@@ -27,7 +27,7 @@ const romeTours = [
   },
   {
     href: "/tours/walking-tours",
-    title: "Rome Private Walking Tour",
+    title: "Rome Walking Tour",
     description: "City-center routes designed around your rhythm and curiosity.",
   },
   {
@@ -50,7 +50,7 @@ const dayTrips = [
   },
   {
     href: "/tours/day-trips-from-rome/tivoli",
-    title: "Private Tivoli Day Trip",
+    title: "Tivoli Day Trip",
     description: "Hadrian's Villa and Villa d'Este with chauffeured comfort from Rome.",
   },
   {
@@ -221,3 +221,4 @@ export default function ToursHubPage() {
     </>
   );
 }
+

@@ -12,7 +12,7 @@ const romanHillTownsDayTripData: TourPageData = {
   slug: "roman-hill-towns-day-trip-from-rome",
   path: "/tours/day-trips-from-rome/roman-hill-towns",
   seoTitle:
-    "Roman Hill Towns Private Day Trip from Rome | Frascati, Castel Gandolfo & Scenic Villages",
+    "Roman Hill Towns Day Trip from Rome | Frascati, Castel Gandolfo & Scenic Villages",
   seoDescription:
     "Private day trip from Rome to Roman hill towns with private driver, village stops, lake views, and flexible countryside pacing.",
   lightSectionsTheme: "tivoliUnified",
@@ -23,7 +23,7 @@ const romanHillTownsDayTripData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE DAY TRIP FROM ROME",
-    title: "Roman Hill Towns\nPrivate Day Trip From Rome",
+    title: "Roman Hill Towns\nDay Trip From Rome",
     landmarksLine: "From Rome | Frascati | Castel Gandolfo | Lake and Village Views",
     subtitle:
       "Enjoy a comfortable countryside day just outside Rome, blending village character, panoramic stops, and slow private pacing.",
@@ -184,12 +184,12 @@ const romanHillTownsDayTripData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Orvieto & Umbria Private Day Trip",
+      title: "Orvieto & Umbria Day Trip",
       description: "For a longer countryside route with stronger cathedral and hill-town cultural focus.",
       href: "/tours/day-trips-from-rome/orvieto-umbria",
     },
     {
-      title: "Tivoli Villas Private Day Trip",
+      title: "Tivoli Villas Day Trip",
       description: "Shift from village atmosphere to world-class villa gardens and imperial archaeology.",
       href: "/tours/day-trips-from-rome/tivoli",
     },
@@ -255,3 +255,4 @@ export function generateMetadata(): Metadata {
 export default function RomanHillTownsDayTripPage() {
   return <TourTemplatePage data={romanHillTownsDayTripData} />;
 }
+

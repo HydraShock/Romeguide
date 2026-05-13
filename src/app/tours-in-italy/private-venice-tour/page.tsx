@@ -13,7 +13,7 @@ const privateVeniceTourData: TourPageData = {
   slug: "private-venice-tour",
   path: "/tours-in-italy/private-venice-tour",
   seoTitle:
-    "Private Venice Tour | St. Mark's, Canals, Hidden Venice & Custom Experience | Rome Guide Services",
+    "Venice Tour | St. Mark's, Canals, Hidden Venice & Custom Experience | Rome Guide Services",
   seoDescription:
     "Explore Venice with a private tour at your pace, mixing iconic landmarks, quiet canals, and hidden corners.",
   lightSectionsTheme: "tivoliUnified",
@@ -24,7 +24,7 @@ const privateVeniceTourData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE TOUR IN ITALY",
-    title: "Private Venice Tour",
+    title: "Venice Tour",
     landmarksLine: "ST. MARK'S \u2022 CANALS \u2022 HIDDEN VENICE",
     subtitle:
       "Discover Venice with a private route that balances iconic landmarks, quiet canals, and the slower rhythm that makes the city special.",
@@ -227,13 +227,13 @@ const privateVeniceTourData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Private Florence & Tuscany Tour",
+      title: "Florence & Tuscany Tour",
       description:
         "Pair Venice with a Florence-first private route focused on Renaissance highlights.",
       href: "/tours-in-italy/private-florence-tuscany-tour",
     },
     {
-      title: "Private Milan Tour",
+      title: "Milan Tour",
       description:
         "Continue north with a private Milan route focused on architecture, design, and city life.",
       href: "/tours-in-italy/private-milan-tour",
@@ -245,7 +245,7 @@ const privateVeniceTourData: TourPageData = {
       href: "/tours/art-architecture",
     },
     {
-      title: "Private Orvieto & Umbria Tour",
+      title: "Orvieto & Umbria Tour",
       description:
         "Switch to a calmer countryside route with hill towns, views, and local food culture.",
       href: "/tours-in-italy/private-orvieto-umbria-tour",
@@ -302,3 +302,4 @@ export function generateMetadata(): Metadata {
 export default function PrivateVeniceTourPage() {
   return <TourTemplatePage data={privateVeniceTourData} />;
 }
+

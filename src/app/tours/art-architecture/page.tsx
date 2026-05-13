@@ -13,7 +13,7 @@ const artArchitectureTourData: TourPageData = {
   slug: "rome-art-architecture-private-tour",
   path: "/tours/art-architecture",
   seoTitle:
-    "Rome Art & Architecture Private Tour | Galleries, Churches & Masterpieces | Rome Guide Services",
+    "Rome Art & Architecture Tour | Galleries, Churches & Masterpieces | Rome Guide Services",
   seoDescription:
     "Admire Rome's galleries, churches, and architectural landmarks with a licensed private guide. Custom art and architecture touring at your pace.",
   lightSectionsTheme: "tivoliUnified",
@@ -197,17 +197,17 @@ const artArchitectureTourData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Ancient Rome Private Tour",
+      title: "Ancient Rome Tour",
       description: "Archaeological storytelling across Colosseum, Forum, and Palatine Hill.",
       href: "/tours/ancient-rome",
     },
     {
-      title: "Private Vatican Tour",
+      title: "Vatican Tour",
       description: "A private Vatican route centered on museums and the Sistine Chapel.",
       href: "/tours/vatican",
     },
     {
-      title: "Rome Private Walking Tour",
+      title: "Rome Walking Tour",
       description: "City-center highlights with flexible pacing and local context.",
       href: "/tours/walking-tours",
     },
@@ -268,3 +268,4 @@ export function generateMetadata(): Metadata {
 export default function ArtArchitectureTourPage() {
   return <TourTemplatePage data={artArchitectureTourData} />;
 }
+

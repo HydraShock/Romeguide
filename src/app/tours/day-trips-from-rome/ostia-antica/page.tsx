@@ -13,7 +13,7 @@ const ostiaAnticaDayTripData: TourPageData = {
   slug: "ostia-antica-day-trip-from-rome",
   path: "/tours/day-trips-from-rome/ostia-antica",
   seoTitle:
-    "Private Ostia Antica Day Trip from Rome | Ancient Port of Rome | Rome Guide Services",
+    "Ostia Antica Day Trip from Rome | Ancient Port of Rome | Rome Guide Services",
   seoDescription:
     "Discover Ostia Antica on a private day trip from Rome with flexible pacing, private transport, and a comfortable archaeological itinerary through the ancient port of Rome.",
   lightSectionsTheme: "tivoliUnified",
@@ -24,7 +24,7 @@ const ostiaAnticaDayTripData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE DAY TRIP FROM ROME",
-    title: "Private Ostia Antica Day Trip from Rome",
+    title: "Ostia Antica Day Trip from Rome",
     landmarksLine: "OSTIA ANTICA \u2022 ANCIENT PORT OF ROME",
     subtitle:
       "Leave the center of Rome behind for a private journey through Ostia Antica, the remarkably preserved ancient port where streets, baths, houses, and public spaces reveal everyday Roman life in extraordinary detail.",
@@ -222,17 +222,17 @@ const ostiaAnticaDayTripData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Private Day Trips from Rome",
+      title: "Day Trips from Rome",
       description: "Explore all well-planned private escape routes departing from Rome.",
       href: "/tours/day-trips-from-rome",
     },
     {
-      title: "Ancient Rome Private Tour",
+      title: "Ancient Rome Tour",
       description: "Pair Ostia's daily-life archaeology with Rome's imperial monuments.",
       href: "/tours/ancient-rome",
     },
     {
-      title: "Private Tivoli Day Trip from Rome",
+      title: "Tivoli Day Trip from Rome",
       description: "A comfortable villa-and-garden alternative with Renaissance and imperial context.",
       href: "/tours/day-trips-from-rome/tivoli",
     },
@@ -242,13 +242,13 @@ const ostiaAnticaDayTripData: TourPageData = {
       href: "/tours/day-trips-from-rome/cerveteri-etruscans",
     },
     {
-      title: "Rome Private Walking Tour",
+      title: "Rome Walking Tour",
       description: "Continue with a beautiful city-center route after your day beyond Rome.",
       href: "/tours/walking-tours",
     },
   ],
   finalCta: {
-    title: "Plan Your Private Ostia Antica Day Trip",
+    title: "Plan Your Ostia Antica Day Trip",
     description:
       "Share your dates and preferences, and we will design a private archaeological day from Rome with the right balance of depth, pacing, and comfort.",
     buttonLabel: "Request Your Private Day Trip",
@@ -298,3 +298,4 @@ export function generateMetadata(): Metadata {
 export default function OstiaAnticaDayTripPage() {
   return <TourTemplatePage data={ostiaAnticaDayTripData} />;
 }
+

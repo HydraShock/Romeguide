@@ -11,7 +11,7 @@ import type { TourPageData } from "@/components/tour-template/types";
 const pompeiiAmalfiNaplesData: TourPageData = {
   slug: "pompeii-amalfi-naples-day-trip-from-rome",
   path: "/tours/day-trips-from-rome/pompeii-amalfi-naples",
-  seoTitle: "Private Pompeii, Amalfi & Naples Day Trip from Rome | Rome Guide Services",
+  seoTitle: "Pompeii, Amalfi & Naples Day Trip from Rome | Rome Guide Services",
   seoDescription:
     "Explore Pompeii, Naples, and the Amalfi Coast on a private day trip from Rome with flexible pacing, comfortable transport, and a well-planned full-day itinerary.",
   lightSectionsTheme: "tivoliUnified",
@@ -22,7 +22,7 @@ const pompeiiAmalfiNaplesData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE DAY TRIP FROM ROME",
-    title: "Private Pompeii, Amalfi & Naples Day Trip from Rome",
+    title: "Pompeii, Amalfi & Naples Day Trip from Rome",
     landmarksLine: "POMPEII • NAPLES • AMALFI COAST",
     subtitle:
       "Discover southern Italy in one beautifully well-planned private day trip from Rome. From the ruins of Pompeii to the color and coastline of Naples and Amalfi, this route is designed for comfort, pacing, and memorable views.",
@@ -216,27 +216,27 @@ const pompeiiAmalfiNaplesData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Private Day Trips from Rome",
+      title: "Day Trips from Rome",
       description: "Explore all well-planned private day routes departing from Rome.",
       href: "/tours/day-trips-from-rome",
     },
     {
-      title: "Private Tivoli Day Trip from Rome",
+      title: "Tivoli Day Trip from Rome",
       description: "A heritage-focused escape to Hadrian's Villa and Villa d'Este.",
       href: "/tours/day-trips-from-rome/tivoli",
     },
     {
-      title: "Private Orvieto Day Trip from Rome",
+      title: "Orvieto Day Trip from Rome",
       description: "Cathedral culture, hill-town atmosphere, and beautiful countryside pacing.",
       href: "/tours/day-trips-from-rome/orvieto-umbria",
     },
     {
-      title: "Ancient Rome Private Tour",
+      title: "Ancient Rome Tour",
       description: "Pair your southern day trip with Rome's essential imperial archaeology.",
       href: "/tours/ancient-rome",
     },
     {
-      title: "Rome Private Walking Tour",
+      title: "Rome Walking Tour",
       description: "Balance your full-day escape with a beautiful city-center route at a slower pace.",
       href: "/tours/walking-tours",
     },
@@ -292,3 +292,4 @@ export function generateMetadata(): Metadata {
 export default function PompeiiAmalfiNaplesDayTripPage() {
   return <TourTemplatePage data={pompeiiAmalfiNaplesData} />;
 }
+

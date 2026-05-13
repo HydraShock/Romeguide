@@ -84,7 +84,9 @@ export default function TravelerTestimonialsSection() {
                     </div>
                   </div>
 
-                  <p className={styles.rating}>5/5</p>
+                  <p className={styles.rating}>
+                    5/5 <span className={styles.ratingStar} aria-hidden>★</span>
+                  </p>
                   <p className={styles.quote}>{item.quote}</p>
                 </div>
               </article>

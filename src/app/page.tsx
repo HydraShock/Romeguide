@@ -61,9 +61,9 @@ type TrustIconName = "temple" | "scroll" | "feather" | "service" | "globe";
 const trustPoints = [
   {
     icon: "temple",
-    title: "Licensed Local Guides in Rome",
+    title: "Licensed Local Guides in Italy",
     description:
-      "Our officially licensed Rome tour guides have spent decades helping travelers enjoy the city with confidence. We blend iconic landmarks, local stories, and hidden corners at your pace.",
+      "Our officially licensed guides have spent decades helping travelers enjoy Rome and Italy with confidence. We blend iconic landmarks, local stories, and hidden corners at your pace.",
   },
   {
     icon: "scroll",
@@ -81,13 +81,13 @@ const trustPoints = [
     icon: "globe",
     title: "Guides in Your Language",
     description:
-      "We guide in English, Spanish, French, German, and more, so your day in Rome feels easy, natural, and enjoyable from start to finish.",
+      "We guide in English, Spanish, French, German, and more, so your day in Rome or across Italy feels easy, natural, and enjoyable from start to finish.",
   },
   {
     icon: "service",
     title: "Friendly Service, Human Touch",
     description:
-      "From your first message to your final stop, we offer thoughtful support and local expertise for smooth, memorable private tours in Rome.",
+      "From your first message to your final stop, we offer thoughtful support and local expertise for smooth, memorable private tours in Rome and Italy.",
   },
 ] as const;
 
@@ -203,8 +203,8 @@ export default function Home() {
       "@type": "OfferCatalog",
       name: "Private Tour Collections",
       itemListElement: [
-        { "@type": "Offer", name: "Ancient Rome Private Tour", url: `${siteUrl}/tours/ancient-rome` },
-        { "@type": "Offer", name: "Private Vatican Tour", url: `${siteUrl}/tours/vatican` },
+        { "@type": "Offer", name: "Ancient Rome Tour", url: `${siteUrl}/tours/ancient-rome` },
+        { "@type": "Offer", name: "Vatican Tour", url: `${siteUrl}/tours/vatican` },
         { "@type": "Offer", name: "Day Trips from Rome", url: `${siteUrl}/tours/day-trips-from-rome` },
         { "@type": "Offer", name: "Private Tours in Italy", url: `${siteUrl}/tours-in-italy` },
       ],
@@ -297,10 +297,10 @@ export default function Home() {
             <div className={styles.whyChooseCopy}>
               <p className={styles.whyChooseEyebrow}>Why Travelers Book With Us</p>
               <h2 id="why-choose-heading" className={styles.whyChooseHeading}>
-                Licensed Guides, Family-Run Care
+                Licensed Guides, Family-Run Care in Rome & Italy
               </h2>
               <p className={styles.whyChooseLead}>
-                We&apos;re a family-run team creating private tours in Rome that feel
+                We&apos;re a family-run team creating private tours in Rome and Italy that feel
                 personal, authentic, and rich in local insight.
               </p>
 
@@ -353,3 +353,4 @@ export default function Home() {
     </>
   );
 }
+

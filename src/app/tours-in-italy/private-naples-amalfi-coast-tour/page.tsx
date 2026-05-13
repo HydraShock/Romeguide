@@ -13,7 +13,7 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
   slug: "private-naples-amalfi-coast-tour",
   path: "/tours-in-italy/private-naples-amalfi-coast-tour",
   seoTitle:
-    "Private Naples & Amalfi Coast Tour | Private Southern Italy Experience | Rome Guide Services",
+    "Naples & Amalfi Coast Tour | Private Southern Italy Experience | Rome Guide Services",
   seoDescription:
     "Explore Naples and the Amalfi Coast with a private tour built around your pace, from city character to stunning coastal views.",
   lightSectionsTheme: "tivoliUnified",
@@ -24,7 +24,7 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE TOUR IN ITALY",
-    title: "Private Naples & Amalfi Coast Tour",
+    title: "Naples & Amalfi Coast Tour",
     landmarksLine: "NAPLES \u2022 AMALFI COAST \u2022 SOUTHERN ITALY ATMOSPHERE",
     subtitle:
       "Discover Naples and the Amalfi Coast with a private route built around scenic views, local character, and the right pace for your group.",
@@ -234,31 +234,31 @@ const privateNaplesAmalfiCoastTourData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Private Sicily Tours",
+      title: "Sicily Tours",
       description:
         "Continue south with private Sicily tours focused on culture, scenery, and local flavor.",
       href: "/tours-in-italy/private-sicily-tours",
     },
     {
-      title: "Private Florence & Tuscany Tour",
+      title: "Florence & Tuscany Tour",
       description:
         "Pair southern coastal atmosphere with a Florence-focused route and optional Tuscany extension.",
       href: "/tours-in-italy/private-florence-tuscany-tour",
     },
     {
-      title: "Private Venice Tour",
+      title: "Venice Tour",
       description:
         "Balance Mediterranean coastal rhythm with a private Venice city route centered on canals and atmosphere.",
       href: "/tours-in-italy/private-venice-tour",
     },
     {
-      title: "Private Day Trips from Rome",
+      title: "Day Trips from Rome",
       description:
         "Compare this with private day trips that depart from Rome.",
       href: "/tours/day-trips-from-rome",
     },
     {
-      title: "Private Pompeii, Amalfi & Naples Day Trip from Rome",
+      title: "Pompeii, Amalfi & Naples Day Trip from Rome",
       description:
         "Need a Rome-departure full-day format instead? Explore the dedicated day-trip version with from-Rome planning.",
       href: "/tours/day-trips-from-rome/pompeii-amalfi-naples",
@@ -315,3 +315,4 @@ export function generateMetadata(): Metadata {
 export default function PrivateNaplesAmalfiCoastTourPage() {
   return <TourTemplatePage data={privateNaplesAmalfiCoastTourData} />;
 }
+

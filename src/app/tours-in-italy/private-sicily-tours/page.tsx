@@ -11,7 +11,7 @@ const privateSicilyToursData: TourPageData = {
   slug: "private-sicily-tours",
   path: "/tours-in-italy/private-sicily-tours",
   seoTitle:
-    "Private Sicily Tours | Private Custom Experiences in Sicily | Rome Guide Services",
+    "Sicily Tours | Private Custom Experiences in Sicily | Rome Guide Services",
   seoDescription:
     "Explore Sicily with private custom tours built around archaeology, baroque towns, coastal views, food, wine, and the pace you prefer.",
   lightSectionsTheme: "tivoliUnified",
@@ -22,7 +22,7 @@ const privateSicilyToursData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE TOURS IN ITALY",
-    title: "Private Sicily Tours",
+    title: "Sicily Tours",
     landmarksLine: "ARCHAEOLOGY \u2022 BAROQUE TOWNS \u2022 COAST \u2022 FOOD \u2022 WINE",
     subtitle:
       "Discover Sicily with private tours built around ancient sites, beautiful towns, coastal views, and food culture.",
@@ -230,19 +230,19 @@ const privateSicilyToursData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Private Venice Tour",
+      title: "Venice Tour",
       description:
         "Pair Sicily's regional depth with a private Venice route centered on canals and atmosphere.",
       href: "/tours-in-italy/private-venice-tour",
     },
     {
-      title: "Private Milan Tour",
+      title: "Milan Tour",
       description:
         "Combine Sicily with a design- and architecture-led private experience in Milan.",
       href: "/tours-in-italy/private-milan-tour",
     },
     {
-      title: "Private Florence & Tuscany Tour",
+      title: "Florence & Tuscany Tour",
       description:
         "Continue your Italy itinerary with a Florence-first route and Tuscan extension possibilities.",
       href: "/tours-in-italy/private-florence-tuscany-tour",
@@ -299,3 +299,4 @@ export function generateMetadata(): Metadata {
 export default function PrivateSicilyToursPage() {
   return <TourTemplatePage data={privateSicilyToursData} />;
 }
+

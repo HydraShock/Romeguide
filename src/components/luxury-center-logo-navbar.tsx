@@ -60,12 +60,12 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
         links: [
           {
             href: "/tours/ancient-rome",
-            label: "Ancient Rome Private Tour",
+            label: "Ancient Rome Tour",
             description: "Colosseum, Roman Forum, and Palatine Hill with private storytelling.",
           },
           {
             href: "/tours/vatican",
-            label: "Private Vatican Tour",
+            label: "Vatican Tour",
             description: "Vatican Museums, Sistine Chapel, and St. Peter's at a relaxed pace.",
           },
           {
@@ -80,7 +80,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
         links: [
           {
             href: "/tours/walking-tours",
-            label: "Rome Private Walking Tour",
+            label: "Rome Walking Tour",
             description: "Historic center landmarks and hidden corners at your rhythm.",
           },
           {
@@ -117,7 +117,7 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
     label: "Day Trips from Rome",
     href: "/tours/day-trips-from-rome",
     kicker: "Beyond Rome",
-    headline: "Private Day Trips from Rome, Easy and Comfortable",
+    headline: "Day Trips from Rome, Easy and Comfortable",
     description:
       "Full-day escapes with private transport, realistic timing, and guide support when you want it.",
     ctaLabel: "Explore Day Trips from Rome",
@@ -127,17 +127,17 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
         links: [
           {
             href: "/tours/day-trips-from-rome/tivoli",
-            label: "Private Tivoli Day Trip from Rome",
+            label: "Tivoli Day Trip from Rome",
             description: "Hadrian's Villa and Villa d'Este at a relaxed pace.",
           },
           {
             href: "/tours/day-trips-from-rome/ostia-antica",
-            label: "Private Ostia Antica Day Trip",
+            label: "Ostia Antica Day Trip",
             description: "Ancient harbor archaeology without urban crowds.",
           },
           {
             href: "/tours/day-trips-from-rome/cerveteri-etruscans",
-            label: "Private Cerveteri Etruscan Day Trip",
+            label: "Cerveteri Etruscan Day Trip",
             description: "Etruscan heritage route with private driver logistics.",
           },
         ],
@@ -152,12 +152,12 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
           },
           {
             href: "/tours/day-trips-from-rome/orvieto-umbria",
-            label: "Private Orvieto & Umbria Day Trip",
+            label: "Orvieto & Umbria Day Trip",
             description: "Hill-town atmosphere, cathedral beauty, and countryside rhythm.",
           },
           {
             href: "/tours/day-trips-from-rome/roman-hill-towns",
-            label: "Roman Hill Towns Private Day Trip",
+            label: "Roman Hill Towns Day Trip",
             description: "Slow village charm and scenic viewpoints outside Rome.",
           },
         ],
@@ -189,17 +189,17 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
         links: [
           {
             href: "/tours-in-italy/private-venice-tour",
-            label: "Private Venice Tour",
+            label: "Venice Tour",
             description: "Historic canals, hidden passages, and easy private pacing.",
           },
           {
             href: "/tours-in-italy/private-milan-tour",
-            label: "Private Milan Tour",
+            label: "Milan Tour",
             description: "Fashion, art, and architecture with local private guidance.",
           },
           {
             href: "/tours-in-italy/private-florence-tuscany-tour",
-            label: "Private Florence & Tuscany Tour",
+            label: "Florence & Tuscany Tour",
             description: "Renaissance highlights and Tuscan atmosphere in one well-planned route.",
           },
         ],
@@ -209,17 +209,17 @@ const megaPanels: Record<PanelKey, MegaPanelData> = {
         links: [
           {
             href: "/tours-in-italy/private-naples-amalfi-coast-tour",
-            label: "Private Naples & Amalfi Coast Tour",
+            label: "Naples & Amalfi Coast Tour",
             description: "Southern heritage and coastlines with smooth logistics.",
           },
           {
             href: "/tours-in-italy/private-sicily-tours",
-            label: "Private Sicily Tours",
+            label: "Sicily Tours",
             description: "Island culture, archaeology, and private routes built around you.",
           },
           {
             href: "/tours-in-italy/private-orvieto-umbria-tour",
-            label: "Private Orvieto & Umbria Tour",
+            label: "Orvieto & Umbria Tour",
             description: "Countryside charm, hill towns, and thoughtfully chosen cultural stops.",
           },
         ],
@@ -242,13 +242,13 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
   romeTours: [
     {
       href: "/tours/ancient-rome",
-      label: "Ancient Rome Private Tour",
+      label: "Ancient Rome Tour",
       description: "Colosseum, Forum, and Palatine Hill with licensed private storytelling.",
       image: "/images/tours/ancient-rome/hero-ancient-rome-private-tour-colosseum-warm-light.webp",
     },
     {
       href: "/tours/vatican",
-      label: "Private Vatican Tour",
+      label: "Vatican Tour",
       description: "Museums, Sistine Chapel, and St. Peter's with smart timing.",
       image: "/images/tours/vatican/hero-vatican-private-tour-san-pietro-sunset-final.webp",
     },
@@ -260,7 +260,7 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
     },
     {
       href: "/tours/walking-tours",
-      label: "Rome Private Walking Tour",
+      label: "Rome Walking Tour",
       description: "Historic center masterpieces and hidden corners at your pace.",
       image: "/images/tours/walking/hero-rome-private-walking-tour-pantheon-dusk.webp",
     },
@@ -280,19 +280,19 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
   dayTrips: [
     {
       href: "/tours/day-trips-from-rome/tivoli",
-      label: "Private Tivoli Day Trip",
+      label: "Tivoli Day Trip",
       description: "Villa d'Este fountains and Hadrian's Villa with private driver comfort.",
       image: "/images/tours/day-trips/tivoli/hero-tivoli-villas-day-trip-from-rome.jpg",
     },
     {
       href: "/tours/day-trips-from-rome/ostia-antica",
-      label: "Private Ostia Antica Day Trip",
+      label: "Ostia Antica Day Trip",
       description: "Ancient port archaeology in a smooth and crowd-smart full-day route.",
       image: "/images/tours/day-trips/ostia-antica/hero-private-ostia-antica-day-trip-from-rome-warm-ruins.jpg",
     },
     {
       href: "/tours/day-trips-from-rome/pompeii-amalfi-naples",
-      label: "Pompeii & Amalfi Private Day Trip",
+      label: "Pompeii & Amalfi Day Trip",
       description: "Archaeology and coastline in one beautiful route from Rome.",
       image: "/images/tours/day-trips/pompeii-amalfi-naples/hero-pompeii-amalfi-day-trip-from-rome.jpg",
     },
@@ -310,7 +310,7 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
     },
     {
       href: "/tours/day-trips-from-rome/cerveteri-etruscans",
-      label: "Private Cerveteri Etruscan Day Trip",
+      label: "Cerveteri Etruscan Day Trip",
       description: "Etruscan tombs, history, and smooth private logistics from Rome.",
       image: "/images/tours/day-trips/cerveteri-etruscans/hero-cerveteri-etruscan-day-trip-from-rome.jpg",
     },
@@ -318,37 +318,37 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
   italyTours: [
     {
       href: "/tours-in-italy/private-venice-tour",
-      label: "Private Venice Tour",
+      label: "Venice Tour",
       description: "Canals, hidden passages, and easy private pacing.",
       image: "/images/tours-in-italy/venice/hero-private-venice-tour.jpg",
     },
     {
       href: "/tours-in-italy/private-florence-tuscany-tour",
-      label: "Private Florence & Tuscany Tour",
+      label: "Florence & Tuscany Tour",
       description: "Renaissance heritage and Tuscan atmosphere in one well-planned route.",
       image: "/images/tours-in-italy/florence-tuscany/hero-private-florence-tuscany-tour.jpg",
     },
     {
       href: "/tours-in-italy/private-milan-tour",
-      label: "Private Milan Tour",
+      label: "Milan Tour",
       description: "Design, fashion, and architecture with local private guidance.",
       image: "/images/tours-in-italy/milan/hero-private-milan-tour.jpg",
     },
     {
       href: "/tours-in-italy/private-naples-amalfi-coast-tour",
-      label: "Private Naples & Amalfi Tour",
+      label: "Naples & Amalfi Tour",
       description: "Southern heritage and coastline with smooth logistics.",
       image: "/images/tours-in-italy/naples-amalfi/hero-private-naples-amalfi-coast-tour.jpg",
     },
     {
       href: "/tours-in-italy/private-sicily-tours",
-      label: "Private Sicily Tours",
+      label: "Sicily Tours",
       description: "Island culture, archaeology, and a route built around you.",
       image: "/images/tours-in-italy/sicily/hero-private-sicily-tours.jpg",
     },
     {
       href: "/tours-in-italy/private-orvieto-umbria-tour",
-      label: "Private Orvieto & Umbria Tour",
+      label: "Orvieto & Umbria Tour",
       description: "Hill towns, countryside views, and local food culture at your pace.",
       image: "/images/tours-in-italy/orvieto-umbria/hero-private-orvieto-umbria-tour.jpg",
     },
@@ -645,4 +645,5 @@ export default function LuxuryCenterLogoNavbar() {
     </>
   );
 }
+
 

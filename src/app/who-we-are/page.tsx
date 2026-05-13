@@ -627,22 +627,22 @@ export default function WhoWeArePage() {
                 <h3>Private Tours in Rome</h3>
                 <ul>
                   <li>
-                    <Link href="/tours/ancient-rome">Ancient Rome Private Tour</Link>
+                    <Link href="/tours/ancient-rome">Ancient Rome Tour</Link>
                   </li>
                   <li>
-                    <Link href="/tours/vatican">Private Vatican Tour</Link>
+                    <Link href="/tours/vatican">Vatican Tour</Link>
                   </li>
                   <li>
-                    <Link href="/tours/christian-rome">Christian Rome Private Tour</Link>
+                    <Link href="/tours/christian-rome">Christian Rome Tour</Link>
                   </li>
                   <li>
-                    <Link href="/tours/walking-tours">Rome Private Walking Tours</Link>
+                    <Link href="/tours/walking-tours">Rome Walking Tours</Link>
                   </li>
                   <li>
-                    <Link href="/tours/family-friendly">Family-Friendly Rome Private Tours</Link>
+                    <Link href="/tours/family-friendly">Family-Friendly Rome Tours</Link>
                   </li>
                   <li>
-                    <Link href="/tours/art-architecture">Rome Art & Architecture Private Tour</Link>
+                    <Link href="/tours/art-architecture">Rome Art & Architecture Tour</Link>
                   </li>
                 </ul>
               </article>
@@ -651,21 +651,21 @@ export default function WhoWeArePage() {
                 <h3>Beyond Rome</h3>
                 <ul>
                   <li>
-                    <Link href="/tours/day-trips-from-rome">Private Day Trips from Rome</Link>
+                    <Link href="/tours/day-trips-from-rome">Day Trips from Rome</Link>
                   </li>
                   <li>
                     <Link href="/tours-in-italy/private-florence-tuscany-tour">
-                      Private Tours in Italy: Florence & Tuscany
+                      Tours in Italy: Florence & Tuscany
                     </Link>
                   </li>
                   <li>
-                    <Link href="/tours-in-italy/private-venice-tour">Private Venice Tour</Link>
+                    <Link href="/tours-in-italy/private-venice-tour">Venice Tour</Link>
                   </li>
                   <li>
-                    <Link href="/tours-in-italy/private-milan-tour">Private Milan Tour</Link>
+                    <Link href="/tours-in-italy/private-milan-tour">Milan Tour</Link>
                   </li>
                   <li>
-                    <Link href="/tours-in-italy/private-sicily-tours">Private Sicily Tours</Link>
+                    <Link href="/tours-in-italy/private-sicily-tours">Sicily Tours</Link>
                   </li>
                 </ul>
               </article>
@@ -714,3 +714,4 @@ export default function WhoWeArePage() {
     </>
   );
 }
+

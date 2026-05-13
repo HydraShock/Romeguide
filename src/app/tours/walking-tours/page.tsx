@@ -13,7 +13,7 @@ const walkingTourData: TourPageData = {
   slug: "rome-private-walking-tour",
   path: "/tours/walking-tours",
   seoTitle:
-    "Rome Private Walking Tour | Pantheon, Piazza Navona & Trevi Fountain | Rome Guide Services",
+    "Rome Walking Tour | Pantheon, Piazza Navona & Trevi Fountain | Rome Guide Services",
   seoDescription:
     "Discover Pantheon, Piazza Navona, and Trevi Fountain with a licensed private guide. A flexible Rome walking tour designed around your pace and interests.",
   lightSectionsTheme: "tivoliUnified",
@@ -24,7 +24,7 @@ const walkingTourData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE GUIDED TOUR",
-    title: "Rome Private Walking Tour",
+    title: "Rome Walking Tour",
     landmarksLine: "Pantheon | Piazza Navona | Trevi Fountain",
     subtitle:
       "Explore Rome on foot through iconic squares and hidden lanes, guided by a private local expert who adapts the route to your rhythm.",
@@ -197,7 +197,7 @@ const walkingTourData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Ancient Rome Private Tour",
+      title: "Ancient Rome Tour",
       description: "Colosseum, Roman Forum, and Palatine Hill with deeper historical context.",
       href: "/tours/ancient-rome",
     },
@@ -207,7 +207,7 @@ const walkingTourData: TourPageData = {
       href: "/tours/art-architecture",
     },
     {
-      title: "Private Vatican Tour",
+      title: "Vatican Tour",
       description: "Vatican Museums and Sistine Chapel in one well-planned private route.",
       href: "/tours/vatican",
     },
@@ -268,3 +268,4 @@ export function generateMetadata(): Metadata {
 export default function WalkingToursPage() {
   return <TourTemplatePage data={walkingTourData} />;
 }
+

@@ -13,7 +13,7 @@ const privateOrvietoUmbriaTourData: TourPageData = {
   slug: "private-orvieto-umbria-tour",
   path: "/tours-in-italy/private-orvieto-umbria-tour",
   seoTitle:
-    "Private Orvieto & Umbria Tour | Hill Towns, Cathedral, Countryside & Custom Experience | Rome Guide Services",
+    "Orvieto & Umbria Tour | Hill Towns, Cathedral, Countryside & Custom Experience | Rome Guide Services",
   seoDescription:
     "Explore Orvieto and Umbria with a private tour at your pace, with hill towns, cathedral heritage, countryside views, and food and wine options.",
   lightSectionsTheme: "tivoliUnified",
@@ -24,7 +24,7 @@ const privateOrvietoUmbriaTourData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE TOUR IN ITALY",
-    title: "Private Orvieto & Umbria Tour",
+    title: "Orvieto & Umbria Tour",
     landmarksLine: "ORVIETO \u2022 HILL TOWNS \u2022 COUNTRYSIDE \u2022 FOOD & WINE",
     subtitle:
       "Discover Orvieto and Umbria with a private route built around hill-town beauty, cathedral architecture, countryside rhythm, and a slower pace.",
@@ -231,31 +231,31 @@ const privateOrvietoUmbriaTourData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Private Florence & Tuscany Tour",
+      title: "Florence & Tuscany Tour",
       description:
         "Pair Umbria's hill-town rhythm with a Florence route and optional Tuscany extension.",
       href: "/tours-in-italy/private-florence-tuscany-tour",
     },
     {
-      title: "Private Castelli Romani Day Trip from Rome",
+      title: "Castelli Romani Day Trip from Rome",
       description:
         "Compare this Umbria destination route with a day trip that starts from Rome.",
       href: "/tours/day-trips-from-rome/roman-hill-towns",
     },
     {
-      title: "Private Tivoli Day Trip from Rome",
+      title: "Tivoli Day Trip from Rome",
       description:
         "Explore another beautiful central Italy private route focused on villas, gardens, and heritage.",
       href: "/tours/day-trips-from-rome/tivoli",
     },
     {
-      title: "Private Sicily Tours",
+      title: "Sicily Tours",
       description:
         "Continue with private Sicily tours across culture, landscapes, and coastal towns.",
       href: "/tours-in-italy/private-sicily-tours",
     },
     {
-      title: "Private Orvieto Day Trip from Rome",
+      title: "Orvieto Day Trip from Rome",
       description:
         "Need a Rome-departure one-day option instead? See the dedicated day-trip page with from-Rome planning.",
       href: "/tours/day-trips-from-rome/orvieto-umbria",
@@ -312,3 +312,4 @@ export function generateMetadata(): Metadata {
 export default function PrivateOrvietoUmbriaTourPage() {
   return <TourTemplatePage data={privateOrvietoUmbriaTourData} />;
 }
+

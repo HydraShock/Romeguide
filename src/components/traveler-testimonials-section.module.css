@@ -263,11 +263,21 @@
 
 .rating {
   margin: 0.88rem 0 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.24rem;
   color: rgba(252, 226, 187, 0.9);
   font-family: var(--font-manrope), "Helvetica Neue", sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.02em;
+}
+
+.ratingStar {
+  color: rgba(255, 210, 136, 0.95);
+  font-size: 0.94em;
+  line-height: 1;
+  transform: translateY(-0.02em);
 }
 
 .quote {

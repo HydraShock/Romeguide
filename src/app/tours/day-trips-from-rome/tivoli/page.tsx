@@ -13,7 +13,7 @@ const tivoliDayTripData: TourPageData = {
   slug: "tivoli-villas-day-trip-from-rome",
   path: "/tours/day-trips-from-rome/tivoli",
   seoTitle:
-    "Private Tivoli Day Trip from Rome | Hadrian\u2019s Villa & Villa d\u2019Este | Rome Guide Services",
+    "Tivoli Day Trip from Rome | Hadrian\u2019s Villa & Villa d\u2019Este | Rome Guide Services",
   seoDescription:
     "Discover Hadrian\u2019s Villa and Villa d\u2019Este on a private day trip from Rome with well-planned pacing, private transport, and a comfortable itinerary through Tivoli\u2019s most iconic villas and gardens.",
   lightSectionsTheme: "tivoliUnified",
@@ -24,7 +24,7 @@ const tivoliDayTripData: TourPageData = {
   upgradesTheme: "homeDarkbronzo",
   hero: {
     eyebrow: "PRIVATE DAY TRIP FROM ROME",
-    title: "Private Tivoli Day Trip from Rome",
+    title: "Tivoli Day Trip from Rome",
     landmarksLine: "HADRIAN\u2019S VILLA \u2022 VILLA D\u2019ESTE \u2022 TIVOLI",
     subtitle:
       "Escape Rome for a beautifully well-planned private day in Tivoli, where imperial ruins, Renaissance villas, and extraordinary gardens create one of Italy\u2019s most beautiful cultural journeys.",
@@ -214,22 +214,22 @@ const tivoliDayTripData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Private Day Trips from Rome",
+      title: "Day Trips from Rome",
       description: "Compare well-planned destination-led private escapes departing from Rome.",
       href: "/tours/day-trips-from-rome",
     },
     {
-      title: "Private Orvieto Day Trip from Rome",
+      title: "Orvieto Day Trip from Rome",
       description: "A comfortable hill-town and cathedral route with beautiful countryside pacing.",
       href: "/tours/day-trips-from-rome/orvieto-umbria",
     },
     {
-      title: "Private Pompeii, Amalfi & Naples Day Trip from Rome",
+      title: "Pompeii, Amalfi & Naples Day Trip from Rome",
       description: "A top southern Italy route combining archaeology, coast, and private comfort.",
       href: "/tours/day-trips-from-rome/pompeii-amalfi-naples",
     },
     {
-      title: "Ancient Rome Private Tour",
+      title: "Ancient Rome Tour",
       description: "Pair Tivoli's villas with Rome's imperial landmarks for a complete historical arc.",
       href: "/tours/ancient-rome",
     },
@@ -240,7 +240,7 @@ const tivoliDayTripData: TourPageData = {
     },
   ],
   finalCta: {
-    title: "Plan Your Private Tivoli Day Trip",
+    title: "Plan Your Tivoli Day Trip",
     description:
       "Share your dates and preferences, and we will design a private day from Rome with the right balance of villas, gardens, history, and comfort.",
     buttonLabel: "Request Your Private Day Trip",
@@ -290,3 +290,4 @@ export function generateMetadata(): Metadata {
 export default function TivoliDayTripPage() {
   return <TourTemplatePage data={tivoliDayTripData} />;
 }
+

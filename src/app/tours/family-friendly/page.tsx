@@ -196,17 +196,17 @@ const familyFriendlyTourData: TourPageData = {
   ],
   relatedTours: [
     {
-      title: "Ancient Rome Private Tour",
+      title: "Ancient Rome Tour",
       description: "A deeper historical route for families with older kids and curious teens.",
       href: "/tours/ancient-rome",
     },
     {
-      title: "Private Vatican Tour",
+      title: "Vatican Tour",
       description: "Vatican Museums and Sistine Chapel with private pacing options for families.",
       href: "/tours/vatican",
     },
     {
-      title: "Rome Private Walking Tour",
+      title: "Rome Walking Tour",
       description: "Flexible city-center walking for families wanting lighter planning.",
       href: "/tours/walking-tours",
     },
@@ -267,3 +267,4 @@ export function generateMetadata(): Metadata {
 export default function FamilyFriendlyTourPage() {
   return <TourTemplatePage data={familyFriendlyTourData} />;
 }
+

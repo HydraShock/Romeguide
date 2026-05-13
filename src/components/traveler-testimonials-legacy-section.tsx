@@ -286,7 +286,9 @@ export default function TravelerTestimonialsLegacySection() {
                       </div>
                     </div>
 
-                    <p className={styles.rating}>5/5</p>
+                    <p className={styles.rating}>
+                      5/5 <span className={styles.ratingStar} aria-hidden>★</span>
+                    </p>
                     <p className={styles.reviewTitle}>{item.title}</p>
                     <p className={styles.quote}>{buildExcerpt(item.body)}</p>
                     <button
@@ -332,4 +334,3 @@ export default function TravelerTestimonialsLegacySection() {
     </section>
   );
 }
-
