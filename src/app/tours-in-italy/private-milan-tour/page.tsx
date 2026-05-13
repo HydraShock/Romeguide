@@ -11,7 +11,7 @@ const privateMilanTourData: TourPageData = {
   slug: "private-milan-tour",
   path: "/tours-in-italy/private-milan-tour",
   seoTitle:
-    "Milan Tour | Duomo, Brera, Design, Architecture & Custom Experience | Rome Guide Services",
+    "Milan Tour | Milan Cathedral, Brera, Design, Architecture & Custom Experience | Rome Guide Services",
   seoDescription:
     "Explore Milan with a private tour at your pace, from iconic landmarks to quieter neighborhoods and design-focused streets.",
   lightSectionsTheme: "tivoliUnified",
@@ -23,17 +23,17 @@ const privateMilanTourData: TourPageData = {
   hero: {
     eyebrow: "PRIVATE TOUR IN ITALY",
     title: "Milan Tour",
-    landmarksLine: "DUOMO \u2022 BRERA \u2022 DESIGN \u2022 HIDDEN MILAN",
+    landmarksLine: "MILAN CATHEDRAL \u2022 BRERA \u2022 DESIGN \u2022 HIDDEN MILAN",
     subtitle:
       "Discover Milan with a private route that balances iconic landmarks, architectural detail, and quieter neighborhoods.",
     intentLine:
-      "From the Duomo and Galleria to Brera and hidden corners, we shape the day around your pace and interests.",
+      "From Milan Cathedral and the Galleria to Brera and hidden corners, we shape the day around your pace and interests.",
     primaryCtaLabel: "Plan This Tour",
     secondaryCtaLabel: "Ask for a Custom Version",
     primaryCtaHref: "#final-cta",
     secondaryCtaHref: "#final-cta",
     imageSrc: "/images/tours-in-italy/milan/hero-private-milan-tour.jpg",
-    imageAlt: "Milan Duomo illuminated in warm evening light",
+    imageAlt: "Milan Cathedral illuminated in warm evening light",
     quickFacts: ["Private only", "Walking-led", "Guide included", "Custom pacing"],
     microTags: [
       "Architecture lovers",
@@ -56,17 +56,17 @@ const privateMilanTourData: TourPageData = {
     intro:
       "Milan is much more than business and fashion headlines. A private tour helps you enjoy the city in a clearer, more relaxed way.",
     body:
-      "We start from the Duomo area, then connect the route through the Galleria, Brera, courtyards, and key architectural transitions. You still see the famous places, but also the quieter details that make Milan feel real.",
+      "We start from the Milan Cathedral area, then connect the route through the Galleria, Brera, courtyards, and key architectural transitions. You still see the famous places, but also the quieter details that make Milan feel real.",
     imageSrc: "/images/tours-in-italy/milan/overview-duomo-district-private-milan-tour.jpg",
     imageAlt: "Galleria Vittorio Emanuele II urban perspective in Milan",
   },
   highlights: [
     {
-      title: "The Duomo and the Monumental Heart of Milan",
+      title: "Milan Cathedral and the Monumental Heart of the City",
       description:
         "Explore the cathedral district as Milan's symbolic center, with simple context that goes beyond first impressions.",
       imageSrc: "/images/tours-in-italy/milan/highlight-duomo-monumental-heart.jpg",
-      imageAlt: "Duomo di Milano facade and spires at night",
+      imageAlt: "Milan Cathedral facade and spires at night",
     },
     {
       title: "Brera, Beautiful Streets, and the City's Cultural Texture",
@@ -97,7 +97,7 @@ const privateMilanTourData: TourPageData = {
         "Start with a clear intro to Milan at a calm pace.",
     },
     {
-      title: "The Duomo District and Milan's Monumental Core",
+      title: "The Milan Cathedral District and Milan's Monumental Core",
       description:
         "Move through the cathedral area and nearby landmarks with clear explanations at the right depth for you.",
     },
@@ -155,9 +155,9 @@ const privateMilanTourData: TourPageData = {
   ],
   upgrades: [
     {
-      title: "More Duomo Focus",
+      title: "More Cathedral Focus",
       description:
-        "Add more focus on the Duomo district and its architectural story.",
+        "Add more focus on the cathedral district and its architectural story.",
     },
     {
       title: "Brera Art and District Extension",
@@ -193,7 +193,7 @@ const privateMilanTourData: TourPageData = {
         "Yes, it is mainly walking-based, with pace adjusted to your group and interests.",
     },
     {
-      question: "Can the route include the Duomo and Brera?",
+      question: "Can the route include Milan Cathedral and Brera?",
       answer:
         "Yes. Both can be included, with focus adjusted to how deep you want to go.",
     },
@@ -276,7 +276,7 @@ export function generateMetadata(): Metadata {
       images: [
         {
           url: "/images/tours-in-italy/milan/hero-private-milan-tour.jpg",
-          alt: "Duomo di Milano in evening atmosphere",
+          alt: "Milan Cathedral in evening atmosphere",
         },
       ],
       locale: "en_US",

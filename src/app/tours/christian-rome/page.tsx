@@ -52,7 +52,7 @@ const christianRomeTourData: TourPageData = {
     body:
       "From catacomb memory to the ceremonial scale of Rome's great churches, each stop is paced to your interests and devotional priorities. The result is a clear spiritual and historical journey, not a checklist.",
     imageSrc: "/images/tours/christian-rome/overview-christian-rome-tour-papal-churches.webp",
-    imageAlt: "Twin church facades at Piazza del Popolo in Rome",
+    imageAlt: "Twin church facades at Popolo Square in Rome",
   },
   highlights: [
     {

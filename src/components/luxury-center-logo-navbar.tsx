@@ -390,10 +390,32 @@ export default function LuxuryCenterLogoNavbar() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [activePanel, setActivePanel] = useState<PanelKey | null>(null);
   const wrapperRef = useRef<HTMLElement>(null);
+  const closeTimerRef = useRef<number | null>(null);
   const panelData = activePanel ? megaPanels[activePanel] : null;
   const panelItems = panelData ? panelPreviewItems[panelData.key] : [];
 
+  const clearCloseTimer = () => {
+    if (closeTimerRef.current !== null) {
+      window.clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+  };
+
+  const schedulePanelClose = () => {
+    clearCloseTimer();
+    closeTimerRef.current = window.setTimeout(() => {
+      setActivePanel(null);
+      closeTimerRef.current = null;
+    }, 220);
+  };
+
+  const openPanel = (panelKey?: PanelKey) => {
+    clearCloseTimer();
+    setActivePanel(panelKey ?? null);
+  };
+
   const closeMenus = () => {
+    clearCloseTimer();
     setIsMobileOpen(false);
     setActivePanel(null);
   };
@@ -409,15 +431,24 @@ export default function LuxuryCenterLogoNavbar() {
   }, []);
 
   useEffect(() => {
+    const closeAll = () => {
+      if (closeTimerRef.current !== null) {
+        window.clearTimeout(closeTimerRef.current);
+        closeTimerRef.current = null;
+      }
+      setIsMobileOpen(false);
+      setActivePanel(null);
+    };
+
     const onPointerDown = (event: PointerEvent) => {
       if (!wrapperRef.current?.contains(event.target as Node)) {
-        closeMenus();
+        closeAll();
       }
     };
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        closeMenus();
+        closeAll();
       }
     };
 
@@ -442,12 +473,22 @@ export default function LuxuryCenterLogoNavbar() {
     };
   }, [isMobileOpen]);
 
+  useEffect(() => {
+    return () => {
+      if (closeTimerRef.current !== null) {
+        window.clearTimeout(closeTimerRef.current);
+        closeTimerRef.current = null;
+      }
+    };
+  }, []);
+
   return (
     <>
       <header
         ref={wrapperRef}
         className={`${styles.headerRoot} ${isScrolled ? styles.headerRootScrolled : ""}`}
-        onMouseLeave={() => setActivePanel(null)}
+        onMouseEnter={clearCloseTimer}
+        onMouseLeave={schedulePanelClose}
       >
         <div className={styles.bar}>
           <nav className={styles.navGroupLeft} aria-label="Primary navigation left">
@@ -466,8 +507,8 @@ export default function LuxuryCenterLogoNavbar() {
                 }`}
                 aria-expanded={item.panelKey ? activePanel === item.panelKey : undefined}
                 aria-haspopup={item.panelKey ? "menu" : undefined}
-                onMouseEnter={() => setActivePanel(item.panelKey ?? null)}
-                onFocus={() => setActivePanel(item.panelKey ?? null)}
+                onMouseEnter={() => openPanel(item.panelKey)}
+                onFocus={() => openPanel(item.panelKey)}
                 onClick={closeMenus}
               >
                 {item.label}
@@ -499,7 +540,7 @@ export default function LuxuryCenterLogoNavbar() {
             <nav
               className={styles.navRightLinks}
               aria-label="Primary navigation right"
-              onMouseEnter={() => setActivePanel(null)}
+              onMouseEnter={() => openPanel()}
             >
               {rightLinks.map((item) => (
                 <Link
@@ -545,7 +586,11 @@ export default function LuxuryCenterLogoNavbar() {
           </div>
         </div>
 
-        <div className={`${styles.megaShell} ${panelData ? styles.megaShellOpen : ""}`}>
+        <div
+          className={`${styles.megaShell} ${panelData ? styles.megaShellOpen : ""}`}
+          onMouseEnter={clearCloseTimer}
+          onMouseLeave={schedulePanelClose}
+        >
           {panelData ? (
             <div
               role="menu"

@@ -29,7 +29,7 @@ const florenceTuscanyTourData: TourPageData = {
     subtitle:
       "Discover Florence with a private tour focused on Renaissance art, architecture, and a relaxed pace, with the option to continue into Tuscany.",
     intentLine:
-      "From the Duomo and Ponte Vecchio to museums, artisan streets, and countryside add-ons, we shape the day around what matters most to you.",
+      "From Florence Cathedral and the Old Bridge to museums, artisan streets, and countryside add-ons, we shape the day around what matters most to you.",
     primaryCtaLabel: "Plan This Tour",
     secondaryCtaLabel: "Ask for a Custom Version",
     primaryCtaHref: "#final-cta",
@@ -58,7 +58,7 @@ const florenceTuscanyTourData: TourPageData = {
     intro:
       "Florence is compact, beautiful, and full of art, architecture, and history.",
     body:
-      "Instead of rushing through everything, we focus on Florence highlights like the Duomo, Ponte Vecchio, Piazza della Signoria, and museum options such as the Uffizi or Accademia. If you want, we can then extend into Tuscany with hill towns, scenic drives, or wine-country stops.",
+      "Instead of rushing through everything, we focus on Florence highlights like Florence Cathedral, the Old Bridge, Signoria Square, and museum options such as the Uffizi Gallery or Academy Gallery. If you want, we can then extend into Tuscany with hill towns, scenic drives, or wine-country stops.",
     imageSrc:
       "/images/tours-in-italy/florence-tuscany/overview-renaissance-florence-urban-texture.jpg",
     imageAlt: "Historic Florence streets and cathedral district seen from above",
@@ -72,18 +72,18 @@ const florenceTuscanyTourData: TourPageData = {
       imageAlt: "Historic Florence along the Arno with Renaissance-era bridge architecture",
     },
     {
-      title: "The Duomo, Ponte Vecchio, and Piazza della Signoria",
+      title: "Florence Cathedral, the Old Bridge, and Signoria Square",
       description:
         "Visit Florence's most iconic landmarks at a private pace, without rushing from stop to stop.",
       imageSrc: "/images/tours-in-italy/florence-tuscany/highlight-piazza-signoria.jpg",
-      imageAlt: "Piazza della Signoria and Palazzo Vecchio in Florence",
+      imageAlt: "Signoria Square and the Old Palace in Florence",
     },
     {
       title: "Uffizi, Accademia, and Art at Your Pace",
       description:
         "Choose how deep to go in the museums, with time to enjoy key works without feeling rushed.",
       imageSrc: "/images/tours-in-italy/florence-tuscany/highlight-uffizi-gallery.jpg",
-      imageAlt: "Uffizi and Palazzo Vecchio context in Florence historic center",
+      imageAlt: "Uffizi Gallery and the Old Palace context in Florence historic center",
     },
     {
       title: "Tuscany Beyond Florence: Hill Towns, Views, and Wine Country",
@@ -102,7 +102,7 @@ const florenceTuscanyTourData: TourPageData = {
     {
       title: "Florence Highlights",
       description:
-        "Walk through key areas like the Duomo, Piazza della Signoria, Ponte Vecchio, and nearby historic streets.",
+        "Walk through key areas like Florence Cathedral, Signoria Square, the Old Bridge, and nearby historic streets.",
     },
     {
       title: "Art, Museums, and Your Pace",
@@ -294,7 +294,7 @@ export function generateMetadata(): Metadata {
       images: [
         {
           url: "/images/tours-in-italy/florence-tuscany/hero-private-florence-tuscany-tour.jpg",
-          alt: "Florence skyline and Duomo in cinematic sunset atmosphere",
+          alt: "Florence skyline and cathedral dome in cinematic sunset atmosphere",
         },
       ],
       locale: "en_US",

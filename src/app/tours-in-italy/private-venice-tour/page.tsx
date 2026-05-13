@@ -184,7 +184,7 @@ const privateVeniceTourData: TourPageData = {
   ],
   testimonial: {
     quote:
-      "In Venice, our guide gave us a wonderful tour of Piazza San Marco, the Doge's Palace, and nearby historic sites in a way that kept everyone engaged.",
+      "In Venice, our guide gave us a wonderful tour of St. Mark's Square, the Doge's Palace, and nearby historic sites in a way that kept everyone engaged.",
     name: "Rich V",
     context: "Tripadvisor review, Jul 2019",
   },

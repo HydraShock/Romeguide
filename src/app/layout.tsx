@@ -155,7 +155,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="it">
+    <html lang="en">
       <body className={`${manrope.variable} ${cormorant.variable} antialiased`}>
         <a href="#main-content" className="skip-link">
           Skip to main content

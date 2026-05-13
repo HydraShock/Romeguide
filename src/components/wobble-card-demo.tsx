@@ -41,7 +41,7 @@ const tours = [
     image: "/images/tours/walking/hero-rome-private-walking-tour-pantheon-dusk.webp",
     alt: "Roman riverside and bridges during golden hour",
     imagePosition: "84% 43%",
-    monuments: ["Navona Square", "Pantheon", "Campo de' Fiori Square"],
+    monuments: ["Navona Square", "Pantheon", "Flower Market Square"],
     href: "/tours/walking-tours",
   },
   {

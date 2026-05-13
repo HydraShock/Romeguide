@@ -13,9 +13,9 @@ const walkingTourData: TourPageData = {
   slug: "rome-private-walking-tour",
   path: "/tours/walking-tours",
   seoTitle:
-    "Rome Walking Tour | Pantheon, Piazza Navona & Trevi Fountain | Rome Guide Services",
+    "Rome Walking Tour | Pantheon, Navona Square & Trevi Fountain | Rome Guide Services",
   seoDescription:
-    "Discover Pantheon, Piazza Navona, and Trevi Fountain with a licensed private guide. A flexible Rome walking tour designed around your pace and interests.",
+    "Discover Pantheon, Navona Square, and Trevi Fountain with a licensed private guide. A flexible Rome walking tour designed around your pace and interests.",
   lightSectionsTheme: "tivoliUnified",
   mergeRelatedAndFinalCta: true,
   overviewTheme: "darkbiancoSoft",
@@ -25,7 +25,7 @@ const walkingTourData: TourPageData = {
   hero: {
     eyebrow: "PRIVATE GUIDED TOUR",
     title: "Rome Walking Tour",
-    landmarksLine: "Pantheon | Piazza Navona | Trevi Fountain",
+    landmarksLine: "Pantheon | Navona Square | Trevi Fountain",
     subtitle:
       "Explore Rome on foot through iconic squares and hidden lanes, guided by a private local expert who adapts the route to your rhythm.",
     intentLine: "Flexible private walking across Rome's must-see highlights and local corners.",
@@ -44,16 +44,16 @@ const walkingTourData: TourPageData = {
     { label: "Guide", value: "Licensed guide" },
     { label: "Walking", value: "Moderate" },
     { label: "Route", value: "Flexible city center" },
-    { label: "Sites", value: "Pantheon, Navona, Trevi" },
+    { label: "Sites", value: "Pantheon, Navona Square, Trevi" },
   ],
   overview: {
     title: "Rome on Foot, Well-planned Around You",
     intro:
       "Your private guide shapes the walk around your pace, interests, and preferred balance of landmarks and hidden corners.",
     body:
-      "From the Pantheon to Piazza Navona and the Trevi area, the route blends essential highlights with local context and practical city insights. A strong fit for first-time visitors who want flexibility without losing depth.",
+      "From the Pantheon to Navona Square and the Trevi area, the route blends essential highlights with local context and practical city insights. A strong fit for first-time visitors who want flexibility without losing depth.",
     imageSrc: "/images/tours/walking/overview-rome-private-walking-tour-piazza-navona.webp",
-    imageAlt: "Fountain and architecture in Piazza Navona during soft daylight",
+    imageAlt: "Fountain and architecture in Navona Square during soft daylight",
   },
   highlights: [
     {
@@ -64,11 +64,11 @@ const walkingTourData: TourPageData = {
       imageAlt: "Pantheon columns and inscription in central Rome",
     },
     {
-      title: "Piazza Navona and Baroque Storytelling",
+      title: "Navona Square and Baroque Storytelling",
       description:
         "Explore fountains, historic buildings, and local city life with a guide who connects art history to everyday life in Rome.",
       imageSrc: "/images/tours/walking/highlight-rome-walking-tour-piazza-navona-architecture.webp",
-      imageAlt: "Architectural details around Piazza Navona on a Rome walking route",
+      imageAlt: "Architectural details around Navona Square on a Rome walking route",
     },
     {
       title: "Trevi Fountain and Hidden Passages",
@@ -97,7 +97,7 @@ const walkingTourData: TourPageData = {
         "Explore the Pantheon area with commentary on architecture, urban layering, and Roman daily life.",
     },
     {
-      title: "Piazza Navona Segment",
+      title: "Navona Square Segment",
       description:
         "Walk through Navona and nearby lanes with focus on fountains, baroque design, and local history.",
     },
@@ -175,7 +175,7 @@ const walkingTourData: TourPageData = {
         "Walking is moderate, mostly on cobblestone streets with frequent stops for storytelling and photos.",
     },
     {
-      question: "Can we customize the route beyond Pantheon, Navona, and Trevi?",
+      question: "Can we customize the route beyond Pantheon, Navona Square, and Trevi?",
       answer:
         "Yes. This private format allows route changes based on your interests, pace, and available time.",
     },

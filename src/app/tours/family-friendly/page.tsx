@@ -24,7 +24,7 @@ const familyFriendlyTourData: TourPageData = {
   hero: {
     eyebrow: "PRIVATE GUIDED TOUR",
     title: "Rome Family-Friendly Tour",
-    landmarksLine: "Ancient Rome Highlights | Vatican Options | Piazza Stops",
+    landmarksLine: "Ancient Rome Highlights | Vatican Options | Square Stops",
     subtitle:
       "Keep children involved with clear storytelling and relaxed pacing while your private guide adapts Rome's major sites to your family rhythm.",
     intentLine: "Private, kid-aware touring that keeps adults and children equally involved.",

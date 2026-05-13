@@ -56,14 +56,6 @@ export default function LuxuryRomanCursor() {
   const visibleRef = useRef(false);
   const modeRef = useRef<CursorMode>("default");
 
-  const targetX = useRef(0);
-  const targetY = useRef(0);
-  const haloX = useRef(0);
-  const haloY = useRef(0);
-  const dotX = useRef(0);
-  const dotY = useRef(0);
-  const rafRef = useRef<number | null>(null);
-
   useEffect(() => {
     const fineQuery = window.matchMedia("(pointer: fine)");
     const reducedQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -97,32 +89,19 @@ export default function LuxuryRomanCursor() {
     html.classList.add("luxury-cursor-enabled");
     body.classList.add("luxury-cursor-enabled");
 
-    const animate = () => {
-      haloX.current += (targetX.current - haloX.current) * 0.16;
-      haloY.current += (targetY.current - haloY.current) * 0.16;
-      dotX.current += (targetX.current - dotX.current) * 0.34;
-      dotY.current += (targetY.current - dotY.current) * 0.34;
+    const handleMove = (event: MouseEvent) => {
+      const x = event.clientX;
+      const y = event.clientY;
 
       if (haloRef.current) {
-        haloRef.current.style.transform = `translate3d(${haloX.current}px, ${haloY.current}px, 0)`;
+        haloRef.current.style.transform = `translate3d(${x}px, ${y}px, 0)`;
       }
 
       if (dotRef.current) {
-        dotRef.current.style.transform = `translate3d(${dotX.current}px, ${dotY.current}px, 0)`;
+        dotRef.current.style.transform = `translate3d(${x}px, ${y}px, 0)`;
       }
 
-      rafRef.current = window.requestAnimationFrame(animate);
-    };
-
-    const handleMove = (event: MouseEvent) => {
-      targetX.current = event.clientX;
-      targetY.current = event.clientY;
-
       if (!visibleRef.current) {
-        haloX.current = event.clientX;
-        haloY.current = event.clientY;
-        dotX.current = event.clientX;
-        dotY.current = event.clientY;
         visibleRef.current = true;
         setVisible(true);
       }
@@ -159,13 +138,7 @@ export default function LuxuryRomanCursor() {
     document.addEventListener("mouseenter", handleEnter, { passive: true });
     window.addEventListener("blur", handleBlur, { passive: true });
 
-    rafRef.current = window.requestAnimationFrame(animate);
-
     return () => {
-      if (rafRef.current !== null) {
-        window.cancelAnimationFrame(rafRef.current);
-      }
-
       window.removeEventListener("mousemove", handleMove);
       window.removeEventListener("mousedown", handleDown);
       window.removeEventListener("mouseup", handleUp);
