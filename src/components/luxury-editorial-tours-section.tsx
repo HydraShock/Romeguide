@@ -16,7 +16,7 @@ const tourTypes = [
     label: "Easy Comfort",
     title: "Family-Friendly Tours",
     description:
-      "Thoughtful pacing, engaging stories, and child-friendly planning make family tours in Rome easy and memorable.",
+      "Thoughtful pacing, engaging stories, and child-friendly planning make family tours in italy easy and memorable.",
     image: familyFriendlyPortrait,
   },
   {
@@ -30,7 +30,7 @@ const tourTypes = [
     label: "Cruise Made Easy",
     title: "Cruise Passengers",
     description:
-      "From port pickup to return, we design private Rome tours that fit tight cruise schedules without missing the city's highlights.",
+      "From port pickup to return, we design tours in italy that fit tight cruise schedules without missing the city's highlights.",
     image: "/editorial-tours/cruise-passengers.jpg",
   },
 ] as const;
