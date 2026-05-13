@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import styles from "./luxury-center-logo-navbar.module.css";
-import logoCarlo from "./logocarlo.png";
+import logoCarlo from "./logocarlo-navbar.png";
 
 type PanelKey = "romeTours" | "dayTrips" | "italyTours";
 

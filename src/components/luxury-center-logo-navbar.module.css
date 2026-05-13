@@ -51,14 +51,14 @@
       rgba(184, 145, 84, 0.34) 62%,
       rgba(184, 145, 84, 0) 100%
     )
-    left center / calc(50% - 7rem) 1px no-repeat,
+    left center / calc(50% - 10.6rem) 1px no-repeat,
     linear-gradient(
       90deg,
       rgba(184, 145, 84, 0) 0%,
       rgba(184, 145, 84, 0.34) 62%,
       rgba(184, 145, 84, 0) 100%
     )
-    right center / calc(50% - 7rem) 1px no-repeat;
+    right center / calc(50% - 10.6rem) 1px no-repeat;
 }
 
 .navGroupLeft,
@@ -435,8 +435,8 @@
 .centerLogoWrap {
   position: relative;
   display: block;
-  width: clamp(9.8rem, 14.2vw, 12.8rem);
-  transform: translateY(-0.34rem);
+  width: clamp(13.4rem, 17.8vw, 16.8rem);
+  transform: translateY(-0.24rem);
 }
 
 .centerLogoImage {
@@ -715,8 +715,8 @@
   }
 
   .centerLogoWrap {
-    width: clamp(7.4rem, 23vw, 9.2rem);
-    transform: translateY(-0.12rem);
+    width: clamp(9.4rem, 28vw, 11.6rem);
+    transform: translateY(-0.06rem);
   }
 
   .centerLogoImage {

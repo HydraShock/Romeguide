@@ -6,42 +6,13 @@
 > romeguidenet@0.1.0 stop:next
 > node ./scripts/stop-next.mjs
 
-Stopped next process PID 8564 (port 3000)
-Stopped next process PID 27524 (workspace process sweep)
 
 > romeguidenet@0.1.0 dev
 > next dev --webpack -p 3000
 
 ▲ Next.js 16.1.6 (webpack)
 - Local:         http://localhost:3000
-- Network:       http://192.168.1.6:3000
+- Network:       http://172.29.224.1:3000
 
 ✓ Starting...
-✓ Ready in 1887ms
- GET / 200 in 2.3s (compile: 1655ms, render: 607ms)
- GET / 200 in 239ms (compile: 109ms, render: 130ms)
- GET /tours 200 in 435ms (compile: 395ms, render: 39ms)
- GET / 200 in 84ms (compile: 17ms, render: 66ms)
- GET /tours 200 in 41ms (compile: 7ms, render: 34ms)
- GET /tours 200 in 48ms (compile: 6ms, render: 42ms)
- GET /tours 200 in 41ms (compile: 6ms, render: 35ms)
- GET /tours 200 in 42ms (compile: 6ms, render: 36ms)
- GET / 200 in 69ms (compile: 7ms, render: 62ms)
- GET / 200 in 187ms (compile: 90ms, render: 97ms)
- GET /tours 200 in 64ms (compile: 21ms, render: 43ms)
- GET / 200 in 67ms (compile: 6ms, render: 62ms)
- GET / 200 in 143ms (compile: 51ms, render: 92ms)
- GET / 200 in 271ms (compile: 6ms, render: 265ms)
- GET /tours 200 in 51ms (compile: 17ms, render: 34ms)
- GET / 200 in 72ms (compile: 4ms, render: 68ms)
- GET /who-we-are 200 in 873ms (compile: 764ms, render: 108ms)
- GET /who-we-are 200 in 64ms (compile: 4ms, render: 60ms)
- GET /who-we-are 200 in 56ms (compile: 5ms, render: 51ms)
- GET /who-we-are 200 in 53ms (compile: 8ms, render: 45ms)
- GET / 200 in 97ms (compile: 23ms, render: 74ms)
- GET /booking-contact 200 in 608ms (compile: 527ms, render: 80ms)
- GET /booking-contact 200 in 59ms (compile: 5ms, render: 54ms)
- GET / 200 in 72ms (compile: 23ms, render: 50ms)
- GET / 200 in 150ms (compile: 67ms, render: 84ms)
- GET /tours/day-trips-from-rome 200 in 640ms (compile: 564ms, render: 76ms)
- GET / 200 in 74ms (compile: 21ms, render: 53ms)
+✓ Ready in 2.4s

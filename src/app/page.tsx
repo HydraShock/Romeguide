@@ -253,13 +253,13 @@ export default function Home() {
             <div className={styles.copyBlock}>
               <p className={styles.kicker}>Private Tours in Rome</p>
               <h1 className={styles.title}>
-                Private Tours in Rome,
+                Private Tours in Rome and Italy,
                 <br />
                 Designed Around You
               </h1>
               <p className={styles.description}>
-                Personalized journeys through Rome, crafted around your passions and pace.
-                Discover the Eternal City alongside our expert local guides.
+                Personalized journeys through Rome and Italy, crafted around your passions and
+                pace. Discover the beauty of Italy alongside our expert local guides.
               </p>
               <div className={styles.ctaRow}>
                 <Link href="/#requested-tours-heading" className={styles.primaryCta}>
