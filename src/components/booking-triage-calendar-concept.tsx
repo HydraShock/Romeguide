@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { emptyPhone, formatPhoneNumber } from "@/lib/phone-number";
+import PhoneField from "./phone-field";
 import styles from "./booking-triage-calendar-concept.module.css";
 
 type DayCell = {
@@ -358,7 +360,7 @@ export default function BookingTriageCalendarConcept() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phone, setPhone] = useState(emptyPhone);
   const [hotelArea, setHotelArea] = useState("");
   const [finalNote, setFinalNote] = useState("");
 
@@ -450,6 +452,8 @@ export default function BookingTriageCalendarConcept() {
     return Array.from({ length: totalTravelers + 1 }, (_, index) => index);
   }, [totalTravelers]);
 
+  const fullPhone = useMemo(() => formatPhoneNumber(phone), [phone]);
+
   const canContinue = useMemo(() => {
     if (activeStep === 1) {
       return true;
@@ -481,7 +485,7 @@ export default function BookingTriageCalendarConcept() {
       firstName.trim().length > 1 &&
       lastName.trim().length > 1 &&
       isValidEmail(email) &&
-      phone.trim().length > 4
+      Boolean(fullPhone)
     );
   }, [
     activeStep,
@@ -491,9 +495,9 @@ export default function BookingTriageCalendarConcept() {
     departureCity,
     email,
     firstName,
+    fullPhone,
     lastName,
     notSureYet,
-    phone,
     preferredLanguage,
     preferredPace,
     preferredTransport,
@@ -570,8 +574,11 @@ export default function BookingTriageCalendarConcept() {
     if (email.trim()) {
       params.set("email", email.trim());
     }
-    if (phone.trim()) {
-      params.set("phone", phone.trim());
+    if (fullPhone) {
+      params.set("phone", fullPhone);
+      if (phone.country) {
+        params.set("phoneCountry", phone.country);
+      }
     }
     if (hotelArea.trim()) {
       params.set("hotelArea", hotelArea.trim());
@@ -590,11 +597,12 @@ export default function BookingTriageCalendarConcept() {
     experiencePriorities,
     finalNote,
     firstName,
+    fullPhone,
     hotelArea,
     lastName,
     mobilityIssues,
     notSureYet,
-    phone,
+    phone.country,
     preferredLanguage,
     preferredPace,
     preferredTransport,
@@ -1221,17 +1229,13 @@ export default function BookingTriageCalendarConcept() {
                     className={styles.fieldInput}
                   />
                 </label>
-                <label className={styles.fieldWrap}>
-                  <span>Phone / WhatsApp</span>
-                  <input
-                    type="tel"
-                    autoComplete="tel"
-                    value={phone}
-                    onChange={(event) => setPhone(event.target.value)}
-                    placeholder="+39 ..."
-                    className={styles.fieldInput}
-                  />
-                </label>
+                <PhoneField
+                  value={phone}
+                  onChange={setPhone}
+                  className={styles.fieldWrap}
+                  inputClassName={styles.fieldInput}
+                  required
+                />
                 <label className={styles.fieldWrap}>
                   <span>accomodations</span>
                   <input

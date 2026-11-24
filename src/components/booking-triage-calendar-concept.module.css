@@ -1107,13 +1107,22 @@
   gap: 0.3rem;
 }
 
-.fieldWrap span {
+.fieldWrap span,
+.fieldWrap legend {
   font-family: var(--font-manrope), Arial, sans-serif;
   font-size: 0.62rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 700;
   color: #d3b58f;
+}
+
+.fieldWrap legend {
+  margin-bottom: 0.3rem;
+}
+
+.fieldWrap select {
+  color-scheme: dark;
 }
 
 .fieldInput {

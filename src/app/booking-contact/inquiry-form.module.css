@@ -53,7 +53,8 @@
   margin-top: 0.8rem;
 }
 
-.field label {
+.field label,
+.field legend {
   display: block;
   margin-bottom: 0.4rem;
   font-family: var(--font-manrope), Arial, sans-serif;

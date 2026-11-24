@@ -1,6 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import PhoneField from "@/components/phone-field";
+import {
+  emptyPhone,
+  formatPhoneNumber,
+  splitPhoneNumber,
+  type PhoneDetails,
+} from "@/lib/phone-number";
 import styles from "./inquiry-form.module.css";
 
 const contactEmail = "romeguideservices@gmail.com";
@@ -49,7 +56,7 @@ const categoryOptions = [
 type FormValues = {
   fullName: string;
   email: string;
-  phone: string;
+  phone: PhoneDetails;
   travelDates: string;
   guests: string;
   interestedIn: string;
@@ -63,7 +70,7 @@ type FormErrors = Partial<Record<keyof FormValues, string>>;
 const initialValues: FormValues = {
   fullName: "",
   email: "",
-  phone: "",
+  phone: emptyPhone,
   travelDates: "",
   guests: "",
   interestedIn: "",
@@ -112,6 +119,10 @@ function validate(values: FormValues): FormErrors {
     errors.travelDates = "Please tell us your expected travel dates.";
   }
 
+  if (values.phone.number.trim() && !formatPhoneNumber(values.phone)) {
+    errors.phone = "Please select a country code and enter a valid phone number.";
+  }
+
   if (!values.guests.trim()) {
     errors.guests = "Please select your group size.";
   }
@@ -154,7 +165,7 @@ export default function InquiryForm() {
     return [
       `Full Name: ${values.fullName || "-"}`,
       `Email: ${values.email || "-"}`,
-      `Phone / WhatsApp: ${values.phone || "-"}`,
+      `Phone: ${formatPhoneNumber(values.phone) || "-"}`,
       `Travel Dates: ${values.travelDates || "-"}`,
       `Number of Guests: ${values.guests || "-"}`,
       `Interested In: ${values.interestedIn || "-"}`,
@@ -194,6 +205,7 @@ export default function InquiryForm() {
     const lastName = params.get("lastName") ?? "";
     const emailFromQuery = params.get("email") ?? "";
     const phoneFromQuery = params.get("phone") ?? "";
+    const phoneCountryFromQuery = params.get("phoneCountry") ?? "";
     const combinedName = [firstName, lastName].filter(Boolean).join(" ").trim();
 
     const hasTriageData = Boolean(
@@ -216,6 +228,7 @@ export default function InquiryForm() {
       return;
     }
 
+    const prefilledPhone = splitPhoneNumber(phoneFromQuery, phoneCountryFromQuery);
     const prefilledMessageLines = [
       date ? `Requested date: ${formatDateLabel(date)}` : "",
       pace ? `Preferred pace: ${pace}` : "",
@@ -231,7 +244,7 @@ export default function InquiryForm() {
       ...current,
       fullName: current.fullName || combinedName || name,
       email: current.email || emailFromQuery,
-      phone: current.phone || phoneFromQuery,
+      phone: current.phone.country || current.phone.number ? current.phone : prefilledPhone,
       travelDates: current.travelDates || (date ? formatDateLabel(date) : ""),
       guests: current.guests || guests,
       preferredLanguage: current.preferredLanguage || language,
@@ -338,18 +351,13 @@ export default function InquiryForm() {
       </div>
 
       <div className={styles.gridTwo}>
-        <div className={styles.field}>
-          <label htmlFor="phone">Optional Phone / WhatsApp</label>
-          <input
-            id="phone"
-            name="phone"
-            type="tel"
-            autoComplete="tel"
-            value={values.phone}
-            onChange={(event) => updateField("phone", event.target.value)}
-            placeholder="+39 ..."
-          />
-        </div>
+        <PhoneField
+          value={values.phone}
+          onChange={(phone) => updateField("phone", phone)}
+          className={styles.field}
+          error={errors.phone}
+          errorClassName={styles.errorText}
+        />
 
         <div className={styles.field}>
           <label htmlFor="travelDates">Travel Dates</label>
