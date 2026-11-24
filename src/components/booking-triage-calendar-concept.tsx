@@ -897,7 +897,7 @@ export default function BookingTriageCalendarConcept() {
           {activeStep === 4 ? (
             <div className={`${styles.stepContent} ${styles.stepContentCompact}`}>
               <h4>A few quick details</h4>
-              <p>Share a few details so we can shape the experience around your group.</p>
+              <p>Share a few details so we can shape the experience around your party.</p>
 
               <div className={styles.stepThreeGrid}>
                 <section className={`${styles.stepSection} ${styles.stepSectionFull} ${styles.stepSectionCompact}`}>
