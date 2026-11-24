@@ -16,7 +16,7 @@ function detectCursorMode(target: EventTarget | null): CursorMode {
 
   if (
     target.closest(
-      "[data-cursor='cta'], .conciergeCta, .primaryCta, .contactHeroPrimaryCta, .calendarCta, .flowFinalCta, .heroCompanionCta",
+      "[data-cursor='cta'], .primaryCta, .contactHeroPrimaryCta, .calendarCta, .flowFinalCta, .heroCompanionCta",
     )
   ) {
     return "cta";

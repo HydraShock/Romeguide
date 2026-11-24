@@ -558,18 +558,6 @@ export default function LuxuryCenterLogoNavbar() {
               ))}
             </nav>
 
-            <Link
-              href="/#booking-calendar"
-              className={styles.conciergeCta}
-              aria-label="Plan my trip - go to booking calendar"
-              onClick={closeMenus}
-            >
-              <span className={styles.conciergeCtaText}>PLAN MY TRIP</span>
-              <span className={styles.conciergeCtaArrow} aria-hidden>
-                &rarr;
-              </span>
-            </Link>
-
             <button
               type="button"
               className={styles.mobileToggle}
@@ -674,17 +662,6 @@ export default function LuxuryCenterLogoNavbar() {
               </Link>
             ))}
           </nav>
-          <Link
-            href="/#booking-calendar"
-            className={styles.mobileCta}
-            aria-label="Plan my trip - go to booking calendar"
-            onClick={closeMenus}
-          >
-            <span className={styles.conciergeCtaText}>PLAN MY TRIP</span>
-            <span className={styles.conciergeCtaArrow} aria-hidden>
-              &rarr;
-            </span>
-          </Link>
         </div>
       </header>
 
