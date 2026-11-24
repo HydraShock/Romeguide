@@ -234,7 +234,7 @@ const experienceStyleTags = [
   "Architecture",
   "Religion",
   "Food & Wine",
-  "Hidden corners",
+  "off the beaten path",
 ] as const;
 
 const paceOptions = ["Relaxed", "Balanced", "In-depth"] as const;
