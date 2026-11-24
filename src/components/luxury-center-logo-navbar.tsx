@@ -356,7 +356,7 @@ const panelPreviewItems: Record<PanelKey, PanelPreviewItem[]> = {
 };
 
 const leftLinks: NavLinkItem[] = [
-  { label: "PRIVATE TOURS", href: "/tours", panelKey: "romeTours" },
+  { label: "EXCLUSIVE ROME TOURS", href: "/tours", panelKey: "romeTours" },
   { label: "DAY TRIPS", href: "/tours/day-trips-from-rome", panelKey: "dayTrips" },
   { label: "TOURS IN ITALY", href: "/tours-in-italy", panelKey: "italyTours" },
 ];
