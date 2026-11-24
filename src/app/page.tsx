@@ -291,6 +291,8 @@ export default function Home() {
           </div>
         </section>
 
+        <DayTripsSection />
+
         <section className={styles.whyChooseSection} aria-labelledby="why-choose-heading">
           <div className={styles.whyChooseInner}>
             <div className={styles.whyChooseCopy}>
@@ -342,7 +344,6 @@ export default function Home() {
         </section>
 
         <LuxuryEditorialToursSection />
-        <DayTripsSection />
         <TailorMadeExperiencesSection />
         <TravelerTestimonialsLegacySection />
         <LuxuryFaqSection />
