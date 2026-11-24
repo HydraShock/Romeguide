@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Manrope } from "next/font/google";
 import CookieConsentBanner from "@/components/cookie-consent-banner";
 import LuxuryCenterLogoNavbar from "@/components/luxury-center-logo-navbar";
 import LuxuryRomanCursor from "@/components/luxury-roman-cursor";
+import { getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -17,7 +18,6 @@ const cormorant = Cormorant_Garamond({
   weight: ["400", "500", "600", "700"],
 });
 
-const DEFAULT_SITE_URL = "http://localhost:3000";
 const SITE_NAME = "Rome Guide Services";
 const SITE_DESCRIPTION =
   "Private tours in Rome and across Italy with licensed guides, custom itineraries, and friendly human planning support.";
@@ -37,18 +37,8 @@ const SITE_KEYWORDS = [
   "family-run Rome tours",
 ];
 
-function resolveMetadataBase() {
-  const rawUrl = process.env.NEXT_PUBLIC_SITE_URL ?? DEFAULT_SITE_URL;
-
-  try {
-    return new URL(rawUrl);
-  } catch {
-    return new URL(DEFAULT_SITE_URL);
-  }
-}
-
-const metadataBase = resolveMetadataBase();
-const siteUrl = metadataBase.toString().replace(/\/+$/, "");
+const siteUrl = getSiteUrl();
+const metadataBase = new URL(siteUrl);
 
 export const metadata: Metadata = {
   metadataBase,

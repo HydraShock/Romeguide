@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LuxuryFooterSection from "@/components/luxury-footer-section";
+import { FOOD_TOURS_PATH } from "@/lib/food-tours";
 import {
   BRONZE_SIGNATURE_BASE_STYLE,
   BRONZE_SIGNATURE_GHOST_STYLE,
@@ -10,6 +11,11 @@ import {
 const PAGE_PATH = "/tours-in-italy";
 
 const italyTours = [
+  {
+    href: FOOD_TOURS_PATH,
+    title: "Private Food Tours in Italy",
+    description: "Food, wine, and dessert tastings in Rome, Florence, and Venice with Sweet & Salty Tours.",
+  },
   {
     href: "/tours-in-italy/private-florence-tuscany-tour",
     title: "Florence & Tuscany Tour",

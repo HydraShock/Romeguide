@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FOOD_TOURS_PATH } from "@/lib/food-tours";
 import styles from "./luxury-footer-section.module.css";
 
 const contactEmail = "romeguideservices@gmail.com";
@@ -11,6 +12,7 @@ const footerGroups = [
       { label: "Day Trips", href: "/tours/day-trips-from-rome" },
       { label: "Tours in Italy", href: "/tours-in-italy" },
       { label: "Rome Tours", href: "/tours" },
+      { label: "Food Tours", href: FOOD_TOURS_PATH },
     ],
   },
   {

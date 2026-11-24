@@ -4,10 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { FOOD_TOURS_PATH, foodTourPath, foodTours } from "@/lib/food-tours";
 import styles from "./luxury-center-logo-navbar.module.css";
 import logoCarlo from "./logocarlo-navbar.png";
 
 type PanelKey = "romeTours" | "dayTrips" | "italyTours";
+type OpenPanel = PanelKey | "foodTours";
 
 type NavLinkItem = {
   label: string;
@@ -378,20 +380,35 @@ function isActivePath(pathname: string, href: string) {
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
+function FoodTourMenuLinks({ id, onNavigate }: { id: string; onNavigate: () => void }) {
+  return (
+    <ul className={styles.foodTourLinks} id={id}>
+      <li><Link href={FOOD_TOURS_PATH} onClick={onNavigate}>All Food Tours</Link></li>
+      {foodTours.map((tour) => (
+        <li key={tour.slug}>
+          <Link href={foodTourPath(tour.slug)} onClick={onNavigate}>{tour.title}</Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export default function LuxuryCenterLogoNavbar() {
   const pathname = usePathname() ?? "/";
   const isHome = pathname === "/";
+  const isFoodTours = isActivePath(pathname, FOOD_TOURS_PATH);
   const isDarkHeroPage =
-    pathname.startsWith("/tours") ||
+    isFoodTours || pathname.startsWith("/tours") ||
     pathname.startsWith("/tours-in-italy") ||
     pathname.startsWith("/who-we-are") ||
     pathname.startsWith("/booking-contact");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const [activePanel, setActivePanel] = useState<PanelKey | null>(null);
+  const [activePanel, setActivePanel] = useState<OpenPanel | null>(null);
   const wrapperRef = useRef<HTMLElement>(null);
   const closeTimerRef = useRef<number | null>(null);
-  const panelData = !isHome && activePanel ? megaPanels[activePanel] : null;
+  const foodMenuOpen = activePanel === "foodTours";
+  const panelData = !isHome && activePanel && activePanel !== "foodTours" ? megaPanels[activePanel] : null;
   const panelItems = panelData ? panelPreviewItems[panelData.key] : [];
 
   const clearCloseTimer = () => {
@@ -409,7 +426,7 @@ export default function LuxuryCenterLogoNavbar() {
     }, 220);
   };
 
-  const openPanel = (panelKey?: PanelKey) => {
+  const openPanel = (panelKey?: OpenPanel) => {
     clearCloseTimer();
     setActivePanel(panelKey ?? null);
   };
@@ -419,6 +436,8 @@ export default function LuxuryCenterLogoNavbar() {
     setIsMobileOpen(false);
     setActivePanel(null);
   };
+
+  const toggleFoodMenu = () => openPanel(foodMenuOpen ? undefined : "foodTours");
 
   useEffect(() => {
     const onScroll = () => {
@@ -544,6 +563,18 @@ export default function LuxuryCenterLogoNavbar() {
               aria-label="Primary navigation right"
               onMouseEnter={() => openPanel()}
             >
+              <div className={styles.foodMenu}>
+                <button
+                  type="button"
+                  className={`${styles.foodMenuButton} ${isFoodTours ? styles.foodMenuCurrent : ""}`}
+                  aria-expanded={foodMenuOpen}
+                  aria-controls={foodMenuOpen ? "desktop-food-tours" : undefined}
+                  onClick={toggleFoodMenu}
+                >
+                  Food Tours <span aria-hidden>⌄</span>
+                </button>
+                {foodMenuOpen && <FoodTourMenuLinks id="desktop-food-tours" onNavigate={closeMenus} />}
+              </div>
               {rightLinks.map((item) => (
                 <Link
                   key={item.href}
@@ -651,6 +682,16 @@ export default function LuxuryCenterLogoNavbar() {
           aria-hidden={!isMobileOpen}
         >
           <nav className={styles.mobileNav} aria-label="Mobile navigation">
+            <button
+              type="button"
+              className={`${styles.mobileNavLink} ${isFoodTours ? styles.mobileNavLinkActive : ""}`}
+              aria-expanded={foodMenuOpen}
+              aria-controls={foodMenuOpen ? "mobile-food-tours" : undefined}
+              onClick={toggleFoodMenu}
+            >
+              Food Tours <span aria-hidden>&nbsp;⌄</span>
+            </button>
+            {foodMenuOpen && <FoodTourMenuLinks id="mobile-food-tours" onNavigate={closeMenus} />}
             {(isHome ? rightLinks : [...leftLinks, ...rightLinks]).map((item) => (
               <Link
                 key={`mobile-${item.href}`}
