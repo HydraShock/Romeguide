@@ -902,7 +902,7 @@ export default function BookingTriageCalendarConcept() {
               <div className={styles.stepThreeGrid}>
                 <section className={`${styles.stepSection} ${styles.stepSectionFull} ${styles.stepSectionCompact}`}>
                   <h5>Trip basics</h5>
-                  <p className={styles.stepSectionHint}>How many travelers are joining?</p>
+                  <p className={styles.stepSectionHint}>Number of travelers</p>
                   <div className={styles.optionGrid}>
                     {totalTravelerOptions.map((option) => (
                       <button
