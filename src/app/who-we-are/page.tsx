@@ -8,27 +8,6 @@ import styles from "./page.module.css";
 const PAGE_PATH = "/who-we-are";
 const WHO_HERO_IMAGE = "/image%20(22).png";
 
-const heroTrustStrip = [
-  {
-    title: "Licensed Guides",
-    value: "Officially licensed in Rome",
-  },
-  {
-    title: "Family-Run",
-    value: "Plan directly with our family team",
-  },
-  {
-    title: "Private Only",
-    value: "Just your group, always",
-  },
-  {
-    title: "Multilingual",
-    value: "English, Italian, Spanish, and more",
-  },
-];
-
-const heroPills = ["Licensed in Rome", "Private tours only", "Family-run", "Multilingual"];
-
 const trustPillars = [
   {
     title: "Licensed Local Guides",
@@ -279,73 +258,26 @@ export default function WhoWeArePage() {
           <div className={styles.heroVignette} />
 
           <div className={styles.heroInner}>
-            <article className={styles.heroPanel}>
-              <p className={styles.heroEyebrow}>WHO WE ARE</p>
-              <h1 id="who-we-are-main-title" className={styles.heroTitle}>
-                The Rome Team Behind Your Private Tour
-              </h1>
-              <p className={styles.heroLead}>
-                We are a family-run team of licensed guides in Rome. We create private tours that
-                feel clear, personal, and paced around your group.
-              </p>
-              <p className={styles.heroSublead}>
-                From must-see landmarks to quieter corners, we help you experience Rome in a way
-                that feels natural and never rushed.
-              </p>
-              <div className={styles.heroActions}>
-                <Link href="/#requested-tours-heading" className={styles.primaryCta}>
-                  Explore Private Tours
-                </Link>
-                <Link href="/#booking-calendar" className={styles.secondaryCta}>
-                  Plan Your Tour
-                </Link>
-              </div>
-              <ul className={styles.heroPills}>
-                {heroPills.map((pill) => (
-                  <li key={pill}>{pill}</li>
-                ))}
-              </ul>
-              <p className={styles.microTrustLine}>Local team in Rome | Licensed guides | Private tours only</p>
-            </article>
-
-          </div>
-        </section>
-
-        <section className={styles.trustStripSection} aria-label="Quick trust overview" data-reveal>
-          <div className={styles.sectionInner}>
-            <div className={styles.trustStripGrid}>
-              {heroTrustStrip.map((item) => (
-                <article key={item.title} className={styles.trustStripCard} data-reveal>
-                  <p>{item.title}</p>
-                  <h3>{item.value}</h3>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.storySection} aria-labelledby="our-story-title" data-reveal>
-          <div className={styles.sectionInner}>
             <div className={styles.storyFrame}>
               <div className={styles.storyGrid}>
                 <article className={styles.storyCopy}>
-                <p className={styles.sectionEyebrow}>OUR STORY</p>
-                <h2 id="our-story-title" className={`${styles.sectionTitle} ${styles.storyTitle}`}>
-                  Rooted in Rome, Built Around People
-                </h2>
-                <p>
-                  Rome Guide Services started as a family project with a simple idea: private tours
-                  should feel personal, not transactional.
-                </p>
-                <p>
-                  We live and work in Rome, and we plan each route ourselves. That means clear
-                  communication, smart timing, and fewer surprises on the day.
-                </p>
-                <p>
-                  Whether it is your first time here or your fifth, we adapt the experience to
-                  you and keep it warm, practical, and memorable.
-                </p>
-                <p className={styles.storyBadge}>Family-run in Rome | Practical planning | Human support</p>
+                  <p className={styles.sectionEyebrow}>OUR STORY</p>
+                  <h1 id="who-we-are-main-title" className={`${styles.sectionTitle} ${styles.storyTitle}`}>
+                    Rooted in Rome, Built Around People
+                  </h1>
+                  <p>
+                    Rome Guide Services started as a family project with a simple idea: private tours
+                    should feel personal, not transactional.
+                  </p>
+                  <p>
+                    We live and work in Rome, and we plan each route ourselves. That means clear
+                    communication, smart timing, and fewer surprises on the day.
+                  </p>
+                  <p>
+                    Whether it is your first time here or your fifth, we adapt the experience to
+                    you and keep it warm, practical, and memorable.
+                  </p>
+                  <p className={styles.storyBadge}>Family-run in Rome | Practical planning | Human support</p>
                 </article>
                 <figure className={styles.storyVisual}>
                   <div className={styles.storyVisualInner}>
@@ -353,7 +285,8 @@ export default function WhoWeArePage() {
                       src="/carlo5.jpg"
                       alt="Family-run Rome guide service team in an authentic on-tour moment"
                       fill
-                      sizes="(max-width: 1024px) 100vw, 42vw"
+                      priority
+                      sizes="(max-width: 860px) 100vw, 40vw"
                       className={styles.storyImage}
                     />
                   </div>
