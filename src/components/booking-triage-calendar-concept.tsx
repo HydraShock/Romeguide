@@ -1233,7 +1233,7 @@ export default function BookingTriageCalendarConcept() {
                   />
                 </label>
                 <label className={styles.fieldWrap}>
-                  <span>Hotel or area in Rome (optional)</span>
+                  <span>accomodations</span>
                   <input
                     type="text"
                     value={hotelArea}
