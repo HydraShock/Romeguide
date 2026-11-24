@@ -1095,7 +1095,66 @@
   margin-top: 0.64rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
   gap: 0.56rem;
+}
+
+.departureColumn {
+  min-width: 0;
+}
+
+.departureCalendar {
+  width: min(100%, 18rem);
+  margin-top: 0.65rem;
+  padding: 0.65rem;
+  border-radius: 0.72rem;
+  border: 1px solid rgba(198, 153, 108, 0.44);
+  background: rgba(44, 24, 15, 0.68);
+}
+
+.departureCalendar h5 {
+  margin: 0 0 0.5rem;
+  color: #d3b58f;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.departureCalendar .calendarMonthLabel {
+  font-size: 1.25rem;
+}
+
+.departureCalendar .monthNavButton {
+  width: 1.9rem;
+  height: 1.9rem;
+}
+
+.departureCalendar .weekdayGrid,
+.departureCalendar .dayGrid {
+  gap: 0.2rem;
+}
+
+.departureCalendar .weekdayGrid {
+  margin-top: 0.55rem;
+}
+
+.departureCalendar .weekdayGrid span {
+  font-size: 0.55rem;
+  letter-spacing: 0;
+}
+
+.departureCalendar .dayCell {
+  min-height: 1.9rem;
+  border-radius: 0.36rem;
+  font-size: 0.76rem;
+}
+
+.departureCalendar button:disabled {
+  opacity: 0.36;
+  cursor: not-allowed;
+  transform: none;
+  filter: none;
 }
 
 .contactGrid > .fieldWrap:last-child {

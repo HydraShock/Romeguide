@@ -200,6 +200,7 @@ export default function InquiryForm() {
     const travelerProfile = params.get("travelerProfile") ?? "";
     const departureCity = params.get("departureCity") ?? "";
     const arrivalCityItaly = params.get("arrivalCityItaly") ?? "";
+    const departureDate = params.get("departureDate") ?? "";
     const transferFrom = params.get("transferFrom")?.trim();
     const transferTo = params.get("transferTo")?.trim();
     const name = params.get("name") ?? "";
@@ -220,6 +221,7 @@ export default function InquiryForm() {
         travelerProfile ||
         departureCity ||
         arrivalCityItaly ||
+        departureDate ||
         (transferFrom && transferTo) ||
         name ||
         combinedName ||
@@ -234,6 +236,7 @@ export default function InquiryForm() {
     const prefilledPhone = splitPhoneNumber(phoneFromQuery, phoneCountryFromQuery);
     const prefilledMessageLines = [
       date ? `Requested date: ${formatDateLabel(date)}` : "",
+      departureDate ? `Departure date: ${formatDateLabel(departureDate)}` : "",
       pace ? `Preferred pace: ${pace}` : "",
       startWindow ? `Preferred start window: ${startWindow}` : "",
       travelerProfile ? `Traveler profile: ${travelerProfile}` : "",

@@ -35,6 +35,13 @@ type InterestGroup = {
 };
 
 const weekdayLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] as const;
+const monthFormatter = new Intl.DateTimeFormat("en-US", { month: "long", year: "numeric" });
+const dayFormatter = new Intl.DateTimeFormat("en-US", {
+  weekday: "long",
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
 
 const triageSteps: readonly TriageStep[] = [
   { id: 1, label: "Step 01", title: "Date" },
@@ -301,6 +308,43 @@ function getCalendarCells(monthDate: Date, todayIso: string): DayCell[] {
   });
 }
 
+type CalendarDaysProps = {
+  cells: DayCell[];
+  selectedIso: string;
+  onSelect: (cell: DayCell) => void;
+  minimumIso?: string;
+};
+
+function CalendarDays({ cells, selectedIso, onSelect, minimumIso }: CalendarDaysProps) {
+  return (
+    <>
+      <div className={styles.weekdayGrid} aria-hidden>
+        {weekdayLabels.map((weekday) => <span key={weekday}>{weekday}</span>)}
+      </div>
+      <div className={styles.dayGrid}>
+        {cells.map((cell) => {
+          const selected = cell.iso === selectedIso;
+          return (
+            <button
+              key={cell.iso}
+              type="button"
+              className={`${styles.dayCell} ${selected ? styles.dayCellSelected : ""} ${
+                cell.inCurrentMonth ? "" : styles.dayCellOutside
+              } ${cell.isToday ? styles.dayCellToday : ""}`}
+              aria-label={`Select ${dayFormatter.format(cell.date)}`}
+              aria-pressed={selected}
+              disabled={minimumIso !== undefined && cell.iso < minimumIso}
+              onClick={() => onSelect(cell)}
+            >
+              <span>{cell.date.getDate()}</span>
+            </button>
+          );
+        })}
+      </div>
+    </>
+  );
+}
+
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
 }
@@ -340,6 +384,8 @@ export default function BookingTriageCalendarConcept() {
   const calendarRef = useRef<HTMLDivElement>(null);
   const stepLabelRef = useRef<HTMLParagraphElement>(null);
   const [departureCity, setDepartureCity] = useState("");
+  const [departureDateIso, setDepartureDateIso] = useState("");
+  const [departureMonthOffset, setDepartureMonthOffset] = useState(0);
   const [arrivalCityItaly, setArrivalCityItaly] = useState("");
   const [selectedGroups, setSelectedGroups] = useState<Record<InterestGroupId, boolean>>(emptyGroups);
   const [selectedInterests, setSelectedInterests] = useState<Record<InterestGroupId, string[]>>(
@@ -371,14 +417,7 @@ export default function BookingTriageCalendarConcept() {
 
   const visibleMonth = useMemo(() => addMonths(today, monthOffset), [monthOffset, today]);
 
-  const monthLabel = useMemo(
-    () =>
-      new Intl.DateTimeFormat("en-US", {
-        month: "long",
-        year: "numeric",
-      }).format(visibleMonth),
-    [visibleMonth],
-  );
+  const monthLabel = monthFormatter.format(visibleMonth);
 
   const calendarCells = useMemo(
     () => getCalendarCells(visibleMonth, todayIso),
@@ -386,16 +425,15 @@ export default function BookingTriageCalendarConcept() {
   );
 
   const selectedDate = useMemo(() => parseIsoDate(selectedDateIso), [selectedDateIso]);
-  const selectedDateLabel = useMemo(
-    () =>
-      new Intl.DateTimeFormat("en-US", {
-        weekday: "long",
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-      }).format(selectedDate),
-    [selectedDate],
+  const departureMonth = useMemo(
+    () => addMonths(selectedDate, departureMonthOffset),
+    [departureMonthOffset, selectedDate],
   );
+  const departureCells = useMemo(
+    () => getCalendarCells(departureMonth, todayIso),
+    [departureMonth, todayIso],
+  );
+  const selectedDateLabel = dayFormatter.format(selectedDate);
 
   const selectedDateShort = useMemo(
     () =>
@@ -466,7 +504,7 @@ export default function BookingTriageCalendarConcept() {
     }
 
     if (activeStep === 2) {
-      return departureCity.trim().length > 1 && arrivalCityItaly.trim().length > 1;
+      return departureCity.trim().length > 1 && arrivalCityItaly.trim().length > 1 && Boolean(departureDateIso);
     }
 
     if (activeStep === 3) {
@@ -499,6 +537,7 @@ export default function BookingTriageCalendarConcept() {
     cruisePassenger,
     cruisePortOfCall,
     departureCity,
+    departureDateIso,
     email,
     firstName,
     fullPhone,
@@ -536,6 +575,7 @@ export default function BookingTriageCalendarConcept() {
     }
     if (departureCity.trim()) {
       params.set("departureCity", departureCity.trim());
+      if (departureDateIso) params.set("departureDate", departureDateIso);
     }
     if (arrivalCityItaly.trim()) {
       params.set("arrivalCityItaly", arrivalCityItaly.trim());
@@ -602,6 +642,7 @@ export default function BookingTriageCalendarConcept() {
     cruisePassenger,
     cruisePortOfCall,
     departureCity,
+    departureDateIso,
     email,
     experiencePriorities,
     finalNote,
@@ -755,46 +796,20 @@ export default function BookingTriageCalendarConcept() {
                 </p>
               </div>
 
-              <div className={styles.weekdayGrid} aria-hidden>
-                {weekdayLabels.map((weekday) => (
-                  <span key={weekday}>{weekday}</span>
-                ))}
-              </div>
-
-              <div className={styles.dayGrid}>
-                {calendarCells.map((cell) => {
-                  const isSelected = cell.iso === selectedDateIso;
-                  const isOutsideMonth = !cell.inCurrentMonth;
-                  const longDateLabel = new Intl.DateTimeFormat("en-US", {
-                    weekday: "long",
-                    day: "numeric",
-                    month: "long",
-                    year: "numeric",
-                  }).format(cell.date);
-
-                  return (
-                    <button
-                      key={cell.iso}
-                      type="button"
-                      className={`${styles.dayCell} ${isSelected ? styles.dayCellSelected : ""} ${
-                        isOutsideMonth ? styles.dayCellOutside : ""
-                      } ${cell.isToday ? styles.dayCellToday : ""}`}
-                      aria-label={`Select ${longDateLabel}`}
-                      aria-pressed={isSelected}
-                      onClick={() => {
-                        if (isOutsideMonth) {
-                          const nextOffset =
-                            cell.date < visibleMonthStart ? monthOffset - 1 : monthOffset + 1;
-                          setMonthOffset(nextOffset);
-                        }
-                        setSelectedDateIso(cell.iso);
-                      }}
-                    >
-                      <span>{cell.date.getDate()}</span>
-                    </button>
-                  );
-                })}
-              </div>
+              <CalendarDays
+                cells={calendarCells}
+                selectedIso={selectedDateIso}
+                onSelect={(cell) => {
+                  if (!cell.inCurrentMonth) {
+                    setMonthOffset(cell.date < visibleMonthStart ? monthOffset - 1 : monthOffset + 1);
+                  }
+                  if (cell.iso !== selectedDateIso) {
+                    setDepartureMonthOffset(0);
+                    if (departureDateIso < cell.iso) setDepartureDateIso("");
+                  }
+                  setSelectedDateIso(cell.iso);
+                }}
+              />
             </>
           ) : null}
 
@@ -802,8 +817,7 @@ export default function BookingTriageCalendarConcept() {
             <div className={styles.stepContent}>
               <h4>Your travel route in Italy</h4>
               <p>
-                Tell us your arrival city and your departure city so we can shape the route around
-                your plan.
+                Tell us where you&apos;ll arrive and where and when you&apos;ll depart.
               </p>
 
               <div className={styles.routeGrid}>
@@ -817,16 +831,56 @@ export default function BookingTriageCalendarConcept() {
                     className={styles.fieldInput}
                   />
                 </label>
-                <label className={styles.fieldWrap}>
-                  <span>Departure city</span>
-                  <input
-                    type="text"
-                    value={departureCity}
-                    onChange={(event) => setDepartureCity(event.target.value)}
-                    placeholder="e.g. Florence"
-                    className={styles.fieldInput}
-                  />
-                </label>
+                <div className={styles.departureColumn}>
+                  <label className={styles.fieldWrap}>
+                    <span>Departure city</span>
+                    <input
+                      type="text"
+                      value={departureCity}
+                      onChange={(event) => setDepartureCity(event.target.value)}
+                      placeholder="e.g. Florence"
+                      className={styles.fieldInput}
+                    />
+                  </label>
+                  {departureCity.trim().length > 1 ? (
+                    <div className={styles.departureCalendar} role="group" aria-labelledby="booking-departure-title">
+                      <h5 id="booking-departure-title">Departure date</h5>
+                      <div className={styles.calendarMonthNav}>
+                        <button
+                          type="button"
+                          className={styles.monthNavButton}
+                          aria-label="Previous departure month"
+                          disabled={departureMonthOffset === 0}
+                          onClick={() => setDepartureMonthOffset((offset) => offset - 1)}
+                        >
+                          <span aria-hidden>&larr;</span>
+                        </button>
+                        <p className={styles.calendarMonthLabel} aria-live="polite">
+                          {monthFormatter.format(departureMonth)}
+                        </p>
+                        <button
+                          type="button"
+                          className={styles.monthNavButton}
+                          aria-label="Next departure month"
+                          onClick={() => setDepartureMonthOffset((offset) => offset + 1)}
+                        >
+                          <span aria-hidden>&rarr;</span>
+                        </button>
+                      </div>
+                      <CalendarDays
+                        cells={departureCells}
+                        selectedIso={departureDateIso}
+                        minimumIso={selectedDateIso}
+                        onSelect={(cell) => {
+                          if (!cell.inCurrentMonth) {
+                            setDepartureMonthOffset((offset) => offset + (cell.date < departureMonth ? -1 : 1));
+                          }
+                          setDepartureDateIso(cell.iso);
+                        }}
+                      />
+                    </div>
+                  ) : null}
+                </div>
               </div>
             </div>
           ) : null}
@@ -1330,6 +1384,11 @@ export default function BookingTriageCalendarConcept() {
                     ? "Not set"
                     : `${totalTravelers} total, ${under18Travelers} under 18`}
                 </p>
+                {departureDateIso ? (
+                  <p>
+                    <strong>Departure date:</strong> {dayFormatter.format(parseIsoDate(departureDateIso))}
+                  </p>
+                ) : null}
                 {transferSelected && hasTransferRoute ? (
                   <p>
                     <strong>Transfer:</strong> {transferFrom.trim()} to {transferTo.trim()}
