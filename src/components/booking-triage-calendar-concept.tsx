@@ -361,7 +361,6 @@ export default function BookingTriageCalendarConcept() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState(emptyPhone);
-  const [hotelArea, setHotelArea] = useState("");
   const [finalNote, setFinalNote] = useState("");
 
   const visibleMonth = useMemo(() => addMonths(today, monthOffset), [monthOffset, today]);
@@ -580,9 +579,6 @@ export default function BookingTriageCalendarConcept() {
         params.set("phoneCountry", phone.country);
       }
     }
-    if (hotelArea.trim()) {
-      params.set("hotelArea", hotelArea.trim());
-    }
     if (finalNote.trim()) {
       params.set("finalNote", finalNote.trim());
     }
@@ -598,7 +594,6 @@ export default function BookingTriageCalendarConcept() {
     finalNote,
     firstName,
     fullPhone,
-    hotelArea,
     lastName,
     mobilityIssues,
     notSureYet,
@@ -1236,16 +1231,6 @@ export default function BookingTriageCalendarConcept() {
                   inputClassName={styles.fieldInput}
                   required
                 />
-                <label className={styles.fieldWrap}>
-                  <span>accomodations</span>
-                  <input
-                    type="text"
-                    value={hotelArea}
-                    onChange={(event) => setHotelArea(event.target.value)}
-                    placeholder="Hotel name or neighborhood"
-                    className={styles.fieldInput}
-                  />
-                </label>
                 <label className={styles.fieldWrap}>
                   <span>What would make this trip perfect for you? (optional)</span>
                   <textarea
