@@ -12,7 +12,7 @@ const trustPillars = [
   {
     title: "Licensed Local Guides",
     description:
-      "Every tour is led by a licensed Rome guide who knows how to make complex history clear and engaging.",
+      "Our licensed local guides share the history, culture, and everyday life of the places you visit.",
   },
   {
     title: "Private Tours Built Around You",
@@ -74,17 +74,17 @@ const processSteps = [
       "We align on meeting points, timing, and practical notes so everything feels easy before tour day.",
   },
   {
-    title: "You Enjoy Rome at Your Pace",
+    title: "Explore Italy at Your Pace",
     description:
-      "On the day, we guide with flexibility and clear context so you can enjoy Rome without stress.",
+      "On tour day, your guide adapts the pace and shares the stories behind each stop.",
   },
 ];
 
 const faqItems = [
   {
-    question: "Are your guides officially licensed in Rome?",
+    question: "Are your guides officially licensed?",
     answer:
-      "Yes. All our Rome tours are led by officially licensed guides.",
+      "Yes. Our private tours are led by officially licensed local guides.",
   },
   {
     question: "Are your tours always private?",
@@ -107,9 +107,9 @@ const faqItems = [
       "Yes. We regularly plan for families, older travelers, and anyone who prefers a slower pace.",
   },
   {
-    question: "Do you also organize day trips and tours beyond Rome?",
+    question: "Where in Italy do you offer private tours?",
     answer:
-      "Yes. Besides Rome, we plan private day trips and selected multi-city Italy routes.",
+      "We organize private tours and day trips across Italy, including Rome, Florence and Tuscany, Venice, Milan, Naples and the Amalfi Coast, and Sicily. We also plan multi-city itineraries around your dates and interests.",
   },
   {
     question: "How do we start planning our private tour?",
@@ -123,7 +123,7 @@ const galleryItems = [
   { src: "/carlo2.jpg", alt: "Private tour moment in central Rome with warm evening light" },
   { src: "/carlo3.jpg", alt: "Guide-led route through Rome with river and dome backdrop" },
   { src: "/carlo4.jpg", alt: "Private guest experience near Rome baroque architecture" },
-  { src: "/carlo5.jpg", alt: "Family-run Rome guide team in an on-tour moment" },
+  { src: "/carlo5.jpg", alt: "Portrait of the family behind Rome Guide Services" },
   { src: "/carlo6.jpg", alt: "Rome private guiding scene focused on authentic guest experience" },
 ];
 
@@ -147,14 +147,10 @@ function buildOrganizationSchema() {
     url: `${baseUrl}/`,
     email: "romeguideservices@gmail.com",
     description:
-      "Family-run Rome guide service offering private tours with licensed guides, multilingual support, and flexible pacing.",
-    foundingLocation: {
-      "@type": "Place",
-      name: "Rome, Italy",
-    },
+      "Family-run travel planning and private tours across Italy with licensed local guides and multilingual support.",
     areaServed: {
-      "@type": "Place",
-      name: "Rome, Italy",
+      "@type": "Country",
+      name: "Italy",
     },
     knowsLanguage: ["English", "Italian", "Spanish", "French", "German"],
   };
@@ -185,9 +181,9 @@ function buildBreadcrumbSchema() {
 
 export function generateMetadata(): Metadata {
   const title =
-    "Who We Are | Licensed Rome Tour Guides & Custom Private Tours | Rome Guide Services";
+    "About Us | Private Tours Across Italy | Rome Guide Services";
   const description =
-    "Meet our family-run team of licensed Rome guides and see how we plan private tours with clear communication, flexible pacing, and personal support.";
+    "Meet the family-run team behind Rome Guide Services. We plan private tours, day trips, and multi-city itineraries across Italy with licensed local guides.";
 
   return {
     title,
@@ -263,27 +259,27 @@ export default function WhoWeArePage() {
                 <article className={styles.storyCopy}>
                   <p className={styles.sectionEyebrow}>OUR STORY</p>
                   <h1 id="who-we-are-main-title" className={`${styles.sectionTitle} ${styles.storyTitle}`}>
-                    Rooted in Rome, Built Around People
+                    Private Tours Across Italy, Built Around People
                   </h1>
                   <p>
-                    Rome Guide Services started as a family project with a simple idea: private tours
-                    should feel personal, not transactional.
+                    Rome Guide Services started as a family project. Today, we plan private tours,
+                    day trips, and multi-city itineraries across Italy.
                   </p>
                   <p>
-                    We live and work in Rome, and we plan each route ourselves. That means clear
-                    communication, smart timing, and fewer surprises on the day.
+                    Our team works with licensed local guides across Italy. We plan each route with
+                    you and take care of the timing and connections between stops.
                   </p>
                   <p>
-                    Whether it is your first time here or your fifth, we adapt the experience to
-                    you and keep it warm, practical, and memorable.
+                    Whether it&apos;s your first trip to Italy or a return visit, we shape the
+                    itinerary around what you want to see and how you like to travel.
                   </p>
-                  <p className={styles.storyBadge}>Family-run in Rome | Practical planning | Human support</p>
+                  <p className={styles.storyBadge}>Family-run | Private tours across Italy</p>
                 </article>
                 <figure className={styles.storyVisual}>
                   <div className={styles.storyVisualInner}>
                     <Image
                       src="/carlo5.jpg"
-                      alt="Family-run Rome guide service team in an authentic on-tour moment"
+                      alt="Portrait of the family behind Rome Guide Services"
                       fill
                       priority
                       sizes="(max-width: 860px) 100vw, 40vw"
@@ -352,8 +348,8 @@ export default function WhoWeArePage() {
                   Meet the Guides Behind Your Tour
                 </h2>
                 <p className={styles.guidesLead}>
-                  A great private guide does more than explain monuments. We read the room, adjust
-                  the rhythm, and turn Rome into a story that makes sense for your group.
+                  Our local guides share the stories behind each destination. They tailor the tour
+                  to your interests and adjust the pace as you go.
                 </p>
                 <p className={styles.guidesTrustRow}>
                   Real local guides | Friendly pace | Clear communication
@@ -363,7 +359,7 @@ export default function WhoWeArePage() {
               <figure className={styles.guidesHeroVisual} data-reveal>
                 <Image
                   src="/carlo5.jpg"
-                  alt="Family-run licensed guide team in Rome"
+                  alt="Portrait of the family behind Rome Guide Services"
                   fill
                   sizes="(max-width: 860px) 100vw, 44vw"
                   className={styles.guidesHeroImage}
@@ -412,7 +408,7 @@ export default function WhoWeArePage() {
                 />
               </figure>
             </div>
-            <p className={styles.guidesPhotoCaption}>Real guides, real guests, real days in Rome.</p>
+            <p className={styles.guidesPhotoCaption}>Our guides and guests on tour in Rome.</p>
           </div>
         </section>
 
@@ -464,7 +460,7 @@ export default function WhoWeArePage() {
                   </article>
                 </div>
 
-                <p className={styles.approachManifestoTag}>Family-run private touring in Rome</p>
+                <p className={styles.approachManifestoTag}>Family-run tour planning across Italy</p>
               </aside>
             </div>
 
@@ -472,7 +468,7 @@ export default function WhoWeArePage() {
               <li>Private tours only</li>
               <li>Family and senior-friendly pacing</li>
               <li>Multilingual support</li>
-              <li>Day trips and Italy extensions</li>
+              <li>Day trips and multi-city itineraries</li>
             </ul>
           </div>
         </section>
@@ -484,8 +480,7 @@ export default function WhoWeArePage() {
               The People Behind the Experience
             </h2>
             <p className={styles.sectionLead}>
-              These are real moments from our tours. No stock actors, no staged scripts, just the
-              way we actually work with guests in Rome.
+              Photos from our tours with guests and guides.
             </p>
 
             <div className={styles.galleryGrid}>
@@ -557,6 +552,29 @@ export default function WhoWeArePage() {
 
             <div className={styles.pathwaysGrid}>
               <article className={styles.pathwayCard} data-reveal>
+                <h3>Private Tours Across Italy</h3>
+                <ul>
+                  <li>
+                    <Link href="/tours-in-italy">Explore All Italy Tours</Link>
+                  </li>
+                  <li>
+                    <Link href="/tours-in-italy/private-florence-tuscany-tour">
+                      Tours in Italy: Florence & Tuscany
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/tours-in-italy/private-venice-tour">Venice Tour</Link>
+                  </li>
+                  <li>
+                    <Link href="/tours-in-italy/private-milan-tour">Milan Tour</Link>
+                  </li>
+                  <li>
+                    <Link href="/tours-in-italy/private-sicily-tours">Sicily Tours</Link>
+                  </li>
+                </ul>
+              </article>
+
+              <article className={styles.pathwayCard} data-reveal>
                 <h3>Private Tours in Rome</h3>
                 <ul>
                   <li>
@@ -577,28 +595,8 @@ export default function WhoWeArePage() {
                   <li>
                     <Link href="/tours/art-architecture">Rome Art & Architecture Tour</Link>
                   </li>
-                </ul>
-              </article>
-
-              <article className={styles.pathwayCard} data-reveal>
-                <h3>Beyond Rome</h3>
-                <ul>
                   <li>
                     <Link href="/tours/day-trips-from-rome">Day Trips from Rome</Link>
-                  </li>
-                  <li>
-                    <Link href="/tours-in-italy/private-florence-tuscany-tour">
-                      Tours in Italy: Florence & Tuscany
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/tours-in-italy/private-venice-tour">Venice Tour</Link>
-                  </li>
-                  <li>
-                    <Link href="/tours-in-italy/private-milan-tour">Milan Tour</Link>
-                  </li>
-                  <li>
-                    <Link href="/tours-in-italy/private-sicily-tours">Sicily Tours</Link>
                   </li>
                 </ul>
               </article>
@@ -626,7 +624,7 @@ export default function WhoWeArePage() {
           <div className={styles.sectionInner}>
             <article className={styles.finalCtaPanel}>
               <h2 id="who-we-are-final-cta-title">
-                Ready to Plan Your Rome Trip Together?
+                Ready to Plan Your Trip to Italy?
               </h2>
               <p>
                 Tell us your dates, priorities, and preferred pace. We&apos;ll send a personal
