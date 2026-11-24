@@ -143,7 +143,7 @@ export default function DayTripsFromRomeHubPage() {
               Day Trips from Rome
             </p>
             <h1 className="mt-3 max-w-[20ch] font-serif text-[clamp(2.1rem,4.3vw,4rem)] leading-[0.95] text-[#f8ead8]">
-              Day Trips from Rome, Well-planned Beyond the City
+              Day Trips from Italy, Well-planned Beyond the City
             </h1>
             <p className="mt-4 max-w-[70ch] font-sans text-[1rem] leading-[1.75] text-[#e8d0b2]">
               Discover full-day private escapes with hotel pickup in Rome, relaxed pace, and
