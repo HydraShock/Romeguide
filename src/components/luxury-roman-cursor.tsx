@@ -10,12 +10,8 @@ function detectCursorMode(target: EventTarget | null): CursorMode {
     return "default";
   }
 
-  if (
-    target.closest(
-      "input, textarea, select, [contenteditable='true'], [data-cursor='text']",
-    )
-  ) {
-    return "text";
+  if (target.closest(":disabled, [aria-disabled='true']")) {
+    return "default";
   }
 
   if (
@@ -28,18 +24,26 @@ function detectCursorMode(target: EventTarget | null): CursorMode {
 
   if (
     target.closest(
-      "[data-cursor='card'], article, .categoryCard, .tripCard, .stepCard, .trustStripCard",
+      "a[href], button, summary, select, input:is([type='button'], [type='submit'], [type='reset'], [type='checkbox'], [type='radio']), [role='button'], [role='link'], [data-cursor='link']",
     )
   ) {
-    return "card";
+    return "link";
   }
 
   if (
     target.closest(
-      "a, button, summary, [role='button'], [data-cursor='link'], input[type='submit'], input[type='button']",
+      "input, textarea, [contenteditable='true'], [data-cursor='text']",
     )
   ) {
-    return "link";
+    return "text";
+  }
+
+  if (
+    target.closest(
+      "[data-cursor='card'], article, .categoryCard, .tripCard, .stepCard, .trustStripCard",
+    )
+  ) {
+    return "card";
   }
 
   return "default";
@@ -52,7 +56,7 @@ export default function LuxuryRomanCursor() {
   const [mode, setMode] = useState<CursorMode>("default");
 
   const haloRef = useRef<HTMLSpanElement | null>(null);
-  const dotRef = useRef<HTMLSpanElement | null>(null);
+  const markerRef = useRef<HTMLSpanElement | null>(null);
   const visibleRef = useRef(false);
   const modeRef = useRef<CursorMode>("default");
 
@@ -97,8 +101,8 @@ export default function LuxuryRomanCursor() {
         haloRef.current.style.transform = `translate3d(${x}px, ${y}px, 0)`;
       }
 
-      if (dotRef.current) {
-        dotRef.current.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+      if (markerRef.current) {
+        markerRef.current.style.transform = `translate3d(${x}px, ${y}px, 0)`;
       }
 
       if (!visibleRef.current) {
@@ -132,6 +136,7 @@ export default function LuxuryRomanCursor() {
     };
 
     window.addEventListener("mousemove", handleMove, { passive: true });
+    window.addEventListener("mouseover", handleMove, { passive: true });
     window.addEventListener("mousedown", handleDown, { passive: true });
     window.addEventListener("mouseup", handleUp, { passive: true });
     document.addEventListener("mouseleave", handleLeave, { passive: true });
@@ -140,6 +145,7 @@ export default function LuxuryRomanCursor() {
 
     return () => {
       window.removeEventListener("mousemove", handleMove);
+      window.removeEventListener("mouseover", handleMove);
       window.removeEventListener("mousedown", handleDown);
       window.removeEventListener("mouseup", handleUp);
       document.removeEventListener("mouseleave", handleLeave);
@@ -169,7 +175,25 @@ export default function LuxuryRomanCursor() {
   return (
     <div aria-hidden className={rootClassName}>
       <span ref={haloRef} className={styles.cursorHalo} />
-      <span ref={dotRef} className={styles.cursorDot} />
+      <span ref={markerRef} className={styles.cursorMarker}>
+        <span className={styles.cursorDot} />
+        <svg className={styles.cursorHand} viewBox="0 0 26 30" focusable="false">
+          <defs>
+            <linearGradient id="roman-cursor-hand-fill" x2="0.25" y2="1">
+              <stop stopColor="#fff8e8" />
+              <stop offset="0.5" stopColor="#f4c77d" />
+              <stop offset="1" stopColor="#bb7939" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M10 2.5a2 2 0 0 1 2 2v9.25a1.8 1.8 0 0 1 3.6 0V15a1.8 1.8 0 0 1 3.6 0v1.1a1.8 1.8 0 0 1 3.6 0v3.7c0 4.9-2.9 8.2-7.8 8.2h-1.8c-2.5 0-4.4-1.1-5.8-3.2l-4.2-6.2a1.9 1.9 0 0 1 2.9-2.3L8 18.1V4.5a2 2 0 0 1 2-2Z"
+            fill="url(#roman-cursor-hand-fill)"
+            stroke="#653418"
+            strokeWidth="1.25"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </span>
     </div>
   );
 }

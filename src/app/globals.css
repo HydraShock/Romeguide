@@ -35,9 +35,8 @@ body.luxury-cursor-enabled {
   cursor: none !important;
 }
 
-.luxury-cursor-enabled input,
-.luxury-cursor-enabled textarea,
-.luxury-cursor-enabled select,
+.luxury-cursor-enabled input:enabled:not(:is([type="button"], [type="submit"], [type="reset"], [type="checkbox"], [type="radio"])),
+.luxury-cursor-enabled textarea:enabled,
 .luxury-cursor-enabled [contenteditable="true"] {
   cursor: text !important;
 }
