@@ -261,11 +261,19 @@ export default function Home() {
                 pace. Discover the beauty of Italy alongside our expert local guides.
               </p>
               <div className={styles.ctaRow}>
-                <Link href="/#requested-tours-heading" className={styles.primaryCta}>
-                  Explore Private Tours
-                </Link>
+                <nav className={styles.tourLinks} aria-label="Tour categories">
+                  <Link href="/tours" className={styles.primaryCta}>
+                    Exclusive Rome Tours
+                  </Link>
+                  <Link href="/tours/day-trips-from-rome" className={styles.primaryCta}>
+                    Day Trips
+                  </Link>
+                  <Link href="/tours-in-italy" className={styles.primaryCta}>
+                    Tours in Italy
+                  </Link>
+                </nav>
                 <Link href="/#booking-calendar" className={styles.secondaryCta}>
-                  Plan Your Rome Trip
+                  Plan Your Trip in Italy
                 </Link>
               </div>
             </div>

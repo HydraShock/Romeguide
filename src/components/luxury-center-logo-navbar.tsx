@@ -391,7 +391,7 @@ export default function LuxuryCenterLogoNavbar() {
   const [activePanel, setActivePanel] = useState<PanelKey | null>(null);
   const wrapperRef = useRef<HTMLElement>(null);
   const closeTimerRef = useRef<number | null>(null);
-  const panelData = activePanel ? megaPanels[activePanel] : null;
+  const panelData = !isHome && activePanel ? megaPanels[activePanel] : null;
   const panelItems = panelData ? panelPreviewItems[panelData.key] : [];
 
   const clearCloseTimer = () => {
@@ -491,30 +491,32 @@ export default function LuxuryCenterLogoNavbar() {
         onMouseLeave={schedulePanelClose}
       >
         <div className={styles.bar}>
-          <nav className={styles.navGroupLeft} aria-label="Primary navigation left">
-            {leftLinks.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`${styles.navLink} ${
-                  isDarkHeroPage ? styles.navLinkLeftOnDark : styles.navLinkLeft
-                } ${
-                  isActivePath(pathname, item.href)
-                    ? isDarkHeroPage
-                      ? styles.navLinkActiveLeftOnDark
-                      : styles.navLinkActiveLeft
-                    : ""
-                }`}
-                aria-expanded={item.panelKey ? activePanel === item.panelKey : undefined}
-                aria-haspopup={item.panelKey ? "menu" : undefined}
-                onMouseEnter={() => openPanel(item.panelKey)}
-                onFocus={() => openPanel(item.panelKey)}
-                onClick={closeMenus}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+          {!isHome && (
+            <nav className={styles.navGroupLeft} aria-label="Primary navigation left">
+              {leftLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`${styles.navLink} ${
+                    isDarkHeroPage ? styles.navLinkLeftOnDark : styles.navLinkLeft
+                  } ${
+                    isActivePath(pathname, item.href)
+                      ? isDarkHeroPage
+                        ? styles.navLinkActiveLeftOnDark
+                        : styles.navLinkActiveLeft
+                      : ""
+                  }`}
+                  aria-expanded={item.panelKey ? activePanel === item.panelKey : undefined}
+                  aria-haspopup={item.panelKey ? "menu" : undefined}
+                  onMouseEnter={() => openPanel(item.panelKey)}
+                  onFocus={() => openPanel(item.panelKey)}
+                  onClick={closeMenus}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          )}
 
           <Link
             href="/"
@@ -661,7 +663,7 @@ export default function LuxuryCenterLogoNavbar() {
           aria-hidden={!isMobileOpen}
         >
           <nav className={styles.mobileNav} aria-label="Mobile navigation">
-            {[...leftLinks, ...rightLinks].map((item) => (
+            {(isHome ? rightLinks : [...leftLinks, ...rightLinks]).map((item) => (
               <Link
                 key={`mobile-${item.href}`}
                 href={item.href}

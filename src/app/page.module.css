@@ -72,15 +72,22 @@
 
 .ctaRow {
   margin-top: 2rem;
-  display: flex;
+  display: grid;
+  justify-items: start;
   gap: 0.78rem;
-  flex-wrap: wrap;
+}
+
+.tourLinks {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: inherit;
 }
 
 .primaryCta,
 .secondaryCta {
   display: inline-flex;
-  height: 3.2rem;
+  min-height: 3.2rem;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
@@ -89,14 +96,17 @@
   font-weight: 620;
   letter-spacing: 0.01em;
   transition: all 150ms ease;
-  white-space: nowrap;
 }
 
 .primaryCta {
-  padding: 0 1.66rem;
+  padding: 0.5rem 0.4rem;
   background: #d09a5f;
   border: 1px solid #d09a5f;
-  color: #f9eee2;
+  color: #352317;
+  font-size: clamp(0.83rem, 1.1vw, 0.97rem);
+  line-height: 1.2;
+  text-align: center;
+  text-wrap: balance;
   box-shadow: 0 5px 14px rgba(88, 55, 30, 0.19);
 }
 
@@ -979,6 +989,7 @@
   }
 
   .contentLayer {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1004,7 +1015,7 @@
   }
 
   .ctaRow {
-    justify-content: center;
+    justify-items: center;
   }
 }
 
@@ -1056,12 +1067,14 @@
   .ctaRow {
     margin-top: 1.25rem;
     gap: 0.56rem;
-    justify-content: center;
   }
 
   .primaryCta,
   .secondaryCta {
-    height: 2.95rem;
+    min-height: 2.95rem;
+  }
+
+  .secondaryCta {
     font-size: 0.95rem;
     padding: 0 1.16rem;
   }
@@ -1194,7 +1207,10 @@
 
   .primaryCta,
   .secondaryCta {
-    height: 2.8rem;
+    min-height: 2.8rem;
+  }
+
+  .secondaryCta {
     font-size: 0.9rem;
     padding: 0 1rem;
   }
