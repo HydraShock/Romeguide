@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import { emptyPhone, formatPhoneNumber } from "@/lib/phone-number";
 import PhoneField from "./phone-field";
 import styles from "./booking-triage-calendar-concept.module.css";
@@ -336,6 +336,9 @@ export default function BookingTriageCalendarConcept() {
   const [monthOffset, setMonthOffset] = useState(0);
   const [selectedDateIso, setSelectedDateIso] = useState(todayIso);
   const [activeStep, setActiveStep] = useState<1 | 2 | 3 | 4 | 5>(1);
+  const previousStep = useRef(activeStep);
+  const calendarRef = useRef<HTMLDivElement>(null);
+  const stepLabelRef = useRef<HTMLParagraphElement>(null);
   const [departureCity, setDepartureCity] = useState("");
   const [arrivalCityItaly, setArrivalCityItaly] = useState("");
   const [selectedGroups, setSelectedGroups] = useState<Record<InterestGroupId, boolean>>(emptyGroups);
@@ -636,6 +639,25 @@ export default function BookingTriageCalendarConcept() {
     setNotSureYet(false);
   }
 
+  useLayoutEffect(() => {
+    if (previousStep.current === activeStep) {
+      return;
+    }
+
+    previousStep.current = activeStep;
+    const calendar = calendarRef.current;
+    if (!calendar) {
+      return;
+    }
+
+    stepLabelRef.current?.focus({ preventScroll: true });
+
+    const { top, height } = calendar.getBoundingClientRect();
+    const viewportHeight = window.visualViewport?.height ?? document.documentElement.clientHeight;
+    const topMargin = Math.max(16, (viewportHeight - height) / 2);
+    window.scrollTo({ top: window.scrollY + top - topMargin, behavior: "instant" });
+  }, [activeStep]);
+
   function goToNext() {
     if (!canContinue || activeStep >= 5) {
       return;
@@ -658,10 +680,10 @@ export default function BookingTriageCalendarConcept() {
     <section
       id="booking-calendar"
       className={styles.bookingTriageSection}
-      aria-labelledby="booking-triage-title"
+      aria-labelledby={activeStep === 1 ? "booking-triage-title" : "booking-triage-step"}
     >
       <div className={styles.bookingTriageInner}>
-        <div className={styles.calendarShell} role="group" aria-label="Private tour planner">
+        <div ref={calendarRef} className={styles.calendarShell} role="group" aria-label="Private tour planner">
           {activeStep === 1 ? (
             <header className={styles.bookingHeader}>
               <h2 id="booking-triage-title" className={styles.bookingHeaderTitle}>
@@ -675,7 +697,7 @@ export default function BookingTriageCalendarConcept() {
               activeStep > 1 ? styles.calendarTopBarCompact : ""
             }`}
           >
-            <p className={styles.calendarTopLabel}>
+            <p ref={stepLabelRef} id="booking-triage-step" tabIndex={-1} className={styles.calendarTopLabel}>
               Booking step: {activeStepMeta.label} - {activeStepMeta.title}
             </p>
 
