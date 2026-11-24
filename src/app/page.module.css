@@ -73,7 +73,7 @@
 .ctaRow {
   margin-top: 2rem;
   display: grid;
-  justify-items: start;
+  justify-items: center;
   gap: 0.78rem;
 }
 
@@ -84,46 +84,55 @@
   gap: inherit;
 }
 
-.primaryCta,
-.secondaryCta {
+.tourCta,
+.bookingCta {
   display: inline-flex;
   min-height: 3.2rem;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
   font-family: var(--font-manrope), Arial, sans-serif;
   font-size: 1.06rem;
   font-weight: 620;
   letter-spacing: 0.01em;
-  transition: all 150ms ease;
+  transition: background-color 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
 }
 
-.primaryCta {
+.tourCta {
   padding: 0.5rem 0.4rem;
-  background: #d09a5f;
-  border: 1px solid #d09a5f;
-  color: #352317;
+  border: 1px solid #b88958;
+  border-radius: 0.82rem;
+  background: linear-gradient(180deg, #fff8ed, #f7e7d3);
+  color: #563923;
   font-size: clamp(0.83rem, 1.1vw, 0.97rem);
   line-height: 1.2;
   text-align: center;
   text-wrap: balance;
-  box-shadow: 0 5px 14px rgba(88, 55, 30, 0.19);
+  box-shadow: 0 1px 0 #fffaf4 inset, 0 4px 10px #68462618;
 }
 
-.primaryCta:hover {
-  background: #c68f56;
-  border-color: #c68f56;
+.tourCta:hover {
+  background: #f2ddc2;
+  border-color: #8c5d34;
 }
 
-.secondaryCta {
+.bookingCta {
   padding: 0 1.64rem;
-  border: 1px solid #d0a177;
-  background: rgba(255, 248, 239, 0.28);
-  color: #584330;
+  border: 1px solid #754825;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #935d35, #694025);
+  color: #fff4e6;
+  box-shadow: 0 1px 0 #edbf8b66 inset, 0 6px 15px #59351e33;
 }
 
-.secondaryCta:hover {
-  background: rgba(253, 241, 227, 0.52);
+.bookingCta:hover {
+  background: #65391f;
+  border-color: #563019;
+}
+
+.tourCta:focus-visible,
+.bookingCta:focus-visible {
+  outline: 2px solid #794a27;
+  outline-offset: 3px;
 }
 
 .heroDivider {
@@ -1014,9 +1023,6 @@
     max-width: 100%;
   }
 
-  .ctaRow {
-    justify-items: center;
-  }
 }
 
 @media (max-width: 720px) {
@@ -1069,12 +1075,12 @@
     gap: 0.56rem;
   }
 
-  .primaryCta,
-  .secondaryCta {
+  .tourCta,
+  .bookingCta {
     min-height: 2.95rem;
   }
 
-  .secondaryCta {
+  .bookingCta {
     font-size: 0.95rem;
     padding: 0 1.16rem;
   }
@@ -1205,12 +1211,12 @@
     gap: 0.46rem;
   }
 
-  .primaryCta,
-  .secondaryCta {
+  .tourCta,
+  .bookingCta {
     min-height: 2.8rem;
   }
 
-  .secondaryCta {
+  .bookingCta {
     font-size: 0.9rem;
     padding: 0 1rem;
   }

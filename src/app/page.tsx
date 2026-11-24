@@ -262,17 +262,17 @@ export default function Home() {
               </p>
               <div className={styles.ctaRow}>
                 <nav className={styles.tourLinks} aria-label="Tour categories">
-                  <Link href="/tours" className={styles.primaryCta}>
+                  <Link href="/tours" className={styles.tourCta}>
                     Exclusive Rome Tours
                   </Link>
-                  <Link href="/tours/day-trips-from-rome" className={styles.primaryCta}>
+                  <Link href="/tours/day-trips-from-rome" className={styles.tourCta}>
                     Day Trips
                   </Link>
-                  <Link href="/tours-in-italy" className={styles.primaryCta}>
+                  <Link href="/tours-in-italy" className={styles.tourCta}>
                     Tours in Italy
                   </Link>
                 </nav>
-                <Link href="/#booking-calendar" className={styles.secondaryCta}>
+                <Link href="/#booking-calendar" className={styles.bookingCta}>
                   Plan Your Trip in Italy
                 </Link>
               </div>
