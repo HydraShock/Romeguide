@@ -1158,7 +1158,7 @@ export default function BookingTriageCalendarConcept() {
                 </section>
 
                 <section className={`${styles.stepSection} ${styles.stepSectionCompact}`}>
-                  <h5>Experience preferences</h5>
+                  <h5>interests &amp; preferences</h5>
                   <div className={styles.optionGrid}>
                     {experienceStyleTags.map((tag) => (
                       <button
