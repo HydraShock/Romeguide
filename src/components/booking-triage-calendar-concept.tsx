@@ -346,6 +346,9 @@ export default function BookingTriageCalendarConcept() {
     emptyInterests,
   );
   const [notSureYet, setNotSureYet] = useState(false);
+  const [transferSelected, setTransferSelected] = useState(false);
+  const [transferFrom, setTransferFrom] = useState("");
+  const [transferTo, setTransferTo] = useState("");
 
   const [totalTravelers, setTotalTravelers] = useState<number | null>(null);
   const [under18Travelers, setUnder18Travelers] = useState<number | null>(null);
@@ -455,6 +458,7 @@ export default function BookingTriageCalendarConcept() {
   }, [totalTravelers]);
 
   const fullPhone = useMemo(() => formatPhoneNumber(phone), [phone]);
+  const hasTransferRoute = Boolean(transferFrom.trim() && transferTo.trim());
 
   const canContinue = useMemo(() => {
     if (activeStep === 1) {
@@ -466,7 +470,7 @@ export default function BookingTriageCalendarConcept() {
     }
 
     if (activeStep === 3) {
-      return notSureYet || selectedGroupCount > 0;
+      return transferSelected ? hasTransferRoute : notSureYet || selectedGroupCount > 0;
     }
 
     if (activeStep === 4) {
@@ -498,6 +502,7 @@ export default function BookingTriageCalendarConcept() {
     email,
     firstName,
     fullPhone,
+    hasTransferRoute,
     lastName,
     notSureYet,
     preferredLanguage,
@@ -505,6 +510,7 @@ export default function BookingTriageCalendarConcept() {
     preferredTransport,
     selectedGroupCount,
     totalTravelers,
+    transferSelected,
     under18Travelers,
   ]);
 
@@ -516,6 +522,10 @@ export default function BookingTriageCalendarConcept() {
 
     if (notSureYet) {
       params.set("notSureYet", "yes");
+    }
+    if (transferSelected && hasTransferRoute) {
+      params.set("transferFrom", transferFrom.trim());
+      params.set("transferTo", transferTo.trim());
     }
 
     if (selectedInterestLabels.length > 0) {
@@ -597,6 +607,7 @@ export default function BookingTriageCalendarConcept() {
     finalNote,
     firstName,
     fullPhone,
+    hasTransferRoute,
     lastName,
     mobilityIssues,
     notSureYet,
@@ -608,6 +619,9 @@ export default function BookingTriageCalendarConcept() {
     selectedGroupLabels,
     selectedInterestLabels,
     totalTravelers,
+    transferFrom,
+    transferSelected,
+    transferTo,
     under18Travelers,
     travelingWithAnimals,
   ]);
@@ -855,6 +869,41 @@ export default function BookingTriageCalendarConcept() {
 
               <button
                 type="button"
+                className={`${styles.notSureChip} ${transferSelected ? styles.notSureChipActive : ""}`}
+                aria-expanded={transferSelected}
+                aria-controls="booking-transfer-cities"
+                onClick={() => setTransferSelected((selected) => !selected)}
+              >
+                Transfer from cities
+              </button>
+
+              <div id="booking-transfer-cities" hidden={!transferSelected}>
+                <div className={styles.routeGrid}>
+                  <label className={styles.fieldWrap}>
+                    <span>Transfer departure city</span>
+                    <input
+                      type="text"
+                      value={transferFrom}
+                      onChange={(event) => setTransferFrom(event.target.value)}
+                      className={styles.fieldInput}
+                      required={transferSelected}
+                    />
+                  </label>
+                  <label className={styles.fieldWrap}>
+                    <span>Transfer arrival city</span>
+                    <input
+                      type="text"
+                      value={transferTo}
+                      onChange={(event) => setTransferTo(event.target.value)}
+                      className={styles.fieldInput}
+                      required={transferSelected}
+                    />
+                  </label>
+                </div>
+              </div>
+
+              <button
+                type="button"
                 className={`${styles.notSureChip} ${notSureYet ? styles.notSureChipActive : ""}`}
                 onClick={() => {
                   setNotSureYet((current) => !current);
@@ -868,9 +917,9 @@ export default function BookingTriageCalendarConcept() {
                 Click here if you&apos;re not sure yet
               </button>
 
-              {!notSureYet && selectedGroupCount === 0 ? (
+              {!transferSelected && !notSureYet && selectedGroupCount === 0 ? (
                 <div className={styles.interestEmptyState}>
-                  Select at least one area to continue.
+                  Select an area or add a transfer to continue.
                 </div>
               ) : null}
 
@@ -1281,6 +1330,11 @@ export default function BookingTriageCalendarConcept() {
                     ? "Not set"
                     : `${totalTravelers} total, ${under18Travelers} under 18`}
                 </p>
+                {transferSelected && hasTransferRoute ? (
+                  <p>
+                    <strong>Transfer:</strong> {transferFrom.trim()} to {transferTo.trim()}
+                  </p>
+                ) : null}
                 <p>
                   <strong>Areas chosen:</strong>{" "}
                   {notSureYet ? "Need help choosing" : selectedGroupCount}

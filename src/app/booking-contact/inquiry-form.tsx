@@ -200,6 +200,8 @@ export default function InquiryForm() {
     const travelerProfile = params.get("travelerProfile") ?? "";
     const departureCity = params.get("departureCity") ?? "";
     const arrivalCityItaly = params.get("arrivalCityItaly") ?? "";
+    const transferFrom = params.get("transferFrom")?.trim();
+    const transferTo = params.get("transferTo")?.trim();
     const name = params.get("name") ?? "";
     const firstName = params.get("firstName") ?? "";
     const lastName = params.get("lastName") ?? "";
@@ -218,6 +220,7 @@ export default function InquiryForm() {
         travelerProfile ||
         departureCity ||
         arrivalCityItaly ||
+        (transferFrom && transferTo) ||
         name ||
         combinedName ||
         emailFromQuery ||
@@ -237,6 +240,7 @@ export default function InquiryForm() {
       departureCity && arrivalCityItaly
         ? `Travel route in Italy: Arrival ${arrivalCityItaly} | Departure ${departureCity}`
         : "",
+      transferFrom && transferTo ? `Requested transfer: ${transferFrom} to ${transferTo}` : "",
     ].filter(Boolean);
 
     // eslint-disable-next-line react-hooks/set-state-in-effect
