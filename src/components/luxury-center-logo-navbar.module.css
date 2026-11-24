@@ -132,6 +132,8 @@
   right: 0;
   z-index: 3;
   width: min(19rem, calc(100vw - 2rem));
+  max-height: calc(100dvh - 6rem);
+  overflow-y: auto;
   box-shadow: 0 16px 35px #1d0d08a8;
 }
 

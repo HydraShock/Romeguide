@@ -680,18 +680,19 @@ export default function LuxuryCenterLogoNavbar() {
           id="center-logo-mobile-nav"
           className={`${styles.mobilePanel} ${isMobileOpen ? styles.mobilePanelOpen : ""}`}
           aria-hidden={!isMobileOpen}
+          inert={!isMobileOpen}
         >
           <nav className={styles.mobileNav} aria-label="Mobile navigation">
             <button
               type="button"
               className={`${styles.mobileNavLink} ${isFoodTours ? styles.mobileNavLinkActive : ""}`}
-              aria-expanded={foodMenuOpen}
-              aria-controls={foodMenuOpen ? "mobile-food-tours" : undefined}
+              aria-expanded={isMobileOpen && foodMenuOpen}
+              aria-controls={isMobileOpen && foodMenuOpen ? "mobile-food-tours" : undefined}
               onClick={toggleFoodMenu}
             >
               Food Tours <span aria-hidden>&nbsp;⌄</span>
             </button>
-            {foodMenuOpen && <FoodTourMenuLinks id="mobile-food-tours" onNavigate={closeMenus} />}
+            {isMobileOpen && foodMenuOpen && <FoodTourMenuLinks id="mobile-food-tours" onNavigate={closeMenus} />}
             {(isHome ? rightLinks : [...leftLinks, ...rightLinks]).map((item) => (
               <Link
                 key={`mobile-${item.href}`}
