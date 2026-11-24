@@ -49,16 +49,6 @@
   width: min(41%, 31.5rem);
 }
 
-.kicker {
-  margin: 0;
-  color: #b77e4a;
-  font-family: var(--font-cormorant), Georgia, serif;
-  font-size: clamp(1.06rem, 1.16vw, 1.5rem);
-  font-style: italic;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-}
-
 .title {
   margin: 1.1rem 0 0;
   color: #3e3630;
@@ -1002,7 +992,6 @@
     margin: 0 auto;
   }
 
-  .kicker,
   .title,
   .description {
     text-align: center;

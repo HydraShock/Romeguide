@@ -662,7 +662,7 @@ export default function BookingTriageCalendarConcept() {
           {activeStep === 1 ? (
             <header className={styles.bookingHeader}>
               <h2 id="booking-triage-title" className={styles.bookingHeaderTitle}>
-                Start booking your Tour!
+                Start booking your Trip!
               </h2>
             </header>
           ) : null}

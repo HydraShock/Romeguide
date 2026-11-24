@@ -251,7 +251,6 @@ export default function Home() {
 
           <div className={styles.contentLayer}>
             <div className={styles.copyBlock}>
-              <p className={styles.kicker}>Private Tours in Rome</p>
               <h1 className={styles.title}>
                 Private Tours in Rome and Italy,
                 <br />
